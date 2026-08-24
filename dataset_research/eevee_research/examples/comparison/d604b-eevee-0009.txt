@@ -1,0 +1,4 @@
+task: try-on-lower_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: lower_body/02868
+caption: A pair of cream-colored trousers features a sleek, straight-leg design with a slight flare at the hem. A smooth texture suggests a high-quality fabric, likely wool or a similar material. A central front crease runs down each leg, enhancing the garment's tailored appearance. A waistband at the top provides a secure fit, though no visible buttons or zippers are present in this view. A minimalist style is evident, with no patterns, graphics, or text adorning the surface. A clean and elegant look is achieved through its simple yet sophisticated design.

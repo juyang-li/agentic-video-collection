@@ -1,0 +1,184 @@
+{
+  "0003": {
+    "interleave_array": [
+      "Add a German shepherd lying on the ground wagging its tail.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_adding/5_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0004": {
+    "interleave_array": [
+      "Remove only the clear glass/plastic dome that covers Santa Claus, while keeping Santa Claus himself and the red car perfectly in place.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_removal/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0005": {
+    "interleave_array": [
+      "Remove the woman in the video.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_removal/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0006": {
+    "interleave_array": [
+      "Remove the central transparent glass cup from the video.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_removal/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0007": {
+    "interleave_array": [
+      "Change the white swan in the video with a grey duck.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_replacement/2_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0008": {
+    "interleave_array": [
+      "Replace the lamp with a glowing globe.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_replacement/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0009": {
+    "interleave_array": [
+      "The cut kiwi fruit is replaced by a complete orange.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_replacement/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0010": {
+    "interleave_array": [
+      "Replace the girl's face with an elderly woman's face, making it look like her grandmother.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0011": {
+    "interleave_array": [
+      "Make the man look more elder.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0012": {
+    "interleave_array": [
+      "Swap the person's face with a face resembling a specific, well-known actor.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0013": {
+    "interleave_array": [
+      "Replace the traditional black abaya with a modern, elegant white floor-length evening gown.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0014": {
+    "interleave_array": [
+      "Change the outfit to a yellow linen sundress with thin spaghetti straps.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0015": {
+    "interleave_array": [
+      "Add a classic blue denim jacket layered over his current gray t-shirt.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

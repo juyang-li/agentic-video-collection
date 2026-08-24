@@ -1,0 +1,3 @@
+video_id: Sp_Object_removal_03
+category: object_removal
+instruction: Remove only the clear glass/plastic dome that covers Santa Claus, while keeping Santa Claus himself and the red car perfectly in place.

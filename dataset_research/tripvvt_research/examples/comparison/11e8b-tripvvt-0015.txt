@@ -1,0 +1,3 @@
+task: try-on-upper_body
+instruction: Replace the person's upper-body clothing with the referenced garment.
+official_text: On a sunlit urban plaza, a person stands facing away, their relaxed posture captured in a steady medium shot under natural daylight. They wear a horizontally striped t-shirt in alternating navy blue and light blue bands, with the fabric gently draping over their frame as they shift slightly. The short sleeves fall loosely, and the material subtly conforms to their movements, creating soft folds at the shoulders and hem. The stripes remain crisp and evenly spaced, maintaining visual continuity despite the gentle sway of the body. The t-shirt's clean lines and relaxed fit are accentuated by the natural motion, highlighting its casual elegance.

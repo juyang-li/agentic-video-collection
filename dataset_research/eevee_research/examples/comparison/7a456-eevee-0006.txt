@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/09531
+caption: a rich, deep brown turtleneck sweater crafted from a soft, textured knit fabric. the garment features a high, ribbed neckline that extends smoothly into the body, providing warmth and a snug fit around the neck. the sleeves are long and slightly tapered, ending in ribbed cuffs that match the hemline. the hem itself is also ribbed, adding structure and elasticity to the bottom edge. the overall silhouette is relaxed and slightly oversized, with a straight cut that drapes loosely over the torso. the knit pattern is consistent throughout, with no visible patterns or embellishments, emphasizing a minimalist and timeless design. the color is uniform, with a warm, earthy tone that suggests comfort and sophistication.

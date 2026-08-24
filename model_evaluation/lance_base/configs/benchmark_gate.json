@@ -1,0 +1,30 @@
+{
+  "0001": {
+    "interleave_array": [
+      "Add a beautiful woman sitting on the sofa while reading a book.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_adding/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0002": {
+    "interleave_array": [
+      "Add a lit candle on the table.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_adding/2_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

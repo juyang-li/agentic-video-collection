@@ -1,0 +1,4 @@
+task: try-on-lower_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: lower_body/1240415_detail.mp4
+caption: 

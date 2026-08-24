@@ -1,0 +1,1 @@
+ Remove the mountain in the foreground on the left.

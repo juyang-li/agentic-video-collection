@@ -1,0 +1,3 @@
+video_id: Sp_Object_adding_02
+category: object_adding
+instruction: Add a lit candle on the table.

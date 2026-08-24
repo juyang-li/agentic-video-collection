@@ -1,0 +1,3 @@
+video_id: Sp_Object_adding_05
+category: object_adding
+instruction: Add a German shepherd lying on the ground wagging its tail.

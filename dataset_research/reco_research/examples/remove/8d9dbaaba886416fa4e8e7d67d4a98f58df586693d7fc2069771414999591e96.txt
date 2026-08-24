@@ -1,0 +1,1 @@
+ Remove the illuminated object on the left.

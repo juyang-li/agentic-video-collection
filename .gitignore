@@ -1,0 +1,80 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.part
+*.part.*
+
+# Video, audio, images, archives, and dataset shards are local artifacts.
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.gif
+*.wav
+*.mp3
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.zst
+
+# Model weights and training outputs
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.bin
+checkpoints/
+wandb/
+runs/
+
+# Large, reproducible upstream metadata kept locally for research scripts.
+/dataset_research/coinve_research/metadata/
+/dataset_research/ditto_research/metadata/
+/dataset_research/egoedit_research/annotation/
+/dataset_research/egoedit_research/zip_indexes/
+/dataset_research/egoedit_research/zip_members.csv
+/dataset_research/insave_research/add_and_remove.csv
+/dataset_research/insvie_research/train_insvie_align.csv
+/dataset_research/openve_research/local_add.csv
+/dataset_research/openve_research/local_change.csv
+/dataset_research/openve_research/local_remove.csv
+
+# Lance runtime and generated evaluation artifacts.
+/model_evaluation/lance_base/runtime/
+/model_evaluation/lance_base/data/official_source/
+/model_evaluation/lance_base/outputs_raw/
+/model_evaluation/lance_base/logs/

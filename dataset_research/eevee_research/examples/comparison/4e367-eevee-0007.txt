@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/00170
+caption: A beige denim jacket features a classic Western style with two chest pockets secured by buttons. A series of decorative, embroidered patches adorn the sleeves and lower front sections, each patch displaying intricate designs that include geometric shapes and possibly symbolic figures. The collar is a standard shirt-style, and the jacket fastens down the front with evenly spaced buttons. An orange topstitching detail runs horizontally across the chest, just above the pockets, adding a subtle contrast to the otherwise neutral color palette. On the inside of the collar, a small label is visible, bearing the text "BALENCIAGA," indicating the brand of the garment. The overall design combines traditional denim workwear with elaborate embellishments, creating a unique and stylish piece.

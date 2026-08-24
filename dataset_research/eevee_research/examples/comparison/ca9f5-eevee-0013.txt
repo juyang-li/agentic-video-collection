@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/01801
+caption: a dark olive-green knit sweater with a high, ribbed turtleneck collar and short sleeves that feature vertical ribbing extending from the shoulder to the hem. the body of the sweater is smooth and tightly knitted, creating a clean, minimalist silhouette. the bottom hem is finished with a ribbed band matching the collar and sleeves, adding structure and definition. the fabric appears soft and slightly textured, suggesting a premium material such as wool or a wool blend. the overall design is simple and modern, emphasizing clean lines and subtle detailing.

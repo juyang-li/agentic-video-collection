@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+f18c8,try-on-dresses,1,1,1,1,1,1,1,
+a8aa7,try-on-dresses,1,1,1,1,1,1,1,
+5e4ee,try-on-dresses,1,1,1,1,1,1,1,
+3257f,try-on-dresses,1,1,1,1,1,1,1,
+70acc,try-on-dresses,1,1,1,1,1,1,1,
+14105,try-on-dresses,1,1,1,1,1,1,1,
+db533,try-on-dresses,1,0,1,1,1,1,1,"target is a white off-shoulder two-piece; reference is a spaghetti-strap slip dress"
+965cc,try-on-lower_body,1,0,1,1,1,1,1,"target remains in white trousers while the reference garment is black trousers"
+99855,try-on-lower_body,1,1,1,1,1,1,1,
+a1904,try-on-lower_body,1,2,1,1,1,1,1,"source and target both show nearly identical light-blue jeans; edit signal is effectively a no-op"
+6cf0a,try-on-lower_body,1,1,1,1,1,1,1,
+2d558,try-on-lower_body,1,1,1,1,1,1,1,
+28ef1,try-on-upper_body,1,1,1,1,1,1,1,
+a4bd8,try-on-upper_body,1,1,1,1,1,1,1,
+11e8b,try-on-upper_body,1,1,1,1,1,1,1,

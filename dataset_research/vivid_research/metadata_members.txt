@@ -1,0 +1,6 @@
+ViViD/dresses/train_pairs.txt
+ViViD/dresses/test_pairs.txt
+ViViD/lower_body/train_pairs.txt
+ViViD/lower_body/test_pairs.txt
+ViViD/upper_body/train_pairs.txt
+ViViD/upper_body/test_pairs.txt

@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+426a2,add,1,2,1,1,1,1,1,人物成功出现，但主体实际接近画面中央，与“left side”位置描述不完全吻合。
+2a100,add,1,1,1,1,1,1,1,
+5f95a,add,1,1,1,1,1,1,1,
+5c27f,add,1,0,1,1,1,0,1,source 的驾驶位已经残留一名模糊人物，target 更像把该人替换/复原为清晰人物，不是干净的 add。
+67471,add,1,1,1,1,1,1,1,
+f8e01,add,1,1,1,1,1,1,1,
+b8e6a,add,1,1,1,1,0,0,1,source 在人物运动路径上保留明显且随时间变化的幽灵状残影。
+b2f53,add,1,1,1,1,1,0,1,source 原人物区域是大块黑色修补孔洞，虽能反向加入人物，但输入本身质量不足。
+f47e5,add,1,1,0,1,1,0,1,source 留有独立漂浮并运动的红色鼻子；target 加入小丑后才恢复语义完整。
+7a293,add,1,1,1,1,0,0,1,source 走廊内有随人物位置变化的半透明涂抹残影。
+3642c,add,1,1,1,1,1,1,1,
+b1315,add,1,0,1,1,1,1,1,target 人物是近景且偏右/居中，也并非清楚的侧面，与“on the left ... shown in profile”不符。
+b724f,add,1,1,1,1,1,1,1,
+32cc8,add,1,1,1,1,1,1,1,
+5563c,add,1,1,1,1,1,1,1,
