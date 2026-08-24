@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/01350
+caption: A purple long-sleeved crop top features a snug fit with a ribbed texture. A circular logo is prominently displayed on the chest area, containing the text "adidas" at the top and "BY STELLA McCARTNEY" below it in a smaller font. The garment has a crew neckline and appears to be made from a stretchy, athletic material. Subtle vertical seams run down the sleeves, adding to its structured design. The overall style suggests it is intended for athletic or workout purposes, combining functionality with a modern aesthetic.

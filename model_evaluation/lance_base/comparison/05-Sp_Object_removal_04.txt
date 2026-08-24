@@ -1,0 +1,3 @@
+video_id: Sp_Object_removal_04
+category: object_removal
+instruction: Remove the woman in the video.

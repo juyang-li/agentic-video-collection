@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+a9ad0,add,1,0,1,1,1,1,1,目标中未见珍珠项链。
+bce85,add,1,1,1,1,1,1,1,透明眼镜被替换为黑色太阳镜；与 c965a 构成反向 pair。
+15141,add,1,1,1,1,1,1,1,深色 fedora 与头发接近且部分位于画面边缘；与第一批 62d38 构成反向 pair。
+04572,change,1,1,1,1,1,1,1,铂金发色恢复为自然棕色；与第一批 15b00 构成反向 pair。
+c965a,remove,1,1,1,1,1,1,1,黑色太阳镜被移除并恢复透明眼镜；与 bce85 构成反向 pair。
+9d14c,remove,1,0,1,0,1,1,1,人物头部和帽子不在画面内；target 还把骑车者上衣从蓝色整体改为黑色。
+81f98,replace,0,1,1,1,1,1,1,折叠黄伞替换为黑伞；与 f97ed 构成反向 pair。
+69097,replace,0,1,1,1,1,1,1,阔叶树替换为高大松树；与 10c2f 构成反向 pair。
+f50b1,replace,0,1,1,1,1,1,1,小艇替换为亮色渔船；与第一批 7965f 构成反向 pair。
+82f29,replace,0,1,1,1,1,1,1,透明亚克力椅替换为深色软包椅；与第一批 7864d 构成反向 pair。
+ef9fb,replace,1,0,1,1,1,1,1,source 中未见深蓝西装、白衬衫和酒红领带；与第一批 c44dd 构成反向 pair。
+8abf2,replace,1,1,1,1,1,1,1,发色和人物外观恢复，同时保留彩色宽檐帽和白衬衫。
+f97ed,replace,0,1,1,1,1,1,1,黑伞替换为折叠黄伞；与 81f98 构成反向 pair。
+c82ab,replace,1,2,1,1,1,1,1,太阳镜确已移除，但 prompt 将画面中的男性误写为女性。
+10c2f,replace,0,0,1,1,1,1,1,松树被移除，但目标中未出现要求的阔叶绿树；与 69097 构成反向 pair。

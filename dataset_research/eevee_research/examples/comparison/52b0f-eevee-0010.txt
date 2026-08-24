@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/04543
+caption: A sleeveless tank top features a deep purple hue with a subtle heathered texture. A racerback design is evident, with two straps crossing at the back before connecting to the shoulders. A fitted silhouette accentuates the form, and the fabric appears smooth and stretchy, suggesting comfort and flexibility. A seamless construction is noticeable, enhancing the sleek and modern style of the garment. No visible text or graphics adorn the surface, maintaining a minimalist aesthetic.

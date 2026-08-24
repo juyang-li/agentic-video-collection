@@ -1,0 +1,3 @@
+task: try-on-lower_body
+instruction: Replace the person's lower-body clothing with the referenced garment.
+official_text: On a bustling city street, a woman strides confidently, captured in a smooth, tracking medium shot under natural daylight. She wears a white off-the-shoulder top with puffed short sleeves that gently billow with each step, its crisp cotton fabric draping softly over her frame and creating subtle folds as she moves. The garment's elasticized neckline conforms snugly around her shoulders while maintaining a relaxed silhouette, accentuating her posture as she walks. The top’s clean lines and structured puff sleeves sway slightly with her motion, highlighting its lightweight drape and elegant simplicity against the urban backdrop.

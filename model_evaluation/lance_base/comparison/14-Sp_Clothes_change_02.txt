@@ -1,0 +1,3 @@
+video_id: Sp_Clothes_change_02
+category: clothes_change
+instruction: Change the outfit to a yellow linen sundress with thin spaghetti straps.

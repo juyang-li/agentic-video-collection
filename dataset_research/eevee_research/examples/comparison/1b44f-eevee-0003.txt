@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/00958
+caption: A navy blue sweater features a V-neck design with long sleeves. A prominent zigzag cable knit pattern runs vertically across the fabric, adding texture and visual interest. A subtle speckled effect is woven throughout the material, giving it a slightly shimmering appearance. A tag at the neckline displays text, though the specific words are not clearly legible. A classic and cozy style, the sweater exudes a warm, inviting aesthetic suitable for cooler weather.

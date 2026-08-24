@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/03293
+caption: A white T-shirt with short sleeves and a crew neck is displayed. A simple, classic design characterizes the garment, featuring a smooth texture and a fitted silhouette that suggests a stretchable material. A small tag is visible at the neckline, indicating branding or size information, though the text on it is not legible. A clean, minimalist aesthetic dominates, with no patterns, graphics, or additional embellishments adorning the fabric. The overall appearance is one of simplicity and versatility, suitable for casual wear or as a base layer.

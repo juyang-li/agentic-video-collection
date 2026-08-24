@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/06652
+caption: A sleeveless dress features a classic black and white pattern, with the iconic interlocking G logo repeated across its fabric. A fitted silhouette accentuates the form, while a rounded neckline adds a touch of elegance. A visible "GUCCI" label is positioned at the neckline, subtly branding the garment. The dress's material appears to be a knit fabric, giving it a textured look that complements the bold design. A straight hemline completes the style, offering a modern yet timeless appeal.

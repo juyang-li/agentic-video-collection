@@ -1,0 +1,1 @@
+Add a small floating gear above the center of the machine, rotating in reverse.

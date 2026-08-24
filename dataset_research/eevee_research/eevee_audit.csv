@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+af29d,try-on-upper_body,1,1,1,1,1,1,1,
+4a68e,try-on-lower_body,1,1,1,1,1,1,1,
+1b44f,try-on-upper_body,1,1,1,1,1,1,1,
+0133f,try-on-dresses,1,1,1,1,1,1,1,
+d6712,try-on-upper_body,1,1,1,1,1,1,1,
+7a456,try-on-upper_body,1,1,1,1,1,1,1,
+4e367,try-on-upper_body,1,1,1,1,1,1,1,
+e176f,try-on-upper_body,1,1,1,1,1,1,1,
+d604b,try-on-lower_body,1,1,1,1,1,1,1,
+52b0f,try-on-upper_body,1,1,1,1,1,1,1,
+1ddf3,try-on-dresses,1,1,1,1,1,1,1,
+39538,try-on-upper_body,1,0,0,1,1,1,1,"published under upper_body, but the garment and videos clearly show a dress"
+ca9f5,try-on-upper_body,1,1,1,1,1,1,1,
+54a6d,try-on-dresses,1,1,1,1,1,1,1,
+593de,try-on-upper_body,1,1,1,1,1,1,1,"official test row references garment 00234; review video shows the matched raw record 03293 because the cross-garment test pair has no ground-truth target"

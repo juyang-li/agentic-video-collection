@@ -1,0 +1,3 @@
+task: try-on-dresses
+instruction: Replace the person's outfit with the referenced garment.
+official_text: On a bustling city street, a woman strides confidently while engrossed in her phone, captured in a smooth, tracking medium shot under natural daylight. She wears a vibrant yellow polka-dot dress with ruffled off-the-shoulder sleeves that gently flutter with each step. The dress features a fitted bodice with front buttons and a matching belt cinched at the waist, accentuating her silhouette. As she walks, the lightweight fabric of the A-line skirt sways softly, creating subtle folds and movement. The playful pattern and flared hemline add a cheerful dynamism to her motion, highlighting the garment’s fluid drape and feminine design.

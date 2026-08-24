@@ -1,0 +1,46 @@
+task,sample_rank,seed,population_index,population_size,metadata_index,video,instruction,source_family
+add,1,20260828,96097,149998,589394,pexel-517619432.hd.mp4_42_48_0.mp4,Add sunset scenery to background_,pexel
+add,2,20260828,86429,149998,529832,pexel-614733974.hd.mp4_24_30_0.mp4,Add neon lights effect,pexel
+add,3,20260828,54400,149998,333354,pexel-579608367.hd.mp4_0_6_1.mp4,add winter theme,pexel
+add,4,20260828,72062,149998,441568,pexel-564149061.hd.mp4_48_54_0.mp4,add fantastical elements,pexel
+add,5,20260828,120211,149998,736860,pexel-277676260.hd.mp4_0_6_0.mp4,Add a rectangular cake with a fountain on top,pexel
+add,6,20260828,58062,149998,355870,pexel-595903624.hd.mp4_24_30_1.mp4,add dust cloud effect to image,pexel
+add,7,20260828,7527,149998,46608,pexel-399450024.hd.mp4_12_18_1.mp4,Add sunset to scene,pexel
+add,8,20260828,129300,149998,792072,pexel-533849178.hd.mp4_18_24_0.mp4,add grayscale effect,pexel
+add,9,20260828,71232,149998,436297,pexel-643844757.hd.mp4_24_30_0.mp4,add fantasy elements,pexel
+add,10,20260828,101338,149998,621329,pexel-426076270.hd.mp4_0_6_0.mp4,Add sunset scenery to input_,pexel
+add,11,20260828,97671,149998,599091,pexel-648052885.hd.mp4_48_54_0.mp4,add spotlight effect to input,pexel
+add,12,20260828,148594,149998,1003813,instructp2p-0106475-61912678.mp4,add a santa hat,instructp2p
+add,13,20260828,30842,149998,189470,pexel-496630628.hd.mp4_0_6_1.mp4,Add golden hour lighting,pexel
+add,14,20260828,139665,149998,904867,pexel-static-592834180.hd.mp4,add magical elements,pexel-static
+add,15,20260828,22703,149998,139092,pexel-466582042.hd.mp4_0_6_1.mp4,add snow effect,pexel
+remove,1,20260829,1235,1605,969316,instructp2p-0445312-3700978784.mp4,remove the archway,instructp2p
+remove,2,20260829,844,1605,918879,magicbrush-332690-3.mp4,remove the shelves,magicbrush
+remove,3,20260829,698,1605,915957,magicbrush-197305-1.mp4,remove the tables and umbrellas and add a car,magicbrush
+remove,4,20260829,1345,1605,984098,instructp2p-0300356-812354544.mp4,remove the cabin,instructp2p
+remove,5,20260829,1337,1605,982639,instructp2p-0249170-4243735812.mp4,Remove the dress.,instructp2p
+remove,6,20260829,143,1605,351107,pexel-592802034.hd.mp4_0_6_1.mp4,remove complex toppings,pexel
+remove,7,20260829,85,1605,197585,pexel-502059601.hd.mp4_0_6_1.mp4,remove complex toppings,pexel
+remove,8,20260829,115,1605,269066,pexel-544776504.hd.mp4_24_30_1.mp4,remove complex toppings,pexel
+remove,9,20260829,295,1605,719578,pexel-433256599.hd.mp4_0_6_0.mp4,remove complex toppings,pexel
+remove,10,20260829,1522,1605,1007855,instructp2p-0251685-2358763817.mp4,Remove the artist,instructp2p
+remove,11,20260829,56,1605,127154,pexel-458881156.hd.mp4_0_6_1.mp4,"Remove fog, make it sunny",pexel
+remove,12,20260829,69,1605,148368,pexel-471892081.hd.mp4_12_18_1.mp4,"Remove hailstorm or any other weather condition, keep sunny.",pexel
+remove,13,20260829,129,1605,303824,pexel-565404720.hd.mp4_0_6_1.mp4,Remove snow and add sunshine,pexel
+remove,14,20260829,1223,1605,968028,instructp2p-0397853-3467872005.mp4,Remove Fuji mountain.,instructp2p
+remove,15,20260829,335,1605,858408,openvid-static-ggROOCxcZZI_9_0to157.mp4,remove excess details,openvid-static
+replace,1,20260830,452,5368,177508,pexel-490321713.hd.mp4_24_30_1.mp4,"replace surfboards with motorcycles, add pink color to ocean",pexel
+replace,2,20260830,1862,5368,694591,pexel-540069624.hd.mp4_12_18_0.mp4,Replace Earth with chocolate,pexel
+replace,3,20260830,3794,5368,961848,instructp2p-0171203-2909436602.mp4,replace Hope with Despair,instructp2p
+replace,4,20260830,855,5368,329775,pexel-578227204.hd.mp4_6_12_1.mp4,"Replace surfboards with motorcycles, pinken ocean",pexel
+replace,5,20260830,268,5368,103338,pexel-444026402.hd.mp4_0_6_1.mp4,"Replace surfboards with motorcycles, pink ocean",pexel
+replace,6,20260830,4428,5368,985574,instructp2p-0353855-1189983084.mp4,replace the harbor with a ball pit,instructp2p
+replace,7,20260830,4845,5368,999648,instructp2p-0184110-3916877695.mp4,swap out the Arc de Triomphe for a Silver Gate,instructp2p
+replace,8,20260830,2329,5368,913595,magicbrush-310473-1.mp4,Replace the car with a motorcycle.,magicbrush
+replace,9,20260830,4445,5368,986000,instructp2p-0368810-1337971167.mp4,replace with a bird,instructp2p
+replace,10,20260830,2600,5368,919328,magicbrush-510611-1.mp4,replace giraffe with an elephant,magicbrush
+replace,11,20260830,238,5368,94958,pexel-436763972.hd.mp4_6_12_1.mp4,"replace surfboards with motorcycles, pink ocean",pexel
+replace,12,20260830,1705,5368,632077,pexel-398842422.hd.mp4_156_162_0.mp4,"replace surfboards with motorcycles, pink ocean",pexel
+replace,13,20260830,4005,5368,968560,instructp2p-0418327-726032564.mp4,swap out the Vestrahorn mountain for the Matterhorn,instructp2p
+replace,14,20260830,5029,5368,1007003,instructp2p-0222625-1806485444.mp4,swap out the water for sand,instructp2p
+replace,15,20260830,4545,5368,989785,instructp2p-0054823-2953536654.mp4,Replace the officer with a teacher.,instructp2p

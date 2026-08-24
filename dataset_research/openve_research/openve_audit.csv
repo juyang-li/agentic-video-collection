@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+85ea8,add,1,0,1,1,1,1,1,未见新增墨镜；与 2ec99 两条 removal 记录复用同一视频对。
+15b00,change,1,1,1,1,1,1,1,人物发色变为浅铂金色。
+2ec99,remove,1,0,1,1,1,1,1,source 中未见墨镜；与 add 记录构成反向复用。
+2ec99,remove,1,0,1,1,1,1,1,与上一行完全相同的视频对；仅把主体从 man 改写为 boy 且 source 中仍未见墨镜。
+c44dd,replace,1,0,1,1,1,1,1,未见商务西装、白衬衫或领带；人物仍穿原有外套。
+88f97,replace,0,1,1,1,1,1,1,沙发材质替换；非人物属性。
+7864d,replace,0,1,1,1,1,1,1,椅子替换；非人物属性。
+0e365,replace,1,0,1,1,1,1,1,未见人物佩戴墨镜；指令未完成。
+7c57d,replace,0,1,1,1,1,1,1,鸟类替换；与 70772 构成同一视频对的反向记录。
+6e551,replace,1,1,1,1,1,1,1,老年女性服装替换成功。
+70772,replace,0,1,1,1,1,1,1,鸟类替换；与 7c57d 构成同一视频对的反向记录。
+62d38,replace,1,1,1,1,1,1,1,深色 fedora 与头发颜色接近；目标中已移除。
+d95db,replace,1,1,1,1,1,1,1,年龄和身份外观替换成功；source 视觉上疑似生成素材。
+aa8f9,replace,1,1,1,1,1,1,1,长裙替换为浅色短裙且保留辫发。
+7965f,replace,0,1,1,1,1,1,1,船只替换；非人物属性。

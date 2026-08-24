@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+187a6,remove,1,1,1,1,1,1,1,
+32cbf,remove,1,1,1,1,1,1,1,
+2343a,remove,1,1,1,1,1,1,1,
+732fe,remove,1,1,1,1,1,1,1,
+4254a,remove,1,1,1,1,1,2,1,人物已完整删除；原人物区域形成大块稳定的失焦背景，是否可接受取决于质量阈值。
+1a46a,remove,1,1,1,1,1,1,1,
+e2d11,remove,1,1,1,1,1,0,1,人物已删除，但桌面上方原人物区域存在持续可见的涂抹状修补伪影。
+b6edc,remove,1,1,1,1,1,1,1,
+f1ef9,remove,1,1,1,1,1,1,1,
+b3d3b,remove,1,1,1,1,1,1,1,
+f5fe4,remove,1,1,1,1,1,1,1,
+6cdd0,remove,1,1,1,1,1,1,1,
+cf40a,remove,1,1,1,1,1,1,1,
+dca49,remove,1,1,1,1,1,1,1,
+bf2c9,remove,1,1,1,1,1,1,1,

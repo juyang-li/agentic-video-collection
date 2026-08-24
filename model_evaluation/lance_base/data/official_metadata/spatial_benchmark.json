@@ -1,0 +1,1202 @@
+[
+    {
+        "video_id": "Sp_Object_direction_change_01",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/1_1280x720.mp4",
+        "editing_instruction": "Rotate the monkey in the video to face left instead of right."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_02",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/2_1280x720.mp4",
+        "editing_instruction": "Change the white dog's direction and make it face the sunshine."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_03",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/3_1280x720.mp4",
+        "editing_instruction": "Let the girl in the first row of the classroom turn to look at the book on her desk."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_04",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/4_1280x720.mp4",
+        "editing_instruction": "Make the character in the video face the sea and back to the camera."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_05",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/5_1280x720.mp4",
+        "editing_instruction": "Rotate the entire wooden rocker and the baby in it to face the opposite direction."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_06",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/6_1280x720.mp4",
+        "editing_instruction": "Rotate the entire cow in the frame to face left instead of right."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_07",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/7_1280x720.mp4",
+        "editing_instruction": "Change the direction of the darker military aircraft."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_08",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/8_1280x720.mp4",
+        "editing_instruction": "Shift the orientation of the central character balloon from a right-facing to a left-facing pose."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_09",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/9_1280x720.mp4",
+        "editing_instruction": "Rotate the gray sofa 180 degrees so it faces the dining area instead of the camera."
+    },
+    {
+        "video_id": "Sp_Object_direction_change_10",
+        "source_video": "Spatial/Subject-Level/Object_direction_change/10_1280x720.mp4",
+        "editing_instruction": "Flip the armored vehicle horizontally so that the head of the vehicle is on the left and the rear is on the right."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_01",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/1_1280x720.mp4",
+        "editing_instruction": "Swap the location of the two volleyballs."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_02",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/2_720x1280.mp4",
+        "editing_instruction": "Swap the location of the two children who are playing the seesaw."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_03",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/3_1280x720.mp4",
+        "editing_instruction": "Swap the location of the two vases."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_04",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/4_720x1280.mp4",
+        "editing_instruction": "Swap the two children's location."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_05",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/5_1280x720.mp4",
+        "editing_instruction": "Swap the positions of the two small boats in the video."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_06",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/6_1280x720.mp4",
+        "editing_instruction": "Swap the positions of the glass cup with orange juice with the bonsai on the table."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_07",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/7_1280x720.mp4",
+        "editing_instruction": "Swap the positions of the black and white bags."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_08",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/8_1280x720.mp4",
+        "editing_instruction": "Swap the locations of the two elephants."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_09",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/9_1280x720.mp4",
+        "editing_instruction": "Swap the woman and the man, keeping them doing what they are doing."
+    },
+    {
+        "video_id": "Sp_Object_location_swap_10",
+        "source_video": "Spatial/Subject-Level/Object_location_swap/10_1280x720.mp4",
+        "editing_instruction": "Exchange the potted plant on the table with the lamp in the corner of the wall."
+    },
+    {
+        "video_id": "Sp_Object_style_change_01",
+        "source_video": "Spatial/Subject-Level/Object_style_change/1_1280x720.mp4",
+        "editing_instruction": "Transform the little penguin in the video into a robotic style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_02",
+        "source_video": "Spatial/Subject-Level/Object_style_change/2_1280x720.mp4",
+        "editing_instruction": "Turn the girl in the video into a Snow White style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_03",
+        "source_video": "Spatial/Subject-Level/Object_style_change/3_1280x720.mp4",
+        "editing_instruction": "Transform the wolf into a majestic, vivid cartoon style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_04",
+        "source_video": "Spatial/Subject-Level/Object_style_change/4_720x1280.mp4",
+        "editing_instruction": "Transform the small boat into origami style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_05",
+        "source_video": "Spatial/Subject-Level/Object_style_change/5_1280x720.mp4",
+        "editing_instruction": "Change the man to batman style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_06",
+        "source_video": "Spatial/Subject-Level/Object_style_change/6_1280x720.mp4",
+        "editing_instruction": "Transform the man in the video into the style of hand-drawn sketches."
+    },
+    {
+        "video_id": "Sp_Object_style_change_07",
+        "source_video": "Spatial/Subject-Level/Object_style_change/7_1280x720.mp4",
+        "editing_instruction": "Turn the man into superman style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_08",
+        "source_video": "Spatial/Subject-Level/Object_style_change/8_1280x720.mp4",
+        "editing_instruction": "Transform the starfish in the video into SpongeBob style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_09",
+        "source_video": "Spatial/Subject-Level/Object_style_change/9_1280x720.mp4",
+        "editing_instruction": "Turn the bird in the video into a ninja style."
+    },
+    {
+        "video_id": "Sp_Object_style_change_10",
+        "source_video": "Spatial/Subject-Level/Object_style_change/10_1280x720.mp4",
+        "editing_instruction": "Transform the man in the video into the style of Iron Man."
+    },
+    {
+        "video_id": "Sp_Object_location_change_01",
+        "source_video": "Spatial/Subject-Level/Object_location_change/1_1280x720.mp4",
+        "editing_instruction": "Move the boat in the center of the video to the distance."
+    },
+    {
+        "video_id": "Sp_Object_location_change_02",
+        "source_video": "Spatial/Subject-Level/Object_location_change/2_1280x720.mp4",
+        "editing_instruction": "Move the canoe and the person rowing it to a location on the lake that is further back and closer to the forest."
+    },
+    {
+        "video_id": "Sp_Object_location_change_03",
+        "source_video": "Spatial/Subject-Level/Object_location_change/3_1280x720.mp4",
+        "editing_instruction": "Move the Eiffel Tower closer."
+    },
+    {
+        "video_id": "Sp_Object_location_change_04",
+        "source_video": "Spatial/Subject-Level/Object_location_change/4_1280x720.mp4",
+        "editing_instruction": "Reposition the lone tree silhouetted against the sunset from the right-hand ridge to the lower-left pasture, placing it adjacent to the existing cows and fence line."
+    },
+    {
+        "video_id": "Sp_Object_location_change_05",
+        "source_video": "Spatial/Subject-Level/Object_location_change/5_1280x720.mp4",
+        "editing_instruction": "Move the plane to the other side of the runway far away."
+    },
+    {
+        "video_id": "Sp_Object_location_change_06",
+        "source_video": "Spatial/Subject-Level/Object_location_change/6_720x1280.mp4",
+        "editing_instruction": "The black cat is sitting on the side of the orange little cat."
+    },
+    {
+        "video_id": "Sp_Object_location_change_07",
+        "source_video": "Spatial/Subject-Level/Object_location_change/7_1280x720.mp4",
+        "editing_instruction": "Move the ostrich to the far end of the screen."
+    },
+    {
+        "video_id": "Sp_Object_location_change_08",
+        "source_video": "Spatial/Subject-Level/Object_location_change/8_1280x720.mp4",
+        "editing_instruction": "Push the red river hog further back into the frame, towards the large rock on the left, and reduce its scale to match the distance."
+    },
+    {
+        "video_id": "Sp_Object_location_change_09",
+        "source_video": "Spatial/Subject-Level/Object_location_change/9_1280x720.mp4",
+        "editing_instruction": "Move the black Mercedes in the picture to the lawn."
+    },
+    {
+        "video_id": "Sp_Object_location_change_10",
+        "source_video": "Spatial/Subject-Level/Object_location_change/10_1280x720.mp4",
+        "editing_instruction": "Move both surfers towards the horizon, placing them further out in the water where the small waves are breaking, and reduce their scale to match the distance."
+    },
+    {
+        "video_id": "Sp_Object_replacement_01",
+        "source_video": "Spatial/Subject-Level/Object_replacement/1_1280x720.mp4",
+        "editing_instruction": "Replace the existing characters on the fan with the text \"Hello, world!\", maintaining the original font style and curve."
+    },
+    {
+        "video_id": "Sp_Object_replacement_02",
+        "source_video": "Spatial/Subject-Level/Object_replacement/2_720x1280.mp4",
+        "editing_instruction": "Change the white swan in the video with a grey duck."
+    },
+    {
+        "video_id": "Sp_Object_replacement_03",
+        "source_video": "Spatial/Subject-Level/Object_replacement/3_1280x720.mp4",
+        "editing_instruction": "Replace the US dollar bills on the table with RMB."
+    },
+    {
+        "video_id": "Sp_Object_replacement_04",
+        "source_video": "Spatial/Subject-Level/Object_replacement/4_1280x720.mp4",
+        "editing_instruction": "Change the zebra with a rhino."
+    },
+    {
+        "video_id": "Sp_Object_replacement_05",
+        "source_video": "Spatial/Subject-Level/Object_replacement/5_1280x720.mp4",
+        "editing_instruction": "Replace the book with a bag."
+    },
+    {
+        "video_id": "Sp_Object_replacement_06",
+        "source_video": "Spatial/Subject-Level/Object_replacement/6_1280x720.mp4",
+        "editing_instruction": "Replace the puppy with a small cute cat with grey fur."
+    },
+    {
+        "video_id": "Sp_Object_replacement_07",
+        "source_video": "Spatial/Subject-Level/Object_replacement/7_1280x720.mp4",
+        "editing_instruction": "Replace the seal pup with a vintage treasure box."
+    },
+    {
+        "video_id": "Sp_Object_replacement_08",
+        "source_video": "Spatial/Subject-Level/Object_replacement/8_1280x720.mp4",
+        "editing_instruction": "Replace the desk lamp with a round mirror."
+    },
+    {
+        "video_id": "Sp_Object_replacement_09",
+        "source_video": "Spatial/Subject-Level/Object_replacement/9_1280x720.mp4",
+        "editing_instruction": "Replace the lamp with a glowing globe."
+    },
+    {
+        "video_id": "Sp_Object_replacement_10",
+        "source_video": "Spatial/Subject-Level/Object_replacement/10_1280x720.mp4",
+        "editing_instruction": "The cut kiwi fruit is replaced by a complete orange."
+    },
+    {
+        "video_id": "Sp_Object_removal_01",
+        "source_video": "Spatial/Subject-Level/Object_removal/1_720x1280.mp4",
+        "editing_instruction": "Remove the rhino which is walking towards the river."
+    },
+    {
+        "video_id": "Sp_Object_removal_02",
+        "source_video": "Spatial/Subject-Level/Object_removal/2_720x1280.mp4",
+        "editing_instruction": "Remove the single, open purple anemone flower lying on the grey marble surface in the foreground."
+    },
+    {
+        "video_id": "Sp_Object_removal_03",
+        "source_video": "Spatial/Subject-Level/Object_removal/3_1280x720.mp4",
+        "editing_instruction": "Remove only the clear glass/plastic dome that covers Santa Claus, while keeping Santa Claus himself and the red car perfectly in place."
+    },
+    {
+        "video_id": "Sp_Object_removal_04",
+        "source_video": "Spatial/Subject-Level/Object_removal/4_1280x720.mp4",
+        "editing_instruction": "Remove the woman in the video."
+    },
+    {
+        "video_id": "Sp_Object_removal_05",
+        "source_video": "Spatial/Subject-Level/Object_removal/5_1280x720.mp4",
+        "editing_instruction": "Completely remove the entire tractor, its front weight, and the attached orange tillage equipment from the field."
+    },
+    {
+        "video_id": "Sp_Object_removal_06",
+        "source_video": "Spatial/Subject-Level/Object_removal/6_1280x720.mp4",
+        "editing_instruction": "Remove the plants, including all stems and dried flower heads, from the clear glass vase."
+    },
+    {
+        "video_id": "Sp_Object_removal_07",
+        "source_video": "Spatial/Subject-Level/Object_removal/7_1280x720.mp4",
+        "editing_instruction": "Remove the woman together with the child on the beach."
+    },
+    {
+        "video_id": "Sp_Object_removal_08",
+        "source_video": "Spatial/Subject-Level/Object_removal/8_1280x720.mp4",
+        "editing_instruction": "Remove the street lamp."
+    },
+    {
+        "video_id": "Sp_Object_removal_09",
+        "source_video": "Spatial/Subject-Level/Object_removal/9_1280x720.mp4",
+        "editing_instruction": "Remove the white beautiful swan in the video."
+    },
+    {
+        "video_id": "Sp_Object_removal_10",
+        "source_video": "Spatial/Subject-Level/Object_removal/10_1280x720.mp4",
+        "editing_instruction": "Remove the central transparent glass cup from the video."
+    },
+    {
+        "video_id": "Sp_Object_adding_01",
+        "source_video": "Spatial/Subject-Level/Object_adding/1_720x1280.mp4",
+        "editing_instruction": "Add a beautiful woman sitting on the sofa while reading a book."
+    },
+    {
+        "video_id": "Sp_Object_adding_02",
+        "source_video": "Spatial/Subject-Level/Object_adding/2_720x1280.mp4",
+        "editing_instruction": "Add a lit candle on the table."
+    },
+    {
+        "video_id": "Sp_Object_adding_03",
+        "source_video": "Spatial/Subject-Level/Object_adding/3_1280x720.mp4",
+        "editing_instruction": "Add a young giraffe eating the leaves on the tree."
+    },
+    {
+        "video_id": "Sp_Object_adding_04",
+        "source_video": "Spatial/Subject-Level/Object_adding/4_1280x720.mp4",
+        "editing_instruction": "Add a colorful butterfly resting on the central, in-focus red poppy."
+    },
+    {
+        "video_id": "Sp_Object_adding_05",
+        "source_video": "Spatial/Subject-Level/Object_adding/5_720x1280.mp4",
+        "editing_instruction": "Add a German shepherd lying on the ground wagging its tail."
+    },
+    {
+        "video_id": "Sp_Object_adding_06",
+        "source_video": "Spatial/Subject-Level/Object_adding/6_1280x720.mp4",
+        "editing_instruction": "Add a transparent glass cup on the wooden table."
+    },
+    {
+        "video_id": "Sp_Object_adding_07",
+        "source_video": "Spatial/Subject-Level/Object_adding/7_1280x720.mp4",
+        "editing_instruction": "Add a small fishing boat on the river."
+    },
+    {
+        "video_id": "Sp_Object_adding_08",
+        "source_video": "Spatial/Subject-Level/Object_adding/8_720x1280.mp4",
+        "editing_instruction": "Add a mirror placed on the table and beside the vase."
+    },
+    {
+        "video_id": "Sp_Object_adding_09",
+        "source_video": "Spatial/Subject-Level/Object_adding/9_1280x720.mp4",
+        "editing_instruction": "Add a leopard walking in the distance."
+    },
+    {
+        "video_id": "Sp_Object_adding_10",
+        "source_video": "Spatial/Subject-Level/Object_adding/10_1280x720.mp4",
+        "editing_instruction": "Beside the vase on the sink counter, place a bottle of laundry detergent."
+    },
+    {
+        "video_id": "Sp_Object_number_change_01",
+        "source_video": "Spatial/Subject-Level/Object_number_change/1_720x1280.mp4",
+        "editing_instruction": "Add a small cluster of five additional ducks swimming on the river at the left bottom side."
+    },
+    {
+        "video_id": "Sp_Object_number_change_02",
+        "source_video": "Spatial/Subject-Level/Object_number_change/2_720x1280.mp4",
+        "editing_instruction": "Remove the two men sitting on the grass."
+    },
+    {
+        "video_id": "Sp_Object_number_change_03",
+        "source_video": "Spatial/Subject-Level/Object_number_change/3_1280x720.mp4",
+        "editing_instruction": "Add three more oranges and place them on top of the oranges that have already been there."
+    },
+    {
+        "video_id": "Sp_Object_number_change_04",
+        "source_video": "Spatial/Subject-Level/Object_number_change/4_1280x720.mp4",
+        "editing_instruction": "Next to the six sausages, place two identical sausages."
+    },
+    {
+        "video_id": "Sp_Object_number_change_05",
+        "source_video": "Spatial/Subject-Level/Object_number_change/5_1280x720.mp4",
+        "editing_instruction": "Add two more common eland, similar in size to the adult on the left, to the grassy area between the current left and center eland. They should be grazing as well."
+    },
+    {
+        "video_id": "Sp_Object_number_change_06",
+        "source_video": "Spatial/Subject-Level/Object_number_change/6_1280x720.mp4",
+        "editing_instruction": "Add three more camels eating grass together with the two camels already there."
+    },
+    {
+        "video_id": "Sp_Object_number_change_07",
+        "source_video": "Spatial/Subject-Level/Object_number_change/7_1280x720.mp4",
+        "editing_instruction": "Remove three sheep which are eating grass."
+    },
+    {
+        "video_id": "Sp_Object_number_change_08",
+        "source_video": "Spatial/Subject-Level/Object_number_change/8_720x1280.mp4",
+        "editing_instruction": "Put four more lit candles on the cake."
+    },
+    {
+        "video_id": "Sp_Object_number_change_09",
+        "source_video": "Spatial/Subject-Level/Object_number_change/9_1280x720.mp4",
+        "editing_instruction": "Add two more dinosaur models on the table."
+    },
+    {
+        "video_id": "Sp_Object_number_change_10",
+        "source_video": "Spatial/Subject-Level/Object_number_change/10_1280x720.mp4",
+        "editing_instruction": "On the flat-bottomed pan, add two eggs that are already being fried."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_01",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/1_1280x720.mp4",
+        "editing_instruction": "Add localized fire special effects to the orange safety cones on the grass, making them appear as if they are intensely burning with bright orange and red flames."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_02",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/2_720x1280.mp4",
+        "editing_instruction": "Add localized, swirling wind and dust devil particles concentrated specifically around the bottom-most red bowling ball (with the numbers), making it look like it's about to be 'fired' out with tremendous rotational energy."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_03",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/3_720x1280.mp4",
+        "editing_instruction": "Add a glowing effect to the globe."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_04",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/4_1280x720.mp4",
+        "editing_instruction": "Add a burned effect to the woman's hair in the video."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_05",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/5_1280x720.mp4",
+        "editing_instruction": "Add a flame effect to the tires of the second racing car in the video."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_06",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/6_1280x720.mp4",
+        "editing_instruction": "Add a mysterious aura to the hot air balloon."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_07",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/7_1280x720.mp4",
+        "editing_instruction": "Add a frozen effect to the deer antlers."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_08",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/8_1280x720.mp4",
+        "editing_instruction": "Add subtle, ethereal wisps of blue-grey smoke rising from the tops and openings of the two stone lanterns, creating a mysterious atmosphere without obscuring them."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_09",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/9_1280x720.mp4",
+        "editing_instruction": "Flames and lava are erupting from the two chimneys."
+    },
+    {
+        "video_id": "Sp_Object_visual_effects_adding_10",
+        "source_video": "Spatial/Subject-Level/Object_visual_effects_adding/10_1280x720.mp4",
+        "editing_instruction": "Add a thick smoke effect above the fire pile."
+    },
+    {
+        "video_id": "Sp_Object_State_change_01",
+        "source_video": "Spatial/Subject-Level/Object_State_change/1_1280x720.mp4",
+        "editing_instruction": "Let the ice cream in the video partially melt."
+    },
+    {
+        "video_id": "Sp_Object_State_change_02",
+        "source_video": "Spatial/Subject-Level/Object_State_change/2_1280x720.mp4",
+        "editing_instruction": "Make the metal chain in the video rust."
+    },
+    {
+        "video_id": "Sp_Object_State_change_03",
+        "source_video": "Spatial/Subject-Level/Object_State_change/3_1280x720.mp4",
+        "editing_instruction": "Make the flower blossom vibrantly."
+    },
+    {
+        "video_id": "Sp_Object_State_change_04",
+        "source_video": "Spatial/Subject-Level/Object_State_change/4_1280x720.mp4",
+        "editing_instruction": "Make the flower bud unfolding into a brilliant, colorful blossom with rich textures and vivid saturation."
+    },
+    {
+        "video_id": "Sp_Object_State_change_05",
+        "source_video": "Spatial/Subject-Level/Object_State_change/5_720x1280.mp4",
+        "editing_instruction": "Let the candle flame be blown out."
+    },
+    {
+        "video_id": "Sp_Object_State_change_06",
+        "source_video": "Spatial/Subject-Level/Object_State_change/6_720x1280.mp4",
+        "editing_instruction": "Make the globe rotate slowly."
+    },
+    {
+        "video_id": "Sp_Object_State_change_07",
+        "source_video": "Spatial/Subject-Level/Object_State_change/7_720x1280.mp4",
+        "editing_instruction": "Apart from the candle lit by the person in the video, the other candles have been extinguished."
+    },
+    {
+        "video_id": "Sp_Object_State_change_08",
+        "source_video": "Spatial/Subject-Level/Object_State_change/8_720x1280.mp4",
+        "editing_instruction": "Turn off the light."
+    },
+    {
+        "video_id": "Sp_Object_State_change_09",
+        "source_video": "Spatial/Subject-Level/Object_State_change/9_1280x720.mp4",
+        "editing_instruction": "Make the wine glass cup empty."
+    },
+    {
+        "video_id": "Sp_Object_State_change_10",
+        "source_video": "Spatial/Subject-Level/Object_State_change/10_720x1280.mp4",
+        "editing_instruction": "Make the plants in the video wither."
+    },
+    {
+        "video_id": "Sp_Texture_change_01",
+        "source_video": "Spatial/Attribute-Level/Texture_change/1_1280x720.mp4",
+        "editing_instruction": "Apply a realistic polished wood grain texture to the surface of the central reindeer, as if it were a sculpture, keeping the same pose and antlers."
+    },
+    {
+        "video_id": "Sp_Texture_change_02",
+        "source_video": "Spatial/Attribute-Level/Texture_change/2_1280x720.mp4",
+        "editing_instruction": "Modify the park bench to replace its current wooden texture with a highly detailed, dark cast iron material, while keeping the identical form, position, and the surrounding lake scene and tree."
+    },
+    {
+        "video_id": "Sp_Texture_change_03",
+        "source_video": "Spatial/Attribute-Level/Texture_change/3_1280x720.mp4",
+        "editing_instruction": "Change the texture of the central dough ball to resemble a finished, baked artisan sourdough loaf with a highly detailed, deeply scored, and blistered crust, while keeping it in the same kitchen environment."
+    },
+    {
+        "video_id": "Sp_Texture_change_04",
+        "source_video": "Spatial/Attribute-Level/Texture_change/4_1280x720.mp4",
+        "editing_instruction": "Transform the texture of the central trunk and key branches into a polished, deeply veined dark cherry wood finish, creating a smooth, reflective surface."
+    },
+    {
+        "video_id": "Sp_Texture_change_05",
+        "source_video": "Spatial/Attribute-Level/Texture_change/5_1280x720.mp4",
+        "editing_instruction": "Modify the central tree trunk texture to match a white birch bark pattern, preserving its shape and the surrounding leaves."
+    },
+    {
+        "video_id": "Sp_Texture_change_06",
+        "source_video": "Spatial/Attribute-Level/Texture_change/6_1280x720.mp4",
+        "editing_instruction": "Modify the vessel holding the Gua Sha tool, transforming its texture from smooth white marble to a deeply weathered and highly detailed olive wood burl texture."
+    },
+    {
+        "video_id": "Sp_Texture_change_07",
+        "source_video": "Spatial/Attribute-Level/Texture_change/7_1280x720.mp4",
+        "editing_instruction": "Replace the zebra's black-and-white stripes with a detailed tiger stripe texture (orange and black), while preserving its pose, form, and the surrounding grassy field."
+    },
+    {
+        "video_id": "Sp_Texture_change_08",
+        "source_video": "Spatial/Attribute-Level/Texture_change/8_1280x720.mp4",
+        "editing_instruction": "Overlay an aged, peeling turquoise paint texture over the right side of the white brick wall, making it look partially weathered, while keeping the rest of the scene intact."
+    },
+    {
+        "video_id": "Sp_Texture_change_09",
+        "source_video": "Spatial/Attribute-Level/Texture_change/9_1280x720.mp4",
+        "editing_instruction": "Modify the turtle's shell texture to look like a traditional Chinese blue and white porcelain."
+    },
+    {
+        "video_id": "Sp_Texture_change_10",
+        "source_video": "Spatial/Attribute-Level/Texture_change/10_1280x720.mp4",
+        "editing_instruction": "Give the elephants a vibrant graffiti art texture."
+    },
+    {
+        "video_id": "Sp_Color_change_01",
+        "source_video": "Spatial/Attribute-Level/Color_change/1_720x1280.mp4",
+        "editing_instruction": "change the balloons color to white"
+    },
+    {
+        "video_id": "Sp_Color_change_02",
+        "source_video": "Spatial/Attribute-Level/Color_change/2_720x1280.mp4",
+        "editing_instruction": "turn the yellow flower to purple"
+    },
+    {
+        "video_id": "Sp_Color_change_03",
+        "source_video": "Spatial/Attribute-Level/Color_change/3_1280x720.mp4",
+        "editing_instruction": "turn one of the flower's petal to pink"
+    },
+    {
+        "video_id": "Sp_Color_change_04",
+        "source_video": "Spatial/Attribute-Level/Color_change/4_1280x720.mp4",
+        "editing_instruction": "change the woman's t-shit to green"
+    },
+    {
+        "video_id": "Sp_Color_change_05",
+        "source_video": "Spatial/Attribute-Level/Color_change/5_1280x720.mp4",
+        "editing_instruction": "change the color of watermelon flesh to yellow"
+    },
+    {
+        "video_id": "Sp_Color_change_06",
+        "source_video": "Spatial/Attribute-Level/Color_change/6_1280x720.mp4",
+        "editing_instruction": "turn this string of grapes to green"
+    },
+    {
+        "video_id": "Sp_Color_change_07",
+        "source_video": "Spatial/Attribute-Level/Color_change/7_720x1280.mp4",
+        "editing_instruction": "Change the flesh color of the grapefruit pulp to a deeper red"
+    },
+    {
+        "video_id": "Sp_Color_change_08",
+        "source_video": "Spatial/Attribute-Level/Color_change/8_1280x720.mp4",
+        "editing_instruction": "change the cat's fur to black and white"
+    },
+    {
+        "video_id": "Sp_Color_change_09",
+        "source_video": "Spatial/Attribute-Level/Color_change/9_1280x720.mp4",
+        "editing_instruction": "change the color of the brown bear's fur to black"
+    },
+    {
+        "video_id": "Sp_Color_change_10",
+        "source_video": "Spatial/Attribute-Level/Color_change/10_1280x720.mp4",
+        "editing_instruction": "change the rabbit's color to white"
+    },
+    {
+        "video_id": "Sp_Material_change_01",
+        "source_video": "Spatial/Attribute-Level/Material_change/1_720x1280.mp4",
+        "editing_instruction": "Change the transparent plastic umbrella to a material like lotus leaf."
+    },
+    {
+        "video_id": "Sp_Material_change_02",
+        "source_video": "Spatial/Attribute-Level/Material_change/2_720x1280.mp4",
+        "editing_instruction": "Transform the metal frame of the bicycles into wood material."
+    },
+    {
+        "video_id": "Sp_Material_change_03",
+        "source_video": "Spatial/Attribute-Level/Material_change/3_1280x720.mp4",
+        "editing_instruction": "Change the orange velvet sofa to a dark brown distressed leather material."
+    },
+    {
+        "video_id": "Sp_Material_change_04",
+        "source_video": "Spatial/Attribute-Level/Material_change/4_1280x720.mp4",
+        "editing_instruction": "change the ceramic cup to a transparent glass cup."
+    },
+    {
+        "video_id": "Sp_Material_change_05",
+        "source_video": "Spatial/Attribute-Level/Material_change/5_1280x720.mp4",
+        "editing_instruction": "change the material of this transparent glass cup to stainless steel."
+    },
+    {
+        "video_id": "Sp_Material_change_06",
+        "source_video": "Spatial/Attribute-Level/Material_change/6_1280x720.mp4",
+        "editing_instruction": "Change the water in the wine glass to thick red wine."
+    },
+    {
+        "video_id": "Sp_Material_change_07",
+        "source_video": "Spatial/Attribute-Level/Material_change/7_1280x720.mp4",
+        "editing_instruction": "Change the green bronze statue to a polished, shiny gold material."
+    },
+    {
+        "video_id": "Sp_Material_change_08",
+        "source_video": "Spatial/Attribute-Level/Material_change/8_1280x720.mp4",
+        "editing_instruction": "Change the gray fabric sofa to a premium dark brown leather material with a slight sheen."
+    },
+    {
+        "video_id": "Sp_Material_change_09",
+        "source_video": "Spatial/Attribute-Level/Material_change/9_1280x720.mp4",
+        "editing_instruction": "Transform the metal frame into a smooth, light-colored bamboo material."
+    },
+    {
+        "video_id": "Sp_Material_change_10",
+        "source_video": "Spatial/Attribute-Level/Material_change/10_1280x720.mp4",
+        "editing_instruction": "change the green leaves to gold material."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_01",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/1_720x1280.mp4",
+        "editing_instruction": "Change the two balloons' shape into pentagon."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_02",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/2_720x1280.mp4",
+        "editing_instruction": "Change the ball's shape into an ellipsoid."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_03",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/3_720x1280.mp4",
+        "editing_instruction": "Change the star-shaped balloon into a classic round heart shape."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_04",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/4_1280x720.mp4",
+        "editing_instruction": "Modify the leaf shape to be a perfect hollow heart silhouette."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_05",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/5_720x1280.mp4",
+        "editing_instruction": "Change the heart shape to a large letter \"A\" made of palm fronds."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_06",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/6_1280x720.mp4",
+        "editing_instruction": "Replace the antelope's spiral horns with a set of palmate (palm-shaped) antlers, while keeping the antelope's body and face unchanged."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_07",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/7_1280x720.mp4",
+        "editing_instruction": "Change the center circle to a smaller square."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_08",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/8_1280x720.mp4",
+        "editing_instruction": "Make the two lamps smaller."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_09",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/9_1280x720.mp4",
+        "editing_instruction": "Scale down the heart shape formed by the two people to 50% of its original size."
+    },
+    {
+        "video_id": "Sp_Size_shape_change_10",
+        "source_video": "Spatial/Attribute-Level/Size_shape_change/10_1280x720.mp4",
+        "editing_instruction": "Shrink the Unisphere sculpture while maintaining the intricate lattice and continent details."
+    },
+    {
+        "video_id": "Sp_Appearance_change_01",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/1_1280x720.mp4",
+        "editing_instruction": "Replace the girl's face with an elderly woman's face, making it look like her grandmother."
+    },
+    {
+        "video_id": "Sp_Appearance_change_02",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/2_1280x720.mp4",
+        "editing_instruction": "Make the woman look like a younger teenager with softer facial features."
+    },
+    {
+        "video_id": "Sp_Appearance_change_03",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/3_1280x720.mp4",
+        "editing_instruction": "Transform this woman into her youthful appearance."
+    },
+    {
+        "video_id": "Sp_Appearance_change_04",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/4_1280x720.mp4",
+        "editing_instruction": "Make the woman look more younger."
+    },
+    {
+        "video_id": "Sp_Appearance_change_05",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/5_1280x720.mp4",
+        "editing_instruction": "Smooth the face to make the person look like a teenager, maintaining the original facial structure."
+    },
+    {
+        "video_id": "Sp_Appearance_change_06",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/6_1280x720.mp4",
+        "editing_instruction": "Make the person appear significantly older, adding realistic wrinkles and age spots."
+    },
+    {
+        "video_id": "Sp_Appearance_change_07",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/7_1280x720.mp4",
+        "editing_instruction": "Make the man look more elder."
+    },
+    {
+        "video_id": "Sp_Appearance_change_08",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/8_1280x720.mp4",
+        "editing_instruction": "Change the person's eye color to a piercing sapphire blue and remove all the beards."
+    },
+    {
+        "video_id": "Sp_Appearance_change_09",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/9_1280x720.mp4",
+        "editing_instruction": "Remove the man's beards and all his wrinkles."
+    },
+    {
+        "video_id": "Sp_Appearance_change_10",
+        "source_video": "Spatial/Attribute-Level/Appearance_change/10_1280x720.mp4",
+        "editing_instruction": "Swap the person's face with a face resembling a specific, well-known actor."
+    },
+    {
+        "video_id": "Sp_Clothes_change_01",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/1_1280x720.mp4",
+        "editing_instruction": "Replace the traditional black abaya with a modern, elegant white floor-length evening gown."
+    },
+    {
+        "video_id": "Sp_Clothes_change_02",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/2_1280x720.mp4",
+        "editing_instruction": "Change the outfit to a yellow linen sundress with thin spaghetti straps."
+    },
+    {
+        "video_id": "Sp_Clothes_change_03",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/3_1280x720.mp4",
+        "editing_instruction": "Replace the polo and t-shirt with a well-tailored light gray blazer over a black button-down shirt."
+    },
+    {
+        "video_id": "Sp_Clothes_change_04",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/4_1280x720.mp4",
+        "editing_instruction": "Add a classic blue denim jacket layered over his current gray t-shirt."
+    },
+    {
+        "video_id": "Sp_Clothes_change_05",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/5_1280x720.mp4",
+        "editing_instruction": "Change the coat to a soft, cream-colored knitted turtleneck sweater."
+    },
+    {
+        "video_id": "Sp_Clothes_change_06",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/6_1280x720.mp4",
+        "editing_instruction": "Change the outfit to a classic tan trench coat with a belted waist."
+    },
+    {
+        "video_id": "Sp_Clothes_change_07",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/7_1280x720.mp4",
+        "editing_instruction": "Replace the graduation gown and cap with a professional navy blue slim-fit suit."
+    },
+    {
+        "video_id": "Sp_Clothes_change_08",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/8_1280x720.mp4",
+        "editing_instruction": "Turn the woman's white sweater to a striped shirt."
+    },
+    {
+        "video_id": "Sp_Clothes_change_09",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/9_1280x720.mp4",
+        "editing_instruction": "Change the woman's outfit to black down jacket."
+    },
+    {
+        "video_id": "Sp_Clothes_change_10",
+        "source_video": "Spatial/Attribute-Level/Clothes_change/10_1280x720.mp4",
+        "editing_instruction": "Replace the coat and black turtleneck with a vibrant yellow puffer jacket."
+    },
+    {
+        "video_id": "Sp_Landscape_change_01",
+        "source_video": "Spatial/Global-Level/Landscape_change/1_1280x720.mp4",
+        "editing_instruction": "Change the landscape that the man is looking at to a fjord landscape."
+    },
+    {
+        "video_id": "Sp_Landscape_change_02",
+        "source_video": "Spatial/Global-Level/Landscape_change/2_1280x720.mp4",
+        "editing_instruction": "Change the overall topography from a vast, flat meadow to a complex network of deep, winding canyon fissures and gorges that cut directly through the foreground fields, dividing the cattle herds. The cattle are now grazing on isolated, high grassy mesas between the deep gorges. The tree-lined distant forest remains on the far edge of this canyon system. View from above looking down."
+    },
+    {
+        "video_id": "Sp_Landscape_change_03",
+        "source_video": "Spatial/Global-Level/Landscape_change/3_720x1280.mp4",
+        "editing_instruction": "Transform the landscape into an icy, frozen coastal scene. Cover the large rock and the sand in layers of snow and ice. The ocean should be filled with floating icebergs."
+    },
+    {
+        "video_id": "Sp_Landscape_change_04",
+        "source_video": "Spatial/Global-Level/Landscape_change/4_1280x720.mp4",
+        "editing_instruction": "Transform the entire green field and hills into a dry, desert-like environment with sparse, arid vegetation. The vibrant green is gone. Add a shimmering, hazy atmosphere over the sand and distant hills under a scorching, bright white-blue sky."
+    },
+    {
+        "video_id": "Sp_Landscape_change_05",
+        "source_video": "Spatial/Global-Level/Landscape_change/5_1280x720.mp4",
+        "editing_instruction": "Change the flat terrain on both sides of the road into towering mountains."
+    },
+    {
+        "video_id": "Sp_Landscape_change_06",
+        "source_video": "Spatial/Global-Level/Landscape_change/6_1280x720.mp4",
+        "editing_instruction": "Transform the desert terrain in the video to a flat, vibrant grassland."
+    },
+    {
+        "video_id": "Sp_Landscape_change_07",
+        "source_video": "Spatial/Global-Level/Landscape_change/7_1280x720.mp4",
+        "editing_instruction": "Reconstruct the flat foreground rice paddies into a complex system of beautifully sculpted, multi-tiered rice terraces that cascade down a newly formed hill slope towards the viewer. These terraces should capture patches of water and green rice, creating a winding, layered pattern. Retain the distant palm trees and hills."
+    },
+    {
+        "video_id": "Sp_Landscape_change_08",
+        "source_video": "Spatial/Global-Level/Landscape_change/8_1280x720.mp4",
+        "editing_instruction": "Reconstruct the foreground and midground flat canola fields into a complex, multi-tiered, cascading terraced landscape, making the dark tire tracks follow the winding contour lines as narrow paths."
+    },
+    {
+        "video_id": "Sp_Landscape_change_09",
+        "source_video": "Spatial/Global-Level/Landscape_change/9_1280x720.mp4",
+        "editing_instruction": "Change the terrain of this scene to be covered with icebergs, with some floating icebergs on the sea surface."
+    },
+    {
+        "video_id": "Sp_Landscape_change_10",
+        "source_video": "Spatial/Global-Level/Landscape_change/10_720x1280.mp4",
+        "editing_instruction": "Change the topography by relocating the large rock formation from the beach to deep within the ocean waves. The rock is now a rugged island, completely surrounded by deeper water and breaking surf. Place the person with the red backpack on the highest point of the rock, now positioned as a solitary figure on a sea-island peak. Retain the distant landmass but make the person and rock feel far from the original shore."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_01",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/1_1280x720.mp4",
+        "editing_instruction": "From far to near, add a few rainbows among the mountains."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_02",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/2_1280x720.mp4",
+        "editing_instruction": "Add a few flashing lightning effects in the black sky."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_03",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/3_1280x720.mp4",
+        "editing_instruction": "Add mist to the lake surface to create a mysterious effect."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_04",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/4_1280x720.mp4",
+        "editing_instruction": "Add meteor shower effects to the sky."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_05",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/5_1280x720.mp4",
+        "editing_instruction": "A high-key, snowy visual effect over the entire scene, with heavy snowflakes falling and covering the decks of both ships, the water frozen in parts, and a colder, paler color palette."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_06",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/6_1280x720.mp4",
+        "editing_instruction": "The distant sky becomes overcast, and a faintly visible tornado is added in the distance, creating a scene of an approaching storm."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_07",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/7_1280x720.mp4",
+        "editing_instruction": "Transform the sky into a rich, saturated cerulean blue with intensified clouds. Create a powerful sunburst with distinct, volumetric crepuscular rays fanning out from behind the distant road bend. Apply this intense golden light to bathes the entire landscape and the canyon walls, casting deep, dramatic shadows."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_08",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/8_1280x720.mp4",
+        "editing_instruction": "Add twinkling stars in the distant sky."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_09",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/9_1280x720.mp4",
+        "editing_instruction": "Add subtle fireworks effects in the upper sky, shimmering water reflections on the lagoon, and glowing full moons on the spherical lamps."
+    },
+    {
+        "video_id": "Sp_Global_visual_effects_adding_10",
+        "source_video": "Spatial/Global-Level/Global_visual_effects_adding/10_1280x720.mp4",
+        "editing_instruction": "A magical fantasy visual effect added to the night castle scene. Enhance the golden illumination of the castle on the hill. Create a vibrant, multi-colored aurora (blue, purple, and gold) with swirling magical light particles and fireflies drifting from the surrounding dark trees towards the spires and turrets, forming intricate light trails in the deep blue sky."
+    },
+    {
+        "video_id": "Sp_Relighting_01",
+        "source_video": "Spatial/Global-Level/Relighting/1_1280x720.mp4",
+        "editing_instruction": "Apply a soft, diffused relighting effect. Mute the direct sunlight into a hazy, pastel pink and lavender glow. The entire scene should have a low-contrast, dreamy atmosphere with a gentle, pearlescent sheen on the ice."
+    },
+    {
+        "video_id": "Sp_Relighting_02",
+        "source_video": "Spatial/Global-Level/Relighting/2_1280x720.mp4",
+        "editing_instruction": "Cinematic low-key relighting with cool blue tones, intensifying the highlights on the wet skin and droplets for a dramatic, high-contrast look."
+    },
+    {
+        "video_id": "Sp_Relighting_03",
+        "source_video": "Spatial/Global-Level/Relighting/3_1280x720.mp4",
+        "editing_instruction": "Cinematic relighting of the scene, changing the blinding sun to a profound, deep moonlit night. Direct, cool silver-blue moonlight rakes across the man's face and clasped hands. The vast dry field is rendered in deep, cool, desaturated shadow."
+    },
+    {
+        "video_id": "Sp_Relighting_04",
+        "source_video": "Spatial/Global-Level/Relighting/4_1280x720.mp4",
+        "editing_instruction": "Transform strong backlight into soft, direct front or side light, making it look more like the sun is lower behind the subject."
+    },
+    {
+        "video_id": "Sp_Relighting_05",
+        "source_video": "Spatial/Global-Level/Relighting/5_1280x720.mp4",
+        "editing_instruction": "Add golden rim lighting to the subject's profile and hair. Integrate cool-toned LED string lights into the foreground vegetation on the right. Maintain the dark, atmospheric silhouette, using the conflicting light sources to create sharp contrast."
+    },
+    {
+        "video_id": "Sp_Relighting_06",
+        "source_video": "Spatial/Global-Level/Relighting/6_1280x720.mp4",
+        "editing_instruction": "Change the lighting to bright, vibrant, full-daylight sun directly hitting the face from the right side."
+    },
+    {
+        "video_id": "Sp_Relighting_07",
+        "source_video": "Spatial/Global-Level/Relighting/7_1280x720.mp4",
+        "editing_instruction": "Relight the scene to a deep blue, cool \"Blue Hour\" aesthetic. The sunset is gone, replaced by a smooth gradient from deep indigo to soft purple in the sky."
+    },
+    {
+        "video_id": "Sp_Relighting_08",
+        "source_video": "Spatial/Global-Level/Relighting/8_1280x720.mp4",
+        "editing_instruction": "Convert the scene to a cool, moonlit evening, replacing the sun with a high silver-blue full moon on the right. Transform the sky to a deep indigo with stars, and the ocean to a matching indigo with shimmering foam. Maintain the composition, but silhouette the surfer and rocks with cool-toned rim lighting. All details and text on the surfboard must be eliminated for a clean silhouette."
+    },
+    {
+        "video_id": "Sp_Relighting_09",
+        "source_video": "Spatial/Global-Level/Relighting/9_1280x720.mp4",
+        "editing_instruction": "Intensely amplify the existing golden backlighting into sharp, brilliant god rays and swirling mist. Create a hyper-defined golden rim light around the woman's silhouette, while casting her face and the front of her dress into deep shadow."
+    },
+    {
+        "video_id": "Sp_Relighting_10",
+        "source_video": "Spatial/Global-Level/Relighting/10_1280x720.mp4",
+        "editing_instruction": "Maintain the core backlight, but cool down the ambient foreground (heather and grass) with deep blues, creating a stronger color contrast with the intense warm golden-orange of the sun and the sky."
+    },
+    {
+        "video_id": "Sp_Environment_change_01",
+        "source_video": "Spatial/Global-Level/Environment_change/1_1280x720.mp4",
+        "editing_instruction": "Replace the background environment with towering mountains, and replace the environment in front of the houses with a small river."
+    },
+    {
+        "video_id": "Sp_Environment_change_02",
+        "source_video": "Spatial/Global-Level/Environment_change/2_1280x720.mp4",
+        "editing_instruction": "Change the environment around the girl to a forest."
+    },
+    {
+        "video_id": "Sp_Environment_change_03",
+        "source_video": "Spatial/Global-Level/Environment_change/3_720x1280.mp4",
+        "editing_instruction": "Transform the colorful ball ocean in the amusement park video into a swimming pool, where the woman and children are playing in the water."
+    },
+    {
+        "video_id": "Sp_Environment_change_04",
+        "source_video": "Spatial/Global-Level/Environment_change/4_1280x720.mp4",
+        "editing_instruction": "The girl is running in the rice field."
+    },
+    {
+        "video_id": "Sp_Environment_change_05",
+        "source_video": "Spatial/Global-Level/Environment_change/5_1280x720.mp4",
+        "editing_instruction": "Change the environment around the girl to a field of sunflowers."
+    },
+    {
+        "video_id": "Sp_Environment_change_06",
+        "source_video": "Spatial/Global-Level/Environment_change/6_1280x720.mp4",
+        "editing_instruction": "Change the environment outside the house to a beach and ocean."
+    },
+    {
+        "video_id": "Sp_Environment_change_07",
+        "source_video": "Spatial/Global-Level/Environment_change/7_1280x720.mp4",
+        "editing_instruction": "The road and railing overlook a dramatic, clear alpine mountain lake. Behind the lake rise massive, snow-capped peaks and rocky mountains under a crisp, clear sky. The water is turquoise and crystal clear, reflecting the mountains. Distant small chalets replace the city skyline. All figures and the road remain."
+    },
+    {
+        "video_id": "Sp_Environment_change_08",
+        "source_video": "Spatial/Global-Level/Environment_change/8_1280x720.mp4",
+        "editing_instruction": "Transform the area where the lake meets the forest into a wharf."
+    },
+    {
+        "video_id": "Sp_Environment_change_09",
+        "source_video": "Spatial/Global-Level/Environment_change/9_1280x720.mp4",
+        "editing_instruction": "Change the distant mountain ranges into plains and faintly visible city buildings."
+    },
+    {
+        "video_id": "Sp_Environment_change_10",
+        "source_video": "Spatial/Global-Level/Environment_change/10_1280x720.mp4",
+        "editing_instruction": "Transform the environment around the astronaut-shaped kite to a vast and brilliant cosmic background."
+    },
+    {
+        "video_id": "Sp_Time_change_01",
+        "source_video": "Spatial/Global-Level/Time_change/1_1280x720.mp4",
+        "editing_instruction": "Change the time to mid afternoon."
+    },
+    {
+        "video_id": "Sp_Time_change_02",
+        "source_video": "Spatial/Global-Level/Time_change/2_1280x720.mp4",
+        "editing_instruction": "Change the time to the midnight."
+    },
+    {
+        "video_id": "Sp_Time_change_03",
+        "source_video": "Spatial/Global-Level/Time_change/3_720x1280.mp4",
+        "editing_instruction": "Adjust the time in the video to dusk at 5 PM."
+    },
+    {
+        "video_id": "Sp_Time_change_04",
+        "source_video": "Spatial/Global-Level/Time_change/4_720x1280.mp4",
+        "editing_instruction": "Adjust the time in the video to midnight."
+    },
+    {
+        "video_id": "Sp_Time_change_05",
+        "source_video": "Spatial/Global-Level/Time_change/5_1280x720.mp4",
+        "editing_instruction": "Change the time to mid afternoon."
+    },
+    {
+        "video_id": "Sp_Time_change_06",
+        "source_video": "Spatial/Global-Level/Time_change/6_1280x720.mp4",
+        "editing_instruction": "Change the time to the early morning."
+    },
+    {
+        "video_id": "Sp_Time_change_07",
+        "source_video": "Spatial/Global-Level/Time_change/7_1280x720.mp4",
+        "editing_instruction": "Adjust the time in the video to dusk."
+    },
+    {
+        "video_id": "Sp_Time_change_08",
+        "source_video": "Spatial/Global-Level/Time_change/8_1280x720.mp4",
+        "editing_instruction": "The time in the video is adjusted to early evening."
+    },
+    {
+        "video_id": "Sp_Time_change_09",
+        "source_video": "Spatial/Global-Level/Time_change/9_1280x720.mp4",
+        "editing_instruction": "Change the time to early afternoon."
+    },
+    {
+        "video_id": "Sp_Time_change_10",
+        "source_video": "Spatial/Global-Level/Time_change/10_1280x720.mp4",
+        "editing_instruction": "Change the time to mid afternoon."
+    },
+    {
+        "video_id": "Sp_Season_change_01",
+        "source_video": "Spatial/Global-Level/Season_change/1_720x1280.mp4",
+        "editing_instruction": "Revamp the scene to a cozy, colorful fall setting."
+    },
+    {
+        "video_id": "Sp_Season_change_02",
+        "source_video": "Spatial/Global-Level/Season_change/2_1280x720.mp4",
+        "editing_instruction": "Transform the scene into a vibrant, blossoming spring vista."
+    },
+    {
+        "video_id": "Sp_Season_change_03",
+        "source_video": "Spatial/Global-Level/Season_change/3_720x1280.mp4",
+        "editing_instruction": "Transform the scene into a sun-drenched, vibrant midsummer dream."
+    },
+    {
+        "video_id": "Sp_Season_change_04",
+        "source_video": "Spatial/Global-Level/Season_change/4_1280x720.mp4",
+        "editing_instruction": "Change the season into winter, the river is frozen and all the scene is covered with thick snow."
+    },
+    {
+        "video_id": "Sp_Season_change_05",
+        "source_video": "Spatial/Global-Level/Season_change/5_1280x720.mp4",
+        "editing_instruction": "Shift the tone to a warm caramel hue, recreating a tranquil moment of falling leaves and abundant harvest."
+    },
+    {
+        "video_id": "Sp_Season_change_06",
+        "source_video": "Spatial/Global-Level/Season_change/6_1280x720.mp4",
+        "editing_instruction": "Revitalize the landscape into a vibrant spring vista, painting every leaf with a brilliant, lively shade of green."
+    },
+    {
+        "video_id": "Sp_Season_change_07",
+        "source_video": "Spatial/Global-Level/Season_change/7_1280x720.mp4",
+        "editing_instruction": "Revitalize this frozen landscape into a vibrant spring vista, melting the ice into a clear flowing stream and covering the trees with rich, newly-grown emerald green leaves. Make the path clear and dry."
+    },
+    {
+        "video_id": "Sp_Season_change_08",
+        "source_video": "Spatial/Global-Level/Season_change/8_1280x720.mp4",
+        "editing_instruction": "Transform the park to a silent winter. Replace all people, flowers, and the bike with deep snow. Cover all trees and the bench in heavy frost and snowdrifts."
+    },
+    {
+        "video_id": "Sp_Season_change_09",
+        "source_video": "Spatial/Global-Level/Season_change/9_1280x720.mp4",
+        "editing_instruction": "Change the season of the scene into vivid spring."
+    },
+    {
+        "video_id": "Sp_Season_change_10",
+        "source_video": "Spatial/Global-Level/Season_change/10_1280x720.mp4",
+        "editing_instruction": "Turn the season of the scene into warm and cozy autumn."
+    },
+    {
+        "video_id": "Sp_Global_style_change_01",
+        "source_video": "Spatial/Global-Level/Global_style_change/1_1280x720.mp4",
+        "editing_instruction": "Transform the style of the video into a cyberpunk style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_02",
+        "source_video": "Spatial/Global-Level/Global_style_change/2_1280x720.mp4",
+        "editing_instruction": "Change the style to hand-drawn sketch style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_03",
+        "source_video": "Spatial/Global-Level/Global_style_change/3_1280x720.mp4",
+        "editing_instruction": "Transform the style to oil painting style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_04",
+        "source_video": "Spatial/Global-Level/Global_style_change/4_1280x720.mp4",
+        "editing_instruction": "Turn the video into Van Gough style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_05",
+        "source_video": "Spatial/Global-Level/Global_style_change/5_1280x720.mp4",
+        "editing_instruction": "Adjust the video's style to traditional Chinese painting style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_06",
+        "source_video": "Spatial/Global-Level/Global_style_change/6_1280x720.mp4",
+        "editing_instruction": "Change the style to romantic and fairytale-like style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_07",
+        "source_video": "Spatial/Global-Level/Global_style_change/7_1280x720.mp4",
+        "editing_instruction": "Make the New York City to a more modern and sci-fi style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_08",
+        "source_video": "Spatial/Global-Level/Global_style_change/8_1280x720.mp4",
+        "editing_instruction": "Transform the video into a cozy, warm and healing oil painting style."
+    },
+    {
+        "video_id": "Sp_Global_style_change_09",
+        "source_video": "Spatial/Global-Level/Global_style_change/9_1280x720.mp4",
+        "editing_instruction": "Make the style of the video similar to that of the Cyberpunk 2077 game."
+    },
+    {
+        "video_id": "Sp_Global_style_change_10",
+        "source_video": "Spatial/Global-Level/Global_style_change/10_1280x720.mp4",
+        "editing_instruction": "Transform the scene into a Japanese Ukiyo-e woodblock print (e.g., in the style of Hokusai)."
+    },
+    {
+        "video_id": "Sp_Weather_change_01",
+        "source_video": "Spatial/Global-Level/Weather_change/1_720x1280.mp4",
+        "editing_instruction": "Change the weather to light rain."
+    },
+    {
+        "video_id": "Sp_Weather_change_02",
+        "source_video": "Spatial/Global-Level/Weather_change/2_1280x720.mp4",
+        "editing_instruction": "The snow has stopped, but the accumulated snow on the ground and on the cars is still there."
+    },
+    {
+        "video_id": "Sp_Weather_change_03",
+        "source_video": "Spatial/Global-Level/Weather_change/3_1280x720.mp4",
+        "editing_instruction": "Change the weather in the scene to overcast with scattered clouds."
+    },
+    {
+        "video_id": "Sp_Weather_change_04",
+        "source_video": "Spatial/Global-Level/Weather_change/4_1280x720.mp4",
+        "editing_instruction": "It's raining heavily in the scene."
+    },
+    {
+        "video_id": "Sp_Weather_change_05",
+        "source_video": "Spatial/Global-Level/Weather_change/5_1280x720.mp4",
+        "editing_instruction": "Switch to a bright, sunny day."
+    },
+    {
+        "video_id": "Sp_Weather_change_06",
+        "source_video": "Spatial/Global-Level/Weather_change/6_1280x720.mp4",
+        "editing_instruction": "Transform the scene into a bright, sun-drenched day."
+    },
+    {
+        "video_id": "Sp_Weather_change_07",
+        "source_video": "Spatial/Global-Level/Weather_change/7_1280x720.mp4",
+        "editing_instruction": "The snow is swirling everywhere and the ground is silver-clad."
+    },
+    {
+        "video_id": "Sp_Weather_change_08",
+        "source_video": "Spatial/Global-Level/Weather_change/8_1280x720.mp4",
+        "editing_instruction": "Turn the scene into a clear, high visibility night."
+    },
+    {
+        "video_id": "Sp_Weather_change_09",
+        "source_video": "Spatial/Global-Level/Weather_change/9_720x1280.mp4",
+        "editing_instruction": "The weather turns into a heavy fog with low visibility."
+    },
+    {
+        "video_id": "Sp_Weather_change_10",
+        "source_video": "Spatial/Global-Level/Weather_change/10_1280x720.mp4",
+        "editing_instruction": "Make the scene in the video a sunny afternoon with bright sunlight."
+    }
+]

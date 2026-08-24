@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/01360
+caption: a black quarter-zip pullover with a high collar and a silver-toned zipper running partially down the front, featuring a subtle embroidered "GUCCI" logo on the left chest area in a matching dark thread, paired with a contrasting gray inner collar lining that bears a red label with the "GUCCI" brand name in white text, including long sleeves with ribbed cuffs, a ribbed hem, and a large kangaroo pocket at the front center, crafted from a soft, textured fabric likely intended for casual or sporty wear.

@@ -1,0 +1,16 @@
+hash,task,person_relevance,instruction_correctness,logical_correctness,content_preservation,temporal_consistency,visual_quality,technical_quality,notes
+0240e,compose-2,1,1,1,1,1,1,1,服装和背景替换均完成且保持较好
+4d71e,compose-2,1,1,1,1,1,1,1,熊添加和衬衫迷彩移除均完成
+99c0f,compose-2,1,1,1,1,1,1,1,领巾改色和白猫添加均完成；source 是 3D 动画而非真人
+aff59,compose-2,0,1,1,1,1,1,1,背景油画化和鸡移除均完成；画面有人但编辑对象不是人物属性
+5c73a,compose-2,0,2,1,1,1,2,1,style-only；头和手臂已动漫化但躯干仍偏写实，背景植物已替换
+5172a,compose-2,1,1,1,1,1,1,1,宇航服由蓝色改为红色，左侧设备墙完成黏土风格化
+304d4,compose-3,0,2,1,1,1,1,1,style-only；人物和发动机已编辑，但浅色工作台面仍可见
+f19a0,compose-3,0,1,1,1,1,1,1,包装和 shuffle 盒移除、白色背景替换均完成；与人物属性无关
+e881a,compose-3,1,1,1,0,1,1,2,发型、内搭和南瓜编辑成功，但货架及背景物品大幅改变；source 245 帧而 target 201 帧
+a4f5b,compose-3,0,1,1,1,1,1,2,玉米替换、木炭移除和锅铲添加均完成；source 218 帧而 target 201 帧
+0a034,compose-3,1,1,1,1,1,1,2,去胡须、加黑帽和换白墙均完成；source 621 帧而 target 201 帧
+2c48d,compose-3,1,1,0,1,1,1,1,三项编辑均完成，但移除方向盘后双手仍保持握持和操控姿势
+44120,compose-3,1,1,1,1,0,1,1,三项编辑均完成，但太阳镜的大小和形状跨帧明显变化
+898ea,compose-3,1,1,1,1,1,1,2,服装、警示条和金属锅移除均完成；source 620 帧而 target 201 帧
+3061e,compose-4,0,1,1,1,1,1,2,style-only；四项编辑均完成；source 367 帧而 target 201 帧

@@ -1,0 +1,4 @@
+task: try-on-dresses
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: dresses/06195
+caption: a sleek black sleeveless gown with a draped, asymmetrical neckline that elegantly cascades down one side, creating a sculpted silhouette; the bodice features intricate vertical ruching that accentuates the waist and enhances the form-fitting design; a high slit runs up the front of the skirt, adding a touch of drama and movement; the fabric appears smooth and lustrous, likely made of a stretchable material such as jersey or crepe, contributing to its fluid drape; the dress extends to floor length, with a clean hemline that maintains a minimalist aesthetic; a small gold-toned detail is visible at the shoulder strap, serving as a subtle yet sophisticated accent.

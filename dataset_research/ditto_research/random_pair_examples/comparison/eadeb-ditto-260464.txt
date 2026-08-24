@@ -1,0 +1,1 @@
+Add a small digital readout on the wall screen displaying 'Treatment Phase 3: 67% Complete'.

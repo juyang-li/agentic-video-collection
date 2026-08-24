@@ -1,0 +1,4 @@
+task: try-on-dresses
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: dresses/01762
+caption: A white strapless gown with a smooth, satin-like texture gracefully drapes over the form. A fitted bodice seamlessly transitions into a full, flared skirt that adds volume and elegance. A subtle sheen on the fabric highlights its luxurious quality, while the absence of any visible text or graphics allows the garment's classic design to stand out. A clean, minimalist aesthetic is achieved through the simplicity of the cut and the uniformity of the color.

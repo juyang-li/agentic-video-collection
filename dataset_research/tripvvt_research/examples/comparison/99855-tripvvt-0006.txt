@@ -1,0 +1,3 @@
+task: try-on-lower_body
+instruction: Replace the person's lower-body clothing with the referenced garment.
+official_text: In a serene indoor setting adorned with cascading green vines, a woman stands gracefully, her back to the camera, as she gently touches a leafy plant. Captured in a steady medium shot under soft, natural light, her movements are subtle and poised. She wears a flowing mint-green pleated skirt that flares elegantly from the waist, its delicate fabric creating gentle ripples and folds as she shifts her stance. The skirt's lightweight material drapes smoothly over her form, swaying slightly with each motion, accentuating its airy, translucent quality and intricate vertical pleats that catch the light with every movement.

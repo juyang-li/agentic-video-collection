@@ -1,0 +1,4 @@
+task: try-on-lower_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: lower_body/01905
+caption: A pair of high-waisted denim jeans features a classic straight-leg cut. A medium blue wash covers the fabric, showcasing subtle fading along the thighs and knees for a worn-in look. A button closure at the waist is complemented by belt loops, ensuring secure fastening. A simple yet stylish design, these jeans have a clean hem that ends just above the ankle. A slight stretch in the material suggests comfort and flexibility. A traditional five-pocket style includes two front pockets, two back pockets, and a small coin pocket inside the right front pocket. A minimalistic approach to detailing keeps the focus on the garment's versatile and timeless appeal.

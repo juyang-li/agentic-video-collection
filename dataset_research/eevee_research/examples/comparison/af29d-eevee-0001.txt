@@ -1,0 +1,4 @@
+task: try-on-upper_body
+instruction: Reconstruct the person's clothing from the referenced garment.
+sample: upper_body/08596
+caption: a minimalist beige long-sleeved top with a clean, structured silhouette. The garment features a high, rounded neckline and a subtle vertical seam running down the center front, adding a touch of detail to the otherwise simple design. The sleeves are full-length and slightly tapered toward the cuffs, which are neatly finished with a folded hem. The fabric appears smooth and lightweight, likely made from a soft, breathable material such as cotton or a cotton blend. The hemline is gently curved, creating a relaxed and modern fit that drapes softly over the body. A small, discreet label is visible at the back of the neckline, suggesting a designer or brand tag. The overall aesthetic is understated and elegant, emphasizing simplicity and comfort.
