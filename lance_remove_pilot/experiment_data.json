@@ -1,0 +1,23 @@
+{
+  "datasets": {
+    "goku": {
+      "repo_id": "bigfacing/GOKU-2M",
+      "revision": "f289f4b245648dc57db04afaaeb68659440c0fa6",
+      "shard": "remove/remove.videos.part32.tar"
+    },
+    "insave": {
+      "repo_id": "suimu/InsAVE-80K",
+      "revision": "8ba8ccaad1d8f97b08e218dae1f2b439bd3d2289",
+      "shard": "train_data/add_and_remove/part_01.tar"
+    }
+  },
+  "goku_seed": 20260825,
+  "human_review_status": "not_reviewed",
+  "insave_control_pairs": 500,
+  "insave_seed": 20260824,
+  "mixed_goku_pairs": 200,
+  "mixed_insave_is_control_subset": true,
+  "mixed_insave_pairs": 300,
+  "selection_basis": "official remove metadata plus full technical decode",
+  "selection_seed": 20260824
+}
