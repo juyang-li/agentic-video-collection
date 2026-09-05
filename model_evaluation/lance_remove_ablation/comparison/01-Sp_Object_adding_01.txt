@@ -1,0 +1,4 @@
+video_id: Sp_Object_adding_01
+category: object_adding
+instruction: Add a beautiful woman sitting on the sofa while reading a book.
+panels: SOURCE | BASE | MIXED | INSAVE

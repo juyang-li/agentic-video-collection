@@ -1,0 +1,16 @@
+sample_index,video_id,category,instruction,mixed_vs_base,insave_vs_base,observation,review_basis
+1,Sp_Object_adding_01,object_adding,Add a beautiful woman sitting on the sofa while reading a book.,worse,worse,"Base较早且稳定地加入女人；mixed和InsAVE目标出现更晚，早期缺失或为残影。",5-frame contact sheet
+2,Sp_Object_adding_02,object_adding,Add a lit candle on the table.,worse,worse,"三者都能加入蜡烛；mixed明显延迟且尺寸漂移，InsAVE尺寸和时序也不如base稳定。",5-frame contact sheet
+3,Sp_Object_adding_05,object_adding,Add a German shepherd lying on the ground wagging its tail.,worse,worse,"Base较早出现且保持狗；两个微调模型到后段才出现不稳定目标。",5-frame contact sheet
+4,Sp_Object_removal_03,object_removal,"Remove only the clear glass/plastic dome that covers Santa Claus, while keeping Santa Claus himself and the red car perfectly in place.",similar_failure,similar_failure,"三者都保留玻璃罩，未完成删除。",5-frame contact sheet
+5,Sp_Object_removal_04,object_removal,Remove the woman in the video.,similar_failure,better,"Base和mixed保留女人；InsAVE在全部观察帧中移除了女人并保持空场景。",5-frame contact sheet
+6,Sp_Object_removal_10,object_removal,Remove the central transparent glass cup from the video.,worse,similar_failure,"Base保留透明杯；mixed把杯子改成不透明灰色器皿，InsAVE保留或扭曲杯子，均未干净删除。",5-frame contact sheet
+7,Sp_Object_replacement_02,object_replacement,Change the white swan in the video with a grey duck.,worse,worse,"Base的灰鸭较稳定；mixed和InsAVE中的鸭子在后段退化或消失。",5-frame contact sheet
+8,Sp_Object_replacement_09,object_replacement,Replace the lamp with a glowing globe.,worse,worse,"Base生成较完整的地球仪；mixed为简单发光球，InsAVE球体模糊且尺寸漂移。",5-frame contact sheet
+9,Sp_Object_replacement_10,object_replacement,The cut kiwi fruit is replaced by a complete orange.,worse,better,"Base后段橙子形态异常；mixed主要是把kiwi染成橙色，InsAVE更持续地呈现完整橙子。",5-frame contact sheet
+10,Sp_Appearance_change_01,appearance_change,"Replace the girl's face with an elderly woman's face, making it look like her grandmother.",different_failure,different_failure,"Base错误地新增一位老人；mixed和InsAVE基本保留原年轻人，三者均未正确换脸。",5-frame contact sheet
+11,Sp_Appearance_change_07,appearance_change,Make the man look more elder.,similar_failure,similar_failure,"三个模型都基本未改变年龄。",5-frame contact sheet
+12,Sp_Appearance_change_10,appearance_change,"Swap the person's face with a face resembling a specific, well-known actor.",different_failure,different_failure,"Base错误地新增第二个人；mixed和InsAVE基本不执行换脸，无法可靠排序。",5-frame contact sheet
+13,Sp_Clothes_change_01,clothes_change,"Replace the traditional black abaya with a modern, elegant white floor-length evening gown.",worse,worse,"Base稳定换成白色礼服；mixed基本不编辑，InsAVE后段人物/礼服融化成白色块。",5-frame contact sheet
+14,Sp_Clothes_change_02,clothes_change,Change the outfit to a yellow linen sundress with thin spaghetti straps.,worse,worse,"Base较稳定完成黄裙；mixed保留红袖且替换不完整，InsAVE早期目标更准但后两帧人物完全消失。",5-frame contact sheet
+15,Sp_Clothes_change_04,clothes_change,Add a classic blue denim jacket layered over his current gray t-shirt.,worse,worse,"Base较稳定加入牛仔夹克；mixed更像蓝色毛衣，InsAVE虽有夹克但身份变化且首帧有严重头部伪影。",5-frame contact sheet

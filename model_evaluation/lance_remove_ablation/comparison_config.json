@@ -1,0 +1,41 @@
+{
+  "benchmark_manifest": "../lance_base/benchmark_15.csv",
+  "comparison_dir": "comparison",
+  "inventory": "comparison/inventory.csv",
+  "scores": "scores.csv",
+  "archive": "lance_remove_ablation_comparison_15_h264.zip",
+  "archive_files": [
+    "README.md",
+    "preliminary_observations.csv",
+    "loss_analysis.json",
+    "loss_comparison.svg"
+  ],
+  "fps": 12,
+  "panel_width": 480,
+  "panel_height": 540,
+  "panels": [
+    {
+      "label": "SOURCE",
+      "manifest_column": "local_source"
+    },
+    {
+      "label": "BASE",
+      "output_dirs": [
+        "../lance_base/outputs_raw/benchmark_gate",
+        "../lance_base/outputs_raw/benchmark_remaining"
+      ]
+    },
+    {
+      "label": "MIXED",
+      "output_dirs": [
+        "outputs_raw/mixed_step499"
+      ]
+    },
+    {
+      "label": "INSAVE",
+      "output_dirs": [
+        "outputs_raw/insave_step499"
+      ]
+    }
+  ]
+}

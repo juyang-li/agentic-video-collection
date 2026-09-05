@@ -1,0 +1,4 @@
+video_id: Sp_Object_replacement_02
+category: object_replacement
+instruction: Change the white swan in the video with a grey duck.
+panels: SOURCE | BASE | MIXED | INSAVE

@@ -1,0 +1,4 @@
+video_id: Sp_Object_removal_10
+category: object_removal
+instruction: Remove the central transparent glass cup from the video.
+panels: SOURCE | BASE | MIXED | INSAVE

@@ -1,0 +1,4 @@
+video_id: Sp_Appearance_change_10
+category: appearance_change
+instruction: Swap the person's face with a face resembling a specific, well-known actor.
+panels: SOURCE | BASE | MIXED | INSAVE

@@ -1,0 +1,4 @@
+video_id: Sp_Clothes_change_01
+category: clothes_change
+instruction: Replace the traditional black abaya with a modern, elegant white floor-length evening gown.
+panels: SOURCE | BASE | MIXED | INSAVE

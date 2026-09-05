@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-25",
+  "purpose": "Compare the final 500-step mixed and InsAVE-only removal fine-tunes against the frozen 15-sample Lance base benchmark",
+  "archive_status": {
+    "state": "historical_non_rerunnable",
+    "pilot_directory_deleted": "2026-09-05",
+    "lightweight_snapshot_commit": "69735dc",
+    "checkpoints_available": false,
+    "note": "Paths under models.mixed and models.insave are historical provenance and no longer exist."
+  },
+  "benchmark_manifest": "../lance_base/benchmark_15.csv",
+  "inference_config": "../lance_base/configs/benchmark_all.json",
+  "inference_runtime": "../lance_base/runtime/upstream",
+  "inference": {
+    "task": "video_edit",
+    "steps": 30,
+    "timestep_shift": 3.5,
+    "seed": 42,
+    "cfg_text_scale": 4.0,
+    "num_frames": 50,
+    "resolution": "video_480p",
+    "use_kvcache": true,
+    "enhance_prompt": false
+  },
+  "models": {
+    "base": "../lance_base/runtime/upstream/downloads/Lance_3B_Video",
+    "mixed": "../../lance_remove_pilot/runs/mixed_300_200_steps500/checkpoints/0000499",
+    "insave": "../../lance_remove_pilot/runs/insave_500_steps500/checkpoints/0000499"
+  },
+  "comparison_panels": [
+    "SOURCE",
+    "BASE",
+    "MIXED",
+    "INSAVE"
+  ],
+  "human_review_status": "pending"
+}
