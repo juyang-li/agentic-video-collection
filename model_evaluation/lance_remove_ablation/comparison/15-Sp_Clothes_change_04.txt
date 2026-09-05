@@ -1,0 +1,4 @@
+video_id: Sp_Clothes_change_04
+category: clothes_change
+instruction: Add a classic blue denim jacket layered over his current gray t-shirt.
+panels: SOURCE | BASE | MIXED | INSAVE

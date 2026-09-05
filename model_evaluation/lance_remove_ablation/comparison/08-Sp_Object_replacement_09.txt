@@ -1,0 +1,4 @@
+video_id: Sp_Object_replacement_09
+category: object_replacement
+instruction: Replace the lamp with a glowing globe.
+panels: SOURCE | BASE | MIXED | INSAVE

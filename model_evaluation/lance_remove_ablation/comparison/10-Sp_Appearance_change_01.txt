@@ -1,0 +1,4 @@
+video_id: Sp_Appearance_change_01
+category: appearance_change
+instruction: Replace the girl's face with an elderly woman's face, making it look like her grandmother.
+panels: SOURCE | BASE | MIXED | INSAVE

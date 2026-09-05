@@ -1,0 +1,4 @@
+video_id: Sp_Appearance_change_07
+category: appearance_change
+instruction: Make the man look more elder.
+panels: SOURCE | BASE | MIXED | INSAVE

@@ -1,0 +1,4 @@
+video_id: Sp_Object_replacement_10
+category: object_replacement
+instruction: The cut kiwi fruit is replaced by a complete orange.
+panels: SOURCE | BASE | MIXED | INSAVE
