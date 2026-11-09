@@ -1,0 +1,170 @@
+{
+  "0004": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the woman's outfit to black down jacket.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0008": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the environment around the girl to a forest.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/2_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0012": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add a few flashing lightning effects in the black sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/2_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0016": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "change the material of this transparent glass cup to stainless steel.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/5_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0020": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add a mirror placed on the table and beside the vase.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_adding/8_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0024": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Move the Eiffel Tower closer.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_location_change/3_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0028": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Next to the six sausages, place two identical sausages.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_number_change/4_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0032": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Replace the lamp with a glowing globe.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_replacement/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0036": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Flames and lava are erupting from the two chimneys.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_visual_effects_adding/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0040": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Transform the scene into a vibrant, blossoming spring vista.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/2_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0044": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Overlay an aged, peeling turquoise paint texture over the right side of the white brick wall, making it look partially weathered, while keeping the rest of the scene intact.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Texture_change/8_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0048": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the weather to light rain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/1_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

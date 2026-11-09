@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CoinVE · 50 对随机审核</title>
+<style>
+@font-face{font-family:AuditCJK;src:url(data:font/woff;base64,__CJK_FONT__) format('woff');font-weight:100 900;font-display:swap}
+:root{color-scheme:dark;--bg:#101218;--panel:#1a1f28;--muted:#99a5b5;--line:#343c49;--accent:#70a9ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#edf2f8;font:15px/1.45 AuditCJK,system-ui,-apple-system,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:11px 16px;background:#131720f5;border-bottom:1px solid var(--line)}
+header strong{white-space:nowrap}.io{display:flex;gap:7px;flex-wrap:wrap;margin-left:auto}progress{width:140px;height:10px}
+button,textarea,input,select{font:inherit}button{color:inherit;background:#282f3a;border:1px solid #424c5c;border-radius:7px;padding:7px 11px;cursor:pointer}button:hover{background:#343d4a}button:disabled{opacity:.4;cursor:default}
+button[data-decision="1"].active{outline:2px solid #35a76f;background:#1c5138}button[data-decision="0"].active{outline:2px solid #df5963;background:#59272e}button[data-decision="2"].active{outline:2px solid #d3a13c;background:#58451f}
+main{max-width:1500px;margin:auto;padding:14px 16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 14px;margin-bottom:11px}.muted{color:var(--muted);font-size:13px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}.tag{border:1px solid #465163;border-radius:30px;padding:3px 9px;font-size:13px}
+ol{margin:0;padding:10px 14px 10px 34px;background:#121720;border-radius:7px;font-size:17px}li+li{margin-top:7px}.op{font-size:12px;color:var(--muted);margin-left:8px}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:12px}.videos>div{min-width:0}.video-label{display:flex;justify-content:space-between;gap:8px;margin-bottom:5px;font-weight:650;color:#cbd5e1}.video-label a{color:var(--accent);font-size:12px;font-weight:400}
+video{display:block;width:100%;max-height:55vh;background:#000;border-radius:8px}.controls,.decision,.footer{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}.controls input{min-width:70px;flex:1}.footer{justify-content:space-between;margin:14px 0 30px}
+textarea{width:100%;min-height:66px;padding:8px;margin-top:8px;border:1px solid var(--line);border-radius:7px;color:inherit;background:#10151d}.decision strong{min-width:100px}details{margin-top:10px;overflow-wrap:anywhere}.error{color:#ff9ea5}#jumpIndex{width:70px;background:#10151d;color:inherit;border:1px solid var(--line);border-radius:6px;padding:6px}
+@media(max-width:700px){.videos{grid-template-columns:1fr}.io{margin-left:0}progress{width:90px}header{gap:7px;padding:9px}main{padding:10px}ol{font-size:15px}video{max-height:40vh}.video-label{font-size:13px}}
+</style>
+</head>
+<body>
+<header><strong>CoinVE · 50 对随机审核</strong><progress id="progress" value="0" max="50"></progress><span id="progressText"></span>
+<div class="io"><button id="exportCsv">导出 CSV</button><button id="exportJson">备份 JSON</button><button id="importBtn">导入</button><input id="importFile" type="file" accept=".csv,.json" hidden></div></header>
+<main>
+<section class="panel"><div class="tags"><span class="tag">CoinVE-200K</span><span class="tag" id="sampleId"></span><span class="tag" id="taskCount"></span><span class="tag">未经过模型质量筛选</span></div>
+<ol id="instructions"></ol><details><summary class="muted">抽样范围与来源</summary><p>从不含 Stylize 的完整 metadata 中，排除此前已看过的 10 条范围内样本，以 seed 20260906 无放回均匀随机抽取 50 对。未按人物、画质、编辑效果或视频时长筛选，未根据内容换样。</p><p id="provenance" class="muted"></p></details></section>
+<section class="panel"><div class="videos">
+<div><div class="video-label"><span>SRC / 官方输入</span><a id="sourceFull" target="_blank" rel="noopener">独立查看完整视频 ↗</a></div><video id="sourceVideo" controls muted playsinline preload="metadata"></video><div class="muted" id="sourceInfo"></div></div>
+<div><div class="video-label"><span>TARGET / 完成全部编辑后的结果</span><a id="targetFull" target="_blank" rel="noopener">独立查看完整视频 ↗</a></div><video id="targetVideo" controls muted playsinline preload="metadata"></video><div class="muted" id="targetInfo"></div></div>
+</div><div class="controls"><button id="play">同步播放 / 暂停</button><input id="timeline" aria-label="同步进度" type="range" min="0" max="1" step="0.01" value="0"><span class="muted" id="timeText"></span></div>
+<p class="muted" id="alignment"></p><p id="mediaError" class="error" role="status"></p>
+<div class="decision"><strong id="reviewState">未审核</strong><button data-decision="1">1 接受</button><button data-decision="0">0 拒绝</button><button data-decision="2">2 存疑</button><button id="clear">清除结论</button><span class="muted">空格同步播放 · ← → 翻页</span></div>
+<div class="muted">整体判断：全部子指令是否完成，画质、非编辑内容和时序是否可接受。可直接跳过；未确认的预填值不计入人工通过。</div>
+<textarea id="notes" placeholder="可选备注：如第 2 条未完成、残影、背景变化、时间不对齐……"></textarea></section>
+<div class="footer"><button id="previous">← 上一条</button><span><input id="jumpIndex" aria-label="跳转编号" type="number" min="1" max="50"><button id="jump">跳转</button></span><span class="muted" id="saveState">结果保存在当前浏览器，换设备前请导出。</span><button id="next">下一条 / 跳过 →</button></div>
+</main>
+<script id="surveyData" type="application/json">__SURVEY_DATA__</script>
+<script>
+(()=>{"use strict";
+const survey=JSON.parse(document.getElementById('surveyData').textContent),items=survey.items,$=id=>document.getElementById(id),videos=[$('sourceVideo'),$('targetVideo')],key='coinve-pair-review:'+survey.survey_version;
+const empty=()=>({human_decision:1,reviewed:0,notes:'',updated_at:''});
+let state={version:survey.survey_version,index:0,reviews:Object.fromEntries(items.map(x=>[x.sample_id,empty()]))},syncing=false;
+try{const old=JSON.parse(localStorage.getItem(key));if(old&&old.version===survey.survey_version&&old.reviews){state=old;for(const x of items)state.reviews[x.sample_id]??=empty();}}catch(_){}
+let index=Math.min(Math.max(Number(state.index)||0,0),items.length-1);
+function review(){return state.reviews[items[index].sample_id];}
+function save(){state.index=index;try{localStorage.setItem(key,JSON.stringify(state));$('saveState').textContent='已自动保存 '+new Date().toLocaleTimeString();}catch(_){$('saveState').textContent='浏览器无法保存，请及时导出 CSV / JSON。';}updateDecision();}
+function updateDecision(){const r=review();document.querySelectorAll('[data-decision]').forEach(b=>b.classList.toggle('active',r.reviewed===1&&Number(b.dataset.decision)===r.human_decision));$('reviewState').textContent=r.reviewed===1?({1:'已接受',0:'已拒绝',2:'仍存疑'})[r.human_decision]:'未审核（预填 1）';const done=items.filter(x=>state.reviews[x.sample_id]?.reviewed===1).length;$('progress').max=items.length;$('progress').value=done;$('progressText').textContent=`已审核 ${done}/${items.length} · 当前 ${index+1}/${items.length}`;}
+function common(){return Math.min(...videos.map(v=>Number.isFinite(v.duration)?v.duration:Infinity));}
+function stop(){videos.forEach(v=>v.pause());}
+function seek(t){const end=common();if(!Number.isFinite(end))return;syncing=true;for(const v of videos)if(Math.abs(v.currentTime-t)>.03)v.currentTime=Math.max(0,Math.min(t,end));setTimeout(()=>syncing=false,50);}
+async function toggle(){if(videos.some(v=>!v.paused)){stop();return;}const end=common();if(!Number.isFinite(end))return;if(videos[0].currentTime>=end-.1)seek(0);try{await Promise.all(videos.map(v=>v.play()));}catch(_){$('mediaError').textContent='播放未启动，请稍后再点同步播放，或使用独立视频链接。';stop();}}
+function render(){stop();const x=items[index];$('sampleId').textContent=x.sample_id;$('taskCount').textContent=x.instructions.length+' 个编辑任务';$('instructions').replaceChildren();x.instructions.forEach((text,i)=>{const li=document.createElement('li');const ins=document.createElement('span');ins.textContent=text;li.append(ins);const op=document.createElement('span');op.className='op';op.textContent=x.operations[i]+' · '+x.objects[i];li.append(op);$('instructions').append(li);});
+$('provenance').textContent=`${survey.repo_id}@${survey.revision}；source_video_path → edited_video_path。只有起始输入和最终结果，没有中间 target。`;
+for(const [i,role] of ['source','target'].entries()){videos[i].src=x[role+'_media'];videos[i].load();$(role+'Full').href=x[role+'_media'];const m=x[role+'_info'];$(role+'Info').textContent=`${m.width}×${m.height} · ${m.fps.toFixed(3)} FPS · ${m.frames} 帧 · ${m.duration.toFixed(3)} 秒`;}
+const s=x.source_info.duration,t=x.target_info.duration;$('alignment').textContent=`同步按真实时间播放共同区间 0–${Math.min(s,t).toFixed(3)} 秒，未拉伸时间。${Math.abs(s-t)>.05?'两侧时长不同；完整片段均已保留，可用上方链接检查较长一侧的尾段。':'两侧时长一致。'}`;
+$('mediaError').textContent='';$('timeline').value=0;$('timeText').textContent='';$('notes').value=review().notes||'';$('jumpIndex').value=index+1;$('previous').disabled=index===0;$('next').disabled=index===items.length-1;updateDecision();}
+function decide(value){Object.assign(review(),{human_decision:value,reviewed:1,updated_at:new Date().toISOString()});save();}
+function move(delta){index=Math.max(0,Math.min(items.length-1,index+delta));save();render();}
+for(const v of videos){v.addEventListener('loadedmetadata',()=>{const end=common();if(Number.isFinite(end))$('timeline').max=end;});v.addEventListener('play',()=>{if(syncing)return;const other=videos.find(x=>x!==v);if(Math.abs(other.currentTime-v.currentTime)>.1)seek(v.currentTime);if(other.paused)other.play().catch(()=>stop());});v.addEventListener('pause',()=>{if(!syncing)stop();});v.addEventListener('seeking',()=>{if(!syncing)seek(v.currentTime);});v.addEventListener('error',()=>{$('mediaError').textContent='视频加载失败；请完整解压审核包，确认 media 目录与 index.html 同级。';});v.addEventListener('ended',stop);}
+videos[0].addEventListener('timeupdate',()=>{const end=common(),t=videos[0].currentTime;if(!Number.isFinite(end))return;$('timeline').value=t;$('timeText').textContent=`${t.toFixed(1)} / ${end.toFixed(1)} 秒`;if(t>=end-.035&&!syncing)stop();else if(!syncing&&!videos[0].paused&&Math.abs(t-videos[1].currentTime)>.2)seek(t);});
+$('timeline').addEventListener('input',()=>seek(Number($('timeline').value)));$('play').onclick=toggle;$('previous').onclick=()=>move(-1);$('next').onclick=()=>move(1);$('jump').onclick=()=>{const n=Number($('jumpIndex').value);if(Number.isInteger(n)&&n>=1&&n<=items.length){index=n-1;save();render();}};
+document.querySelectorAll('[data-decision]').forEach(b=>b.onclick=()=>decide(Number(b.dataset.decision)));$('clear').onclick=()=>{review().reviewed=0;review().human_decision=1;review().updated_at=new Date().toISOString();save();};$('notes').addEventListener('input',()=>{review().notes=$('notes').value;review().updated_at=new Date().toISOString();save();});
+const fields=['survey_version','sample_id','dataset','branch','instruction_count','human_decision','reviewed','notes','updated_at'];
+function rows(){return items.map(x=>({survey_version:survey.survey_version,sample_id:x.sample_id,dataset:'CoinVE-200K',branch:x.branch,instruction_count:x.instructions.length,...state.reviews[x.sample_id]}));}
+function cell(v){const s=String(v??'');return /[",\r\n]/.test(s)?'"'+s.replaceAll('"','""')+'"':s;}
+function download(name,text,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('exportCsv').onclick=()=>download(survey.survey_version+'_review.csv','\ufeff'+[fields.join(','),...rows().map(r=>fields.map(f=>cell(r[f])).join(','))].join('\r\n')+'\r\n','text/csv;charset=utf-8');
+$('exportJson').onclick=()=>download(survey.survey_version+'_review.json',JSON.stringify({version:survey.survey_version,rows:rows()},null,2),'application/json');
+function parseCsv(text){text=text.replace(/^\uFEFF/,'');const out=[];let row=[],s='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){s+='"';i++;}else if(c==='"')quoted=false;else s+=c;}else if(c==='"')quoted=true;else if(c===','){row.push(s);s='';}else if(c==='\n'){row.push(s);out.push(row);row=[];s='';}else if(c!=='\r')s+=c;}if(s||row.length){row.push(s);out.push(row);}const h=out.shift()||[];return out.filter(r=>r.some(Boolean)).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]||''])));}
+$('importBtn').onclick=()=>$('importFile').click();$('importFile').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const text=await file.text(),input=file.name.toLowerCase().endsWith('.json')?JSON.parse(text).rows:parseCsv(text);if(!Array.isArray(input))throw Error('格式不正确');let count=0;for(const r of input){if(!(r.sample_id in state.reviews))continue;const decision=Number(r.human_decision),reviewed=Number(r.reviewed);if(![0,1,2].includes(decision)||![0,1].includes(reviewed))continue;state.reviews[r.sample_id]={human_decision:decision,reviewed,notes:r.notes||'',updated_at:r.updated_at||''};count++;}save();render();$('saveState').textContent=`已按 sample_id 导入 ${count} 条记录。`;}catch(error){$('saveState').textContent='导入失败：'+error.message;}finally{e.target.value='';}});
+document.addEventListener('keydown',e=>{if(e.target.matches('textarea,input,select,button,a'))return;if(['0','1','2'].includes(e.key))decide(Number(e.key));else if(e.key==='ArrowRight'){e.preventDefault();move(1);}else if(e.key==='ArrowLeft'){e.preventDefault();move(-1);}else if(e.key===' '){e.preventDefault();toggle();}});
+window.addEventListener('beforeunload',save);render();
+})();
+</script>
+</body></html>

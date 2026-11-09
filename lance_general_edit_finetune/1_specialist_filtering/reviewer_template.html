@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Specialist Error Survey</title>
+  <style>
+    :root { color-scheme: dark; --bg:#111318; --panel:#1b1f27; --muted:#9ca6b5; --line:#323946; --good:#2f9e63; --bad:#d64d55; --warn:#c9952e; --accent:#6ea8fe; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:#edf1f7; font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { position:sticky; top:0; z-index:5; display:flex; gap:12px; align-items:center; padding:10px 16px; background:#141820f2; border-bottom:1px solid var(--line); }
+    header strong { white-space:nowrap; }
+    progress { width:220px; height:12px; }
+    button, select, input, textarea { font:inherit; }
+    button { color:#edf1f7; background:#282e39; border:1px solid #414a59; border-radius:7px; padding:7px 11px; cursor:pointer; }
+    button:hover { background:#333b48; }
+    button.active { outline:2px solid var(--accent); background:#263a58; }
+    button.good.active { outline-color:var(--good); background:#1d4b35; }
+    button.bad.active { outline-color:var(--bad); background:#55262c; }
+    button.warn.active { outline-color:var(--warn); background:#55421f; }
+    button.primary { background:#285ea8; border-color:#4380d3; }
+    main { max-width:1500px; margin:auto; padding:16px; }
+    .meta, .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px; margin-bottom:12px; }
+    .meta-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px 16px; }
+    .muted { color:var(--muted); }
+    .instruction { margin-top:10px; padding:10px; background:#12151b; border-radius:7px; white-space:pre-wrap; }
+    .tabs { display:flex; gap:8px; margin:12px 0; }
+    .tab.locked { opacity:.45; }
+    .video-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .video-card { min-width:0; }
+    video { width:100%; max-height:58vh; background:#000; border-radius:8px; }
+    .single .video-card:not(.hidden) { grid-column:1 / -1; width:100%; max-width:1000px; margin:auto; }
+    .single .video-card.hidden, .hidden { display:none !important; }
+    .status-row { display:flex; gap:8px; margin:14px 0; flex-wrap:wrap; align-items:center; }
+    .checks { display:grid; grid-template-columns:repeat(4,minmax(180px,1fr)); gap:7px 12px; }
+    label.check { display:flex; gap:7px; align-items:flex-start; padding:6px; border-radius:6px; background:#151922; }
+    .dimensions { display:grid; grid-template-columns:minmax(220px,1fr) 2fr; gap:7px 12px; align-items:center; }
+    .dimension-buttons { display:flex; gap:6px; }
+    textarea { width:100%; min-height:70px; margin-top:10px; color:#edf1f7; background:#11151c; border:1px solid var(--line); border-radius:7px; padding:8px; }
+    .footer-actions { display:flex; justify-content:space-between; gap:10px; margin:16px 0 40px; }
+    .io { display:flex; gap:7px; flex-wrap:wrap; margin-left:auto; }
+    .timer { font-variant-numeric:tabular-nums; white-space:nowrap; }
+    .pill { border:1px solid var(--line); border-radius:999px; padding:2px 8px; color:var(--muted); }
+    .notice { color:#ffd27a; }
+    @media (max-width:900px) { .meta-grid,.checks { grid-template-columns:1fr 1fr; } .video-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <strong id="title">错误模式普查</strong>
+  <progress id="progress" value="0" max="1"></progress>
+  <span id="progressText"></span>
+  <span class="timer" id="timer">00:00</span>
+  <button id="jumpBtn">跳转</button>
+  <div class="io">
+    <button id="exportCsv">导出 CSV</button>
+    <button id="exportJson">备份 JSON</button>
+    <button id="importBtn">导入</button>
+    <input id="importFile" type="file" accept=".csv,.json" hidden>
+  </div>
+</header>
+<main>
+  <section class="meta">
+    <div class="meta-grid" id="meta"></div>
+    <div class="instruction hidden" id="instruction"></div>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab" data-phase="target">1. Target 自身</button>
+    <button class="tab" data-phase="source">2. Source 自身</button>
+    <button class="tab" data-phase="pair">3. Pair + Instruction</button>
+  </nav>
+
+  <section class="panel">
+    <div id="singleVideos" class="video-grid single">
+      <div class="video-card" id="targetCard"><div class="muted">TARGET</div><video id="targetVideo" controls muted loop playsinline></video></div>
+      <div class="video-card" id="sourceCard"><div class="muted">SOURCE</div><video id="sourceVideo" controls muted loop playsinline></video></div>
+    </div>
+
+    <div class="status-row">
+      <strong>本页结论</strong>
+      <button class="status good" data-status="pass">1 通过</button>
+      <button class="status bad" data-status="hard_fail">0 明显坏</button>
+      <button class="status warn" data-status="uncertain">2 存疑</button>
+      <span class="muted">快捷键 1 / 0 / 2；空格播放暂停</span>
+    </div>
+
+    <div id="videoAudit">
+      <div class="checks" id="defectChecks"></div>
+      <div id="sourceFlags" class="checks hidden" style="margin-top:10px"></div>
+    </div>
+
+    <div id="pairAudit" class="hidden">
+      <div class="dimensions" id="dimensions"></div>
+      <h4>关系错误（可多选）</h4>
+      <div class="checks" id="pairChecks"></div>
+    </div>
+    <textarea id="notes" placeholder="可选备注；只记录无法由选项表达的关键信息"></textarea>
+  </section>
+
+  <div class="footer-actions">
+    <button id="previous">← 上一条</button>
+    <span id="saveState" class="muted">已自动保存</span>
+    <button id="nextPhase" class="primary">提交本步并继续 →</button>
+  </div>
+</main>
+
+<script id="surveyData" type="application/json">__SURVEY_DATA__</script>
+<script>
+(() => {
+  "use strict";
+  const survey = JSON.parse(document.getElementById("surveyData").textContent);
+  const items = survey.items;
+  const storageKey = `specialist-survey:${survey.survey_version}`;
+  const phases = ["target", "source", "pair"];
+  const defects = [
+    ["black_white", "黑屏/白屏"], ["exposure", "严重过曝/欠曝"],
+    ["freeze_repeat", "冻结/重复帧"], ["global_blur", "全局模糊/压缩"],
+    ["local_blur", "局部失焦/边缘软化"], ["smear_ghost", "涂抹/残影"],
+    ["repair_hole", "修补洞/漂浮碎片"], ["mask_seam", "遮罩边缘/纹理断裂"],
+    ["local_flicker", "局部闪烁/时间不稳"], ["geometry_human", "几何/人脸/人体异常"],
+    ["other", "其他视频质量问题"]
+  ];
+  const sourceFlags = [
+    ["suspected_edited", "疑似编辑生成的视频"],
+    ["edit_residual", "残留上一次编辑痕迹"],
+    ["unsuitable_input", "不适合作为当前任务输入"]
+  ];
+  const pairErrors = [
+    ["unrelated_pair", "source-target 完全错配"], ["temporal_mismatch", "时间/动作/相机轨迹错位"],
+    ["direction_wrong", "编辑方向不合理或反转"], ["target_absent", "instruction 目标不在 source"],
+    ["no_op", "no-op 或编辑不足"], ["wrong_object", "删错/加错/换错对象"],
+    ["non_edit_changed", "非编辑区域被改动"], ["physical_logic", "悬空物/姿势/交互不合理"],
+    ["multi_step", "不是 single-step"], ["other", "其他 pair 问题"]
+  ];
+  const dimensionLabels = [
+    ["same_scene", "同场景、同主体"], ["temporal_alignment", "时间与相机轨迹对应"],
+    ["target_present", "编辑目标存在于 source"], ["instruction_complete", "instruction 完成"],
+    ["content_preserved", "非编辑区域保持"], ["logical_result", "结果与交互逻辑合理"],
+    ["single_step", "原子 single-step"]
+  ];
+  let state = loadState();
+  let index = Math.min(state.index || 0, items.length - 1);
+  let phase = phases.includes(state.phase) ? state.phase : "target";
+  let enteredAt = Date.now();
+  let timerHandle = null;
+  let syncLock = false;
+
+  const $ = id => document.getElementById(id);
+  const sourceVideo = $("sourceVideo"), targetVideo = $("targetVideo");
+
+  function emptyAudit() { return {status:"", flags:[], notes:"", seconds:0, updated_at:""}; }
+  function freshState() { return {version:survey.survey_version,index:0,phase:"target",pairs:{},video_audits:{}}; }
+  function loadState() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(storageKey) || "null");
+      return parsed && parsed.version === survey.survey_version
+        ? parsed : freshState();
+    } catch (_) { return freshState(); }
+  }
+  function pairReview(item) {
+    if (!state.pairs[item.sample_id]) state.pairs[item.sample_id] = {target:emptyAudit(),source:emptyAudit(),pair:{...emptyAudit(),dimensions:{}}};
+    return state.pairs[item.sample_id];
+  }
+  function audit() { return pairReview(items[index])[phase]; }
+  function save() {
+    state.index=index; state.phase=phase;
+    localStorage.setItem(storageKey, JSON.stringify(state));
+    $("saveState").textContent = "已自动保存 " + new Date().toLocaleTimeString();
+    updateProgress();
+  }
+  function accountTime() {
+    const elapsed = Math.max(0, Math.round((Date.now()-enteredAt)/1000));
+    audit().seconds = Number(audit().seconds || 0) + elapsed;
+    enteredAt = Date.now();
+  }
+  function escapeHtml(value) { const d=document.createElement("div"); d.textContent=String(value ?? ""); return d.innerHTML; }
+  function renderChecks(container, choices, selected) {
+    container.innerHTML = choices.map(([value,label]) => `<label class="check"><input type="checkbox" value="${value}" ${selected.includes(value)?"checked":""}>${escapeHtml(label)}</label>`).join("");
+    container.querySelectorAll("input").forEach(input => input.addEventListener("change", collectAndSave));
+  }
+  function renderDimensions(values) {
+    $("dimensions").innerHTML = dimensionLabels.map(([key,label]) => {
+      const buttons = [["pass","通过"],["hard_fail","失败"],["uncertain","存疑"],["na","N/A"]]
+        .map(([v,t]) => `<button data-dimension="${key}" data-value="${v}" class="${values[key]===v?"active":""}">${t}</button>`).join("");
+      return `<div>${escapeHtml(label)}</div><div class="dimension-buttons">${buttons}</div>`;
+    }).join("");
+    $("dimensions").querySelectorAll("button").forEach(button => button.addEventListener("click", () => {
+      audit().dimensions[button.dataset.dimension] = button.dataset.value;
+      renderDimensions(audit().dimensions); save();
+    }));
+  }
+  function collectAndSave() {
+    const current = audit();
+    current.notes = $("notes").value;
+    if (phase === "pair") {
+      current.flags = [...$("pairChecks").querySelectorAll("input:checked")].map(x=>x.value);
+    } else {
+      current.flags = [...$("defectChecks").querySelectorAll("input:checked")].map(x=>x.value);
+      if (phase === "source") current.source_flags = [...$("sourceFlags").querySelectorAll("input:checked")].map(x=>x.value);
+      const item = items[index], videoId = item[`${phase}_video_id`];
+      state.video_audits[videoId] = {status:current.status,flags:[...current.flags],notes:current.notes};
+    }
+    current.updated_at = new Date().toISOString(); save();
+  }
+  function loadReusableVideoAudit(item, role) {
+    const current = pairReview(item)[role];
+    if (current.status) return;
+    const reused = state.video_audits[item[`${role}_video_id`]];
+    if (reused) Object.assign(current, JSON.parse(JSON.stringify(reused)));
+  }
+  function render() {
+    const item=items[index]; loadReusableVideoAudit(item,"target"); loadReusableVideoAudit(item,"source");
+    const current=audit(); enteredAt=Date.now();
+    $("meta").innerHTML = [
+      ["编号",`${index+1} / ${items.length}`],["分支",item.branch],["方向",item.direction],
+      ["任务",item.operation],["Sample ID",item.sample_id]
+    ].map(([k,v])=>`<div><span class="muted">${k}</span><br>${escapeHtml(v)}</div>`).join("");
+    $("instruction").textContent=item.instruction;
+    $("instruction").classList.toggle("hidden",phase!=="pair");
+    sourceVideo.src=item.source_media; targetVideo.src=item.target_media;
+    $("sourceCard").classList.toggle("hidden",phase==="target");
+    $("targetCard").classList.toggle("hidden",phase==="source");
+    $("singleVideos").classList.toggle("single",phase!=="pair");
+    $("videoAudit").classList.toggle("hidden",phase==="pair");
+    $("pairAudit").classList.toggle("hidden",phase!=="pair");
+    document.querySelectorAll(".tab").forEach((button,i)=>{
+      button.classList.toggle("active",button.dataset.phase===phase);
+      button.classList.toggle("locked",i>phases.indexOf(phase)+1);
+    });
+    document.querySelectorAll(".status").forEach(b=>b.classList.toggle("active",b.dataset.status===current.status));
+    renderChecks($("defectChecks"),defects,current.flags||[]);
+    $("sourceFlags").classList.toggle("hidden",phase!=="source");
+    if (phase==="source") renderChecks($("sourceFlags"),sourceFlags,current.source_flags||[]);
+    if (phase==="pair") { renderChecks($("pairChecks"),pairErrors,current.flags||[]); renderDimensions(current.dimensions||{}); }
+    $("notes").value=current.notes||"";
+    $("nextPhase").textContent=phase==="pair"?"完成本条并进入下一条 →":"提交本步并继续 →";
+    updateProgress();
+  }
+  function setStatus(value) { accountTime(); audit().status=value; collectAndSave(); render(); }
+  function advance() {
+    collectAndSave(); accountTime();
+    if (!audit().status) { alert("请先选择本页结论：通过、明显坏或存疑。"); return; }
+    const p=phases.indexOf(phase);
+    if (p<phases.length-1) phase=phases[p+1];
+    else if (index<items.length-1) { index++; phase="target"; }
+    save(); render();
+  }
+  function previous() {
+    collectAndSave(); accountTime();
+    const p=phases.indexOf(phase);
+    if (p>0) phase=phases[p-1];
+    else if (index>0) { index--; phase="pair"; }
+    save(); render();
+  }
+  function updateProgress() {
+    const completed=items.filter(item=>{
+      const r=state.pairs[item.sample_id]; return r&&r.target.status&&r.source.status&&r.pair.status;
+    }).length;
+    $("progress").max=items.length; $("progress").value=completed;
+    $("progressText").textContent=`${completed}/${items.length} 完成`;
+    const seconds=Object.values(state.pairs).reduce((sum,r)=>sum+phases.reduce((s,p)=>s+Number(r[p]?.seconds||0),0),0);
+    $("timer").textContent=new Date(seconds*1000).toISOString().slice(11,19);
+  }
+  function download(name,text,type) {
+    const link=document.createElement("a"); link.href=URL.createObjectURL(new Blob([text],{type})); link.download=name; link.click(); setTimeout(()=>URL.revokeObjectURL(link.href),1000);
+  }
+  function csvCell(value) { const s=String(value??""); return /[",\n]/.test(s)?`"${s.replaceAll('"','""')}"`:s; }
+  const exportFields=["survey_version","sample_id","dataset","branch","direction","operation","target_status","target_defects","target_notes","target_seconds","source_status","source_defects","source_flags","source_notes","source_seconds","pair_status","pair_errors",...dimensionLabels.map(x=>`pair_${x[0]}`),"pair_notes","pair_seconds","updated_at"];
+  function reviewRows() { return items.map(item=>{ const r=pairReview(item); const row={survey_version:survey.survey_version,sample_id:item.sample_id,dataset:item.dataset,branch:item.branch,direction:item.direction,operation:item.operation,target_status:r.target.status,target_defects:(r.target.flags||[]).join("|"),target_notes:r.target.notes,target_seconds:r.target.seconds,source_status:r.source.status,source_defects:(r.source.flags||[]).join("|"),source_flags:(r.source.source_flags||[]).join("|"),source_notes:r.source.notes,source_seconds:r.source.seconds,pair_status:r.pair.status,pair_errors:(r.pair.flags||[]).join("|"),pair_notes:r.pair.notes,pair_seconds:r.pair.seconds,updated_at:r.pair.updated_at||r.source.updated_at||r.target.updated_at||""}; dimensionLabels.forEach(([key])=>row[`pair_${key}`]=r.pair.dimensions?.[key]||""); return row; }); }
+  function exportCsv() { const rows=reviewRows(); const text=[exportFields.join(","),...rows.map(r=>exportFields.map(f=>csvCell(r[f])).join(","))].join("\n")+"\n"; download(`${survey.survey_version}_review.csv`,text,"text/csv;charset=utf-8"); }
+  function parseCsv(text) { const rows=[]; let row=[],cell="",quoted=false; for(let i=0;i<text.length;i++){ const c=text[i]; if(quoted){ if(c==='"'&&text[i+1]==='"'){cell+='"';i++;} else if(c==='"')quoted=false; else cell+=c; } else if(c==='"')quoted=true; else if(c===','){row.push(cell);cell="";} else if(c==='\n'){row.push(cell);rows.push(row);row=[];cell="";} else if(c!=='\r')cell+=c; } if(cell||row.length){row.push(cell);rows.push(row);} const headers=rows.shift()||[]; return rows.filter(r=>r.length).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]||""]))); }
+  function clone(value) { return JSON.parse(JSON.stringify(value)); }
+  function reviewHasData(review) { return phases.some(name=>{ const audit=review?.[name]; return audit&&(audit.status||audit.notes||Number(audit.seconds||0)||(audit.flags||[]).length||(audit.source_flags||[]).length||Object.values(audit.dimensions||{}).some(Boolean)); }); }
+  function mergeImportedState(parsed) {
+    if (!parsed || typeof parsed!=="object") throw new Error("JSON 不是有效的审阅备份");
+    const itemById=new Map(items.map(item=>[item.sample_id,item]));
+    const knownVideos=new Set(items.flatMap(item=>[item.source_video_id,item.target_video_id]));
+    const importedPairs=parsed.pairs&&typeof parsed.pairs==="object"?parsed.pairs:{};
+    const importedVideos=parsed.video_audits&&typeof parsed.video_audits==="object"?parsed.video_audits:{};
+    let pairCount=0,videoCount=0;
+    for(const [sampleId,review] of Object.entries(importedPairs)){
+      if(!itemById.has(sampleId)||!review||typeof review!=="object"||!reviewHasData(review))continue;
+      state.pairs[sampleId]=clone(review); pairCount++;
+    }
+    for(const [videoId,review] of Object.entries(importedVideos)){
+      if(!knownVideos.has(videoId)||!review||typeof review!=="object")continue;
+      state.video_audits[videoId]=clone(review); videoCount++;
+    }
+    state.version=survey.survey_version;
+    const importedIndex=Number(parsed.index);
+    if(Number.isInteger(importedIndex)&&importedIndex>=0&&importedIndex<items.length)index=importedIndex;
+    if(phases.includes(parsed.phase))phase=parsed.phase;
+    state.index=index; state.phase=phase;
+    save(); render();
+    return {pairCount,videoCount,sourceVersion:String(parsed.version||"未知版本")};
+  }
+  function importRows(rows) { const itemById=new Map(items.map(x=>[x.sample_id,x])); let imported=0; for(const row of rows){ const item=itemById.get(row.sample_id); if(!item)continue; if(!row.target_status&&!row.source_status&&!row.pair_status)continue; const r=pairReview(item); r.target={...r.target,status:row.target_status||"",flags:(row.target_defects||"").split("|").filter(Boolean),notes:row.target_notes||"",seconds:Number(row.target_seconds||0)}; r.source={...r.source,status:row.source_status||"",flags:(row.source_defects||"").split("|").filter(Boolean),source_flags:(row.source_flags||"").split("|").filter(Boolean),notes:row.source_notes||"",seconds:Number(row.source_seconds||0)}; r.pair={...r.pair,status:row.pair_status||"",flags:(row.pair_errors||"").split("|").filter(Boolean),notes:row.pair_notes||"",seconds:Number(row.pair_seconds||0),dimensions:{}}; dimensionLabels.forEach(([key])=>r.pair.dimensions[key]=row[`pair_${key}`]||""); for(const role of ["source","target"]){ state.video_audits[item[`${role}_video_id`]]={status:r[role].status,flags:[...r[role].flags],notes:r[role].notes}; } imported++; } state.version=survey.survey_version; save(); render(); return imported; }
+
+  document.querySelectorAll(".status").forEach(b=>b.addEventListener("click",()=>setStatus(b.dataset.status)));
+  document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{ const requested=b.dataset.phase; const r=pairReview(items[index]); if(requested==="source"&&!r.target.status){alert("请先完成 Target 自身审阅。");return;} if(requested==="pair"&&(!r.target.status||!r.source.status)){alert("请先完成 Target 和 Source 自身审阅。");return;} accountTime(); phase=requested; save(); render(); }));
+  $("notes").addEventListener("input",collectAndSave); $("nextPhase").addEventListener("click",advance); $("previous").addEventListener("click",previous);
+  $("jumpBtn").addEventListener("click",()=>{ const raw=prompt(`跳转到 1-${items.length}`,String(index+1)); const n=Number(raw); if(Number.isInteger(n)&&n>=1&&n<=items.length){accountTime();index=n-1;phase="target";save();render();} });
+  $("exportCsv").addEventListener("click",exportCsv); $("exportJson").addEventListener("click",()=>download(`${survey.survey_version}_backup.json`,JSON.stringify(state,null,2),"application/json"));
+  $("importBtn").addEventListener("click",()=>$("importFile").click()); $("importFile").addEventListener("change",async event=>{ const file=event.target.files[0]; if(!file)return; try { const text=await file.text(); if(file.name.toLowerCase().endsWith(".json")){ const result=mergeImportedState(JSON.parse(text)); alert(`已从 ${result.sourceVersion} 合并 ${result.pairCount} 条 pair、${result.videoCount} 条视频审核；当前版本为 ${survey.survey_version}。`); } else { const count=importRows(parseCsv(text)); alert(`已按 sample_id 合并 ${count} 条非空 CSV 审核。`); } } catch(error) { alert("导入失败："+(error?.message||error)); } finally { event.target.value=""; } });
+  function sync(primary,secondary,event){ if(syncLock)return; syncLock=true; if(event==="play")secondary.play().catch(()=>{}); if(event==="pause")secondary.pause(); if(event==="seek"&&Math.abs(primary.currentTime-secondary.currentTime)>.08)secondary.currentTime=primary.currentTime; setTimeout(()=>syncLock=false,0); }
+  [sourceVideo,targetVideo].forEach((video,_,all)=>{ const other=video===sourceVideo?targetVideo:sourceVideo; video.addEventListener("play",()=>phase==="pair"&&sync(video,other,"play")); video.addEventListener("pause",()=>phase==="pair"&&sync(video,other,"pause")); video.addEventListener("seeking",()=>phase==="pair"&&sync(video,other,"seek")); });
+  document.addEventListener("keydown",event=>{ if(event.target.matches("textarea,input"))return; if(event.key==="1")setStatus("pass"); else if(event.key==="0")setStatus("hard_fail"); else if(event.key==="2")setStatus("uncertain"); else if(event.key===" "){event.preventDefault(); const v=phase==="source"?sourceVideo:targetVideo; v.paused?v.play():v.pause();} else if(event.key==="ArrowRight")advance(); else if(event.key==="ArrowLeft")previous(); });
+  timerHandle=setInterval(updateProgress,1000); window.addEventListener("beforeunload",()=>{collectAndSave();accountTime();save();clearInterval(timerHandle);});
+  render();
+})();
+</script>
+</body>
+</html>

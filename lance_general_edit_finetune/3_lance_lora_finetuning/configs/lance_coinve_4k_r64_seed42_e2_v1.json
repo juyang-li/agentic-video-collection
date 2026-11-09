@@ -1,0 +1,263 @@
+{
+  "schema_version": "datamake_lance_one_step_x0_lora_profile_v3",
+  "profile_id": "lance_coinve_4k_r64_seed42_e2_v1",
+  "created_at": "2026-09-09",
+  "status": "training_authorized",
+  "training_authorized": true,
+  "source": {
+    "lance_commit": "9717d9160ed16fedfdad5ce39ccbc6c9d69695e0",
+    "base_revision": "7395315758865e6f56ab87ad06a88c7ac172f056d",
+    "base_policy": "official_Lance_3B_Video_plus_fresh_zero_output_lora",
+    "inherit_any_finetuned_weights": false,
+    "senior_checkpoint_used": false,
+    "runtime": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/runtime/lance"
+  },
+  "data": {
+    "train_chain_manifest": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_coinve_4k_r64_seed42_e2_v1/data/manifest.json",
+    "train_chain_manifest_sha256": "0b98a765e8c0597f9e471285f03f00a68f29c5e107aae66438cfd784dbf90522",
+    "train_config": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_coinve_4k_r64_seed42_e2_v1/data/lance_dataset.yaml",
+    "train_config_sha256": "2a7afca17901e8accfb608c8a0f39962cd4b750786586ddbb9fb9b98e4a6517a",
+    "training_schedule": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_coinve_4k_r64_seed42_e2_v1/data/training_schedule.csv",
+    "training_schedule_sha256": "21ec4d6da7166d8516a6b50bfd09bd10389b47500c7c8f862abd190867c97723",
+    "history_mode": "one_step_x0_history",
+    "schedule_seed": 42,
+    "train_pairs": 3601,
+    "validation_pairs": 195,
+    "test_pairs": 204,
+    "crop_seconds": 5.0,
+    "sample_fps": 12,
+    "resolution": 480,
+    "horizontal_flip": false,
+    "prompt_rewrite": false
+  },
+  "run": {
+    "run_name": "lance_coinve_4k_r64_seed42_e2_v1",
+    "output_root": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/runs",
+    "epochs": 2,
+    "optimizer_steps_per_epoch": 451,
+    "total_steps": 902,
+    "gradient_accumulation_steps": 2,
+    "global_pairs_per_optimizer_step": 8,
+    "gpus": 4,
+    "global_seed": 42
+  },
+  "model": {
+    "model_path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/runtime/lance/downloads/Lance_3B_Video",
+    "model_safetensors_sha256": "7f0550e1d1511b29a4740a67c1e18e176302a4ecb3177c8a5850ff5fe6447c25",
+    "vit_path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/runtime/lance/downloads/Qwen2.5-VL-ViT",
+    "vit_type": "qwen_2_5_vl_original",
+    "llm_qk_norm": true,
+    "llm_qk_norm_und": true,
+    "llm_qk_norm_gen": true,
+    "tie_word_embeddings": false,
+    "latent_patch_size": [
+      1,
+      1,
+      1
+    ],
+    "max_num_frames": 121,
+    "max_latent_size": 64,
+    "vit_max_num_patch_per_side": 70,
+    "connector_act": "gelu_pytorch_tanh",
+    "interpolate_pos": false,
+    "visual_gen": true,
+    "visual_und": true,
+    "vae_model_type": "wan",
+    "copy_init_moe": true,
+    "load_from_lance_checkpoint": true,
+    "init_from_vlm_checkpoint": false,
+    "precision": "bf16"
+  },
+  "lora": {
+    "implementation": "native_torch_no_peft",
+    "rank": 64,
+    "alpha": 64.0,
+    "dropout": 0.05,
+    "scaling": 1.0,
+    "target_scope": "generation_experts",
+    "target_modules": 252,
+    "target_signature_sha256": "4735391ebe7190b9b968c9912bc623af906e353a8105da461f40ad250252917f",
+    "trainable_parameters": 119734272,
+    "adapter_weight_dtype": "float32"
+  },
+  "freeze": {
+    "all_base_parameters": true,
+    "understanding_experts": true,
+    "generation_expert_base_weights": true,
+    "generation_io": true,
+    "vit": true,
+    "vae": true,
+    "token_embeddings_and_lm_head": true,
+    "only_lora_A_and_lora_B_trainable": true,
+    "ema": false
+  },
+  "rollout": {
+    "online_during_training": false,
+    "method": "training_forward_pred_x0",
+    "reuse_training_forward": true,
+    "diffusion_steps": 0,
+    "text_cfg": 1.0,
+    "timestep_shift": 4.0,
+    "cfg_interval": [
+      0.4,
+      1.0
+    ],
+    "cfg_renorm_min": 0.0,
+    "cfg_renorm_type": "global",
+    "use_kv_cache": false
+  },
+  "loss": {
+    "type": "lance_native_flow_matching_latent_mse",
+    "mse_weight": 1.0,
+    "ce_weight": 0.0,
+    "edit_region_weighting": false
+  },
+  "condition_dropout": {
+    "text": 0.0,
+    "vit": 0.0,
+    "vae": 0.0
+  },
+  "optimization": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "minimum_learning_rate": 1e-05,
+    "scheduler": "cosine",
+    "warmup_steps": 45,
+    "cosine_cycles": 0.5,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "epsilon": 1e-15,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "timestep_shift": 4.0
+  },
+  "distributed": {
+    "nodes": 1,
+    "gpus_per_node": 4,
+    "sharding_strategy": "HYBRID_SHARD",
+    "num_replicate": 1,
+    "num_shard": 4,
+    "cpu_offload": false,
+    "resume_requires_same_world_size": true
+  },
+  "checkpoint": {
+    "format_version": 5,
+    "completed_optimizer_step_interval": 50,
+    "milestone_steps": [
+      226,
+      451,
+      677,
+      902
+    ],
+    "milestone_epochs": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "selection_candidate_steps": [
+      451,
+      677,
+      902
+    ],
+    "fallback_only_steps": [
+      226
+    ],
+    "keep_last_complete": 4,
+    "adapter_only_model_weights": true,
+    "store_optimizer": true,
+    "store_scheduler": true,
+    "store_trainer_cursor": true,
+    "store_rng_per_rank": true
+  },
+  "wandb": {
+    "mode": "online",
+    "entity": "ucantseeit1000-xi-an-jiaotong-university-",
+    "project": "lance_general_edit_4k",
+    "run_id": "lance-coinve-4k-r64-seed42-e2-v1",
+    "group": "coinve-ablation-r64-seed42",
+    "job_type": "formal-train",
+    "tags": [
+      "general-edit",
+      "coinve",
+      "4k",
+      "multitask",
+      "r64",
+      "seed42",
+      "2epoch",
+      "4xh200"
+    ],
+    "log_every_steps": 1,
+    "upload_model": false,
+    "upload_media": false,
+    "upload_code": false
+  },
+  "evaluation": {
+    "funnel_version": "adaptive_validation_v1",
+    "screen": {
+      "split": "validation",
+      "samples": 48,
+      "samples_per_branch": 8,
+      "checkpoint_steps": [
+        451,
+        677,
+        902
+      ],
+      "checkpoint_epochs": [
+        1.0,
+        1.5,
+        2.0
+      ],
+      "include_base": false,
+      "include_half_epoch": false
+    },
+    "promotion": {
+      "action": "expand_numeric_winner_only_to_full_validation",
+      "tie_breaker": "earlier_checkpoint_step",
+      "full_validation_samples": 195,
+      "remaining_after_screen": 147
+    },
+    "clear_winner_rule": {
+      "metric": "six_branch_macro_average",
+      "comparison": "paired_bootstrap",
+      "confidence": 0.95,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 42,
+      "lower_bound_must_exceed": 0.0,
+      "must_beat_every_other_candidate": true,
+      "minimum_branch_mean_wins": 5
+    },
+    "human_review": {
+      "default_required": false,
+      "trigger": "optional_audit_only_not_a_selection_gate",
+      "samples_min": 24,
+      "samples_max": 36
+    },
+    "final_evaluation": {
+      "internal_test_samples": 204,
+      "internal_test_models": [
+        "winner"
+      ],
+      "omni_edit_spatial_samples": 240,
+      "omni_edit_models_to_generate_here": [
+        "winner"
+      ],
+      "base_omni_edit_source": "reuse_external_lance_base_session"
+    },
+    "inference_steps": 30,
+    "timestep_shift": 3.5,
+    "cfg_text_scale": 4.0,
+    "seed": 42,
+    "judge_model": "gemini-3.8-flash",
+    "judge_thinking_level": "low",
+    "judge_media_resolution": "MEDIA_RESOLUTION_LOW",
+    "benchmark": "IVEBench",
+    "comparison_checkpoint_step": 677,
+    "comparison_models": [
+      "single4k_step677",
+      "coinve4k_step677",
+      "mixed2k2k_step677"
+    ],
+    "protocol": "all three unordered model pairs, both A/B orders, blinded labels"
+  }
+}

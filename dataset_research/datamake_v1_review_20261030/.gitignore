@@ -1,0 +1,4 @@
+metadata/*.gz
+metadata/.baidu*
+review/
+__pycache__/

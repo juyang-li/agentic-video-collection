@@ -1,0 +1,65 @@
+D1:
+  datamake_multiturn_v2v_local:
+    is_mandatory: true
+    data_type: video
+    dataset_names:
+      coinve_4k_train:
+        data_dir:
+        - /scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_coinve_4k_r64_seed42_e2_v1/data/train_index.parquet
+    dataset_type: datamake_multiturn_video2video
+    datamake_record_level: chain
+    datamake_history_mode: online_rollout_full
+    datamake_chain_manifest: /scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_coinve_4k_r64_seed42_e2_v1/data/manifest.json
+    media_root: /
+    is_image: false
+    task_type: tv2v
+    sample_task: edit
+    target_modality: video
+    vision_cond_type:
+    - vit
+    - vae_Nsplit
+    text_template: true
+    raw_bytes_input: false
+    video_frame_sampler_args:
+      type: multi_clips
+      params:
+        temporal: 4
+        sample_fps: 12
+        truncate: false
+        max_duration: 5.0
+        length_type: kn+1
+        assert_seconds: true
+    video_transform_args:
+      resolution: 480
+      mode: bucket
+      divisible_crop_size: 16
+      stride_spatial: 16
+      stride_temporal: 4
+      aspect_ratios:
+      - '21:9'
+      - '16:9'
+      - '4:3'
+      - '1:1'
+      - '3:4'
+      - '9:16'
+      mean: 0.5
+      std: 0.5
+    vit_video_transform_args:
+      resolution: 448
+      mode: bucket
+      divisible_crop_size: 28
+      aspect_ratios:
+      - '21:9'
+      - '16:9'
+      - '4:3'
+      - '1:1'
+      - '3:4'
+      - '9:16'
+      mean:
+      - 0.48145466
+      - 0.4578275
+      - 0.40821073
+      std:
+      - 0.26862954
+      - 0.26130258
+      - 0.27577711

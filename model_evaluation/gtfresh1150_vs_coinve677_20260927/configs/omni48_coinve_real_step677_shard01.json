@@ -1,0 +1,170 @@
+{
+  "0002": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Smooth the face to make the person look like a teenager, maintaining the original facial structure.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/5_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0006": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "change the rabbit's color to white",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/10_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0010": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Transform the scene into a Japanese Ukiyo-e woodblock print (e.g., in the style of Hokusai).",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/10_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0014": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Reconstruct the flat foreground rice paddies into a complex system of beautifully sculpted, multi-tiered rice terraces that cascade down a newly formed hill slope towards the viewer. These terraces should capture patches of water and green rice, creating a winding, layered pattern. Retain the distant palm trees and hills.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/7_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0018": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Apart from the candle lit by the person in the video, the other candles have been extinguished.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_State_change/7_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0022": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Rotate the gray sofa 180 degrees so it faces the dining area instead of the camera.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_direction_change/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0026": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Swap the woman and the man, keeping them doing what they are doing.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_location_swap/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0030": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Completely remove the entire tractor, its front weight, and the attached orange tillage equipment from the field.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_removal/5_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0034": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the man to batman style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_style_change/5_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0038": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Convert the scene to a cool, moonlit evening, replacing the sun with a high silver-blue full moon on the right. Transform the sky to a deep indigo with stars, and the ocean to a matching indigo with shimmering foam. Maintain the composition, but silhouette the surfer and rocks with cool-toned rim lighting. All details and text on the surfboard must be eliminated for a clean silhouette.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/8_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0042": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Replace the antelope's spiral horns with a set of palmate (palm-shaped) antlers, while keeping the antelope's body and face unchanged.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/6_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0046": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the time to mid afternoon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/1_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

@@ -63,6 +63,10 @@ def make_session() -> requests.Session:
         allowed_methods=("HEAD", "GET"),
     )
     session = requests.Session()
+    # Compute nodes can reach Hugging Face directly.  The cluster HTTP proxy is
+    # faster for HEAD resolution but throttles large Range responses heavily;
+    # direct sessions are substantially faster and avoid proxy stream resets.
+    session.trust_env = False
     session.headers.update({"Accept-Encoding": "identity"})
     session.mount("https://", HTTPAdapter(max_retries=retry, pool_maxsize=2))
     return session
@@ -108,42 +112,77 @@ class RemoteTar:
     def __init__(self, shard_path: str) -> None:
         self.shard_path = shard_path
         self.session = make_session()
-        encoded_path = quote(shard_path, safe="/")
+        self.refresh()
+
+    def refresh(self) -> None:
+        """Renew an expiring CDN location while retaining the pinned file version."""
+        encoded_path = quote(self.shard_path, safe="/")
         resolver_url = (
             f"https://huggingface.co/datasets/{REPO_ID}/resolve/"
-            f"{REVISION}/{encoded_path}?download=true"
+            f"{REVISION}/{encoded_path}?download=true&resolve_timestamp={time.time_ns()}"
         )
-        response = self.session.head(
-            resolver_url, allow_redirects=True, timeout=(30, 60)
-        )
-        response.raise_for_status()
-        self.url = response.url
-        self.size = int(response.headers["Content-Length"])
-        if response.headers.get("Accept-Ranges", "").lower() != "bytes":
-            raise RuntimeError(f"server does not advertise byte ranges: {shard_path}")
+        response = None
+        try:
+            response = self.session.head(resolver_url, allow_redirects=True,
+                headers={"Cache-Control":"no-cache"}, timeout=(30,60))
+            if response.status_code >= 400:
+                raise RuntimeError(f"shard resolver HTTP failure: status={response.status_code}")
+            size = int(response.headers["Content-Length"])
+            if hasattr(self,"size") and self.size != size:
+                raise RuntimeError("pinned shard size changed during URL refresh")
+            if response.headers.get("Accept-Ranges", "").lower() != "bytes":
+                raise RuntimeError(f"server does not advertise byte ranges: {self.shard_path}")
+            self.url=response.url;self.size=size;self._resolved_at=time.monotonic()
+        except requests.RequestException as error:
+            raise RuntimeError("shard resolver network failure: "+type(error).__name__) from None
+        finally:
+            if response is not None:response.close()
 
     def read_range(self, start: int, end: int) -> bytes:
-        response = self.session.get(
-            self.url,
-            headers={"Range": f"bytes={start}-{end}"},
-            stream=True,
-            timeout=(30, 120),
-        )
-        try:
-            if response.status_code != 206:
-                raise RuntimeError(
-                    f"range request failed for {self.shard_path}: "
-                    f"status={response.status_code}"
-                )
-            data = response.content
-        finally:
-            response.close()
         expected = end - start + 1
-        if len(data) != expected:
-            raise RuntimeError(
-                f"short range for {self.shard_path}: expected={expected} got={len(data)}"
-            )
-        return data
+        last_error: Exception | None = None
+        last_status = None
+        for attempt in range(1, 6):
+            response = None
+            try:
+                if time.monotonic()-self._resolved_at > 45*60:
+                    self.refresh()
+                response = self.session.get(
+                    self.url,
+                    headers={"Range": f"bytes={start}-{end}"},
+                    stream=True,
+                    timeout=(30, 120),
+                )
+                last_status=response.status_code
+                if response.status_code in (401,403) and attempt < 5:
+                    self.refresh()
+                    continue
+                if response.status_code != 206:
+                    raise RuntimeError(
+                        f"range request failed for {self.shard_path}: "
+                        f"status={response.status_code}"
+                    )
+                data = response.content
+                if len(data) != expected:
+                    raise RuntimeError(
+                        f"short range for {self.shard_path}: expected={expected} got={len(data)}"
+                    )
+                return data
+            except (requests.RequestException, RuntimeError) as error:
+                # Retrying status codes in HTTPAdapter does not cover a stream
+                # that is truncated while response.content is being consumed.
+                last_error = error
+                if attempt < 5:
+                    time.sleep(min(8.0, 0.5 * 2 ** (attempt - 1)))
+            finally:
+                if response is not None:
+                    response.close()
+        failure = RuntimeError(
+            f"range transfer failed after retries for {self.shard_path}: "
+            f"{type(last_error).__name__}; status={last_status}"
+        )
+        failure.http_status=last_status
+        raise failure
 
     def close(self) -> None:
         self.session.close()
@@ -171,19 +210,50 @@ def scan_regular_headers(data: bytes, base_offset: int) -> list[TarEntry]:
     return entries
 
 
-def locate_member(remote: RemoteTar, target: str) -> tuple[TarEntry, int]:
+def locate_member(remote: RemoteTar, target: str,
+                  known_entries: dict[str, TarEntry] | None = None,
+                  walk_small_ranges: bool = True) -> tuple[TarEntry, int]:
+    """Locate a member, optionally retaining validated headers across lookups."""
+    if known_entries is not None and target in known_entries:
+        return known_entries[target], 0
     low = 0
     high = remote.size
     transferred = 0
+    if known_entries:
+        lower = [e for n,e in known_entries.items() if n < target]
+        upper = [e for n,e in known_entries.items() if n > target]
+        if lower:
+            low = max(e.next_offset for e in lower)
+        if upper:
+            high = min(e.offset for e in upper)
 
     for _ in range(48):
         span = high - low
         if span <= 0:
             break
         if span <= FINAL_SCAN_SIZE:
+            # A known lower entry ends exactly at the next tar/PAX header.
+            # Follow those headers instead of transferring intervening MP4s.
+            if known_entries is not None and walk_small_ranges:
+                cursor=low
+                for _ in range(64):
+                    if cursor>=high:break
+                    stop=min(high,cursor+64*1024)
+                    piece=remote.read_range(cursor,stop-1);transferred+=len(piece)
+                    found=scan_regular_headers(piece,cursor)
+                    if not found:break # Large/unknown extension: use the existing scan fallback.
+                    known_entries.update((e.name,e) for e in found)
+                    for entry in found:
+                        if entry.name==target:return entry,transferred
+                        if entry.name>target:raise FileNotFoundError(f"member not found in {remote.shard_path}: {target}")
+                    cursor=found[-1].next_offset
+                low=cursor
+                if low>=high:break
             data = remote.read_range(low, high - 1)
             transferred += len(data)
             entries = scan_regular_headers(data, low)
+            if known_entries is not None:
+                known_entries.update((e.name,e) for e in entries)
             for entry in entries:
                 if entry.name == target:
                     return entry, transferred
@@ -202,6 +272,8 @@ def locate_member(remote: RemoteTar, target: str) -> tuple[TarEntry, int]:
             data = remote.read_range(start, end - 1)
             transferred += len(data)
             entries = scan_regular_headers(data, start)
+            if known_entries is not None:
+                known_entries.update((e.name,e) for e in entries)
             probe_size *= 2
         if not entries:
             raise RuntimeError(
