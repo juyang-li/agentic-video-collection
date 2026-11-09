@@ -1,0 +1,170 @@
+{
+  "0003": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Replace the coat and black turtleneck with a vibrant yellow puffer jacket.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/10_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0007": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "The road and railing overlook a dramatic, clear alpine mountain lake. Behind the lake rise massive, snow-capped peaks and rocky mountains under a crisp, clear sky. The water is turquoise and crystal clear, reflecting the mountains. Distant small chalets replace the city skyline. All figures and the road remain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/7_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0011": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add mist to the lake surface to create a mysterious effect.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/3_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0015": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Transform the metal frame of the bicycles into wood material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/2_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0019": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add a lit candle on the table.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_adding/2_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0023": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Move the ostrich to the far end of the screen.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_location_change/7_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0027": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add three more camels eating grass together with the two camels already there.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_number_change/6_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0031": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the white swan in the video with a grey duck.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_replacement/2_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0035": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Add a burned effect to the woman's hair in the video.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_visual_effects_adding/4_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0039": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Shift the tone to a warm caramel hue, recreating a tranquil moment of falling leaves and abundant harvest.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/5_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0043": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Modify the turtle's shell texture to look like a traditional Chinese blue and white porcelain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Texture_change/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0047": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the weather in the scene to overcast with scattered clouds.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/3_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

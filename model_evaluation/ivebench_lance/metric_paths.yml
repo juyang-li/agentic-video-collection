@@ -1,0 +1,22 @@
+motion_smoothness:
+  config: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics/quality/amt/cfgs/AMT-G.yaml"
+  checkpoint: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/amt/amt-g.pth"
+
+vtss:
+  checkpoint: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/vtss/infer.pth"
+
+motion_fidelity:
+  checkpoint: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/cotracker/baseline_offline.pth"
+
+semantic_fidelity:
+  model_path: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/videoclip/VideoCLIP-XL-v2.bin"
+
+overall_semantic_consistency:
+  model_path: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/videoclip/VideoCLIP-XL-v2.bin"
+
+phrase_semantic_consistency:
+  model_path: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/videoclip/VideoCLIP-XL-v2.bin"
+
+quantity_accuracy:
+  config: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics/compliance/groundingdino/config/GroundingDINO_SwinB_cfg.py"
+  checkpoint: "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/models/groundingdino/groundingdino_swinb_cogcoor.pth"

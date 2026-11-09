@@ -1,0 +1,12 @@
+# Track only maintained source and handoff documents, never generated datasets.
+/*
+!/.gitignore
+!/README.md
+!/HANDOFF_FOR_COLLEAGUE.txt
+!/dataset_reader.py
+!/read_example.py
+!/scripts/
+!/jobs/
+!/archive/
+/archive/*
+!/archive/README.md

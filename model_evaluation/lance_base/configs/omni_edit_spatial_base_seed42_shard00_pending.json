@@ -1,0 +1,1864 @@
+{
+  "0108": {
+    "interleave_array": [
+      "Overlay an aged, peeling turquoise paint texture over the right side of the white brick wall, making it look partially weathered, while keeping the rest of the scene intact.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Texture_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0109": {
+    "interleave_array": [
+      "Modify the turtle's shell texture to look like a traditional Chinese blue and white porcelain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Texture_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0110": {
+    "interleave_array": [
+      "Give the elephants a vibrant graffiti art texture.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Texture_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0111": {
+    "interleave_array": [
+      "change the balloons color to white",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0112": {
+    "interleave_array": [
+      "turn the yellow flower to purple",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/2_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0113": {
+    "interleave_array": [
+      "turn one of the flower's petal to pink",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0114": {
+    "interleave_array": [
+      "change the woman's t-shit to green",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0115": {
+    "interleave_array": [
+      "change the color of watermelon flesh to yellow",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0116": {
+    "interleave_array": [
+      "turn this string of grapes to green",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0117": {
+    "interleave_array": [
+      "Change the flesh color of the grapefruit pulp to a deeper red",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/7_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0118": {
+    "interleave_array": [
+      "change the cat's fur to black and white",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0119": {
+    "interleave_array": [
+      "change the color of the brown bear's fur to black",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0120": {
+    "interleave_array": [
+      "change the rabbit's color to white",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0121": {
+    "interleave_array": [
+      "Change the transparent plastic umbrella to a material like lotus leaf.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0122": {
+    "interleave_array": [
+      "Transform the metal frame of the bicycles into wood material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/2_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0123": {
+    "interleave_array": [
+      "Change the orange velvet sofa to a dark brown distressed leather material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0124": {
+    "interleave_array": [
+      "change the ceramic cup to a transparent glass cup.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0125": {
+    "interleave_array": [
+      "change the material of this transparent glass cup to stainless steel.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0126": {
+    "interleave_array": [
+      "Change the water in the wine glass to thick red wine.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0127": {
+    "interleave_array": [
+      "Change the green bronze statue to a polished, shiny gold material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0128": {
+    "interleave_array": [
+      "Change the gray fabric sofa to a premium dark brown leather material with a slight sheen.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0129": {
+    "interleave_array": [
+      "Transform the metal frame into a smooth, light-colored bamboo material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0130": {
+    "interleave_array": [
+      "change the green leaves to gold material.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Material_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0131": {
+    "interleave_array": [
+      "Change the two balloons' shape into pentagon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0132": {
+    "interleave_array": [
+      "Change the ball's shape into an ellipsoid.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/2_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0133": {
+    "interleave_array": [
+      "Change the star-shaped balloon into a classic round heart shape.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/3_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0134": {
+    "interleave_array": [
+      "Modify the leaf shape to be a perfect hollow heart silhouette.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0135": {
+    "interleave_array": [
+      "Change the heart shape to a large letter \"A\" made of palm fronds.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/5_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0136": {
+    "interleave_array": [
+      "Replace the antelope's spiral horns with a set of palmate (palm-shaped) antlers, while keeping the antelope's body and face unchanged.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0137": {
+    "interleave_array": [
+      "Change the center circle to a smaller square.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0138": {
+    "interleave_array": [
+      "Make the two lamps smaller.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0139": {
+    "interleave_array": [
+      "Scale down the heart shape formed by the two people to 50% of its original size.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0140": {
+    "interleave_array": [
+      "Shrink the Unisphere sculpture while maintaining the intricate lattice and continent details.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0141": {
+    "interleave_array": [
+      "Replace the girl's face with an elderly woman's face, making it look like her grandmother.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0142": {
+    "interleave_array": [
+      "Make the woman look like a younger teenager with softer facial features.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0143": {
+    "interleave_array": [
+      "Transform this woman into her youthful appearance.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0144": {
+    "interleave_array": [
+      "Make the woman look more younger.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0145": {
+    "interleave_array": [
+      "Smooth the face to make the person look like a teenager, maintaining the original facial structure.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0146": {
+    "interleave_array": [
+      "Make the person appear significantly older, adding realistic wrinkles and age spots.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0147": {
+    "interleave_array": [
+      "Make the man look more elder.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0148": {
+    "interleave_array": [
+      "Change the person's eye color to a piercing sapphire blue and remove all the beards.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0149": {
+    "interleave_array": [
+      "Remove the man's beards and all his wrinkles.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0150": {
+    "interleave_array": [
+      "Swap the person's face with a face resembling a specific, well-known actor.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0151": {
+    "interleave_array": [
+      "Replace the traditional black abaya with a modern, elegant white floor-length evening gown.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0152": {
+    "interleave_array": [
+      "Change the outfit to a yellow linen sundress with thin spaghetti straps.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0153": {
+    "interleave_array": [
+      "Replace the polo and t-shirt with a well-tailored light gray blazer over a black button-down shirt.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0154": {
+    "interleave_array": [
+      "Add a classic blue denim jacket layered over his current gray t-shirt.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0155": {
+    "interleave_array": [
+      "Change the coat to a soft, cream-colored knitted turtleneck sweater.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0156": {
+    "interleave_array": [
+      "Change the outfit to a classic tan trench coat with a belted waist.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0157": {
+    "interleave_array": [
+      "Replace the graduation gown and cap with a professional navy blue slim-fit suit.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0158": {
+    "interleave_array": [
+      "Turn the woman's white sweater to a striped shirt.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0159": {
+    "interleave_array": [
+      "Change the woman's outfit to black down jacket.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0160": {
+    "interleave_array": [
+      "Replace the coat and black turtleneck with a vibrant yellow puffer jacket.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Clothes_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0161": {
+    "interleave_array": [
+      "Change the landscape that the man is looking at to a fjord landscape.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0162": {
+    "interleave_array": [
+      "Change the overall topography from a vast, flat meadow to a complex network of deep, winding canyon fissures and gorges that cut directly through the foreground fields, dividing the cattle herds. The cattle are now grazing on isolated, high grassy mesas between the deep gorges. The tree-lined distant forest remains on the far edge of this canyon system. View from above looking down.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0163": {
+    "interleave_array": [
+      "Transform the landscape into an icy, frozen coastal scene. Cover the large rock and the sand in layers of snow and ice. The ocean should be filled with floating icebergs.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/3_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0164": {
+    "interleave_array": [
+      "Transform the entire green field and hills into a dry, desert-like environment with sparse, arid vegetation. The vibrant green is gone. Add a shimmering, hazy atmosphere over the sand and distant hills under a scorching, bright white-blue sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0165": {
+    "interleave_array": [
+      "Change the flat terrain on both sides of the road into towering mountains.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0166": {
+    "interleave_array": [
+      "Transform the desert terrain in the video to a flat, vibrant grassland.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0167": {
+    "interleave_array": [
+      "Reconstruct the flat foreground rice paddies into a complex system of beautifully sculpted, multi-tiered rice terraces that cascade down a newly formed hill slope towards the viewer. These terraces should capture patches of water and green rice, creating a winding, layered pattern. Retain the distant palm trees and hills.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0168": {
+    "interleave_array": [
+      "Reconstruct the foreground and midground flat canola fields into a complex, multi-tiered, cascading terraced landscape, making the dark tire tracks follow the winding contour lines as narrow paths.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0169": {
+    "interleave_array": [
+      "Change the terrain of this scene to be covered with icebergs, with some floating icebergs on the sea surface.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0170": {
+    "interleave_array": [
+      "Change the topography by relocating the large rock formation from the beach to deep within the ocean waves. The rock is now a rugged island, completely surrounded by deeper water and breaking surf. Place the person with the red backpack on the highest point of the rock, now positioned as a solitary figure on a sea-island peak. Retain the distant landmass but make the person and rock feel far from the original shore.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/10_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0171": {
+    "interleave_array": [
+      "From far to near, add a few rainbows among the mountains.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0172": {
+    "interleave_array": [
+      "Add a few flashing lightning effects in the black sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0173": {
+    "interleave_array": [
+      "Add mist to the lake surface to create a mysterious effect.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0174": {
+    "interleave_array": [
+      "Add meteor shower effects to the sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0175": {
+    "interleave_array": [
+      "A high-key, snowy visual effect over the entire scene, with heavy snowflakes falling and covering the decks of both ships, the water frozen in parts, and a colder, paler color palette.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0176": {
+    "interleave_array": [
+      "The distant sky becomes overcast, and a faintly visible tornado is added in the distance, creating a scene of an approaching storm.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0177": {
+    "interleave_array": [
+      "Transform the sky into a rich, saturated cerulean blue with intensified clouds. Create a powerful sunburst with distinct, volumetric crepuscular rays fanning out from behind the distant road bend. Apply this intense golden light to bathes the entire landscape and the canyon walls, casting deep, dramatic shadows.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0178": {
+    "interleave_array": [
+      "Add twinkling stars in the distant sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0179": {
+    "interleave_array": [
+      "Add subtle fireworks effects in the upper sky, shimmering water reflections on the lagoon, and glowing full moons on the spherical lamps.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0180": {
+    "interleave_array": [
+      "A magical fantasy visual effect added to the night castle scene. Enhance the golden illumination of the castle on the hill. Create a vibrant, multi-colored aurora (blue, purple, and gold) with swirling magical light particles and fireflies drifting from the surrounding dark trees towards the spires and turrets, forming intricate light trails in the deep blue sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_visual_effects_adding/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0181": {
+    "interleave_array": [
+      "Apply a soft, diffused relighting effect. Mute the direct sunlight into a hazy, pastel pink and lavender glow. The entire scene should have a low-contrast, dreamy atmosphere with a gentle, pearlescent sheen on the ice.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0182": {
+    "interleave_array": [
+      "Cinematic low-key relighting with cool blue tones, intensifying the highlights on the wet skin and droplets for a dramatic, high-contrast look.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0183": {
+    "interleave_array": [
+      "Cinematic relighting of the scene, changing the blinding sun to a profound, deep moonlit night. Direct, cool silver-blue moonlight rakes across the man's face and clasped hands. The vast dry field is rendered in deep, cool, desaturated shadow.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0184": {
+    "interleave_array": [
+      "Transform strong backlight into soft, direct front or side light, making it look more like the sun is lower behind the subject.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0185": {
+    "interleave_array": [
+      "Add golden rim lighting to the subject's profile and hair. Integrate cool-toned LED string lights into the foreground vegetation on the right. Maintain the dark, atmospheric silhouette, using the conflicting light sources to create sharp contrast.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0186": {
+    "interleave_array": [
+      "Change the lighting to bright, vibrant, full-daylight sun directly hitting the face from the right side.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0187": {
+    "interleave_array": [
+      "Relight the scene to a deep blue, cool \"Blue Hour\" aesthetic. The sunset is gone, replaced by a smooth gradient from deep indigo to soft purple in the sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0188": {
+    "interleave_array": [
+      "Convert the scene to a cool, moonlit evening, replacing the sun with a high silver-blue full moon on the right. Transform the sky to a deep indigo with stars, and the ocean to a matching indigo with shimmering foam. Maintain the composition, but silhouette the surfer and rocks with cool-toned rim lighting. All details and text on the surfboard must be eliminated for a clean silhouette.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0189": {
+    "interleave_array": [
+      "Intensely amplify the existing golden backlighting into sharp, brilliant god rays and swirling mist. Create a hyper-defined golden rim light around the woman's silhouette, while casting her face and the front of her dress into deep shadow.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0190": {
+    "interleave_array": [
+      "Maintain the core backlight, but cool down the ambient foreground (heather and grass) with deep blues, creating a stronger color contrast with the intense warm golden-orange of the sun and the sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0191": {
+    "interleave_array": [
+      "Replace the background environment with towering mountains, and replace the environment in front of the houses with a small river.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0192": {
+    "interleave_array": [
+      "Change the environment around the girl to a forest.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0193": {
+    "interleave_array": [
+      "Transform the colorful ball ocean in the amusement park video into a swimming pool, where the woman and children are playing in the water.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/3_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0194": {
+    "interleave_array": [
+      "The girl is running in the rice field.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0195": {
+    "interleave_array": [
+      "Change the environment around the girl to a field of sunflowers.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0196": {
+    "interleave_array": [
+      "Change the environment outside the house to a beach and ocean.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0197": {
+    "interleave_array": [
+      "The road and railing overlook a dramatic, clear alpine mountain lake. Behind the lake rise massive, snow-capped peaks and rocky mountains under a crisp, clear sky. The water is turquoise and crystal clear, reflecting the mountains. Distant small chalets replace the city skyline. All figures and the road remain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0198": {
+    "interleave_array": [
+      "Transform the area where the lake meets the forest into a wharf.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0199": {
+    "interleave_array": [
+      "Change the distant mountain ranges into plains and faintly visible city buildings.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0200": {
+    "interleave_array": [
+      "Transform the environment around the astronaut-shaped kite to a vast and brilliant cosmic background.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Environment_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0201": {
+    "interleave_array": [
+      "Change the time to mid afternoon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0202": {
+    "interleave_array": [
+      "Change the time to the midnight.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0203": {
+    "interleave_array": [
+      "Adjust the time in the video to dusk at 5 PM.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/3_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0204": {
+    "interleave_array": [
+      "Adjust the time in the video to midnight.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/4_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0205": {
+    "interleave_array": [
+      "Change the time to mid afternoon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0206": {
+    "interleave_array": [
+      "Change the time to the early morning.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0207": {
+    "interleave_array": [
+      "Adjust the time in the video to dusk.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0208": {
+    "interleave_array": [
+      "The time in the video is adjusted to early evening.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0209": {
+    "interleave_array": [
+      "Change the time to early afternoon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0210": {
+    "interleave_array": [
+      "Change the time to mid afternoon.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0211": {
+    "interleave_array": [
+      "Revamp the scene to a cozy, colorful fall setting.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0212": {
+    "interleave_array": [
+      "Transform the scene into a vibrant, blossoming spring vista.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0213": {
+    "interleave_array": [
+      "Transform the scene into a sun-drenched, vibrant midsummer dream.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/3_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0214": {
+    "interleave_array": [
+      "Change the season into winter, the river is frozen and all the scene is covered with thick snow.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0215": {
+    "interleave_array": [
+      "Shift the tone to a warm caramel hue, recreating a tranquil moment of falling leaves and abundant harvest.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0216": {
+    "interleave_array": [
+      "Revitalize the landscape into a vibrant spring vista, painting every leaf with a brilliant, lively shade of green.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0217": {
+    "interleave_array": [
+      "Revitalize this frozen landscape into a vibrant spring vista, melting the ice into a clear flowing stream and covering the trees with rich, newly-grown emerald green leaves. Make the path clear and dry.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0218": {
+    "interleave_array": [
+      "Transform the park to a silent winter. Replace all people, flowers, and the bike with deep snow. Cover all trees and the bench in heavy frost and snowdrifts.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0219": {
+    "interleave_array": [
+      "Change the season of the scene into vivid spring.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0220": {
+    "interleave_array": [
+      "Turn the season of the scene into warm and cozy autumn.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0221": {
+    "interleave_array": [
+      "Transform the style of the video into a cyberpunk style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/1_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0222": {
+    "interleave_array": [
+      "Change the style to hand-drawn sketch style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0223": {
+    "interleave_array": [
+      "Transform the style to oil painting style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0224": {
+    "interleave_array": [
+      "Turn the video into Van Gough style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0225": {
+    "interleave_array": [
+      "Adjust the video's style to traditional Chinese painting style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0226": {
+    "interleave_array": [
+      "Change the style to romantic and fairytale-like style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0227": {
+    "interleave_array": [
+      "Make the New York City to a more modern and sci-fi style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0228": {
+    "interleave_array": [
+      "Transform the video into a cozy, warm and healing oil painting style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0229": {
+    "interleave_array": [
+      "Make the style of the video similar to that of the Cyberpunk 2077 game.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/9_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0230": {
+    "interleave_array": [
+      "Transform the scene into a Japanese Ukiyo-e woodblock print (e.g., in the style of Hokusai).",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0231": {
+    "interleave_array": [
+      "Change the weather to light rain.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/1_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0232": {
+    "interleave_array": [
+      "The snow has stopped, but the accumulated snow on the ground and on the cars is still there.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/2_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0233": {
+    "interleave_array": [
+      "Change the weather in the scene to overcast with scattered clouds.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/3_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0234": {
+    "interleave_array": [
+      "It's raining heavily in the scene.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/4_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0235": {
+    "interleave_array": [
+      "Switch to a bright, sunny day.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/5_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0236": {
+    "interleave_array": [
+      "Transform the scene into a bright, sun-drenched day.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/6_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0237": {
+    "interleave_array": [
+      "The snow is swirling everywhere and the ground is silver-clad.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/7_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0238": {
+    "interleave_array": [
+      "Turn the scene into a clear, high visibility night.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/8_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0239": {
+    "interleave_array": [
+      "The weather turns into a heavy fog with low visibility.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/9_720x1280.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0240": {
+    "interleave_array": [
+      "Make the scene in the video a sunny afternoon with bright sunlight.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Weather_change/10_1280x720.mp4"
+    ],
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "0001": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Remove the man's beards and all his wrinkles.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Appearance_change/9_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0005": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "turn the yellow flower to purple",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Color_change/2_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0009": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the style to hand-drawn sketch style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Global_style_change/2_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0013": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Reconstruct the foreground and midground flat canola fields into a complex, multi-tiered, cascading terraced landscape, making the dark tire tracks follow the winding contour lines as narrow paths.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/8_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0017": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Make the plants in the video wither.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_State_change/10_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0021": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Make the character in the video face the sea and back to the camera.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_direction_change/4_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0025": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Swap the locations of the two elephants.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_location_swap/8_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0029": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Remove the plants, including all stems and dried flower heads, from the clear glass vase.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_removal/6_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0033": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Transform the wolf into a majestic, vivid cartoon style.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Subject-Level/Object_style_change/3_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0037": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Maintain the core backlight, but cool down the ambient foreground (heather and grass) with deep blues, creating a stronger color contrast with the intense warm golden-orange of the sun and the sky.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Relighting/10_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0041": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the ball's shape into an ellipsoid.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Attribute-Level/Size_shape_change/2_720x1280.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  },
+  "0045": {
+    "element_dtype_array": [
+      "text",
+      "video"
+    ],
+    "interleave_array": [
+      "Change the time to the midnight.",
+      "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Time_change/2_1280x720.mp4"
+    ],
+    "istarget_in_interleave": [
+      0,
+      0
+    ]
+  }
+}

@@ -68,6 +68,7 @@ runs/
 /dataset_research/egoedit_research/zip_indexes/
 /dataset_research/egoedit_research/zip_members.csv
 /dataset_research/insave_research/add_and_remove.csv
+/dataset_research/insave_research/general_replacement/general_editing.csv
 /dataset_research/insvie_research/train_insvie_align.csv
 /dataset_research/openve_research/local_add.csv
 /dataset_research/openve_research/local_change.csv
@@ -78,3 +79,38 @@ runs/
 /model_evaluation/lance_base/data/official_source/
 /model_evaluation/lance_base/outputs_raw/
 /model_evaluation/lance_base/logs/
+
+# General-edit specialist survey media, review bundles, and generated results.
+/lance_general_edit_finetune/1_specialist_filtering/artifacts/
+/lance_general_edit_finetune/2_vlm_filtering/artifacts/
+/lance_general_edit_finetune/2_vlm_filtering/logs/
+/lance_general_edit_finetune/2_vlm_filtering/.venv-vefx/
+/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/
+/lance_general_edit_finetune/3_lance_lora_finetuning/logs/
+/lance_general_edit_finetune/3_lance_lora_finetuning/runtime/
+/lance_general_edit_finetune/3_lance_lora_finetuning/runs/
+
+# Shared project code only; never vendor runtimes or generated media/results.
+**/runtime/
+**/vendor/
+**/node_modules/
+**/models/
+**/outputs/
+**/outputs_raw/
+**/media/
+**/originals/
+**/.cache/
+*.parquet
+*.arrow
+*.npy
+*.npz
+*.sqlite
+*.db
+*.woff
+*.woff2
+*.otf
+*.ttf
+*.baidu_upload.json
+**/.baidu*
+**/*session*.json
+**/credentials*/
