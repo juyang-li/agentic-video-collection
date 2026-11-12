@@ -37,6 +37,7 @@
 - 试验阶段不要主动引入数据库；是否开始使用数据库，必须先询问用户并取得确认。
 - 经确认需要数据库时，默认使用 SQLite，并优先将稳定属性设计成关系字段。
 - JSON 字段只用于结构高度灵活、暂时无法合理关系化的数据，不把 JSON 当作默认的数据建模方式。
+- 后续审核包增加固定任务导航与分组锚点，任意位置可跳转任务；VACE prepared input 和 overlay_video 只在整个包前两个 sample 展示并打包。
 - 审核包默认采用无评分表、完整展开的 scroll down 页面；只有明确要求评分时才生成 audit。带评分表时各审核项默认 `1`、`reviewed=0`，不计作人工通过；`1` 表示通过、`0` 不通过、`2` 存疑。完整模式规范见 `DATASET_AUDIT_GUIDE.md`。
 
 ## 集群存储与大文件
@@ -49,7 +50,7 @@
 - 推荐流程是“从 `/scratch` stage 到 `$TMPDIR` → 在本地盘训练或推理 → 定期并在作业结束前 rsync 回 `/scratch`”。回传后应检查文件完整性；重要权重归档时还应记录并核对 SHA256。
 - 清理 checkpoint 前必须先盘点精确路径和文件组成，并区分推理权重与恢复状态：`model.safetensors` 可用于推理和从权重启动新实验，optimizer/scheduler/data cursor 仅在需要精确 resume 时保留。不得删除尚待评测的中间 checkpoint 或仍可能用于续训的 final checkpoint。
 
-## 当前目录映射（2026-11-09）
+## 当前目录映射（2026-11-12）
 
 ```text
 video_collection/
@@ -78,6 +79,14 @@ video_collection/
     ├── lance_tools/                  # 共用 Lance 评测工具
     ├── ivebench_lance/               # IVEBench 系列评测及便携浏览器运行时
     ├── omni_baselines_20260926/       # 冻结的 OmniEdit-48 对齐子集与基线
+    ├── ltx25_vace_a100_20261111/      # 三模型百样本，四卡H200吞吐量见任务README
+    │   ├── scripts/                 # 推理/打包；review_layout.py 固定任务导航
+    │   ├── runtime/                 # 保留VACE环境和权重，后续推理复用
+    │   ├── cache/ / conditions/     # 保留输入缓存与SOURCE条件
+    │   ├── outputs/                 # 生成JSON；视频已上传后清理
+    │   ├── metadata/deliveries/      # 无媒体历史页面与清单快照
+    │   ├── review/                  # 仅上传回执，无本地ZIP
+    │   └── logs/ / archive/         # 运行证据与历史说明
     ├── vace_coinve/                   # VACE/CoinVE 评测
     └── gtfresh1150_vs_coinve677_20260927/
         ├── README.md                  # 本次任务结论、经验和交付信息
@@ -103,3 +112,9 @@ video_collection/
 - 当前 11K 数据只做本地交付，不再制作新的评分审核包、执行独立全量验收或上传；历史 50 对无评分滚动审核 ZIP 和上传收据保留，不代表全量数据已经上传。
 - 正式数据入口、`media/` 和被引用的历史原素材不能因目录清理而失效。可重建 smoke、副本和暂存可清理，冻结来源、历史审核和回执应保留。
 - 11K 的 CPU 相似度评分仍只复用 `dataset_research/tripvvt_research/score_pair_similarity.py`，不要复制修改多个版本；CoinVE tar 通用读取器位于 `dataset_research/coinve_research/download_random_pairs.py`。
+
+## 2026-11-12 阶段整理
+
+- `ltx25_vace_a100_20261111/README.md` 是当前阶段总结；目录名a100表示百样本，实测GPU为H200。旧运行流程保存在任务archive，包含已过期jobid。
+- 本批输入/结果ZIP及其中已上传视频已删除，清理记录位于任务metadata；review只剩上传回执。metadata/deliveries中的HTML是无媒体快照，不能当作可播放审核包。
+- 用户后续还需LTX2.5、VACE和师兄模型，保留本任务runtime、cache、conditions以及外部共享模型。其他历史任务的数据未经本次清理。
