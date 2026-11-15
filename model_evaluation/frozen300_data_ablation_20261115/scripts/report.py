@@ -84,6 +84,17 @@ def main():
  lines+=['','## 分数据集的GT保真度','', '总体是300条视频等权，其中UE占200条；以下分组用于观察合成与真实域，不以总体掩盖域间差异。','', '|数据集／指标|'+'|'.join(labels[m] for m in ALLMODELS[:3])+'|','|---|'+'---:|'*3]
  for group in ['ue','coinve','tripvvt']:
   for dim in GTDIMS:lines.append('|'+group+' / '+dim+(' ↓' if dim=='lpips' else ' ↑')+'|'+'|'.join(display(m,dim,'dataset',group) for m in ALLMODELS[:3])+'|')
+ if not errors:
+  lines+=['','### 观察','']
+  for level,group,label in [('overall','all','总体'),('dataset','ue','UE'),('dataset','coinve','CoinVE'),('dataset','tripvvt','TripVVT')]:
+   wins={m:[] for m in MODELS}
+   for dim in GTDIMS:
+    means={m:next(r['mean'] for r in summaries if (r['level'],r['group'],r['model'],r['dimension'])==(level,group,m,dim)) for m in MODELS}
+    if all(v is not None for v in means.values()) and means[MODELS[0]]!=means[MODELS[1]]:
+     winner=min(means,key=means.get) if dim=='lpips' else max(means,key=means.get);wins[winner].append(dim)
+   for model,dimensions in wins.items():
+    if dimensions:lines.append(f'- {label}：{labels[model]}在'+ '、'.join(dimensions)+'上优于另一个消融checkpoint。')
+  lines+=['','这些是与GT的数值比较。总体含三分之二UE，需结合真实域分组；两组checkpoint步数不同，也不能由这些分数替代编辑指令或身份的人工审核。']
  lines+=['','## 混合训练A849参考','', 'A849使用dev基座、40步及原CFG/STG配置，不能与主表视为相同推理协议的数据消融。仅复用历史已验收分数，不重跑。','', '|指标|A849 dev40步|','|---|---:|']
  for dim in DIMS:lines.append('|'+dim+(' ×100' if dim in VBDIMS else '')+'|'+display('a849_v7',dim)+'|')
  lines+=['','## 协议与结果入口','', 'GT三指标：全部冻结12fps采样点，按原GT索引/输出PTS对齐，固定contain几何去padding，LANCZOS有效720p；SSIM高斯11/sigma1.5/population covariance；PSNR逐帧MSE后求dB；LPIPS AlexNet v0.1、FP32、关闭AMP/TF32、batch4（OOM仅降batch）。先帧平均、再视频等权。', 'VBench：原始1280×736或对应竖屏直接输入官方custom_input，保持固定commit/权重与longer成像预处理。全部六列统一score×100，成像质量只除100一次。Temporal Flickering为全量原始分数，受正常运动影响，不做静态筛选，不输出Total Score。', '六项质量/一致性与GT保真度不能自动判定编辑指令通过。没有新增人工通过标记，也没有上传审核包。','', '- [总体与分组统计](summary.csv)：总体、UE/CoinVE/TripVVT及10任务组，主表配对交集和各自n。','- [逐视频九指标](per_video_metrics.csv)、[逐帧GT指标](frames.jsonl)、[差值](deltas.csv)。差值为原尺度直接相减，LPIPS下降才表示改善；VBench差值显示时可乘100。','- [失败项](failures.json)、[输入及权重身份](../metadata/implementation.json)、[历史复用证据](../metadata/reuse_audit.json)。','- [验收](../metadata/final_validation.json)、[执行用时](../metadata/timing.json)、[资源释放](../metadata/release.json)。']
