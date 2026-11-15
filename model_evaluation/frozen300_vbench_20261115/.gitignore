@@ -1,0 +1,7 @@
+/metadata/
+/logs/
+/media/
+/runtime/
+/report/
+__pycache__/
+*.pyc
