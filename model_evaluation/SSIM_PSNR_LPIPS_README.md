@@ -1,96 +1,121 @@
-# SSIM、PSNR、LPIPS：视频编辑对 GT 测评方式与经验
+# 视频编辑对GT测评：SSIM、PSNR、LPIPS
 
-更新：2026-11-15。依据已完成的冻结300条、四模型实验整理，供后续测评和接手 Agent 使用。本文区分已实测协议、历史运行条件和迁移建议；不是任意视频都能直接调用的通用 CLI。
+项目正式运行与实测经验见[测评经验汇总](METRIC_EVALUATION_LESSONS.md)。通用示例的CPU测试与正式实验验收分开记录，不能据此宣称通用示例已完成独立GPU验收。
 
-**当前比较对象仅为模型输出与对应 GT，不与 SOURCE 比。** 三项指标表示接近单一 GT 的程度，不直接判断编辑指令是否完成、身份是否匹配参考，或时序是否稳定。动作、镜头等编辑可能有合理多解；全图指标也可能被大面积未变化区域主导。输出自身质量与一致性另见 [VBench README](VBENCH_README.md)。
+这份指南面向在自己Linux/NVIDIA机器上评测新数据集的读者。你只需要自己的GT和生成视频，不需要原作者的数据、目录、账号或集群。随包提供[最小示例](metric_examples/gt_metrics.py)、[共享模块](metric_examples/common.py)、[输入样例](metric_examples/manifest.example.jsonl)和[测试](metric_examples/test_examples.py)。这不是训练或视频生成程序，也不包含任务调度、断点续跑平台或私有下载器。
 
-开始前阅读 [AGENTS.md](../AGENTS.md) 和 [任务描述](../任务描述.md)。涉及人工审核再读 [审核规范](../DATASET_AUDIT_GUIDE.md)。本页相对链接指向项目工作区；单独分发 README 不包含所链接的实验数据、权重或脚本。
+主线是常见的10秒UE合成编辑对。**只比较输出与对应GT，不与SOURCE比较。** 三指标反映对单一GT的保真度，不直接代表编辑指令完成、参考身份匹配或时序质量。动作和镜头可以有合理多解，未编辑的大面积背景也会主导全图指标。输出自身质量另见[VBench指南](VBENCH_README.md)。
 
-## 1. 冻结样本与实际比较范围
+## 1. 安装与输入
 
-- 用稳定 ID/UID 关联输入、GT、输出及运行回执，核对完整指令、SOURCE、参考顺序、时间范围、模型权重、采样参数和媒体 SHA256。不能仅按文件名配对，也不能将不同加速版本统称为同一基线。
-- 固定输入清单、GT清单和协议身份；GT只用于评分，不进入模型推理条件。新测评另建目录，不改写原始视频和历史 JSON。
-- 评价完整冻结时间轴的全部12fps采样帧。本例 UE 为121帧，真实视频为49–97帧；不得为省时只取几帧，也不能把所有样本统一截成历史4秒版本。
-- GT按冻结 `sample_frame_indices` 取帧；输出按实际 PTS 选择最近时刻，距离相等取后帧。本实现以1e-9秒处理数值平局；普通12fps输出时间误差限为1e-5秒，H3为1/48秒加1e-6容差。
-- H3原生24fps输出通常对应真实生成帧 `2*i`；尾部原生对齐帧不参与评分。验证完整原生流的画幅、帧数、PTS及末端覆盖，不插帧、不复制输出帧、不做光流、时间偏移搜索或最优配准。
+建议新建独立Python 3.12环境，先按[PyTorch官方安装选择器](https://pytorch.org/get-started/locally/)安装匹配驱动的torch和torchvision，再安装：
 
-## 2. 统一有效画面，保留颜色与缩放口径
+```bash
+python -m pip install -r metric_examples/requirements-base.txt
+python metric_examples/gt_metrics.py --help
+```
 
-PyAV解码到RGB，按原始宽高和协议 contain 几何推导固定 padding。**不能检测黑色像素后再裁剪**，否则会误删真实黑色内容。1920×1080放入1280×736的例子，固定去掉上下各8像素；竖屏相应去掉左右各8像素。
+依赖清单记录了已使用版本，不是所有GPU/驱动组合的安装保证。参考测试环境是Python3.12、torch2.10、CUDA12.6；不要复制别人的虚拟环境或把CUDA12.6强加给自己的驱动。AlexNet与LPIPS权重来自公开软件的官方下载/缓存，首次使用可能联网；离线机器需事先准备这些缓存。不包含任何权重或凭据。
 
-本例最终有效画面统一为1280×720或720×1280。GT原件直接缩放一次，输出先裁协议 padding，再用 Pillow LANCZOS缩放到同尺寸；H3有效画面也按相同目标尺寸处理。保持原生解码颜色语义，不做自动颜色匹配。
+输入为UTF-8 JSONL，每行是一对输出与GT，路径相对于清单文件所在目录：
 
-该预处理属于本项目冻结协议，不代表所有论文的唯一做法。更换尺寸、插值、裁剪或颜色口径后需新建协议并重算，不能混用缓存。它与 VBench 保留模型原生画布的协议不同，**不能把三指标归一化后的媒体直接替代 VBench 评分媒体**。
+```json
+{"id":"clip_001","model":"editor_a","prediction":"outputs/clip_001.mp4","gt":"targets/clip_001.mp4"}
+```
 
-## 3. 指标参数与汇总
+`id`和`prediction`必填，GT指标还要求`gt`；`model`可省略，默认为default。`(id, model)`不能重复。数量、模型名称和数据集名称不固定。不同模型比较时，同一id必须对应同一语义片段和GT；脚本无法识别语义上错配的文件。示例只读取本地视频，数据需由使用者事先准备。
 
-| 指标 | 本例固定计算方式 |
+## 2. 我的做法：先时间轴，再有效画面
+
+### 时间轴
+
+默认预设为相对视频首帧的0–10秒、12fps、含末端，共121个采样点：`t=i/12, i=0..120`。两份输入必须已在语义上从同一起点开始；有起点偏移时先由使用者正确裁剪，不能根据分数搜索最佳偏移。原始容器首帧PTS会记录并归零为视频相对时间。
+
+按实际PTS找最近帧，平局取后帧，数值平局精度1e-9秒。24fps输出通常选择0,2,…,240帧；额外尾帧完整解码检查后排除，不压缩时间、不插帧、不重复生成帧。最近时刻误差限为半个名义原生帧间隔加1e-6秒；重复选择生成帧或覆盖不足会失败。
+
+GT有一个明确边界例外：例如30fps、300帧的10秒原件，末帧PTS约9.9667秒，但显示区间覆盖到10秒。仅最后一个采样点允许在一原生帧间隔内映射到这类合法末帧，并记录`gt_endpoint_quantized`；不允许用这个例外补长生成结果。
+
+121帧是本文的显式预设，不是“所有10秒视频必然有121帧”。若你的协议为左闭右开0–10秒、12fps共120帧，使用`--endpoint exclusive`并在报告中保持该口径；不要静默混用。`--start`、`--end`、`--fps`也可配置，间隔乘fps须为整数。
+
+### 有效画面
+
+GT直接缩放一次；输出只在已知协议下去padding，再用Pillow LANCZOS缩放到相同有效尺寸。默认`--size auto720`按GT横竖屏选择1280×720或720×1280；其他宽高比使用例如`--size 720x720`。脚本拒绝任意拉伸宽高比。
+
+默认不裁padding。若你明确知道输出使用GT原始宽高比的contain协议，传`--prediction-padding contain`：1920×1080放入1280×736会去掉上下各8像素；竖屏相应去左右各8像素。**不检测黑色像素猜边框。** 非contain裁剪可在清单中明确给出`gt_crop`或`prediction_crop`，格式为整数`[x,y,width,height]`；prediction_crop不可与contain同时使用。
+
+解码使用PyAV转RGB，不自动颜色匹配。示例检查完整原生流的PTS和画幅，不支持视频内部变分辨率；VFR或异常时间戳应先确认协议。它不会自动修复错误数据。
+
+## 3. 固定数值参数与汇总
+
+| 指标 | 本示例参数 |
 |---|---|
-| SSIM ↑ | scikit-image 0.26.0；RGB浮点 `[0,1]`；`data_range=1`、`channel_axis=-1`、`gaussian_weights=True`、`sigma=1.5`、`win_size=11`、`use_sample_covariance=False`；RGB通道平均 |
-| PSNR ↑ | RGB归一化到 `[0,1]`，用float64计算逐帧MSE，再计算 `-10*log10(MSE)`，单位dB；不先跨帧平均MSE再求PSNR |
-| LPIPS ↓ | 官方 lpips 0.1.4，`net=alex`、`version=0.1`、FP32、`eval()`、`inference_mode()`；输入为RGB `[-1,1]`，不再额外归一化 |
+| SSIM ↑ | scikit-image，RGB浮点[0,1]，data_range=1，channel_axis=-1，11×11高斯窗，sigma1.5，use_sample_covariance=False |
+| PSNR ↑ | RGB[0,1]，float64逐帧MSE，再求−10 log10(MSE)，单位dB；不先跨帧平均MSE再求PSNR |
+| LPIPS ↓ | lpips0.1.4，AlexNet/version0.1，FP32，eval和inference_mode，输入RGB[-1,1]；无AMP、TF32、额外缩至256或分块 |
 
-LPIPS关闭AMP和TF32，保留完整有效720p画面，不缩到256，也不分块拼接。初始batch为4，OOM只降为2或1；不能为了继续运行偷偷降低分辨率或改网络。
+LPIPS默认batch4，OOM仅降batch，不改图像尺寸或精度；实际batch记录到结果。SSIM与PSNR使用联合核函数遍历，选择其中一项仅控制输出，不能把该联合计时称作另一项的独立耗时。
 
-每项均为 **逐帧分数 → 视频内算术平均 → 视频间等权平均**。分别给出总体、数据集和任务组结果及有效n，不能把所有帧混在一起平均，让长视频获得更大权重。缺失或失败不能填0或静默剔除；模型有效样本不齐时另列相同任务ID的配对交集。
+每项先逐帧平均得到视频均值，再对视频等权平均。模型汇总给出实际n、预期n和参与id；比较模型时还应核对参与id一致，不只看n一样。失败不会填0。某视频部分指标成功而另一项失败时，保留已计算值，同时将整条状态标failed，报告不宣称全量通过。
 
-MSE为0时PSNR为正无穷。本实现保存 `psnr_db=null`、`psnr_infinite=true`，不封顶为某个大数，也不当作缺失。任一帧无穷时视频均值延续该标记，任一视频无穷时对应分组也延续；报告展示为∞。本次正式1200对没有该情况。非法NaN与这种有明确含义的无穷标记应分开处理。
+PSNR零MSE表示正无穷，保存`psnr_db=null`加`psnr_infinite=true`，不封顶，不当作缺失。任一帧无穷则对应视频均值无穷，任一视频无穷则对应模型汇总延续该标记。非法NaN不是这个例外。
 
-## 4. CPU/GPU执行与断点复用
+## 4. 可直接验证的命令
 
-默认纯CPU工作在login执行：配对/哈希、解码、对齐、SSIM和PSNR、汇总及验收。SSIM和PSNR在同一遍CPU计算中一起得到，没有单独记录两者各自耗时。LPIPS使用 `testqueue` GPU；不为CPU评分新申请GPU，也不伪造分区变量。
+先生成很小的自造10秒样例，验证安装、24fps对齐及恒等分数。这是功能测试，不是720p速度基准：
 
-历史实验经用户明确授权，曾使用已有allocation的空闲CPU与login分片并行；那是既有资源的授权使用，不是以后默认提交CPU作业的依据。复用allocation前重新核实授权、资源、剩余时间和step；历史job号不可直接照抄。
+```bash
+python metric_examples/make_demo.py --output-dir demo_data
+python metric_examples/gt_metrics.py --manifest demo_data/manifest.jsonl \
+  --output-dir demo_cpu --metrics ssim,psnr --device cpu --size 128x72
+python metric_examples/gt_metrics.py --manifest demo_data/manifest.jsonl \
+  --output-dir demo_lpips --metrics lpips --device cuda:0 --size 128x72
+python metric_examples/test_examples.py
+```
 
-先做小测并查看首/中/末GT与输出并排预览，确认横竖屏、padding、PTS及H3尾帧处理，再扩大到全量。预览用于几何审核，不能自动标记编辑效果通过。本例小测为六任务×四模型共24对，覆盖UE、CoinVE、TripVVT。
+正式数据例子：
 
-复用分数至少要求GT、输出、采样对齐和数值协议身份一致；核对原件及SHA，不只核对ID。CPU阶段的分数可由LPIPS阶段读取复用，避免再次计算SSIM/PSNR。当前CPU脚本跳过缓存时只显式检查协议和输出SHA，LPIPS入口还会检查GT SHA；迁移时应在复用前补齐GT身份审核，不能把较少的检查当作完整缓存合同。
+```bash
+python metric_examples/gt_metrics.py --manifest my_pairs.jsonl \
+  --output-dir pilot_gt --limit 8 --device cuda:0 \
+  --cpu-workers 4 --torch-threads 2 --lpips-batch-size 4 \
+  --prediction-padding contain
+```
 
-不落盘全部规范化无损帧，避免耗尽共享存储；逐视频读取并复用同任务GT即可。记录实际环境、指标与AlexNet权重SHA、batch、运行位置、逐条状态及耗时；不要升级共享推理环境来修复评分依赖。
+仅在确知contain时使用最后一个参数。清单前8行由你安排为有代表性的样本，不能按效果挑选；混合横竖屏、分辨率或解码格式时分别小测。去掉`--limit`即可评完整清单。输出目录必须新建或为空，避免混入旧结果；示例不做自动缓存复用或续跑。
 
-## 5. 已遇到的问题与验收方法
+普通工作站可串行运行三项；受调度器管理的机器应遵循自己的资源规则。示例不要求Slurm，不读取分区变量，不申请资源。若CPU与GPU阶段分开运行，用不同输出目录及`--metrics ssim,psnr`、`--metrics lpips`，按id/model合并结果，不能当作不同样本直接拼接取均值。
 
-| 经验 | 处理方式 |
-|---|---|
-| NumPy标量导致JSON序列化失败 | 写盘前显式转为Python `float`、`bool`；本例曾因此中止CPU阶段。保留异常回执，修复后校验缓存再续跑 |
-| 改线程或迁移节点后担心分数混用 | 保存执行迁移记录，确认数值函数和协议不变；线程数、节点及scope记录为执行条件，不冒称一次干净基准 |
-| 同画面但帧有偏移，或把原生尾帧算进去 | 检查每帧目标时刻、所选索引/PTS及末端覆盖；不能根据分数高低搜索最佳对齐 |
-| LPIPS显存不足 | 仅降低batch，不改720p、FP32、网络或分块方式；记录最终batch |
-| 汇总文件生成但不齐全 | 检查预期 `(ID, model, frame)` 键和每视频帧数，核对GT/输出/协议SHA；不能只看文件数量 |
+## 5. 速度估计与实际用时报告
 
-CPU核心检查包括：固定padding、同图SSIM=1、同图PSNR无穷、独立PSNR公式、构造24fps视频抽偶数帧、排除尾帧、错误画幅拒绝。GPU检查包括：同图LPIPS≈0、亮度扰动可区分、对称性、batch一致性。随后独立复核逐帧到逐视频、逐视频到总体/分组的均值。
+每次生成`results.jsonl`（逐帧、逐视频、取帧审计及失败）、`summary.csv/json`、`timing.json`和`timing_report.md`。报告给出硬件、版本、线程、batch、协议、成功/失败数、视频/小时、帧对/秒和实际墙钟时间。**一对视频指一个模型输出与GT，不是一个标量分数，也不是包含多个模型的任务。**
 
-技术校验不等于人工编辑效果审核。缺失、解码失败、评分失败需记录原因；仅有smoke通过不能宣称全量通过。不同指令、模型版本或新增/删去样本后的均值不应直接当作模型改进证据。
+GT计时包含启动、预检、加载AlexNet/可能下载、解码/对齐/哈希、SSIM＋PSNR联合计算、LPIPS传输及计算、指标结果写盘；GPU计算边界同步CUDA。首条和冷启动不隐藏。报告自身写盘与进程退出不在墙钟终点内。`--cache-state cold|warm|unknown`只是用户声明，脚本不假装能自动识别全部缓存。
 
-## 6. 本轮实测速度
+`--limit 8`仍读取完整清单的头信息。只有完整清单的原生画幅、fps、编码、帧数头信息及归一化配置一致，且小测无失败时，才给同规格外推：
 
-一“对视频”指一个模型输出与其GT，300任务×四模型=1200对，不是1200个任务。条件为有效720p横竖屏、12fps、49–121帧，全帧评分；以下包含实际解码、对齐、读盘等开销。
+```text
+预计全量秒数 = 小测实际墙钟秒数 × 清单输出数 / 小测输出数
+视频/小时 = 完整成功输出数 × 3600 / 实测墙钟秒数
+帧对/秒 = 完整成功视频的目标帧数之和 / 实测墙钟秒数
+```
 
-| 阶段 | 历史运行条件 | 实测吞吐 |
+估计包含小测的启动开销，可能高估大批量的固定开销；它不是置信区间，也不是保证上界。异质或探测失败的数据不输出单一估计，须按规格分组小测。可以另跑一个新输出目录记录暖缓存小测，与首次运行分别保存；不删除首次开销后冒称总用时。
+
+本示例是串行CPU/GPU工作流，总用时用实际墙钟；若自行实现CPU/GPU流水并行，应报告整段墙钟，不能相加并发阶段、也不能相加吞吐。单卡线性乘四不等于四卡实测。报告样式见[用时报告样例](metric_examples/timing_report.example.md)。
+
+## 6. 经验、验收和历史参考
+
+- 先检查首、中、末帧，确认同一语义时间段、横竖屏和padding。几何审核不等于编辑效果人工通过。
+- Python JSON不接受所有NumPy标量，落盘前转Python float/bool；保留失败原因，不能失败后填0。
+- 不把所有视频的规范化无损帧长期落盘，逐条处理即可。更改GT、输出、采样或参数后，旧分数不能直接复用。
+- 检查完整期望键、逐帧数、无限PSNR标记及逐视频/模型均值。核心测试包括恒等SSIM=1、LPIPS≈0、PSNR∞、独立PSNR公式、24fps取偶数帧、GT合法终点、生成结果不足和错误画幅拒绝。
+
+以下仅是过去一次4–10秒、12fps、有效720p混合视频的实测；**不是纯10秒UE或你的机器的保证**：
+
+| 阶段 | 当时资源/条件 | 参考速度 |
 |---|---|---:|
-| SSIM＋PSNR | login，4个CPU工作线程；两节点分片后的本地新增527对 | 约250对/小时 |
-| SSIM＋PSNR | 已授权现有分配的纯CPU step；16 CPU、128GB、12个工作线程；远端600对 | 约400对/小时 |
-| SSIM＋PSNR整体 | CPU阶段先后迁移并两处分片；1200对从首条落盘到全部完成约2小时22分钟 | 约500对/小时 |
-| LPIPS | 单H200，16 CPU、128GB；AlexNet、FP32、batch4；作业204990耗时1小时14分08秒 | 约970对/小时 |
+| SSIM＋PSNR | 4个CPU工作线程 | 约250对/小时 |
+| SSIM＋PSNR | 16 CPU可用、12个工作线程 | 约400对/小时 |
+| LPIPS | 单H200、16 CPU、128GB、FP32、batch4；1200对用1小时14分08秒 | 约970对/小时 |
 
-从首条CPU结果（11:59:39）到LPIPS作业结束（15:36:07），这轮三项完整流程约3小时36分钟，折合330对/小时。CPU两处分片的模型和视频不同，阶段有先后和尾部等待；不能简单相加为持续650对/小时，也不能据此认定12线程相对4线程的纯加速比。单条回执的 `seconds` 不包含所有GT读取开销，整体吞吐应使用实际阶段/作业墙钟时间。
-
-以上是2026-11-15这一批的实测，不是任意时长、分辨率或机器的通用保证。SSIM和PSNR没有独立计时，不编造各自速度；也没有四卡LPIPS独立实测。
-
-## 7. 事实入口与迁移顺序
-
-现有实现位于 [frozen300_gt_metrics_20261115](frozen300_gt_metrics_20261115/README.md)。参考入口如下，均有本实验路径和模型常量，**不是新数据可直接运行的通用工具**：
-
-| 用途 | 参考 |
-|---|---|
-| 冻结数值协议 | [protocol.json](frozen300_gt_metrics_20261115/metadata/protocol.json) |
-| 对齐、归一化、指标核函数及LPIPS阶段 | [evaluate.py](frozen300_gt_metrics_20261115/scripts/evaluate.py) |
-| CPU阶段 | [cpu_stage.py](frozen300_gt_metrics_20261115/scripts/cpu_stage.py) |
-| CPU小测、最终独立复核 | [test_cpu.py](frozen300_gt_metrics_20261115/scripts/test_cpu.py)、[final_audit.py](frozen300_gt_metrics_20261115/scripts/final_audit.py) |
-| 汇总、GPU提交配置 | [report.py](frozen300_gt_metrics_20261115/scripts/report.py)、[run.sbatch](frozen300_gt_metrics_20261115/scripts/run.sbatch) |
-| 实际依赖及权重身份 | [environment.json](frozen300_gt_metrics_20261115/metadata/environment.json) |
-| CPU历史分片 | [two_node_cpu.json](frozen300_gt_metrics_20261115/metadata/two_node_cpu.json) |
-
-迁移顺序：新建实验目录并冻结GT/输出和协议 → 适配路径、ID、模型集合及数量 → CPU小测与几何预览 → login计算SSIM/PSNR → testqueue最小LPIPS验证及全量 → CPU汇总和独立验收。检查旧controller/supervisor的副作用，不为查看状态重启它们。
-
-本例共1200对、124848帧对，每模型31212帧；四模型为LTX2.5 distilled＋V7、dev＋A849＋V7、H3-PDD8和VACE-LightX2V4。完整结果见 [报告](frozen300_gt_metrics_20261115/report/REPORT.md)、[分组统计](frozen300_gt_metrics_20261115/report/summary.csv)、[逐视频](frozen300_gt_metrics_20261115/report/videos.csv)、[逐帧](frozen300_gt_metrics_20261115/report/frames.jsonl)；验收见 [completion_audit.json](frozen300_gt_metrics_20261115/metadata/completion_audit.json)。依赖和机器数据优先于聊天中的估计，不重跑已完成结果、不自动上传实验数据。
+当时两处CPU分片的整体CPU阶段约500对/小时；三项先CPU后GPU，首条CPU结果到GPU结束约3小时36分钟，1200对约330对/小时。模型分片、视频长度、IO和尾部等待均有差异，不把两处CPU速度相加为持续吞吐。本指南不要求这些机器、原数据、任何账号或私有脚本。请用自己的10秒UE小测和生成的实际用时报告做预算。

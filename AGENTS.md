@@ -1,16 +1,21 @@
 # 项目协作规则
 
-## 集群分区硬性限制（用户于 2026-11-08 明确要求）
+## 运行位置与集群分区（用户于 2026-11-13 更新）
 
-- **所有集群任务只能提交到 `testqueue` 分区。严禁提交到 `cpup`、`cpun` 或其他分区。** 此限制适用于数据准备、下载、CPU 评分、训练、推理、验收、打包、上传及续跑，不因任务不使用 GPU 而例外。
-- 每次提交前检查脚本和实际提交参数，明确指定 `--partition=testqueue`；不得通过命令行覆盖为其他分区。运行入口应检查 `SLURM_JOB_PARTITION`，不等于 `testqueue` 时立即退出。
+- **只使用CPU的任务直接在login节点执行，不为此排GPU。** 包括纯CPU数据准备、下载、评分、验收、打包和上传；CPU任务入口须允许login节点运行。
+- **需要GPU的集群任务只能提交到 `testqueue` 分区，严禁提交到 `cpup`、`cpun` 或其他分区。** 适用于GPU训练、推理、预处理和续跑。
+- 提交GPU任务前检查脚本和实际参数，明确指定 `--partition=testqueue`；不得通过命令行覆盖为其他分区。GPU入口检查 `SLURM_JOB_PARTITION`，不等于 `testqueue` 时立即退出。纯CPU任务不依赖Slurm分配，不得伪造分区变量绕过入口检查。
 - **需要排队时就休眠等待，绝不为了绕过排队而换分区。** 默认沿用用户指定的 15 分钟检查节奏；异常修复后恢复等待。
 - 发现本任务误入其他分区，应立即停止对应作业并取消其后续依赖，保留可续跑数据；不得继续运行或自行重投其他分区。
 
 ## 对话开始前
 
+- 测评执行与汇总先读 [测评经验](model_evaluation/METRIC_EVALUATION_LESSONS.md)，当前入口见 [测评索引](model_evaluation/README.md)，最终分数见 [300／116汇总](model_evaluation/FINAL_RESULTS_300_116.md)。不要根据旧README的作业号或submitted文字自动重启已完成任务。
+
 - 每次开始处理本项目的任务时，先完整阅读根目录下的 `任务描述.md`，再进行分析、讨论或修改。
 - 进行数据集样本抽查、质量审核或编写相应脚本时，还要阅读根目录下的 `DATASET_AUDIT_GUIDE.md`。
+- 进行 VBench 评分、结果汇总或跨模型比较时，阅读 [VBench 测评经验 README](model_evaluation/VBENCH_README.md)。用户于2026-11-15明确要求：Temporal Flickering按全量原始分数统计，不做静态筛选；旧静态共同子集仅作历史记录，不是当前默认流程或验收门槛。
+- 进行输出与GT的SSIM、PSNR、LPIPS测评时，阅读 [三指标测评方式与经验](model_evaluation/SSIM_PSNR_LPIPS_README.md)，固定配对、时间轴、有效画面和数值参数；不与SOURCE比，不混用VBench原生画布与GT指标的归一化媒体。
 
 ## 沟通与写作风格
 
@@ -50,67 +55,30 @@
 - 推荐流程是“从 `/scratch` stage 到 `$TMPDIR` → 在本地盘训练或推理 → 定期并在作业结束前 rsync 回 `/scratch`”。回传后应检查文件完整性；重要权重归档时还应记录并核对 SHA256。
 - 清理 checkpoint 前必须先盘点精确路径和文件组成，并区分推理权重与恢复状态：`model.safetensors` 可用于推理和从权重启动新实验，optimizer/scheduler/data cursor 仅在需要精确 resume 时保留。不得删除尚待评测的中间 checkpoint 或仍可能用于续训的 final checkpoint。
 
-## 当前目录映射（2026-11-12）
+## 当前目录映射（2026-11-21）
 
-```text
-video_collection/
-├── AGENTS.md                         # 本项目协作规则与目录映射
-├── 任务描述.md                       # 项目背景、目标和数据职责
-├── DATASET_AUDIT_GUIDE.md            # 人工抽查字段与填写规范
-├── dataset_research/                 # 各外部数据集的调研与样本审核
-│   ├── <dataset>_research/           # CoinVE、TripVVT、OpenVE、ReCo 等独立调研
-│   └── coinve_tripvvt_11k_20261108/ # 已完成的本地 11K 数据
-│       ├── README.md / HANDOFF_FOR_COLLEAGUE.txt
-│       ├── manifest.jsonl / manifest.csv / crops.csv
-│       ├── dataset_reader.py / read_example.py
-│       ├── scripts/                 # 准备、预取、交接、滚动审核、可选检查、测试
-│       ├── jobs/                    # 仅 testqueue 的 Slurm 入口
-│       ├── media/                   # 原媒体；正式路径保持不变
-│       ├── metadata/                # 冻结候选、来源、哈希、探测、评分、排除和状态
-│       ├── logs/                    # 作业历史与重试记录
-│       ├── reviews/                 # 已交付 ZIP、冻结抽样、SHA256 和回执
-│       └── archive/                 # 历史过程说明，不是当前入口
-├── lance_general_edit_finetune/      # 真实数据筛选、VLM 过滤与 Lance LoRA 微调
-│   ├── 1_specialist_filtering/
-│   ├── 2_vlm_filtering/
-│   └── 3_lance_lora_finetuning/
-└── model_evaluation/                 # 模型推理、对比评测与人工审核交付
-    ├── lance_base/                   # Lance 基模评测与百度网盘核验工具
-    ├── lance_tools/                  # 共用 Lance 评测工具
-    ├── ivebench_lance/               # IVEBench 系列评测及便携浏览器运行时
-    ├── omni_baselines_20260926/       # 冻结的 OmniEdit-48 对齐子集与基线
-    ├── ltx25_vace_a100_20261111/      # 三模型百样本，四卡H200吞吐量见任务README
-    │   ├── scripts/                 # 推理/打包；review_layout.py 固定任务导航
-    │   ├── runtime/                 # 保留VACE环境和权重，后续推理复用
-    │   ├── cache/ / conditions/     # 保留输入缓存与SOURCE条件
-    │   ├── outputs/                 # 生成JSON；视频已上传后清理
-    │   ├── metadata/deliveries/      # 无媒体历史页面与清单快照
-    │   ├── review/                  # 仅上传回执，无本地ZIP
-    │   └── logs/ / archive/         # 运行证据与历史说明
-    ├── vace_coinve/                   # VACE/CoinVE 评测
-    └── gtfresh1150_vs_coinve677_20260927/
-        ├── README.md                  # 本次任务结论、经验和交付信息
-        ├── configs/                   # 8 个正式 OmniEdit 分片配置
-        ├── inference_checkpoints/     # CoinVE step677 的只读兼容推理入口
-        ├── logs/                      # 正式单轮与多轮运行日志
-        ├── metadata/                  # 冻结任务、来源凭据与完成状态
-        ├── outputs_raw/               # 两模型共 96 个正式单轮输出
-        ├── multiturn/                 # 两模型各 28 个多轮/诊断输出及 manifest
-        ├── technical/                 # 8 个正式分片的技术检查 CSV
-        ├── scripts/                   # 准备、推理、打包和浏览器验收脚本
-        └── review/
-            ├── omni48_multiturn_*_human_review_20260927.zip
-            │                           # 已上传百度网盘的精确归档
-            └── *.json                 # SHA-256 sidecar 与上传收据
-```
+- `dataset_research/coinve_tripvvt_11k_20261108/`：正式11K，canonical媒体已内部化；保留media、清单、reader和元数据。
+- `model_evaluation/FINAL_RESULTS_300_116.md`：最终分数；300为六模型，V4自建集为116条四模型，不是166条。
+- `model_evaluation/METRIC_EVALUATION_LESSONS.md`：GT三指标与VBench正式经验和实测速度。
+- `model_evaluation/frozen300_20261113/`：300条冻结输入、GT及A849原始输出。
+- `model_evaluation/ltx25_distilled_v7_300/`：蒸馏8步无LoRA基座输出。
+- `model_evaluation/frozen300_gt_metrics_20261115/`、`frozen300_vbench_20261115/`：四模型正式GT／VBench，后者最终不做静态筛选。
+- `model_evaluation/frozen300_data_ablation_20261115/`：纯合成step600、纯真实step232；已完成5400项新增分数。205167已释放，单次CPU节点并行授权不改变login默认规则。
+- `model_evaluation/a849_external_vbench_v4_116/`：最终V4的464输出、2784项六维分数；旧V1／V2／V3为历史。
+- `model_evaluation/ds_full_eval_20261115/`：正式DeepSeek VLM，最终4748项含重复评分；固定Prompt和校准／非校准分表分开保留。
+- `model_evaluation/inference_models/`、`model_evaluation/ltx25_vace_a100_20261111/`：保留可复用模型入口、runtime、cache和conditions。
+- `model_evaluation/ltx25_action_full121_20261112/`：整体保护，不纳入普通副本清理。
+- `retirement_lance_goku_20261112/`：退役任务最小结论和交付审计，不是当前执行入口。
 
-历史审核包的远端目录约定为 `/apps/bypy/lance_review/`；是否上传以当前任务授权为准。`gtfresh1150_vs_coinve677_20260927/` 中不保留 smoke 临时产物、`*_pending.json`、Python 字节码缓存、runner 复制的 adapter 暂存副本或可由最终 ZIP 恢复的解压态审核副本。
+Lance/GOKU 的训练、评测、消融、真实人物压力测试和源码已于 2026-11-12 退役；不要恢复为当前入口。最小删除清单、关键结论和百度交付凭据位于 `retirement_lance_goku_20261112/`。
+
+历史审核包的远端目录约定为 `/apps/bypy/lance_review/`；是否上传以当前任务授权为准。Lance/GOKU 本地任务已退役，历史交付只依据退役档案中的成功回执追溯。
 
 ## Git 与本次任务收尾
 
 - Git 仓库根目录为 `video_collection/`，不要在上级共享工作目录重复初始化。源码、说明和提交脚本进入版本管理；媒体、生成清单、运行日志、模型、缓存、ZIP、凭据及第三方 runtime/vendor 保留在本地且由 `.gitignore` 排除。
 - 当前 11K 数据只做本地交付，不再制作新的评分审核包、执行独立全量验收或上传；历史 50 对无评分滚动审核 ZIP 和上传收据保留，不代表全量数据已经上传。
-- 正式数据入口、`media/` 和被引用的历史原素材不能因目录清理而失效。可重建 smoke、副本和暂存可清理，冻结来源、历史审核和回执应保留。
+- 正式数据入口和 `media/` 不能因目录清理而失效。11K 的所有 canonical 媒体路径已内部化为 `media/...`；可重建 smoke、副本和暂存可清理，冻结来源、历史审核 selection、SHA sidecar 和回执应保留。
 - 11K 的 CPU 相似度评分仍只复用 `dataset_research/tripvvt_research/score_pair_similarity.py`，不要复制修改多个版本；CoinVE tar 通用读取器位于 `dataset_research/coinve_research/download_random_pairs.py`。
 
 ## 2026-11-12 阶段整理
@@ -118,3 +86,11 @@ video_collection/
 - `ltx25_vace_a100_20261111/README.md` 是当前阶段总结；目录名a100表示百样本，实测GPU为H200。旧运行流程保存在任务archive，包含已过期jobid。
 - 本批输入/结果ZIP及其中已上传视频已删除，清理记录位于任务metadata；review只剩上传回执。metadata/deliveries中的HTML是无媒体快照，不能当作可播放审核包。
 - 用户后续还需LTX2.5、VACE和师兄模型，保留本任务runtime、cache、conditions以及外部共享模型。其他历史任务的数据未经本次清理。
+
+## 保守清理与交接（2026-11-21）
+
+- 清理前记录精确路径、大小、依据和恢复方式，检查活动进程与正式清单引用；不按cache／review／tmp名称批量删除，不跟随符号链接清理共享外部目录。
+- 有成功上传回执的ZIP、确认不被正式流程引用的可重建浏览／临时副本才进入本轮清理；无可靠依据的内容保留并记录原因。以既有上传工具回执为准，不增加远端回读或哈希核对。
+- VLM实际送评卡片、参考帧、请求签名、原始响应，VBench评分投影，冻结输入／GT、参考、正式输出、分数和协议证据均保护。浏览副本与送评证据不能混为一类。
+- root与测评README维护当前入口；原运行记录保持原样，必要时加“已完成／历史”说明。不得改写既有分数、Prompt或冻结清单。
+- Git只纳管经审阅的源码、说明、依赖、固定Prompt和必要配置；运行结果与凭据留本地。历史删除按档案核对后提交，不用git add -A直接纳入混合工作区；推送只做正常快进或合并，不强推。
