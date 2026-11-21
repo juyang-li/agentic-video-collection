@@ -1,0 +1,20 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_pairs": 700,
+  "survivors": 697,
+  "pair_decisions": {
+    "accepted": 511,
+    "uncertain": 186,
+    "rejected": 3
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 511,
+      "uncertain": 186,
+      "rejected": 3
+    }
+  },
+  "rejection_reasons": {
+    "sustained_near_freeze": 3
+  }
+}

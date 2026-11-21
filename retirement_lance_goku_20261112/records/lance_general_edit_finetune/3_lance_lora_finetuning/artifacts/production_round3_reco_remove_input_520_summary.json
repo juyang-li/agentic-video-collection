@@ -1,0 +1,16 @@
+{
+  "selection_seed": 20260904,
+  "input_rows": 755,
+  "excluded_prior_ids": 0,
+  "eligible_rows": 755,
+  "available_by_branch": {
+    "reco_remove": 755
+  },
+  "requested_quotas": {
+    "reco_remove": 520
+  },
+  "selected_rows": 520,
+  "selected_by_branch": {
+    "reco_remove": 520
+  }
+}

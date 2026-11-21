@@ -1,0 +1,44 @@
+{
+  "filter_version": "general_edit_stage1_pilot_v1",
+  "videos": 510,
+  "pairs": 460,
+  "video_decisions": {
+    "uncertain": 91,
+    "rejected": 26,
+    "accepted": 393
+  },
+  "pair_decisions": {
+    "uncertain": 78,
+    "rejected": 26,
+    "accepted": 356
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "uncertain": 36,
+      "accepted": 64
+    },
+    "goku_add": {
+      "accepted": 97,
+      "uncertain": 3
+    },
+    "goku_remove": {
+      "accepted": 99,
+      "uncertain": 1
+    },
+    "insave_remove": {
+      "uncertain": 37,
+      "rejected": 26,
+      "accepted": 37
+    },
+    "reco_add": {
+      "accepted": 20
+    },
+    "reco_remove": {
+      "accepted": 19,
+      "uncertain": 1
+    },
+    "reco_replace": {
+      "accepted": 20
+    }
+  }
+}

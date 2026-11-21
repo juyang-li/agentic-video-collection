@@ -1,5 +1,7 @@
 # InsAVE-80K 原子 add / remove 随机抽查
 
+`clone_id` 与其他分类栏是否能提供 replacement 的 metadata 排查和随机 10 对视频审核已经合并进 [`insave_report.md`](./insave_report.md)。结论是 `clone_id` 保持人物外观、不是视觉 replacement；`general_editing` 的 single-operation Replace 子总体 instruction 通过 0、失败 8、存疑 2，也不能直接进入 baseline。
+
 当前保留两套各 15 组的 H.264 画面对照：
 
 - `insave_remove_random_pairs_15_h264.zip`：`part_01` 的 9,994 个完整 pair 中均匀随机抽 15 个正向 remove。
@@ -22,6 +24,7 @@ ZIP 中的 `comparison/*.mp4` 是左右对照、无音轨、H.264/AVC、`yuv420p
 - `insave_audit.csv` / `insave_add_audit.csv`：人工画面审核。
 - `insave_audio_inventory.csv` / `insave_add_audio_inventory.csv`：16 kHz mono PCM 客观对比。
 - `insave_report.md`：结论与适用边界。
+- `general_replacement/`：replacement 的 manifest、inventory、audit、复现脚本和 10 对复核包。
 - `sample_random_pairs.py`、`sample_random_add_pairs.py`、`extract_random_pairs.py`、`prepare_random_pairs.py`、`prepare_random_add_pairs.py`：复现脚本。
 
 独立 source/target MP4 在 comparison 与 ZIP 校验后删除，避免重复占空间；官方原始分片也只作临时获取，不留在项目中。

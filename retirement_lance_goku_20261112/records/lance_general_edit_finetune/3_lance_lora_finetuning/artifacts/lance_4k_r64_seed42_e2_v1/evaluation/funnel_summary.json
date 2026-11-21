@@ -1,0 +1,73 @@
+{
+  "base_in_screen": false,
+  "candidate_checkpoints": [
+    {
+      "epoch": 1.0,
+      "step": 451
+    },
+    {
+      "epoch": 1.5,
+      "step": 677
+    },
+    {
+      "epoch": 2.0,
+      "step": 902
+    }
+  ],
+  "clear_winner_rule": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 42,
+    "lower_bound_must_exceed": 0.0,
+    "metric": "six_branch_macro_average",
+    "minimum_branch_mean_wins": 5,
+    "must_beat_every_other_candidate": true,
+    "paired_bootstrap_confidence": 0.95
+  },
+  "final_comparison": {
+    "base_omni_edit": "reuse external lance_base session",
+    "internal_test204": [
+      "winner"
+    ],
+    "omni_edit_spatial240_generate_here": [
+      "winner"
+    ]
+  },
+  "generation_counts_excluding_external_base_omni": {
+    "end_to_end": 735,
+    "selection": 291
+  },
+  "half_epoch_in_screen": false,
+  "internal_test_samples": 204,
+  "manifests": {
+    "internal_test": {
+      "path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_4k_r64_seed42_e2_v1/evaluation/internal_test204.csv",
+      "sha256": "fb45360e704ad22f241c660ec9fc3080062d66e81288eebe3655e6ab05257774"
+    },
+    "screen_generation_tasks": {
+      "path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_4k_r64_seed42_e2_v1/evaluation/validation_screen48_tasks.csv",
+      "sha256": "c6903013323088e52a813581c1b52643f80ae28e287687d6352008cd121c87f9"
+    },
+    "screen_samples": {
+      "path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_4k_r64_seed42_e2_v1/evaluation/validation_screen48.csv",
+      "sha256": "cdf4140914032943dae43c6ff2e4544efcd40c7b10a786a1975495a38f1a3d66"
+    },
+    "validation_remaining": {
+      "path": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_4k_r64_seed42_e2_v1/evaluation/validation_remaining147.csv",
+      "sha256": "a7f5b1bfcccb537548d149a771dbe3557c1edd8ce6107a1a97cc8f4846073bb7"
+    }
+  },
+  "promotion": "always generate remaining147 for the numeric winner only",
+  "schema_version": "lance_general_edit_adaptive_evaluation_funnel_v1",
+  "screen_branch_counts": {
+    "egoedit_replace": 8,
+    "goku_add": 8,
+    "goku_remove": 8,
+    "reco_add": 8,
+    "reco_remove": 8,
+    "reco_replace": 8
+  },
+  "screen_generation_tasks": 144,
+  "screen_samples": 48,
+  "selection_seed": 42,
+  "validation_remaining_samples": 147
+}

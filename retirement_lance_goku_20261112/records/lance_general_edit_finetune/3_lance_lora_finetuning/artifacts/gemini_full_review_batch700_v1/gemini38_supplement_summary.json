@@ -1,0 +1,44 @@
+{
+  "judge_version": "gemini_3_8_flash_provenance_aware_pair_judge",
+  "roi_method_version": "paired_tight_change_roi_five_aligned_v6",
+  "visual_layout_version": "five_aligned_full_tight_roi_timecards_v7",
+  "model_id": "google/gemini-3.8-flash",
+  "model_backend": "openrouter",
+  "prompt_sha256": "32e0d04ebc02bd292725425f144e6eab9d36b7915a39a4da2b5511176394212c",
+  "input_rows": 700,
+  "completed": 698,
+  "parse_errors": 2,
+  "decision_counts": {
+    "accepted": 533,
+    "rejected": 165,
+    "uncertain": 2
+  },
+  "check_counts": {
+    "instruction_following": {
+      "pass": 614,
+      "fail": 84
+    },
+    "visible_artifact": {
+      "pass": 594,
+      "fail": 104
+    },
+    "content_preservation": {
+      "pass": 631,
+      "fail": 67
+    }
+  },
+  "provider_counts": {
+    "Google AI Studio": 698
+  },
+  "new_rows_attempted": 4,
+  "concurrency": 1,
+  "new_run_wall_seconds": 17.511706225574017,
+  "mean_pair_elapsed_seconds": 6.823363931428571,
+  "mean_api_elapsed_seconds": 5.7042100329512895,
+  "total_input_tokens": 4702684,
+  "total_output_tokens": 125214,
+  "total_cost_usd": 3.9915178499999984,
+  "mean_input_tokens": 6737.369627507163,
+  "mean_roi_pairs": 5,
+  "rows_retried": 2
+}

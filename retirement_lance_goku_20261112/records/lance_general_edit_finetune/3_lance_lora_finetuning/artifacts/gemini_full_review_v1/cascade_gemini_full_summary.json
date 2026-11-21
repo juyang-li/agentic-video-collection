@@ -1,0 +1,64 @@
+{
+  "cascade_version": "gemini38_full_review_v1",
+  "rows": 7185,
+  "decision_counts": {
+    "accepted": 3863,
+    "rejected": 3307,
+    "quarantine": 15
+  },
+  "changed_rows": 441,
+  "change_types": {
+    "accepted->rejected": 439,
+    "accepted->quarantine": 2
+  },
+  "by_dataset": {
+    "egoedit": {
+      "accepted": 959,
+      "rejected": 330,
+      "quarantine": 1
+    },
+    "goku": {
+      "accepted": 1022,
+      "rejected": 1993,
+      "quarantine": 9
+    },
+    "reco": {
+      "rejected": 984,
+      "accepted": 1882,
+      "quarantine": 5
+    }
+  },
+  "by_branch": {
+    "egoedit_replace": {
+      "accepted": 959,
+      "rejected": 330,
+      "quarantine": 1
+    },
+    "goku_add": {
+      "rejected": 827,
+      "accepted": 420,
+      "quarantine": 4
+    },
+    "goku_remove": {
+      "accepted": 602,
+      "rejected": 1166,
+      "quarantine": 5
+    },
+    "reco_add": {
+      "rejected": 198,
+      "accepted": 540,
+      "quarantine": 2
+    },
+    "reco_remove": {
+      "rejected": 601,
+      "accepted": 634,
+      "quarantine": 2
+    },
+    "reco_replace": {
+      "accepted": 708,
+      "rejected": 185,
+      "quarantine": 1
+    }
+  },
+  "supplemental_cost_usd": 10.7689461
+}

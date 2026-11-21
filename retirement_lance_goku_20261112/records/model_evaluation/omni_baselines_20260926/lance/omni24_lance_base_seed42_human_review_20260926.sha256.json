@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "archive": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/omni_baselines_20260926/lance/omni24_lance_base_seed42_human_review_20260926.zip",
+  "bytes": 51541993,
+  "sha256": "13a7f615def2265ff9b18be98e449292342b9ca1459b03dcf3d6e761a8dbbbe9",
+  "samples": 24,
+  "videos": 48,
+  "zip_crc_verified": true,
+  "single_top_level_directory": true,
+  "browser_validation": "passed",
+  "remote_upload_status": "verified",
+  "remote_path": "/apps/bypy/lance_review/omni_baselines_20260926/omni24_lance_base_seed42_human_review_20260926.zip",
+  "remote_bytes": 51541993,
+  "remote_md5": "9574dbe3df91b217005f54b389d64a0d"
+}

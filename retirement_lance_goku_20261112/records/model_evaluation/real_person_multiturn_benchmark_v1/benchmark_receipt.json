@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "benchmark": "real_person_multiturn_benchmark_v1",
+  "dataset": "IVEBench",
+  "dataset_revision": "1e6cb655c0a537f6093edcf18e2607fb03e76734",
+  "chains": 30,
+  "turns": 112,
+  "reserve_candidates": 5,
+  "unique_sources": 30,
+  "prior_evaluation_overlap": 0,
+  "api_model": "qwen/qwen3.8-omni-flash",
+  "api_provider": "Alibaba",
+  "api_credential_env": "LIJUYANG_ICLR",
+  "personal_credential_used": false,
+  "reported_api_cost_usd": 0.13734603,
+  "validation": "passed",
+  "files": {
+    "benchmark.jsonl": "81ee7174737eac2ddb427891d17f86ecb3329d3e115fbdcc2313f36ca48a6ef0",
+    "turns.csv": "f7b441409e68626fa833c783d834351a713875662781d888b26b4366abd6072d",
+    "source_inventory.csv": "161eb9fb0c01eb1350d34212a0392cefa0337a25ba15b60e71bb5580b65113b0",
+    "validation_report.json": "1378d523a6b3bcfefd8dc3ec1a6266067213d43c7ced57978c0b30cd0966721f",
+    "metadata/api_summary.json": "73d1c41c8e6739f7b025e207a6d92dcc1cad8a398432f3ed722178ce6a1c7761",
+    "review/real_person_multiturn_benchmark_v1_review.zip": "afb98324d87a2f1fe3f068a7f913d8976104fbfbee7d29475b4a19c569cf6fb4"
+  },
+  "review_package": {
+    "browser_validation": "passed",
+    "external_requests": 0,
+    "zip_crc_verified": true,
+    "single_top_level_directory": true,
+    "remote_path": "/apps/bypy/lance_review/real_person_multiturn_benchmark_v1_review.zip",
+    "remote_upload_status": "uploaded_and_size_verified",
+    "remote_fs_id": 1077734856659107,
+    "remote_bytes": 16975474
+  }
+}

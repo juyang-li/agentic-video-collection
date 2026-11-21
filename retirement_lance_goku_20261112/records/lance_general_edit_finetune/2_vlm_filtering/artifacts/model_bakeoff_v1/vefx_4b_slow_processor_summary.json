@@ -1,0 +1,17 @@
+{
+  "model_id": "xiangbog/VEFX-Reward-4B",
+  "input": "2_vlm_filtering/artifacts/model_bakeoff_v1/current_scope_63.csv",
+  "output": "2_vlm_filtering/artifacts/model_bakeoff_v1/vefx_4b_slow_processor_scores.csv",
+  "rows": 63,
+  "status_counts": {
+    "pass": 63
+  },
+  "route_counts": {
+    "inverse": 16,
+    "forward": 43,
+    "training_direction_both_generated": 4
+  },
+  "fps": 4.0,
+  "max_frame_pixels": 399360,
+  "new_run_wall_seconds": 80.18634849786758
+}

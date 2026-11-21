@@ -1,0 +1,39 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_pairs": 2650,
+  "survivors": 2351,
+  "pair_decisions": {
+    "accepted": 2257,
+    "rejected": 299,
+    "uncertain": 94
+  },
+  "pair_decisions_by_branch": {
+    "reco_add": {
+      "accepted": 700,
+      "rejected": 123,
+      "uncertain": 40
+    },
+    "reco_remove": {
+      "accepted": 690,
+      "rejected": 149,
+      "uncertain": 27
+    },
+    "reco_replace": {
+      "accepted": 867,
+      "rejected": 27,
+      "uncertain": 27
+    }
+  },
+  "rejection_reasons": {
+    "sustained_near_freeze": 211,
+    "extreme_freeze_repeat": 72,
+    "boundary_musiq_p10": 33,
+    "boundary_sharpness_p10": 19,
+    "joint_extreme_low_quality": 16,
+    "boundary_dino_max_feature_jump": 10,
+    "global_low_visual_quality": 70,
+    "global_blur_low_detail": 62,
+    "media_missing": 4,
+    "full_score_missing": 4
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "model_id": "xiangbog/VEFX-Reward-4B",
+  "input": "2_vlm_filtering/artifacts/model_bakeoff_v1/current_scope_63.csv",
+  "output": "2_vlm_filtering/artifacts/model_bakeoff_v1/vefx_4b_smoke_scores.csv",
+  "rows": 2,
+  "status_counts": {
+    "pass": 2
+  },
+  "route_counts": {
+    "inverse": 2
+  },
+  "fps": 4.0,
+  "max_frame_pixels": 399360,
+  "new_run_wall_seconds": 4.074339486658573
+}

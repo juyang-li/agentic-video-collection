@@ -1,0 +1,15 @@
+{
+  "benchmark": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/real_person_drift_stress_v1/benchmark.jsonl",
+  "benchmark_sha256": "0b739400124f78139681d17423b635055e91209c96282adad182c6e03b3035c4",
+  "chains": 12,
+  "checkpoints": 24,
+  "overlap_with_real_person_v2": 0,
+  "patterns": {
+    "delayed_rollback": 4,
+    "history_state_retrieval": 4,
+    "repeated_edit_undo": 4
+  },
+  "status": "complete",
+  "turns": 48,
+  "unique_source_hashes": 12
+}

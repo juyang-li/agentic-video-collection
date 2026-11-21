@@ -1,4 +1,0 @@
-task: try-on-dresses
-instruction: Reconstruct the person's clothing from the referenced garment.
-sample: dresses/1167710_detail.mp4
-caption: 

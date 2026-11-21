@@ -1,0 +1,18 @@
+{
+  "judge_version": "qwen2_5_vl_7b_pair_judge_v1",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_backend": "transformers",
+  "prompt_sha256": "c734ff2a1199ea1bec0f17a1b625f370d419ebf13456cda1b82f80838d15eadc",
+  "input_rows": 240,
+  "completed": 240,
+  "parse_errors": 0,
+  "decision_counts": {
+    "accepted": 193,
+    "rejected": 47,
+    "uncertain": 0
+  },
+  "new_run_elapsed_seconds": 553.9641460360726,
+  "seconds_per_new_pair": 2.3081839418169694,
+  "mean_input_tokens": 2787.7791666666667,
+  "peak_gpu_memory_mb": 17296.247
+}

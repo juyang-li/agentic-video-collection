@@ -1,0 +1,671 @@
+{
+  "api_key_env": "OPEN_ROUTER_QWEN",
+  "bidirectional_consensus": {
+    "by_pair": {
+      "coinve4k_step677__vs__mixed2k2k_step677": {
+        "counts": {
+          "fidelity": {
+            "coinve4k_step677": 117,
+            "mixed2k2k_step677": 46,
+            "order_inconsistent": 40,
+            "tie": 25
+          },
+          "instruction": {
+            "coinve4k_step677": 48,
+            "mixed2k2k_step677": 47,
+            "order_inconsistent": 54,
+            "tie": 79
+          },
+          "overall": {
+            "coinve4k_step677": 107,
+            "mixed2k2k_step677": 57,
+            "order_inconsistent": 45,
+            "tie": 19
+          }
+        },
+        "groups": 228,
+        "rates": {
+          "fidelity": {
+            "coinve4k_step677": 0.5131578947368421,
+            "mixed2k2k_step677": 0.20175438596491227,
+            "order_inconsistent": 0.17543859649122806,
+            "tie": 0.10964912280701754
+          },
+          "instruction": {
+            "coinve4k_step677": 0.21052631578947367,
+            "mixed2k2k_step677": 0.20614035087719298,
+            "order_inconsistent": 0.23684210526315788,
+            "tie": 0.34649122807017546
+          },
+          "overall": {
+            "coinve4k_step677": 0.4692982456140351,
+            "mixed2k2k_step677": 0.25,
+            "order_inconsistent": 0.19736842105263158,
+            "tie": 0.08333333333333333
+          }
+        }
+      },
+      "single4k_step677__vs__coinve4k_step677": {
+        "counts": {
+          "fidelity": {
+            "coinve4k_step677": 89,
+            "order_inconsistent": 39,
+            "single4k_step677": 78,
+            "tie": 22
+          },
+          "instruction": {
+            "coinve4k_step677": 81,
+            "order_inconsistent": 49,
+            "single4k_step677": 31,
+            "tie": 67
+          },
+          "overall": {
+            "coinve4k_step677": 109,
+            "order_inconsistent": 37,
+            "single4k_step677": 61,
+            "tie": 21
+          }
+        },
+        "groups": 228,
+        "rates": {
+          "fidelity": {
+            "coinve4k_step677": 0.39035087719298245,
+            "order_inconsistent": 0.17105263157894737,
+            "single4k_step677": 0.34210526315789475,
+            "tie": 0.09649122807017543
+          },
+          "instruction": {
+            "coinve4k_step677": 0.35526315789473684,
+            "order_inconsistent": 0.2149122807017544,
+            "single4k_step677": 0.13596491228070176,
+            "tie": 0.29385964912280704
+          },
+          "overall": {
+            "coinve4k_step677": 0.4780701754385965,
+            "order_inconsistent": 0.16228070175438597,
+            "single4k_step677": 0.2675438596491228,
+            "tie": 0.09210526315789473
+          }
+        }
+      },
+      "single4k_step677__vs__mixed2k2k_step677": {
+        "counts": {
+          "fidelity": {
+            "mixed2k2k_step677": 55,
+            "order_inconsistent": 43,
+            "single4k_step677": 112,
+            "tie": 18
+          },
+          "instruction": {
+            "mixed2k2k_step677": 89,
+            "order_inconsistent": 46,
+            "single4k_step677": 33,
+            "tie": 60
+          },
+          "overall": {
+            "mixed2k2k_step677": 104,
+            "order_inconsistent": 30,
+            "single4k_step677": 79,
+            "tie": 15
+          }
+        },
+        "groups": 228,
+        "rates": {
+          "fidelity": {
+            "mixed2k2k_step677": 0.2412280701754386,
+            "order_inconsistent": 0.18859649122807018,
+            "single4k_step677": 0.49122807017543857,
+            "tie": 0.07894736842105263
+          },
+          "instruction": {
+            "mixed2k2k_step677": 0.39035087719298245,
+            "order_inconsistent": 0.20175438596491227,
+            "single4k_step677": 0.14473684210526316,
+            "tie": 0.2631578947368421
+          },
+          "overall": {
+            "mixed2k2k_step677": 0.45614035087719296,
+            "order_inconsistent": 0.13157894736842105,
+            "single4k_step677": 0.34649122807017546,
+            "tie": 0.06578947368421052
+          }
+        }
+      }
+    },
+    "by_pair_stage": {
+      "coinve4k_step677__vs__mixed2k2k_step677": {
+        "attribute_all": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 42,
+              "mixed2k2k_step677": 18,
+              "order_inconsistent": 23,
+              "tie": 11
+            },
+            "instruction": {
+              "coinve4k_step677": 15,
+              "mixed2k2k_step677": 11,
+              "order_inconsistent": 22,
+              "tie": 46
+            },
+            "overall": {
+              "coinve4k_step677": 41,
+              "mixed2k2k_step677": 17,
+              "order_inconsistent": 26,
+              "tie": 10
+            }
+          },
+          "groups": 94,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.44680851063829785,
+              "mixed2k2k_step677": 0.19148936170212766,
+              "order_inconsistent": 0.24468085106382978,
+              "tie": 0.11702127659574468
+            },
+            "instruction": {
+              "coinve4k_step677": 0.1595744680851064,
+              "mixed2k2k_step677": 0.11702127659574468,
+              "order_inconsistent": 0.23404255319148937,
+              "tie": 0.48936170212765956
+            },
+            "overall": {
+              "coinve4k_step677": 0.43617021276595747,
+              "mixed2k2k_step677": 0.18085106382978725,
+              "order_inconsistent": 0.2765957446808511,
+              "tie": 0.10638297872340426
+            }
+          }
+        },
+        "long_subject": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 27,
+              "mixed2k2k_step677": 7,
+              "order_inconsistent": 4,
+              "tie": 5
+            },
+            "instruction": {
+              "coinve4k_step677": 8,
+              "mixed2k2k_step677": 15,
+              "order_inconsistent": 9,
+              "tie": 11
+            },
+            "overall": {
+              "coinve4k_step677": 20,
+              "mixed2k2k_step677": 13,
+              "order_inconsistent": 6,
+              "tie": 4
+            }
+          },
+          "groups": 43,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.627906976744186,
+              "mixed2k2k_step677": 0.16279069767441862,
+              "order_inconsistent": 0.09302325581395349,
+              "tie": 0.11627906976744186
+            },
+            "instruction": {
+              "coinve4k_step677": 0.18604651162790697,
+              "mixed2k2k_step677": 0.3488372093023256,
+              "order_inconsistent": 0.20930232558139536,
+              "tie": 0.2558139534883721
+            },
+            "overall": {
+              "coinve4k_step677": 0.46511627906976744,
+              "mixed2k2k_step677": 0.3023255813953488,
+              "order_inconsistent": 0.13953488372093023,
+              "tie": 0.09302325581395349
+            }
+          }
+        },
+        "short_subject": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 48,
+              "mixed2k2k_step677": 21,
+              "order_inconsistent": 13,
+              "tie": 9
+            },
+            "instruction": {
+              "coinve4k_step677": 25,
+              "mixed2k2k_step677": 21,
+              "order_inconsistent": 23,
+              "tie": 22
+            },
+            "overall": {
+              "coinve4k_step677": 46,
+              "mixed2k2k_step677": 27,
+              "order_inconsistent": 13,
+              "tie": 5
+            }
+          },
+          "groups": 91,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.5274725274725275,
+              "mixed2k2k_step677": 0.23076923076923078,
+              "order_inconsistent": 0.14285714285714285,
+              "tie": 0.0989010989010989
+            },
+            "instruction": {
+              "coinve4k_step677": 0.27472527472527475,
+              "mixed2k2k_step677": 0.23076923076923078,
+              "order_inconsistent": 0.25274725274725274,
+              "tie": 0.24175824175824176
+            },
+            "overall": {
+              "coinve4k_step677": 0.5054945054945055,
+              "mixed2k2k_step677": 0.2967032967032967,
+              "order_inconsistent": 0.14285714285714285,
+              "tie": 0.054945054945054944
+            }
+          }
+        }
+      },
+      "single4k_step677__vs__coinve4k_step677": {
+        "attribute_all": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 44,
+              "order_inconsistent": 12,
+              "single4k_step677": 29,
+              "tie": 9
+            },
+            "instruction": {
+              "coinve4k_step677": 32,
+              "order_inconsistent": 20,
+              "single4k_step677": 10,
+              "tie": 32
+            },
+            "overall": {
+              "coinve4k_step677": 52,
+              "order_inconsistent": 12,
+              "single4k_step677": 21,
+              "tie": 9
+            }
+          },
+          "groups": 94,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.46808510638297873,
+              "order_inconsistent": 0.1276595744680851,
+              "single4k_step677": 0.30851063829787234,
+              "tie": 0.09574468085106383
+            },
+            "instruction": {
+              "coinve4k_step677": 0.3404255319148936,
+              "order_inconsistent": 0.2127659574468085,
+              "single4k_step677": 0.10638297872340426,
+              "tie": 0.3404255319148936
+            },
+            "overall": {
+              "coinve4k_step677": 0.5531914893617021,
+              "order_inconsistent": 0.1276595744680851,
+              "single4k_step677": 0.22340425531914893,
+              "tie": 0.09574468085106383
+            }
+          }
+        },
+        "long_subject": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 9,
+              "order_inconsistent": 9,
+              "single4k_step677": 19,
+              "tie": 6
+            },
+            "instruction": {
+              "coinve4k_step677": 14,
+              "order_inconsistent": 9,
+              "single4k_step677": 7,
+              "tie": 13
+            },
+            "overall": {
+              "coinve4k_step677": 14,
+              "order_inconsistent": 8,
+              "single4k_step677": 14,
+              "tie": 7
+            }
+          },
+          "groups": 43,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.20930232558139536,
+              "order_inconsistent": 0.20930232558139536,
+              "single4k_step677": 0.4418604651162791,
+              "tie": 0.13953488372093023
+            },
+            "instruction": {
+              "coinve4k_step677": 0.32558139534883723,
+              "order_inconsistent": 0.20930232558139536,
+              "single4k_step677": 0.16279069767441862,
+              "tie": 0.3023255813953488
+            },
+            "overall": {
+              "coinve4k_step677": 0.32558139534883723,
+              "order_inconsistent": 0.18604651162790697,
+              "single4k_step677": 0.32558139534883723,
+              "tie": 0.16279069767441862
+            }
+          }
+        },
+        "short_subject": {
+          "counts": {
+            "fidelity": {
+              "coinve4k_step677": 36,
+              "order_inconsistent": 18,
+              "single4k_step677": 30,
+              "tie": 7
+            },
+            "instruction": {
+              "coinve4k_step677": 35,
+              "order_inconsistent": 20,
+              "single4k_step677": 14,
+              "tie": 22
+            },
+            "overall": {
+              "coinve4k_step677": 43,
+              "order_inconsistent": 17,
+              "single4k_step677": 26,
+              "tie": 5
+            }
+          },
+          "groups": 91,
+          "rates": {
+            "fidelity": {
+              "coinve4k_step677": 0.3956043956043956,
+              "order_inconsistent": 0.1978021978021978,
+              "single4k_step677": 0.32967032967032966,
+              "tie": 0.07692307692307693
+            },
+            "instruction": {
+              "coinve4k_step677": 0.38461538461538464,
+              "order_inconsistent": 0.21978021978021978,
+              "single4k_step677": 0.15384615384615385,
+              "tie": 0.24175824175824176
+            },
+            "overall": {
+              "coinve4k_step677": 0.4725274725274725,
+              "order_inconsistent": 0.18681318681318682,
+              "single4k_step677": 0.2857142857142857,
+              "tie": 0.054945054945054944
+            }
+          }
+        }
+      },
+      "single4k_step677__vs__mixed2k2k_step677": {
+        "attribute_all": {
+          "counts": {
+            "fidelity": {
+              "mixed2k2k_step677": 23,
+              "order_inconsistent": 17,
+              "single4k_step677": 48,
+              "tie": 6
+            },
+            "instruction": {
+              "mixed2k2k_step677": 35,
+              "order_inconsistent": 18,
+              "single4k_step677": 13,
+              "tie": 28
+            },
+            "overall": {
+              "mixed2k2k_step677": 43,
+              "order_inconsistent": 9,
+              "single4k_step677": 36,
+              "tie": 6
+            }
+          },
+          "groups": 94,
+          "rates": {
+            "fidelity": {
+              "mixed2k2k_step677": 0.24468085106382978,
+              "order_inconsistent": 0.18085106382978725,
+              "single4k_step677": 0.5106382978723404,
+              "tie": 0.06382978723404255
+            },
+            "instruction": {
+              "mixed2k2k_step677": 0.3723404255319149,
+              "order_inconsistent": 0.19148936170212766,
+              "single4k_step677": 0.13829787234042554,
+              "tie": 0.2978723404255319
+            },
+            "overall": {
+              "mixed2k2k_step677": 0.4574468085106383,
+              "order_inconsistent": 0.09574468085106383,
+              "single4k_step677": 0.3829787234042553,
+              "tie": 0.06382978723404255
+            }
+          }
+        },
+        "long_subject": {
+          "counts": {
+            "fidelity": {
+              "mixed2k2k_step677": 3,
+              "order_inconsistent": 10,
+              "single4k_step677": 27,
+              "tie": 3
+            },
+            "instruction": {
+              "mixed2k2k_step677": 15,
+              "order_inconsistent": 12,
+              "single4k_step677": 8,
+              "tie": 8
+            },
+            "overall": {
+              "mixed2k2k_step677": 16,
+              "order_inconsistent": 6,
+              "single4k_step677": 17,
+              "tie": 4
+            }
+          },
+          "groups": 43,
+          "rates": {
+            "fidelity": {
+              "mixed2k2k_step677": 0.06976744186046512,
+              "order_inconsistent": 0.23255813953488372,
+              "single4k_step677": 0.627906976744186,
+              "tie": 0.06976744186046512
+            },
+            "instruction": {
+              "mixed2k2k_step677": 0.3488372093023256,
+              "order_inconsistent": 0.27906976744186046,
+              "single4k_step677": 0.18604651162790697,
+              "tie": 0.18604651162790697
+            },
+            "overall": {
+              "mixed2k2k_step677": 0.37209302325581395,
+              "order_inconsistent": 0.13953488372093023,
+              "single4k_step677": 0.3953488372093023,
+              "tie": 0.09302325581395349
+            }
+          }
+        },
+        "short_subject": {
+          "counts": {
+            "fidelity": {
+              "mixed2k2k_step677": 29,
+              "order_inconsistent": 16,
+              "single4k_step677": 37,
+              "tie": 9
+            },
+            "instruction": {
+              "mixed2k2k_step677": 39,
+              "order_inconsistent": 16,
+              "single4k_step677": 12,
+              "tie": 24
+            },
+            "overall": {
+              "mixed2k2k_step677": 45,
+              "order_inconsistent": 15,
+              "single4k_step677": 26,
+              "tie": 5
+            }
+          },
+          "groups": 91,
+          "rates": {
+            "fidelity": {
+              "mixed2k2k_step677": 0.31868131868131866,
+              "order_inconsistent": 0.17582417582417584,
+              "single4k_step677": 0.4065934065934066,
+              "tie": 0.0989010989010989
+            },
+            "instruction": {
+              "mixed2k2k_step677": 0.42857142857142855,
+              "order_inconsistent": 0.17582417582417584,
+              "single4k_step677": 0.13186813186813187,
+              "tie": 0.26373626373626374
+            },
+            "overall": {
+              "mixed2k2k_step677": 0.4945054945054945,
+              "order_inconsistent": 0.16483516483516483,
+              "single4k_step677": 0.2857142857142857,
+              "tie": 0.054945054945054944
+            }
+          }
+        }
+      }
+    },
+    "counts": {
+      "fidelity": {
+        "coinve4k_step677": 206,
+        "mixed2k2k_step677": 101,
+        "order_inconsistent": 122,
+        "single4k_step677": 190,
+        "tie": 65
+      },
+      "instruction": {
+        "coinve4k_step677": 129,
+        "mixed2k2k_step677": 136,
+        "order_inconsistent": 149,
+        "single4k_step677": 64,
+        "tie": 206
+      },
+      "overall": {
+        "coinve4k_step677": 216,
+        "mixed2k2k_step677": 161,
+        "order_inconsistent": 112,
+        "single4k_step677": 140,
+        "tie": 55
+      }
+    },
+    "groups": 684,
+    "rates": {
+      "fidelity": {
+        "coinve4k_step677": 0.30116959064327486,
+        "mixed2k2k_step677": 0.1476608187134503,
+        "order_inconsistent": 0.1783625730994152,
+        "single4k_step677": 0.2777777777777778,
+        "tie": 0.09502923976608187
+      },
+      "instruction": {
+        "coinve4k_step677": 0.18859649122807018,
+        "mixed2k2k_step677": 0.19883040935672514,
+        "order_inconsistent": 0.21783625730994152,
+        "single4k_step677": 0.0935672514619883,
+        "tie": 0.30116959064327486
+      },
+      "overall": {
+        "coinve4k_step677": 0.3157894736842105,
+        "mixed2k2k_step677": 0.23538011695906433,
+        "order_inconsistent": 0.16374269005847952,
+        "single4k_step677": 0.2046783625730994,
+        "tie": 0.0804093567251462
+      }
+    }
+  },
+  "failed_task_ids": [],
+  "manifest_task_count": 1368,
+  "normalized_preferences": {
+    "fidelity": {
+      "coinve4k_step677": 476,
+      "mixed2k2k_step677": 265,
+      "single4k_step677": 445,
+      "tie": 182
+    },
+    "instruction": {
+      "coinve4k_step677": 332,
+      "mixed2k2k_step677": 340,
+      "single4k_step677": 177,
+      "tie": 519
+    },
+    "overall": {
+      "coinve4k_step677": 503,
+      "mixed2k2k_step677": 388,
+      "single4k_step677": 337,
+      "tie": 140
+    }
+  },
+  "normalized_preferences_by_pair": {
+    "coinve4k_step677__vs__mixed2k2k_step677": {
+      "fidelity": {
+        "coinve4k_step677": 265,
+        "mixed2k2k_step677": 122,
+        "tie": 69
+      },
+      "instruction": {
+        "coinve4k_step677": 134,
+        "mixed2k2k_step677": 125,
+        "tie": 197
+      },
+      "overall": {
+        "coinve4k_step677": 253,
+        "mixed2k2k_step677": 152,
+        "tie": 51
+      }
+    },
+    "single4k_step677__vs__coinve4k_step677": {
+      "fidelity": {
+        "coinve4k_step677": 211,
+        "single4k_step677": 188,
+        "tie": 57
+      },
+      "instruction": {
+        "coinve4k_step677": 198,
+        "single4k_step677": 90,
+        "tie": 168
+      },
+      "overall": {
+        "coinve4k_step677": 250,
+        "single4k_step677": 156,
+        "tie": 50
+      }
+    },
+    "single4k_step677__vs__mixed2k2k_step677": {
+      "fidelity": {
+        "mixed2k2k_step677": 143,
+        "single4k_step677": 257,
+        "tie": 56
+      },
+      "instruction": {
+        "mixed2k2k_step677": 215,
+        "single4k_step677": 87,
+        "tie": 154
+      },
+      "overall": {
+        "mixed2k2k_step677": 236,
+        "single4k_step677": 181,
+        "tie": 39
+      }
+    }
+  },
+  "order_consistency": {
+    "fidelity": 0.8216374269005848,
+    "instruction": 0.7821637426900585,
+    "overall": 0.8362573099415205
+  },
+  "reported_cost_usd": 1.8595604999999968,
+  "requests_including_retries": 1371,
+  "requests_without_reported_cost": 2,
+  "scope": "full_manifest",
+  "status": "complete",
+  "tasks_failed": 0,
+  "tasks_requested": 1368,
+  "tasks_succeeded": 1368,
+  "usage_totals": {
+    "completion_tokens": 241988,
+    "prompt_tokens": 1269474,
+    "total_tokens": 1511462
+  }
+}

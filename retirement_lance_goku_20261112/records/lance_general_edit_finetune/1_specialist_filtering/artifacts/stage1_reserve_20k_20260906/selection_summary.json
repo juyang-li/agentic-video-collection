@@ -1,0 +1,256 @@
+{
+  "status": "metadata_complete_media_and_gpu_pending",
+  "rows": 20000,
+  "seed": 20260906,
+  "quotas": {
+    "goku_remove": 3000,
+    "goku_add": 2000,
+    "egoedit_replace": 5000,
+    "reco_add": 3000,
+    "reco_remove": 3000,
+    "reco_replace": 4000
+  },
+  "census": {
+    "goku_remove": {
+      "metadata_rejected": 3507,
+      "previously_used": 3036,
+      "eligible": 4273
+    },
+    "goku_add": {
+      "previously_used": 2177,
+      "metadata_rejected": 3866,
+      "eligible": 9267
+    },
+    "egoedit_replace": {
+      "previously_used": 2070,
+      "metadata_rejected": 477,
+      "heldout_component": 1520,
+      "eligible": 85447
+    },
+    "reco_add": {
+      "metadata_rejected": 79,
+      "previously_used": 1011,
+      "eligible": 8889
+    },
+    "reco_remove": {
+      "previously_used": 2052,
+      "metadata_rejected": 59,
+      "eligible": 7886
+    },
+    "reco_replace": {
+      "previously_used": 1091,
+      "metadata_rejected": 3,
+      "eligible": 8904
+    }
+  },
+  "history_manifest_paths": [
+    "artifacts/filter_run_v1/pilot_manifest_5k.csv",
+    "artifacts/filter_run_v1/pilot_manifest_phase_a.csv",
+    "artifacts/filter_run_v1/pilot_manifest_phase_b.csv",
+    "artifacts/filter_run_v1/stage1_0_results.csv",
+    "artifacts/filter_run_v1/stage1_0_survivors.csv",
+    "artifacts/filter_run_v1/stage1_1_accepted.csv",
+    "artifacts/filter_run_v1/stage1_1_calibration_pair_decisions.csv",
+    "artifacts/filter_run_v1/stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v1/stage1_1_pending.csv",
+    "artifacts/filter_run_v1/stage1_1_rejected.csv",
+    "artifacts/filter_run_v1/stage1_1_uncertain.csv",
+    "artifacts/filter_run_v1/stage1_2_robot_queue.csv",
+    "artifacts/filter_run_v1/stage1_5_human_queue.csv",
+    "artifacts/filter_run_v1/stage1_6_pair_candidate_queue.csv",
+    "artifacts/filter_run_v1/stage1_audit_300.csv",
+    "artifacts/filter_run_v1/stage1_handheld_remove_review_15.csv",
+    "artifacts/filter_run_v1/stage1_uncertain_review_15.csv",
+    "artifacts/filter_run_v1/training_auxiliary_candidates.csv",
+    "artifacts/filter_run_v1/training_main_candidates.csv",
+    "artifacts/filter_run_v1/training_provenance_hold.csv",
+    "artifacts/filter_run_v2/stage1_2_robot_queue.csv",
+    "artifacts/filter_run_v2/stage1_next_input.csv",
+    "artifacts/filter_run_v2/stage1_structural_exclusions.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_input.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_stage1_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_input.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_input.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_missing_full_manifest.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_missing_technical_manifest.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_stage1_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round1_input.csv",
+    "artifacts/filter_run_v3/expansion_round1_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round1_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round2_ego_input.csv",
+    "artifacts/filter_run_v3/expansion_round2_ego_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round2_ego_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round2_ego_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round2_ego_stage1_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_input.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_missing_full_manifest.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_stage1_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_input.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_stage1_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_input.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_reco_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_stage1_0_results.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/expansion_round4_refill_stage1_survivors.csv",
+    "artifacts/filter_run_v3/missing_quality_manifest.csv",
+    "artifacts/filter_run_v3/nonreco_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/nonreco_stage1_1_pair_decisions_corrected.csv",
+    "artifacts/filter_run_v3/nonreco_stage1_survivors.csv",
+    "artifacts/filter_run_v3/nonreco_stage1_survivors_corrected.csv",
+    "artifacts/filter_run_v3/reco_stage1_1_pair_decisions.csv",
+    "artifacts/filter_run_v3/reco_stage1_survivors.csv",
+    "artifacts/filter_run_v3/stage1_0_results.csv",
+    "artifacts/filter_run_v3/stage1_0_survivors.csv",
+    "artifacts/filter_run_v3/stage1_input.csv",
+    "artifacts/survey_manifest.csv",
+    "artifacts/survey_manifest_openve_v2.csv",
+    "artifacts/survey_manifest_reco_v3.csv"
+  ],
+  "history_unique_pairs": 12531,
+  "heldout_components": 390,
+  "heldout_definition": "Full candidate and history graph; same (dataset, locator) as frozen 4K split.",
+  "source_archives": {
+    "remove/remove.videos.part24.tar": 989,
+    "remove/remove.videos.part22.tar": 2011,
+    "add/add.videos.part22.tar": 820,
+    "add/add.videos.part27.tar": 1180,
+    "egoedit_remote_zip": 5000,
+    "add/src_videos/add_src_video_00.tar": 652,
+    "add/src_videos/add_src_video_42.tar": 670,
+    "add/src_videos/add_src_video_37.tar": 664,
+    "add/src_videos/add_src_video_56.tar": 633,
+    "add/src_videos/add_src_video_38.tar": 381,
+    "remove/src_videos/remove_src_video_44.tar": 685,
+    "remove/src_videos/remove_src_video_39.tar": 689,
+    "remove/src_videos/remove_src_video_00.tar": 742,
+    "remove/src_videos/remove_src_video_20.tar": 707,
+    "remove/src_videos/remove_src_video_50.tar": 177,
+    "replace/src_videos/replace_src_video_37.tar": 880,
+    "replace/src_videos/replace_src_video_58.tar": 554,
+    "replace/src_videos/replace_src_video_11.tar": 850,
+    "replace/src_videos/replace_src_video_72.tar": 868,
+    "replace/src_videos/replace_src_video_34.tar": 848
+  },
+  "quality_checked_roles": {
+    "target": 4597,
+    "source": 2794,
+    "both": 12609
+  },
+  "unique_media": 38735,
+  "reused_media": 684,
+  "excluded_datasets": [
+    "coinve",
+    "insave",
+    "openve"
+  ],
+  "stage2_requested": false,
+  "api_judge_calls": 0,
+  "config": {
+    "filter_version": "general_edit_stage1_pilot_v1",
+    "seed": 20260906,
+    "base_quota_per_branch": 500,
+    "targeted_quota": {
+      "reco_robot_cg": {
+        "reco_add": 167,
+        "reco_remove": 167,
+        "reco_replace": 166
+      },
+      "reco_clothes": {
+        "reco_add": 150,
+        "reco_remove": 150,
+        "reco_replace": 200
+      }
+    },
+    "minimum_duration_seconds": 3.0,
+    "exclusion_manifest": "artifacts/survey_manifest_reco_v3.csv",
+    "sources": {
+      "insave_remove": {
+        "repo_id": "suimu/InsAVE-80K",
+        "revision": "8ba8ccaad1d8f97b08e218dae1f2b439bd3d2289",
+        "metadata": "../../dataset_research/insave_research/add_and_remove.csv"
+      },
+      "goku_remove": {
+        "repo_id": "bigfacing/GOKU-2M",
+        "revision": "f289f4b245648dc57db04afaaeb68659440c0fa6",
+        "populations": [
+          "artifacts/populations/goku_remove_part22.csv",
+          "artifacts/populations/goku_remove_part24.csv"
+        ]
+      },
+      "goku_add": {
+        "repo_id": "bigfacing/GOKU-2M",
+        "revision": "f289f4b245648dc57db04afaaeb68659440c0fa6",
+        "populations": [
+          "artifacts/populations/goku_add_part22.csv",
+          "artifacts/populations/goku_add_part27.csv"
+        ]
+      },
+      "egoedit_replace": {
+        "repo_id": "liguang0115/EgoEdit",
+        "revision": "a9bd3faafe51a581b359acd7c6ad5c432508ff60",
+        "data_table": "../../dataset_research/egoedit_research/annotation/egoeditdata_data_table.csv",
+        "edits_table": "../../dataset_research/egoedit_research/annotation/egoeditdata_edits_table.csv",
+        "direction_quota": {
+          "original_to_edited": 150,
+          "edited_to_original": 100,
+          "edited_to_edited": 250
+        }
+      },
+      "reco_add": {
+        "repo_id": "HiDream-ai/ReCo-Data",
+        "revision": "63c6481a4aedae39ec602ce8e17a836cc07b4ca9",
+        "metadata": "artifacts/metadata/reco/add/add_data_configs.json",
+        "base_shard": 38,
+        "candidate_shards": [
+          0,
+          37,
+          38,
+          42,
+          56
+        ]
+      },
+      "reco_remove": {
+        "repo_id": "HiDream-ai/ReCo-Data",
+        "revision": "63c6481a4aedae39ec602ce8e17a836cc07b4ca9",
+        "metadata": "artifacts/metadata/reco/remove/remove_data_configs.json",
+        "base_shard": 50,
+        "candidate_shards": [
+          0,
+          20,
+          39,
+          44,
+          50
+        ]
+      },
+      "reco_replace": {
+        "repo_id": "HiDream-ai/ReCo-Data",
+        "revision": "63c6481a4aedae39ec602ce8e17a836cc07b4ca9",
+        "metadata": "artifacts/metadata/reco/replace/replace_data_configs.json",
+        "base_shard": 58,
+        "candidate_shards": [
+          11,
+          34,
+          37,
+          58,
+          72
+        ]
+      }
+    }
+  },
+  "manifest_sha256": "61b58aa66f6b2a6732bb4e9dcdaaa0ac4a20aec3ee724f8df607fb1a3d173367"
+}

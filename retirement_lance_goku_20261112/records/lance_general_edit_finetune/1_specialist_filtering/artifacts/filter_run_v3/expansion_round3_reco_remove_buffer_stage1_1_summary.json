@@ -1,0 +1,28 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 900,
+  "survivors": 755,
+  "pair_decisions": {
+    "accepted": 740,
+    "rejected": 145,
+    "uncertain": 15
+  },
+  "pair_decisions_by_branch": {
+    "reco_remove": {
+      "accepted": 740,
+      "rejected": 145,
+      "uncertain": 15
+    }
+  },
+  "rejection_reasons": {
+    "boundary_musiq_p10": 34,
+    "global_low_visual_quality": 75,
+    "global_blur_low_detail": 53,
+    "boundary_sharpness_p10": 14,
+    "sustained_near_freeze": 78,
+    "extreme_freeze_repeat": 18,
+    "boundary_dino_max_feature_jump": 4,
+    "joint_extreme_low_quality": 5
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "judge_version": "qwen3_vl_32b_openrouter_pair_judge_v2_4",
+  "roi_method_version": "paired_change_rect_nine_time_anchor_propagation_v5",
+  "visual_layout_version": "five_full_two_nine_time_roi_sheets_generated_side_v4",
+  "model_id": "qwen/qwen3-vl-32b-instruct",
+  "model_backend": "openrouter",
+  "prompt_sha256": "a0f97eeec9e59f4d8db2527650e6b954299cc37ac165f65a31c53ebf207de028",
+  "input_rows": 3,
+  "completed": 3,
+  "parse_errors": 0,
+  "decision_counts": {
+    "rejected": 1,
+    "accepted": 2
+  },
+  "check_counts": {
+    "instruction_following": {
+      "fail": 1,
+      "pass": 2
+    },
+    "visible_artifact": {
+      "pass": 3
+    },
+    "content_preservation": {
+      "pass": 3
+    }
+  },
+  "provider_counts": {
+    "Alibaba": 3
+  },
+  "new_rows_attempted": 3,
+  "concurrency": 3,
+  "new_run_wall_seconds": 22.157206177711487,
+  "mean_pair_elapsed_seconds": 14.584920333333335,
+  "mean_api_elapsed_seconds": 12.723209666666666,
+  "total_input_tokens": 31330,
+  "total_output_tokens": 1160,
+  "total_cost_usd": 0.0037408800000000002,
+  "mean_input_tokens": 10443.333333333334,
+  "mean_roi_pairs": 9,
+  "rows_retried": 0
+}

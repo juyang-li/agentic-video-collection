@@ -1,0 +1,24 @@
+{
+  "survey_version": "general_edit_stage1_handheld_remove_review_15_v1",
+  "rows": 15,
+  "seed": 20260830,
+  "excluded_previous_samples": 313,
+  "branch_counts": {
+    "goku_remove": 8,
+    "reco_remove": 7
+  },
+  "category_counts": {
+    "other": 3,
+    "phone_tablet": 1,
+    "book_paper": 2,
+    "instrument": 2,
+    "tool": 1,
+    "container": 1,
+    "bag_box": 2,
+    "animal": 2,
+    "footwear": 1
+  },
+  "decision_counts": {
+    "accepted": 15
+  }
+}

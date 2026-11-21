@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "archive": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/omni_baselines_20260926/lance/omni48_lance_base_seed42_human_review_20260926.zip",
+  "bytes": 101711945,
+  "sha256": "c478a7a61cb00f19f912b4e5da61ef987af15c549bfd811820dc0aa28eb1e92c",
+  "samples": 48,
+  "videos": 96,
+  "zip_crc_verified": true,
+  "single_top_level_directory": true,
+  "browser_validation": "passed",
+  "remote_upload_status": "not_uploaded"
+}

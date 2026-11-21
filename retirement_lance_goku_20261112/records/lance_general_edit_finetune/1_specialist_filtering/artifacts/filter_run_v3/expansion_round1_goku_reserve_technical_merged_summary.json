@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_technical.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_reserve_technical_new.csv"
+  ],
+  "input_rows": 5742,
+  "unique_videos": 5742,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 5742
+  },
+  "full_scores": 0
+}

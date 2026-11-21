@@ -1,0 +1,23 @@
+{
+  "route_version": "qwen72b_prompt_v12_to_gemini38_rescue_v2",
+  "input_rows": 2351,
+  "routed_rows": 1163,
+  "route_rate": 0.49468311356869415,
+  "route_counts": {
+    "qwen_accept_high_risk": 732,
+    "qwen_rejected_requires_gemini_rescue_decision": 431
+  },
+  "risk_counts": {
+    "robot_or_synthetic_subject": 411,
+    "stage1_boundary": 94,
+    "high_risk_remove": 717
+  },
+  "by_dataset": {
+    "reco": 1163
+  },
+  "by_branch": {
+    "reco_add": 152,
+    "reco_remove": 717,
+    "reco_replace": 294
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": "lance_training_recovery_archive_v1",
+  "verified_at_utc": "2026-09-05T23:03:13.998226+00:00",
+  "archive": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/lance_4k_r64_seed42_e2_v1/training_recovery_v1.tar",
+  "archive_bytes": 3368058880,
+  "archive_sha256": "885868e7977684690d51d2b5d3c2dc19e9d2b4a38936d92e2c1f15b70ca592f6",
+  "archive_root": "lance_4k_r64_seed42_e2_v1_training_recovery_v1",
+  "verified_file_count": 35,
+  "all_archived_files_match_sources": true,
+  "complete_resume_steps": [
+    902
+  ],
+  "inference_only_adapter_steps": [
+    226,
+    451,
+    677
+  ],
+  "contains_original_or_generated_videos": false,
+  "environment_secret_values_absent_from_selected_text_and_code": true,
+  "remote_backup_status": "uploaded_remote_size_and_id_verified",
+  "remote_verification_receipt": "training_recovery_v1.remote_verification.json",
+  "intended_remote_path": "/apps/bypy/lance_review/lance_4k_r64_seed42_e2_v1_training_recovery_v1.tar",
+  "files": [
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/rng.rank-00002-of-00004.pt",
+      "bytes": 14885,
+      "sha256": "2a48d26b99428ecc0235d914169b71a94649ccaf27412fd004bd1cc4302565ef"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/trainer_state.json",
+      "bytes": 226,
+      "sha256": "a537b18e4cd82415837d947919c13de7ee001319c3b20555a3b10ce772cc16ff"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/rng.rank-00003-of-00004.pt",
+      "bytes": 14885,
+      "sha256": "7e8247db37021a4b336ffb01cf3c0bc7aa3b2a5d8aa88b9dc0b085d1273683bc"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/datamake_online_training_contract.json",
+      "bytes": 2727,
+      "sha256": "5881c0d8efb250e2a835e091a4a7ac212b560d4c5dea65d58eda3ca7fcd0aa78"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/datamake_lora_config.json",
+      "bytes": 290,
+      "sha256": "e78437b8f337b136ec060ba094b5df89e545c96a419d4c2d0ba75abede6732df"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/optimizer/__3_0.distcp",
+      "bytes": 361893986,
+      "sha256": "99322486456d28df37b35d320d952ef5bd4bab451b46103b4b54bfe9c2808b07"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/optimizer/.metadata",
+      "bytes": 1950103,
+      "sha256": "22c6bb1929239d090403f809e4f1e4ac1268479c37072968f4b141badcd262e6"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/optimizer/__2_0.distcp",
+      "bytes": 361855959,
+      "sha256": "9a796ffdc9dba8285408bae2816c917ae1b9a510dec0dbfe6ceed80d6f252bf3"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/optimizer/__0_0.distcp",
+      "bytes": 361588817,
+      "sha256": "4d9f33c2d3cf90456bf639a73b3b7cf24494a84b90e2f26696ce3364e50cbdfb"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/optimizer/__1_0.distcp",
+      "bytes": 361855959,
+      "sha256": "3a2853c6e48c4b1fcac43b9a9bd2d4055b373fd5124859c6ae6f2647a69169a7"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/scheduler.pt",
+      "bytes": 1465,
+      "sha256": "fcb4ff99ab7ebab57c0d86e2e58699cc392334a3aa02713ffdd367f8b9922e30"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/rng.rank-00000-of-00004.pt",
+      "bytes": 14885,
+      "sha256": "fbc7bd77b257b8f66de5be9e48615bd39e721aca2d342cb82e542755eca9faef"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/checkpoint_complete.json",
+      "bytes": 599,
+      "sha256": "782ad120abce1495fd41a907afaa9b7eabe52de0dace0602eba27e45e88441f9"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/rng.rank-00001-of-00004.pt",
+      "bytes": 14885,
+      "sha256": "fe29a72cd21157ae290ec82b55a9b4a1a37079137d7915dda7d13f78377d916f"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000902/adapter.safetensors",
+      "bytes": 479004528,
+      "sha256": "e92f514abf8f8bef36d2f350af5692a51630ae51403d19f76f8c638cd3b4a179"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000226/adapter.safetensors",
+      "bytes": 479004528,
+      "sha256": "7e51a42edc8a07977ccfc633a34e246361e7be167ad62c00977b03e3977431bc"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000226/datamake_lora_config.json",
+      "bytes": 290,
+      "sha256": "e78437b8f337b136ec060ba094b5df89e545c96a419d4c2d0ba75abede6732df"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000451/adapter.safetensors",
+      "bytes": 479004528,
+      "sha256": "27c25f0453421397d1253de7d0d948bff8d25cd9abaf7a07210284b28b8bcb66"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000451/datamake_lora_config.json",
+      "bytes": 290,
+      "sha256": "e78437b8f337b136ec060ba094b5df89e545c96a419d4c2d0ba75abede6732df"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000677/adapter.safetensors",
+      "bytes": 479004528,
+      "sha256": "86c04a7a0e83a754f7a726c3aeceac4fe2bd947277741d5938a7be5d86a07811"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/checkpoints/0000677/datamake_lora_config.json",
+      "bytes": 290,
+      "sha256": "e78437b8f337b136ec060ba094b5df89e545c96a419d4c2d0ba75abede6732df"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/segments/job_123507_2119029/launch_manifest.json",
+      "bytes": 5661,
+      "sha256": "71573260c04a135e6d24e16503fdc027e95cfbda05df2c0682f7130a3736a023"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/monitor/metrics.csv",
+      "bytes": 158353,
+      "sha256": "2f42a6b1aaf5ce7a17daa86dbc32c9647973d42cb6d9e77fcf2a4512390b7843"
+    },
+    {
+      "path": "runs/lance_4k_r64_seed42_e2_v1/monitor/status.json",
+      "bytes": 655,
+      "sha256": "86045242405e90650e2e467f8d73fcfcc6b0f817fe224435c29ac7454bec6060"
+    },
+    {
+      "path": "logs/formal_train.log",
+      "bytes": 427614,
+      "sha256": "0a72c0fbaca8a443e1f3ae148a0307cfa6bd7675653dbbbd3d535dd1a0378c97"
+    },
+    {
+      "path": "configs/lance_4k_r64_seed42_e2_v1.json",
+      "bytes": 7404,
+      "sha256": "2ede096470808848c83661647e99aa4cff527b9fb64d8cd621d1ef8b78b4ace3"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/TRAINING_RECOVERY_README.md",
+      "bytes": 2183,
+      "sha256": "30993dca19586af91ab63fcc0396cf817552669ba0401f8e308b5deb398f8edc"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/training_completion.json",
+      "bytes": 3553,
+      "sha256": "b5e358d4b3d860ee07bf92a635032e284495f7cc006ba35962d2503c36e25fb6"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/training_code_snapshot.tar.gz",
+      "bytes": 118046,
+      "sha256": "c90be662b0c0bf3fbe2b60fa270e16789476904515d7e5cf6cb7e5a5c29a3468"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/training_code_snapshot.json",
+      "bytes": 864,
+      "sha256": "42e3915cc273f20f82b7b242f4dc430e732ee4a18b888e28aec61f2b7d53bdb1"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/resume_smoke_audit.json",
+      "bytes": 1584,
+      "sha256": "aca0b224766af25363dc13a90b682616e9a522860957163c3196ca2a7972a81d"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/data/manifest.json",
+      "bytes": 1923,
+      "sha256": "e6e73d8d6d21be1f6f461278056a56ddc65e1b42f61e217a3192619a483c1094"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/data/lance_dataset.yaml",
+      "bytes": 1696,
+      "sha256": "e77be7c7119909668316055edc158b6a30c414373d42ab5804acbe39e49e78a1"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/data/training_schedule.csv",
+      "bytes": 793710,
+      "sha256": "938aadeb6c903b425d0991dbc2ec2ec8df7212852e9315a180729b3ce3bf7cc5"
+    },
+    {
+      "path": "artifacts/lance_4k_r64_seed42_e2_v1/data/train_index.parquet",
+      "bytes": 1239799,
+      "sha256": "f299638130d13f2fc9fd046997b0d9980bc5fd9166af205a3993c89aea57840f"
+    }
+  ],
+  "remote_preflight": {
+    "target_absent": true,
+    "directory_entries_checked": 35
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "input_pairs": 20000,
+  "decided_pairs": 20000,
+  "quarantined_pairs": 0,
+  "decision_counts": {
+    "accepted": 16916,
+    "rejected": 1338,
+    "uncertain": 1746
+  },
+  "by_branch": {
+    "egoedit_replace": {
+      "accepted": 3715,
+      "uncertain": 1272,
+      "rejected": 13
+    },
+    "goku_add": {
+      "accepted": 1846,
+      "rejected": 108,
+      "uncertain": 46
+    },
+    "goku_remove": {
+      "accepted": 2785,
+      "rejected": 148,
+      "uncertain": 67
+    },
+    "reco_add": {
+      "accepted": 2449,
+      "rejected": 391,
+      "uncertain": 160
+    },
+    "reco_remove": {
+      "accepted": 2409,
+      "rejected": 538,
+      "uncertain": 53
+    },
+    "reco_replace": {
+      "accepted": 3712,
+      "uncertain": 148,
+      "rejected": 140
+    }
+  },
+  "scored_unique_media": 38735,
+  "unique_media": 38735,
+  "pair_role_score_rows": 40000,
+  "protocol": {
+    "frame_samples": 12,
+    "resize": "224x224 INTER_AREA",
+    "musiq": "musiq-koniq",
+    "dino": "facebook/dinov2-small",
+    "minimum_duration_seconds": 3,
+    "policy_revision": "v2_reverse_removal_generated_side_20260905"
+  },
+  "stage2_status": "not_requested",
+  "api_judge_calls": 0,
+  "training_approved": false,
+  "pid": 467612,
+  "host": "H64Y574",
+  "slurm_job_id": "123778",
+  "device": "NVIDIA H200",
+  "stage2_requested": false,
+  "decode_workers": 8,
+  "prefetch_window": 16
+}

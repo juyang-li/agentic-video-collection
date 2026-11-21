@@ -1,0 +1,32 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 2400,
+  "survivors": 2256,
+  "pair_decisions": {
+    "accepted": 2205,
+    "rejected": 144,
+    "uncertain": 51
+  },
+  "pair_decisions_by_branch": {
+    "goku_add": {
+      "accepted": 836,
+      "uncertain": 12,
+      "rejected": 52
+    },
+    "goku_remove": {
+      "accepted": 1369,
+      "rejected": 92,
+      "uncertain": 39
+    }
+  },
+  "rejection_reasons": {
+    "global_blur_low_detail": 80,
+    "sustained_near_freeze": 39,
+    "global_low_visual_quality": 41,
+    "boundary_musiq_p10": 7,
+    "boundary_dino_max_feature_jump": 6,
+    "boundary_sharpness_p10": 8,
+    "extreme_freeze_repeat": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "all_recorded_requests_including_retries": 241,
+  "categories": {
+    "unspecified": {
+      "accuracy": 1.5125,
+      "consistency": 3.0875,
+      "count": 240,
+      "overall_score": 1.2134166666666675,
+      "preservation": 3.2416666666666667,
+      "realism": 2.625
+    }
+  },
+  "failed_task_ids": [],
+  "manifest_task_count": 240,
+  "mean_scores_successes_only": {
+    "accuracy": 1.5125,
+    "consistency": 3.0875,
+    "overall_score": 1.2134166666666675,
+    "preservation": 3.2416666666666667,
+    "realism": 2.625
+  },
+  "reasoning_tokens": 35459,
+  "reported_cost_usd_known_requests": 0.5236649999999996,
+  "requests_without_reported_cost": 1,
+  "retry_requests": 1,
+  "returned_models": [
+    "google/gemini-3.8-flash"
+  ],
+  "returned_providers": [
+    "Google"
+  ],
+  "scope": "full_manifest",
+  "status": "complete",
+  "tasks_failed": 0,
+  "tasks_requested": 240,
+  "tasks_succeeded": 240,
+  "usage_totals": {
+    "completion_tokens": 55163,
+    "prompt_tokens": 422405,
+    "total_tokens": 477568
+  }
+}

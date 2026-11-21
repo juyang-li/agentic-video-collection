@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/expansion_round3_reco_remove_technical_shard0.csv",
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/expansion_round3_reco_remove_technical_shard1.csv"
+  ],
+  "input_rows": 600,
+  "unique_videos": 600,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 600
+  },
+  "full_scores": 0
+}

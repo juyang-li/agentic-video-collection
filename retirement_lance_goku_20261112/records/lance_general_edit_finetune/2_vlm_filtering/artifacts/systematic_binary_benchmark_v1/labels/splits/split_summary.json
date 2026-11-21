@@ -1,0 +1,102 @@
+{
+  "split_version": "explicit_binary_prompt_eval_split_v1",
+  "seed": 20260904,
+  "policy": "stratify development by branch+label into train/validation; keep all completed systematic test_v1 rows untouched as final test",
+  "test_leakage_policy": "do not call or inspect model test predictions before prompt freeze",
+  "train": {
+    "rows": 94,
+    "labels": {
+      "accepted": 76,
+      "rejected": 18
+    },
+    "datasets": {
+      "egoedit": 16,
+      "goku": 39,
+      "reco": 39
+    },
+    "branches": {
+      "egoedit_replace": 16,
+      "goku_add": 18,
+      "goku_remove": 21,
+      "reco_add": 9,
+      "reco_remove": 15,
+      "reco_replace": 15
+    },
+    "audit_operations": {
+      "replace": 31,
+      "remove": 54,
+      "add": 9
+    },
+    "audit_relations": {
+      "forward": 33,
+      "training_direction_both_generated": 3,
+      "inverse": 19,
+      "training_direction_generation_side_unresolved": 39
+    },
+    "sample_id_sha256": "c2422cf1d874c1ff8847530b4a528ff7feb51299dd403c0981a00c79ae07b91a"
+  },
+  "validation": {
+    "rows": 45,
+    "labels": {
+      "accepted": 35,
+      "rejected": 10
+    },
+    "datasets": {
+      "egoedit": 8,
+      "goku": 18,
+      "reco": 19
+    },
+    "branches": {
+      "egoedit_replace": 8,
+      "goku_add": 8,
+      "goku_remove": 10,
+      "reco_add": 5,
+      "reco_remove": 7,
+      "reco_replace": 7
+    },
+    "audit_operations": {
+      "replace": 15,
+      "remove": 25,
+      "add": 5
+    },
+    "audit_relations": {
+      "forward": 17,
+      "training_direction_both_generated": 1,
+      "inverse": 8,
+      "training_direction_generation_side_unresolved": 19
+    },
+    "sample_id_sha256": "ecc9033c19ebbcf631b34fbe5196c9d139bfa0a78e9a6176d69028b8ebf7634e"
+  },
+  "test": {
+    "rows": 91,
+    "labels": {
+      "accepted": 65,
+      "rejected": 26
+    },
+    "datasets": {
+      "goku": 31,
+      "reco": 56,
+      "egoedit": 4
+    },
+    "branches": {
+      "goku_add": 14,
+      "reco_remove": 28,
+      "reco_replace": 14,
+      "reco_add": 14,
+      "goku_remove": 17,
+      "egoedit_replace": 4
+    },
+    "audit_operations": {
+      "remove": 59,
+      "replace": 18,
+      "add": 14
+    },
+    "audit_relations": {
+      "inverse": 14,
+      "training_direction_generation_side_unresolved": 56,
+      "forward": 20,
+      "training_direction_both_generated": 1
+    },
+    "sample_id_sha256": "192bf72407879c1573955ab2885077462ff01cd27268c5c6d4f00f5c1a580840"
+  }
+}

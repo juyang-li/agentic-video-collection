@@ -1,0 +1,30 @@
+{
+  "survey_version": "qwen72b_artifact_risk_30_v1",
+  "selection_seed": "qwen72b-artifact-risk-20260831-v1",
+  "rows": 30,
+  "excluded_previously_touched_ids": 700,
+  "risk_groups": {
+    "goku_structural_garment": 7,
+    "reco_remove_wearable_or_person": 7,
+    "goku_reverse_add_wearable": 8,
+    "goku_remove_wearable": 8
+  },
+  "datasets": {
+    "goku": 23,
+    "reco": 7
+  },
+  "operations": {
+    "remove": 16,
+    "add": 14
+  },
+  "generated_roles": {
+    "target": 16,
+    "source": 14
+  },
+  "stage1_1_decisions": {
+    "uncertain": 12,
+    "accepted": 18
+  },
+  "structurally_excluded_rows": 7,
+  "selection_policy": "new/unreviewed and not previously VLM-scored; enriched for remove targets, reverse-add generated sources, garments/accessories/body completion, and low or boundary Stage1 quality signals"
+}

@@ -1,0 +1,33 @@
+{
+  "bundle": "quality",
+  "failures": 0,
+  "finished_at": "2026-09-08T13:40:36.219846+00:00",
+  "metrics": {
+    "background_consistency": {
+      "average": 0.9476883993663641,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    },
+    "subject_consistency": {
+      "average": 0.9078015013197485,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    },
+    "temporal_flickering": {
+      "average": 0.9746100982581233,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    }
+  },
+  "model_kind": "base",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "attribute_all",
+  "started_at": "2026-09-08T13:25:21.152076+00:00",
+  "status": "complete"
+}

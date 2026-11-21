@@ -1,0 +1,16 @@
+{
+  "selection_seed": 20260904,
+  "input_rows": 2583,
+  "excluded_prior_ids": 2256,
+  "eligible_rows": 441,
+  "available_by_branch": {
+    "goku_remove": 217,
+    "goku_add": 224
+  },
+  "requested_quotas": {},
+  "selected_rows": 441,
+  "selected_by_branch": {
+    "goku_add": 224,
+    "goku_remove": 217
+  }
+}

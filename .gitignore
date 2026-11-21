@@ -114,3 +114,54 @@ runs/
 **/.baidu*
 **/*session*.json
 **/credentials*/
+
+# before_start script
+before_start.py
+
+# Generated manifests, evaluation evidence, browser artifacts, and result tables.
+# Keep their local files; these rules only control version management.
+**/metadata/
+**/logs/
+**/cache/
+**/conditions/
+**/latents/
+**/frames/
+**/scores/
+**/cpu_scores/
+**/results/
+**/results_archive*/
+**/report/
+**/review/
+**/reviews/
+**/review_*/
+**/inputs/
+**/prepared/
+**/remote/
+*.pid
+
+# Top-level run manifests and generated statistics, not source fixtures/configs.
+/model_evaluation/**/*.csv
+/model_evaluation/**/*.jsonl
+!/model_evaluation/metric_examples/manifest.example.jsonl
+/model_evaluation/**/reference_controls.json
+/model_evaluation/**/inventory_summary.json
+/model_evaluation/**/expansion_templates.json
+/model_evaluation/**/run.json
+/model_evaluation/**/.packages_uploaded
+/model_evaluation/**/*_receipt*.json
+/model_evaluation/**/*_manifest*.json
+/model_evaluation/**/inference_args*.json
+/model_evaluation/**/inputs_index*.json
+/dataset_research/coinve_research/coinve_*_20*/
+/dataset_research/insave_research/general_replacement/*.csv
+/dataset_research/insave_research/general_replacement/*.json
+/dataset_research/tripvvt_research/tripvvt_*_20*/*.json
+/dataset_research/tripvvt_research/tripvvt_*_20*/*.csv
+/dataset_research/datamake_v1_review_20261030/selection.json
+/dataset_research/recent_motion_review_20261030/selection.json
+# Runtime symlinks and historical generated manifests/receipts.
+/model_evaluation/**/runtime
+/model_evaluation/omni_baselines_20260926/*/manifests/
+/model_evaluation/**/*.done
+/model_evaluation/**/.tier_a_4gpu_done
+/model_evaluation/**/*.sha256.json

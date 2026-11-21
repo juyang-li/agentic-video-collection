@@ -1,0 +1,20 @@
+{
+  "route_version": "qwen72b_prompt_v12_to_gemini38_rescue_v2",
+  "input_rows": 697,
+  "routed_rows": 319,
+  "route_rate": 0.45767575322812054,
+  "route_counts": {
+    "qwen_rejected_requires_gemini_rescue_decision": 132,
+    "qwen_skipped_preclassified_risk": 187
+  },
+  "risk_counts": {
+    "stage1_boundary": 186,
+    "robot_or_synthetic_subject": 1
+  },
+  "by_dataset": {
+    "egoedit": 319
+  },
+  "by_branch": {
+    "egoedit_replace": 319
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_full4_shard0.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_full4_shard1.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_full4_shard2.csv",
+    "artifacts/filter_run_v3/expansion_round1_goku_buffer_full4_shard3.csv"
+  ],
+  "input_rows": 2400,
+  "unique_videos": 2400,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 2400
+  },
+  "full_scores": 2400
+}

@@ -1,0 +1,25 @@
+{
+  "cascade_version": "gemini38_full_review_plus_direct_refill_v1",
+  "base_rows": 7185,
+  "refill_rows": 373,
+  "output_rows": 7558,
+  "refill_decision_counts": {
+    "accepted": 278,
+    "rejected": 95
+  },
+  "refill_by_branch": {
+    "egoedit_replace": {
+      "accepted": 67,
+      "rejected": 12
+    },
+    "reco_add": {
+      "rejected": 45,
+      "accepted": 82
+    },
+    "reco_replace": {
+      "accepted": 129,
+      "rejected": 38
+    }
+  },
+  "refill_cost_usd_recorded": 2.13383625
+}

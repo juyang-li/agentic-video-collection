@@ -1,0 +1,19 @@
+{
+  "pass": 4047,
+  "pass_by_anchor": {
+    "add": 1014,
+    "remove": 1216,
+    "replace": 1817
+  },
+  "probed": 4240,
+  "reject": 193,
+  "reject_reasons": {
+    "common_duration_under_5s": 193
+  },
+  "required_by_anchor": {
+    "add": 1000,
+    "remove": 1200,
+    "replace": 1800
+  },
+  "status": "complete_for_downloaded"
+}

@@ -1,0 +1,15 @@
+-r requirements-base.txt
+opencv-python==5.0.0.93
+timm==1.0.12
+pyiqa==0.1.14.1
+openai-clip
+decord==0.6.0
+omegaconf
+einops
+easydict
+requests
+tqdm
+PyYAML
+scipy
+scikit-learn
+matplotlib

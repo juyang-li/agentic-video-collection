@@ -1,0 +1,61 @@
+{
+  "coinve_nested_ids": 2000,
+  "mixed_2k2k": {
+    "branches": {
+      "coinve_add": 500,
+      "coinve_remove": 600,
+      "coinve_replace": 900,
+      "egoedit_replace": 500,
+      "goku_add": 200,
+      "goku_remove": 300,
+      "reco_add": 300,
+      "reco_remove": 300,
+      "reco_replace": 400
+    },
+    "datasets": {
+      "CoinVE-200K": 2000,
+      "egoedit": 500,
+      "goku": 500,
+      "reco": 1000
+    },
+    "operations": {
+      "add": 1000,
+      "remove": 1200,
+      "replace": 1800
+    },
+    "rows": 4000,
+    "splits": {
+      "test": 204,
+      "train": 3601,
+      "validation": 195
+    }
+  },
+  "mixed_pool": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/coinve_ablation_v1/mixed_2k2k_pool.csv",
+  "mixed_pool_sha256": "4c9af8e2c699b21b3af5a53819e76036d081f295d1ac1a4096245039f4c725a8",
+  "pure_coinve": {
+    "branches": {
+      "coinve_add": 1000,
+      "coinve_remove": 1200,
+      "coinve_replace": 1800
+    },
+    "datasets": {
+      "CoinVE-200K": 4000
+    },
+    "operations": {
+      "add": 1000,
+      "remove": 1200,
+      "replace": 1800
+    },
+    "rows": 4000,
+    "splits": {
+      "test": 204,
+      "train": 3601,
+      "validation": 195
+    }
+  },
+  "pure_pool": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/coinve_ablation_v1/coinve_4k_pool.csv",
+  "pure_pool_sha256": "fc028c3003cbecb6a2ceabc8229bb15a9ac303faec284cf005d3d7a9f2cf3604",
+  "selection_seed": 20260904,
+  "status": "complete",
+  "training_seed": 42
+}

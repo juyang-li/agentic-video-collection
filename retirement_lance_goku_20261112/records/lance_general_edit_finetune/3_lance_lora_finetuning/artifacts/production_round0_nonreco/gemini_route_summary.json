@@ -1,0 +1,24 @@
+{
+  "route_version": "qwen72b_prompt_v12_to_gemini38_rescue_v2",
+  "input_rows": 1375,
+  "routed_rows": 1059,
+  "route_rate": 0.7701818181818182,
+  "route_counts": {
+    "qwen_accept_high_risk": 556,
+    "qwen_rejected_requires_gemini_rescue_decision": 503
+  },
+  "risk_counts": {
+    "high_risk_remove": 782,
+    "stage1_boundary": 172,
+    "robot_or_synthetic_subject": 2
+  },
+  "by_dataset": {
+    "goku": 782,
+    "egoedit": 277
+  },
+  "by_branch": {
+    "goku_remove": 365,
+    "goku_add": 417,
+    "egoedit_replace": 277
+  }
+}

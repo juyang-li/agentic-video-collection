@@ -1,0 +1,16 @@
+{
+  "selection_seed": 20260904,
+  "selection_policy": "branch_interleaved_then_seeded_sample_hash",
+  "cascade_rows": 7185,
+  "supplemental_rows": 1882,
+  "by_dataset": {
+    "egoedit": 694,
+    "reco": 1188
+  },
+  "by_branch": {
+    "egoedit_replace": 694,
+    "reco_add": 588,
+    "reco_replace": 600
+  },
+  "reason": "Gemini full review of prior qwen_accept_low_risk rows"
+}

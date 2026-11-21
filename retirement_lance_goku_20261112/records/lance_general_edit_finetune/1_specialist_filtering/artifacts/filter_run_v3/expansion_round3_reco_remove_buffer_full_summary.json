@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_full.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_full_shard0.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_full_shard1.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_full_shard2.csv",
+    "artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_full_shard3.csv"
+  ],
+  "input_rows": 1802,
+  "unique_videos": 1802,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 1802
+  },
+  "full_scores": 1802
+}

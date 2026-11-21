@@ -1,0 +1,25 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "selection_seed": 20260904,
+  "round": 3,
+  "rows": 300,
+  "requested_quotas": {
+    "reco_remove": 300
+  },
+  "by_branch": {
+    "reco_remove": 300
+  },
+  "by_branch_scope": {
+    "reco_remove:object": 151,
+    "reco_remove:person": 137,
+    "reco_remove:accessory": 9,
+    "reco_remove:clothes": 3
+  },
+  "source_archives": {
+    "remove/src_videos/remove_src_video_50.tar": 300
+  },
+  "metadata_rejected_before_selection": {
+    "excluded_handheld_object_remove": 1,
+    "excluded_task_scope": 2
+  }
+}

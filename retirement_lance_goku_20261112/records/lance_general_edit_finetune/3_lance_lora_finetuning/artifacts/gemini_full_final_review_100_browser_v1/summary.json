@@ -1,0 +1,43 @@
+{
+  "review_version": "gemini_full_final_review_100_browser_v1",
+  "selection_seed": 20260904,
+  "selection_policy": "all_rows",
+  "subset": "all",
+  "cascade_inputs": [
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/gemini_full_final_review_100_v1_input.csv"
+  ],
+  "rows": 100,
+  "groups": {
+    "qwen_reject_gemini_rescue": 10,
+    "gemini_final_reject": 44,
+    "boundary_or_quarantine": 22,
+    "gemini_reviewed_accept": 24
+  },
+  "datasets": {
+    "egoedit": 23,
+    "goku": 18,
+    "reco": 59
+  },
+  "branches": {
+    "egoedit_replace": 23,
+    "goku_add": 9,
+    "goku_remove": 9,
+    "reco_add": 25,
+    "reco_remove": 10,
+    "reco_replace": 24
+  },
+  "cascade_status": {
+    "accepted": 40,
+    "rejected": 50,
+    "quarantine": 10
+  },
+  "benchmark_error_type": {
+    "": 100
+  },
+  "review_media": {
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "browser_compatible": true,
+    "transcoded_files": 46
+  }
+}

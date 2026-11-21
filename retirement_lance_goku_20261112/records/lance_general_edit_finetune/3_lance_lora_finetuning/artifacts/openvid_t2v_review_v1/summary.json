@@ -1,0 +1,521 @@
+{
+  "review_version": "openvid_t2v_review_v1",
+  "source_url": "https://huggingface.co/datasets/finetrainers/OpenVid-1k-split/resolve/main/dataset_0000.tar",
+  "selection_seed": 20260904,
+  "eligibility": {
+    "seconds": "3-10",
+    "temporal_consistency_score": ">=0.995"
+  },
+  "quotas": {
+    "human": 15,
+    "vehicle": 10,
+    "animal": 5,
+    "scene": 10,
+    "object": 10
+  },
+  "eligible_seen": "not_recovered_after_post-download_finalize",
+  "selected": 50,
+  "video_probes": {
+    "openvid-review-2b4f21b894f9313f": {
+      "probe_backend": "decord",
+      "frame_count": 179,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.972639305972639,
+      "size": 20749701,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-ab7802147e648d5f": {
+      "probe_backend": "decord",
+      "frame_count": 103,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.433333333333333,
+      "size": 10906025,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-bf2bb523d6b476fc": {
+      "probe_backend": "decord",
+      "frame_count": 135,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.63063063063063,
+      "size": 3402565,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-40e285cc51ae74fc": {
+      "probe_backend": "decord",
+      "frame_count": 145,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.838171504838171,
+      "size": 4387572,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-26f24ad409576320": {
+      "probe_backend": "decord",
+      "frame_count": 177,
+      "fps": 29.97,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 5.9059059059059065,
+      "size": 1864052,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-106b6ce95b3b396d": {
+      "probe_backend": "decord",
+      "frame_count": 221,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 9.217550884217552,
+      "size": 7746444,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-0dc0a58798b25c26": {
+      "probe_backend": "decord",
+      "frame_count": 107,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.462796129462796,
+      "size": 4243726,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-80ccde44d91063f4": {
+      "probe_backend": "decord",
+      "frame_count": 153,
+      "fps": 25.0,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 6.12,
+      "size": 2278188,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-5f7f9a48849b18f0": {
+      "probe_backend": "decord",
+      "frame_count": 120,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.004004004004004,
+      "size": 2194632,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-c7749b73077dada5": {
+      "probe_backend": "decord",
+      "frame_count": 109,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.546212879546213,
+      "size": 5593473,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-df54961a2eff99b0": {
+      "probe_backend": "decord",
+      "frame_count": 118,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.921588254921589,
+      "size": 6117158,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-717696093c736381": {
+      "probe_backend": "decord",
+      "frame_count": 179,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.972639305972639,
+      "size": 2721945,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-a6dd1abd34cff121": {
+      "probe_backend": "decord",
+      "frame_count": 88,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.6703370036703373,
+      "size": 4131560,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-e56df223d7670866": {
+      "probe_backend": "decord",
+      "frame_count": 101,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.04,
+      "size": 3872883,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-8c329eebc02b6a48": {
+      "probe_backend": "decord",
+      "frame_count": 109,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.6369703036369705,
+      "size": 2477387,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-4e436910d499daa9": {
+      "probe_backend": "decord",
+      "frame_count": 190,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.6,
+      "size": 12062906,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-f31c5ceb23edda3a": {
+      "probe_backend": "decord",
+      "frame_count": 239,
+      "fps": 29.97,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 7.974641307974641,
+      "size": 6349526,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-1a9ada02c785349f": {
+      "probe_backend": "decord",
+      "frame_count": 195,
+      "fps": 25.0,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 7.8,
+      "size": 7120225,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-94123f057a1433e9": {
+      "probe_backend": "decord",
+      "frame_count": 181,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.549215882549216,
+      "size": 12551845,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-9391dfea1f22fef5": {
+      "probe_backend": "decord",
+      "frame_count": 107,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.570236903570237,
+      "size": 6319755,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-6e0885a465af3454": {
+      "probe_backend": "decord",
+      "frame_count": 111,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.44,
+      "size": 1789981,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-da76863163d8083c": {
+      "probe_backend": "decord",
+      "frame_count": 124,
+      "fps": 29.97,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 4.137470804137471,
+      "size": 3402341,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-b859fb597bd8b974": {
+      "probe_backend": "decord",
+      "frame_count": 123,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.13013013013013,
+      "size": 5117011,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-3c2defc00dc6ffcc": {
+      "probe_backend": "decord",
+      "frame_count": 111,
+      "fps": 29.97,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 3.7037037037037037,
+      "size": 4593314,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-0124c36f59b03e13": {
+      "probe_backend": "decord",
+      "frame_count": 166,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.538872205538873,
+      "size": 6429311,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-99b3d16e50dffed4": {
+      "probe_backend": "decord",
+      "frame_count": 86,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.44,
+      "size": 2550390,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-f7cc561d0f110989": {
+      "probe_backend": "decord",
+      "frame_count": 144,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.76,
+      "size": 3983024,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-9250a072b3b77aba": {
+      "probe_backend": "decord",
+      "frame_count": 124,
+      "fps": 29.906,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 4.146325152143382,
+      "size": 1532236,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-bb52047476117cbd": {
+      "probe_backend": "decord",
+      "frame_count": 137,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.566666666666666,
+      "size": 12735955,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-48187e39073a79f6": {
+      "probe_backend": "decord",
+      "frame_count": 109,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.6369703036369705,
+      "size": 5088359,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-c78c1999b1b4b79f": {
+      "probe_backend": "decord",
+      "frame_count": 105,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.2,
+      "size": 11231746,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-7182f0e63fc40214": {
+      "probe_backend": "decord",
+      "frame_count": 211,
+      "fps": 25.0,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 8.44,
+      "size": 6831402,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-fbbfe1f3a8fec11e": {
+      "probe_backend": "decord",
+      "frame_count": 102,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.4034034034034035,
+      "size": 11535191,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-2f9683503aa41d22": {
+      "probe_backend": "decord",
+      "frame_count": 124,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.137470804137471,
+      "size": 11345238,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-a5af581e0594b1e2": {
+      "probe_backend": "decord",
+      "frame_count": 126,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.255255255255255,
+      "size": 9033047,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-d43f60e1f002fc83": {
+      "probe_backend": "decord",
+      "frame_count": 147,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 6.131131131131132,
+      "size": 7125823,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-0ef2ce7543a65bd3": {
+      "probe_backend": "decord",
+      "frame_count": 115,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.6,
+      "size": 10266798,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-d0e6f45887cbb8da": {
+      "probe_backend": "decord",
+      "frame_count": 122,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.88,
+      "size": 4915538,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-90d00bf54555068a": {
+      "probe_backend": "decord",
+      "frame_count": 117,
+      "fps": 29.97,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 3.903903903903904,
+      "size": 2510162,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-06fd1a127e50ff9f": {
+      "probe_backend": "decord",
+      "frame_count": 114,
+      "fps": 24.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.75,
+      "size": 9755352,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-d1c70369a9d2c14b": {
+      "probe_backend": "decord",
+      "frame_count": 199,
+      "fps": 24.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 8.291666666666666,
+      "size": 7153228,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-72643fe954ba924d": {
+      "probe_backend": "decord",
+      "frame_count": 141,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.64,
+      "size": 3725225,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-383a183f352da995": {
+      "probe_backend": "decord",
+      "frame_count": 137,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.571237904571238,
+      "size": 5113179,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-3c99a6ea00546585": {
+      "probe_backend": "decord",
+      "frame_count": 118,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.9372706039372707,
+      "size": 4679159,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-7daa813ccbd94bfb": {
+      "probe_backend": "decord",
+      "frame_count": 163,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 5.4387721054387725,
+      "size": 4293957,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-06b159877d031471": {
+      "probe_backend": "decord",
+      "frame_count": 114,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.754754754754755,
+      "size": 4059679,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-6809338801b45b29": {
+      "probe_backend": "decord",
+      "frame_count": 184,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.36,
+      "size": 7266623,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-dfdc8e990dce9fcd": {
+      "probe_backend": "decord",
+      "frame_count": 112,
+      "fps": 29.97,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 3.7370704037370706,
+      "size": 6106958,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-5658ce0b8e2f5435": {
+      "probe_backend": "decord",
+      "frame_count": 217,
+      "fps": 23.976,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 9.050717384050717,
+      "size": 4619234,
+      "decoded_first_and_last": true
+    },
+    "openvid-review-80931417211285e7": {
+      "probe_backend": "decord",
+      "frame_count": 161,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 6.44,
+      "size": 12417559,
+      "decoded_first_and_last": true
+    }
+  },
+  "all_manifest_sha256_verified": true
+}

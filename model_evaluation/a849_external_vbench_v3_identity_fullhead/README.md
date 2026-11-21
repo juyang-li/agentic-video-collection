@@ -1,0 +1,9 @@
+# Identity v3 完整头部参考复测
+
+四条任务、三个模型共十二条输出已生成并直接核看。任务02、03、04在三模型中均未呈现清晰参考面部身份迁移，按预设“至少三条任务三模型均无清晰迁移”规则移出主测；任务01的VACE有较清晰迁移。主测的四个名额补为Hair color，全部诊断输出保留。
+
+参考为1024×1024 CelebA-HQ照片00011、00009、00017、00023，完整头部、自然头发、RGB128背景，保留前景掩膜内像素按位不变。分割并非人工matting真值；00023外围抬手有一个小内部缺失，脸部与头部完整，局限记录在metadata/input_review.json。
+
+初轮02–04照片裁顶，九条旧输出位于相邻a849_external_vbench_v3_identity目录，仅作历史构图诊断；01参考与全部有效输入未变，三条原输出按SHA复用。正式判断只使用本目录十二条输出。source、时间取样、source-only面部mask与三个模型推理参数保持原协议，49帧、12fps，未调用外部VLM API。
+
+逐模型判断及输出SHA见metadata/identity_review.json；source/参考/三模型放大时序图见review/identity_01_face_detail.jpg至identity_04_face_detail.jpg。六项质量指标与静态配对子集将随主测统一计算后写入metadata/report.md、per_video_metrics.csv和per_task_report.csv；低质量或失败编辑结果不隐藏。离线对比页及ZIP由主测scripts/finalize_diagnostic.py生成，最终状态见metadata/final_validation.json。

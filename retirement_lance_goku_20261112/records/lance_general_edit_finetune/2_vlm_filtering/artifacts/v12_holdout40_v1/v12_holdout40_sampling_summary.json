@@ -1,0 +1,90 @@
+{
+  "survey_version": "qwen72b_v12_unseen_holdout40_v1",
+  "seed": 20260901,
+  "input_rows": 4003,
+  "prior_review_ids": 741,
+  "review_source_files": 68,
+  "unseen_media_ready_candidates": 3742,
+  "general_per_branch": 6,
+  "general_available": {
+    "reco_add": 799,
+    "reco_remove": 770,
+    "reco_replace": 832,
+    "goku_add": 395,
+    "goku_remove": 355,
+    "egoedit_replace": 583
+  },
+  "eyewear_available": 8,
+  "eyewear_count": 4,
+  "selected_rows": 40,
+  "selected_branches": {
+    "goku_add": 7,
+    "reco_replace": 6,
+    "reco_add": 6,
+    "goku_remove": 8,
+    "reco_remove": 7,
+    "egoedit_replace": 6
+  },
+  "selected_datasets": {
+    "goku": 15,
+    "reco": 19,
+    "egoedit": 6
+  },
+  "selected_operations": {
+    "add": 13,
+    "replace": 12,
+    "remove": 15
+  },
+  "selected_stage1_1": {
+    "accepted": 35,
+    "uncertain": 5
+  },
+  "eyewear_ids": [
+    "pilot-reco_remove-702b14653e33380e",
+    "pilot-goku_remove-2a206d5cc7f5535a",
+    "pilot-goku_add-c336fd8aa967568a",
+    "pilot-goku_remove-fadd468cefa456af"
+  ],
+  "sample_ids": [
+    "pilot-goku_add-31d1e44c2b2846e7",
+    "pilot-reco_replace-020756be2af7436d",
+    "pilot-reco_add-991f777caee1280d",
+    "pilot-reco_add-72646b2b82296982",
+    "pilot-goku_remove-2a206d5cc7f5535a",
+    "pilot-reco_remove-e7ea7a771c86a5de",
+    "pilot-goku_remove-a51ce5a49975e890",
+    "pilot-reco_remove-3aa3e06a97564e96",
+    "pilot-reco_add-bbbe2627f1108471",
+    "pilot-goku_remove-fadd468cefa456af",
+    "pilot-goku_remove-578020587156114b",
+    "pilot-goku_add-c336fd8aa967568a",
+    "pilot-reco_remove-b66993a1fbf776a6",
+    "pilot-goku_add-d11b34c619478409",
+    "pilot-egoedit_replace-419190c48bbf76f7",
+    "pilot-egoedit_replace-d73c0b817da15609",
+    "pilot-egoedit_replace-821ab9cc404bad1f",
+    "pilot-goku_add-ab74b2cb060e74e4",
+    "pilot-goku_remove-668b3f594c05f8c8",
+    "pilot-goku_add-1f000e8e0a456a08",
+    "pilot-goku_add-22f4419ba4f662bd",
+    "pilot-egoedit_replace-66647674a675ea59",
+    "pilot-goku_remove-02f605beb2079d22",
+    "pilot-egoedit_replace-bda63ba8477d018a",
+    "pilot-reco_add-cc351c64563d5ffd",
+    "pilot-reco_remove-702b14653e33380e",
+    "pilot-reco_add-fb8b272bc1850d05",
+    "pilot-reco_add-7800b9efb073b5c3",
+    "pilot-goku_remove-a10c446aa54a763b",
+    "pilot-reco_replace-9f5d82ef14c95732",
+    "pilot-reco_replace-fd59cde379162316",
+    "pilot-reco_remove-3f0a273931b19241",
+    "pilot-reco_remove-afd419f6acd98316",
+    "pilot-egoedit_replace-fa7cd85d6155d76f",
+    "pilot-reco_remove-74a1f690d366bfe2",
+    "pilot-goku_add-73fbbfa48ca69962",
+    "pilot-reco_replace-81abd02777da0a63",
+    "pilot-goku_remove-0b455d2f93103a8d",
+    "pilot-reco_replace-7b2d254913822eed",
+    "pilot-reco_replace-37c3958a20d474c4"
+  ]
+}

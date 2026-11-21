@@ -1,0 +1,42 @@
+{
+  "filter_version": "general_edit_stage1_pilot_v1",
+  "input_rows": 5000,
+  "accepted": 4748,
+  "rejected": 252,
+  "pending_media": 2,
+  "media_ready": 4746,
+  "decision_by_branch": {
+    "egoedit_replace": {
+      "accepted": 595,
+      "rejected": 4
+    },
+    "goku_add": {
+      "rejected": 123,
+      "accepted": 431
+    },
+    "goku_remove": {
+      "accepted": 440,
+      "rejected": 113
+    },
+    "insave_remove": {
+      "accepted": 623
+    },
+    "reco_add": {
+      "accepted": 863,
+      "rejected": 8
+    },
+    "reco_remove": {
+      "accepted": 875,
+      "rejected": 4
+    },
+    "reco_replace": {
+      "accepted": 921
+    }
+  },
+  "reason_counts": {
+    "excluded_task_scope": 247,
+    "excluded_garment_add_remove": 164,
+    "excluded_style": 4,
+    "excluded_camera": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "selection_seed": 20260904,
+  "round": 2,
+  "rows": 700,
+  "requested_quotas": {
+    "egoedit_replace": 700
+  },
+  "by_branch": {
+    "egoedit_replace": 700
+  },
+  "by_branch_scope": {
+    "egoedit_replace:object": 700
+  },
+  "source_archives": {
+    "egoedit_remote_zip": 700
+  },
+  "metadata_rejected_before_selection": {
+    "excluded_style": 463,
+    "excluded_camera": 23
+  }
+}

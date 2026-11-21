@@ -1,0 +1,10 @@
+metadata/
+logs/
+outputs/
+assets/
+__pycache__/
+
+/review/
+/conditions/
+/runtime/
+/cache/

@@ -1,0 +1,8 @@
+frames/
+metadata/
+results/
+review/
+review_v2/
+logs/
+__pycache__/
+*.zip

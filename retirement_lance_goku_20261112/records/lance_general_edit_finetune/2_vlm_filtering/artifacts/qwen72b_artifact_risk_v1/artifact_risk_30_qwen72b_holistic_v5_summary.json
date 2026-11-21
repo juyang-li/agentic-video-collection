@@ -1,0 +1,42 @@
+{
+  "judge_version": "qwen2_5_vl_72b_openrouter_holistic_timecard_pair_judge_v5",
+  "roi_method_version": "paired_tight_change_roi_five_aligned_v6",
+  "visual_layout_version": "five_aligned_full_tight_roi_timecards_v7",
+  "model_id": "qwen/qwen2.5-vl-72b-instruct",
+  "model_backend": "openrouter",
+  "prompt_sha256": "a1ef9303090a14dcf2971b52b29018f6e1fdb567bf7832622a1ed2627d2d9f85",
+  "input_rows": 30,
+  "completed": 30,
+  "parse_errors": 0,
+  "decision_counts": {
+    "accepted": 24,
+    "rejected": 6
+  },
+  "check_counts": {
+    "instruction_following": {
+      "pass": 24,
+      "fail": 6
+    },
+    "visible_artifact": {
+      "pass": 24,
+      "fail": 6
+    },
+    "content_preservation": {
+      "pass": 30
+    }
+  },
+  "provider_counts": {
+    "Nebius": 30
+  },
+  "new_rows_attempted": 3,
+  "concurrency": 3,
+  "new_run_wall_seconds": 12.179298129980452,
+  "mean_pair_elapsed_seconds": 18.393982866666665,
+  "mean_api_elapsed_seconds": 17.285963566666666,
+  "total_input_tokens": 228286,
+  "total_output_tokens": 4784,
+  "total_cost_usd": 0.0606595,
+  "mean_input_tokens": 7609.533333333334,
+  "mean_roi_pairs": 5,
+  "rows_retried": 0
+}

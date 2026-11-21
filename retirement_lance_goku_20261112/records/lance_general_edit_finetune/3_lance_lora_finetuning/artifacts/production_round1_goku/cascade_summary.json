@@ -1,0 +1,39 @@
+{
+  "cascade_version": "qwen72b_prompt_v12_gemini38_rescue_v2",
+  "rows": 2256,
+  "decision_counts": {
+    "accepted": 758,
+    "rejected": 1493,
+    "quarantine": 5
+  },
+  "route_counts": {
+    "gemini_direct_preclassified_risk": 2256
+  },
+  "risk_counts": {
+    "high_risk_remove": 2256,
+    "stage1_boundary": 51,
+    "robot_or_synthetic_subject": 3
+  },
+  "by_dataset": {
+    "goku": {
+      "accepted": 758,
+      "rejected": 1493,
+      "quarantine": 5
+    }
+  },
+  "by_branch": {
+    "goku_add": {
+      "accepted": 282,
+      "rejected": 563,
+      "quarantine": 3
+    },
+    "goku_remove": {
+      "accepted": 476,
+      "rejected": 930,
+      "quarantine": 2
+    }
+  },
+  "qwen_cost_usd": 0.0,
+  "gemini_routed_cost_usd": 12.880243275,
+  "cascade_cost_usd": 12.880243275
+}

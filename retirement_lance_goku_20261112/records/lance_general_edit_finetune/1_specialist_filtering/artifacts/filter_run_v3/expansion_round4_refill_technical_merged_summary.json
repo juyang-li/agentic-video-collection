@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_technical.csv",
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_reco_technical_shard0.csv",
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_reco_technical_shard1.csv",
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_reco_technical_shard2.csv",
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_reco_technical_shard3.csv"
+  ],
+  "input_rows": 780,
+  "unique_videos": 780,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 780
+  },
+  "full_scores": 0
+}

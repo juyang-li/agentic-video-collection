@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "review_type": "human_only_unlabeled",
+  "sample_count": 48,
+  "category_count": 24,
+  "samples_per_category": 2,
+  "tiers": {
+    "A": 24,
+    "B": 24
+  },
+  "automated_judge_included": false,
+  "historical_gemini_scores_included": false,
+  "lance_regenerated": false,
+  "source": "existing verified OmniEdit Spatial 240 Lance outputs",
+  "aligned_subset_sha256": "654e39544aaf445f320bdc9cde3b214c347a71df4572d9385b66b305cac353dd"
+}

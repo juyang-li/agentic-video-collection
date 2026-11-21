@@ -1,0 +1,40 @@
+{
+  "schema": "frozen300_result_v1",
+  "one_record_per_model_and_id": true,
+  "required": [
+    "id",
+    "model",
+    "status",
+    "input_manifest_sha256",
+    "model_revision",
+    "code_revision_or_sha256",
+    "checkpoint_sha256",
+    "seed",
+    "parameters",
+    "original_prompt",
+    "adapted_prompt",
+    "source_sha256",
+    "ordered_reference_sha256s",
+    "derived_condition_sha256s",
+    "num_frames",
+    "fps",
+    "canvas_wh",
+    "comparison_interval_seconds",
+    "native_alignment_tail_seconds",
+    "elapsed_seconds",
+    "peak_memory_bytes",
+    "memory_measurement",
+    "gpu_model",
+    "parallelism",
+    "failure_reason"
+  ],
+  "allowed_status": [
+    "complete",
+    "failed",
+    "not_run"
+  ],
+  "seed": 42,
+  "failure_rule": "Failed records retain the id; failure_reason is mandatory on failure. Unknown measurements are null, never fabricated. Old output reuse does not count as a new batch result.",
+  "output_naming": "results/<model>/<id>.mp4 plus <id>.json; aggregate results.jsonl",
+  "parameters_note": "Record all sampler/guidance/flow/STG/negative prompt/conditioning settings, including duration and reference order; native_alignment_tail_seconds=null when no tail."
+}

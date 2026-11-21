@@ -1,0 +1,32 @@
+{
+  "cascade_version": "qwen72b_prompt_v12_gemini38_rescue_v2",
+  "rows": 697,
+  "decision_counts": {
+    "accepted": 590,
+    "rejected": 107
+  },
+  "route_counts": {
+    "gemini_decides_qwen_rejected": 132,
+    "qwen_accept_low_risk": 378,
+    "gemini_direct_preclassified_risk": 187
+  },
+  "risk_counts": {
+    "stage1_boundary": 186,
+    "robot_or_synthetic_subject": 1
+  },
+  "by_dataset": {
+    "egoedit": {
+      "accepted": 590,
+      "rejected": 107
+    }
+  },
+  "by_branch": {
+    "egoedit_replace": {
+      "accepted": 590,
+      "rejected": 107
+    }
+  },
+  "qwen_cost_usd": 4.059077,
+  "gemini_routed_cost_usd": 1.83746625,
+  "cascade_cost_usd": 5.896543250000001
+}

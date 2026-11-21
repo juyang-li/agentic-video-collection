@@ -1,0 +1,50 @@
+{
+  "survey_version": "qwen32b_vs_72b_artifact_risk_30_v1",
+  "rows": 30,
+  "same_input_prompt_layout": true,
+  "qwen32b_decisions": {
+    "accepted": 24,
+    "uncertain": 4,
+    "rejected": 2
+  },
+  "qwen72b_decisions": {
+    "rejected": 20,
+    "accepted": 10
+  },
+  "decision_matrix": {
+    "32b=accepted|72b=rejected": 15,
+    "32b=uncertain|72b=rejected": 3,
+    "32b=uncertain|72b=accepted": 1,
+    "32b=accepted|72b=accepted": 9,
+    "32b=rejected|72b=rejected": 2
+  },
+  "decision_agreement": {
+    "count": 11,
+    "rate": 0.36666666666666664
+  },
+  "qwen32b_visible_artifact": {
+    "pass": 25,
+    "uncertain": 4,
+    "fail": 1
+  },
+  "qwen72b_visible_artifact": {
+    "fail": 7,
+    "pass": 23
+  },
+  "visible_artifact_matrix": {
+    "32b=pass|72b=fail": 6,
+    "32b=pass|72b=pass": 19,
+    "32b=uncertain|72b=pass": 4,
+    "32b=fail|72b=fail": 1
+  },
+  "visible_artifact_agreement": {
+    "count": 20,
+    "rate": 0.6666666666666666
+  },
+  "comparison_strata": {
+    "decision_disagreement": 19,
+    "full_decision_artifact_agreement": 11
+  },
+  "qwen32b_cost_usd": 0.037733176,
+  "qwen72b_cost_usd": 0.081998
+}

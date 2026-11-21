@@ -1,0 +1,12 @@
+{
+  "input_rows": 1375,
+  "survivor_ids": 1361,
+  "output_rows": 1361,
+  "removed_rows": 14,
+  "removed_by_branch": {
+    "goku_add": 14
+  },
+  "removed_by_final_decision": {
+    "": 14
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 390,
+  "survivors": 373,
+  "pair_decisions": {
+    "accepted": 340,
+    "uncertain": 33,
+    "rejected": 17
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 57,
+      "uncertain": 22,
+      "rejected": 1
+    },
+    "reco_add": {
+      "accepted": 122,
+      "rejected": 13,
+      "uncertain": 5
+    },
+    "reco_replace": {
+      "accepted": 161,
+      "rejected": 3,
+      "uncertain": 6
+    }
+  },
+  "rejection_reasons": {
+    "extreme_freeze_repeat": 7,
+    "sustained_near_freeze": 19,
+    "boundary_sharpness_p10": 1
+  }
+}

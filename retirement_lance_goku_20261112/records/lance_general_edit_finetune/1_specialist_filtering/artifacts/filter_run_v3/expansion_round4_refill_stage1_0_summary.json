@@ -1,0 +1,20 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_rows": 390,
+  "accepted": 390,
+  "rejected": 0,
+  "pending_media": 310,
+  "media_ready": 80,
+  "decision_by_branch": {
+    "egoedit_replace": {
+      "accepted": 80
+    },
+    "reco_add": {
+      "accepted": 140
+    },
+    "reco_replace": {
+      "accepted": 170
+    }
+  },
+  "reason_counts": {}
+}

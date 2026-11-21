@@ -1,0 +1,20 @@
+{
+  "rows": 40,
+  "raw_status": {
+    "usable": 24,
+    "uncertain": 14,
+    "unusable": 2
+  },
+  "policy_status": {
+    "usable": 26,
+    "uncertain": 4,
+    "unusable": 10
+  },
+  "policy_basis": {
+    "explicit_usable_keep": 24,
+    "neutral_uncertain_flexible": 4,
+    "positive_uncertain_keep": 2,
+    "explicit_unusable_delete": 2,
+    "negative_uncertain_delete": 8
+  }
+}

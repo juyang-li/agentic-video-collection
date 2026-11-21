@@ -1,0 +1,21 @@
+{
+  "route_version": "qwen72b_prompt_v12_to_gemini38_rescue_v2",
+  "input_rows": 2256,
+  "routed_rows": 2256,
+  "route_rate": 1.0,
+  "route_counts": {
+    "qwen_skipped_preclassified_risk": 2256
+  },
+  "risk_counts": {
+    "high_risk_remove": 2256,
+    "stage1_boundary": 51,
+    "robot_or_synthetic_subject": 3
+  },
+  "by_dataset": {
+    "goku": 2256
+  },
+  "by_branch": {
+    "goku_remove": 1408,
+    "goku_add": 848
+  }
+}

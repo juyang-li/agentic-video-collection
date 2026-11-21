@@ -1,0 +1,48 @@
+{
+  "selection_seed": 20260904,
+  "selection_policy": "fixed_category_quota_then_deterministic_maximum_stratum_coverage",
+  "rows": 100,
+  "requested_by_category": {
+    "final_4k_selected": 20,
+    "accepted_reserve": 10,
+    "full_review_overturn_reject": 15,
+    "gemini_existing_reject": 15,
+    "refill_accept": 10,
+    "refill_reject": 10,
+    "stage1_round4_reject": 10,
+    "quarantine": 10
+  },
+  "available_by_category": {
+    "final_4k_selected": 4000,
+    "accepted_reserve": 141,
+    "full_review_overturn_reject": 439,
+    "gemini_existing_reject": 2868,
+    "refill_accept": 278,
+    "refill_reject": 95,
+    "stage1_round4_reject": 17,
+    "quarantine": 15
+  },
+  "selected_by_category": {
+    "final_4k_selected": 20,
+    "accepted_reserve": 10,
+    "full_review_overturn_reject": 15,
+    "gemini_existing_reject": 15,
+    "refill_accept": 10,
+    "refill_reject": 10,
+    "stage1_round4_reject": 10,
+    "quarantine": 10
+  },
+  "selected_by_branch": {
+    "reco_remove": 10,
+    "egoedit_replace": 23,
+    "goku_remove": 9,
+    "reco_replace": 24,
+    "goku_add": 9,
+    "reco_add": 25
+  },
+  "selected_by_status": {
+    "accepted": 40,
+    "rejected": 50,
+    "quarantine": 10
+  }
+}

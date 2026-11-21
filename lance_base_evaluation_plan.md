@@ -1,4 +1,8 @@
-# Lance 原始模型部署与最小评测计划
+# Lance 原始模型部署与最小评测计划（历史）
+
+> 当前交接说明（2026-11-21）：本文件及其中Lance／GOKU执行路线已退役，以下仅为历史记录；当前入口见[项目README](README.md)，退役依据见[退役档案](retirement_lance_goku_20261112/README.md)。
+
+> 归档说明（2026-09-05）：本文描述的 15 条探索性 base manifest、输出、comparison 和评分入口已删除，不能按文中路径直接复跑。当前正式方案改为完整 OmniEdit Spatial 240，见 [`model_evaluation/lance_base/README.md`](model_evaluation/lance_base/README.md)。本文仅保留决策历史。
 
 > 日期：2026-08-24  
 > 状态：部署、15 条生成与技术检查已完成；人工视频评分待审阅  

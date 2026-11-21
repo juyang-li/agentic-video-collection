@@ -1,0 +1,27 @@
+{
+  "anchor_definition": "first non-Stylize operation in original instruction order",
+  "candidate_counts": {
+    "add": 1500,
+    "remove": 1800,
+    "replace": 2700
+  },
+  "candidate_factor": 1.5,
+  "instruction_counts": {
+    "2": 3504,
+    "3": 1868,
+    "4": 499,
+    "5": 129
+  },
+  "manifest": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/coinve_ablation_v1/candidate_manifest.csv",
+  "manifest_sha256": "68f90651810b5f8aa9566dd920fd3e4e7bfcb3a72388f981fbdfe3169884e7f0",
+  "metadata": "/scratch/prj0000000275/jcy/ljy/video_collection/dataset_research/coinve_research/metadata/metadata_coinve200k.jsonl",
+  "metadata_sha256": "d1f0b643d2c5cc1cfe855351d2642fb1b6c0cb403f5301002111ac8c2246a5a6",
+  "prompt_policy": "preserve all ordered instructions as one numbered caption",
+  "repo_id": "FireCRT/CoinVE-200K",
+  "revision": "7989adca1088928414242c57dd62ce485f740889",
+  "selection_seed": 20260904,
+  "status": "complete",
+  "stylize_candidates": 1706,
+  "technical_prefilter": "source filename frame span >=151",
+  "unique_source_video": true
+}

@@ -1,0 +1,26 @@
+{
+  "bundle": "temporal",
+  "failures": 0,
+  "finished_at": "2026-09-08T13:40:04.349441+00:00",
+  "metrics": {
+    "motion_smoothness": {
+      "average": 0.9887131416993669,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    },
+    "vtss": {
+      "average": 0.05157798896246451,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    }
+  },
+  "model_kind": "base",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "attribute_all",
+  "started_at": "2026-09-08T13:25:21.151222+00:00",
+  "status": "complete"
+}

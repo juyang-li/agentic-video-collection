@@ -4,7 +4,7 @@
 
 ## 使用入口
 
-- `manifest.jsonl`：正式配对、完整 prompt、参考图、split、来源和原媒体 SHA256；`manifest.csv` 是表格副本。
+- `manifest.jsonl`：正式配对、完整 prompt、参考图、split、来源和原媒体 SHA256；`manifest.csv` 是表格副本。`source`、`target`、`reference` 均为数据集内部 `media/...` 相对路径。
 - `crops.csv`：两侧起点及共同结束时间。所有媒体路径相对清单所在目录解析。
 - `dataset_reader.py`：`iter_samples(manifest, split=..., dataset=...)` 返回含绝对媒体路径的记录；`sample_times(row, fps=..., frames=...)` 返回两侧共用时间戳，超出共同区间会报错。
 - `HANDOFF_FOR_COLLEAGUE.txt`：给师兄的完整字段、模型输入条件和接入示例。不要移动或清理被清单引用的历史原媒体。
@@ -35,10 +35,10 @@ python dataset_reader.py manifest.jsonl --split train --dataset tripvvt --fps 12
 ├── media/            # 本次下载的原视频和参考图；不进入 Git
 ├── metadata/         # 候选、哈希、来源、技术记录、分数、排除原因和状态
 ├── logs/             # 作业与重试历史
-├── reviews/          # 已交付 50 对 ZIP、冻结抽样、SHA256、上传收据
+├── reviews/          # 50 对冻结抽样、SHA256 和上传收据；本地 ZIP 已清理
 └── archive/          # 历史过程说明
 ```
 
-已删除可重建 smoke 素材、重复预取暂存、字节码缓存及被撤销的验收/打包/上传旧流水线；正式清单内容和媒体路径保持不变。审核包默认使用无评分表的连续滚动形式，规范见项目根目录 `DATASET_AUDIT_GUIDE.md`。Git 只追踪源码和说明，不包含原媒体、生成清单、日志、凭据和 ZIP。
+2026-11-12 已将原先依赖 Lance、旧 CoinVE/TripVVT 审核目录和 ref-edit 抽查目录的 5,202 个媒体字段硬链接迁入本数据集 `media/`，字段 schema、reader API、split 和哈希保持不变；迁移与全量校验回执位于 `metadata/media_internalization_20261112.json`。已删除可重建 smoke、重复暂存和历史审核 ZIP。审核包默认使用无评分表的连续滚动形式，规范见项目根目录 `DATASET_AUDIT_GUIDE.md`。Git 只追踪源码和说明，不包含原媒体、生成清单、日志、凭据和 ZIP。
 
 后续审核包上传默认只传 ZIP，不单独传 JSONL 或哈希文件，不追加哈希、远端大小核对；上传工具报告成功即完成。历史已上传 ZIP、sidecar 和回执原样保留。该规则不删除本地用于来源追溯和分组隔离的媒体哈希。

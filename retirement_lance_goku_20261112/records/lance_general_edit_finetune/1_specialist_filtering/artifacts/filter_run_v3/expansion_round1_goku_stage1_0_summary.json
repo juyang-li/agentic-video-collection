@@ -1,0 +1,17 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_rows": 1700,
+  "accepted": 1700,
+  "rejected": 0,
+  "pending_media": 1700,
+  "media_ready": 0,
+  "decision_by_branch": {
+    "goku_add": {
+      "accepted": 600
+    },
+    "goku_remove": {
+      "accepted": 1100
+    }
+  },
+  "reason_counts": {}
+}

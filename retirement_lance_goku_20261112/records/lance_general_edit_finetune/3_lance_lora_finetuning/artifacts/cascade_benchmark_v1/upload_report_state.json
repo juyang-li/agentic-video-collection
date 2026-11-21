@@ -1,0 +1,24 @@
+{
+  "local": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/CASCADE_BENCHMARK_REPORT.md",
+  "remote": "/apps/bypy/lance_review/CASCADE_BENCHMARK_REPORT.md",
+  "size": 4567,
+  "mtime_ns": 1788535137204917428,
+  "block_size": 4194304,
+  "block_md5s": [
+    "edc69155ab53847e49a8c0a5a1ed857e"
+  ],
+  "uploadid": "N1-MjAyLjEzMC41OC4yOjE3ODg1MzUyMzQ6OTE4Njc1Njc3Nzk2NzAzMDA2MA==",
+  "needed": [
+    0
+  ],
+  "completed": [
+    0
+  ],
+  "status": "complete",
+  "remote_result": {
+    "fs_id": 24833977930656,
+    "path": "/apps/bypy/lance_review/CASCADE_BENCHMARK_REPORT.md",
+    "server_filename": "CASCADE_BENCHMARK_REPORT.md",
+    "size": 4567
+  }
+}

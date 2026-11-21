@@ -1,0 +1,26 @@
+{
+  "survey_version": "general_edit_stage1_2_stage2_calibration_100_v1",
+  "rows": 100,
+  "strata": {
+    "stage1_2_high": 20,
+    "stage1_2_boundary": 20,
+    "stage1_2_low": 20,
+    "qwen_accepted": 14,
+    "qwen_rejected": 13,
+    "qwen_accepted_fallback_for_uncertain": 8,
+    "qwen_rejected_fallback_for_uncertain": 5
+  },
+  "branches": {
+    "reco_remove": 27,
+    "reco_replace": 27,
+    "reco_add": 24,
+    "goku_add": 8,
+    "egoedit_replace": 7,
+    "goku_remove": 7
+  },
+  "operations": {
+    "remove": 34,
+    "replace": 34,
+    "add": 32
+  }
+}

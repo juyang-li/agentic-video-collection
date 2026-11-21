@@ -1,0 +1,39 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "selection_seed": 20260904,
+  "round": 4,
+  "rows": 390,
+  "requested_quotas": {
+    "egoedit_replace": 80,
+    "reco_add": 140,
+    "reco_replace": 170
+  },
+  "archive_restrictions": {},
+  "by_branch": {
+    "egoedit_replace": 80,
+    "reco_add": 140,
+    "reco_replace": 170
+  },
+  "by_branch_scope": {
+    "egoedit_replace:object": 80,
+    "reco_add:object": 73,
+    "reco_add:person": 63,
+    "reco_add:accessory": 4,
+    "reco_replace:object": 94,
+    "reco_replace:person": 60,
+    "reco_replace:accessory": 5,
+    "reco_replace:clothes": 3,
+    "reco_replace:appearance": 5,
+    "reco_replace:background": 3
+  },
+  "source_archives": {
+    "egoedit_remote_zip": 80,
+    "add/src_videos/add_src_video_38.tar": 140,
+    "replace/src_videos/replace_src_video_58.tar": 170
+  },
+  "metadata_rejected_before_selection": {
+    "excluded_style": 464,
+    "excluded_camera": 23,
+    "excluded_task_scope": 16
+  }
+}

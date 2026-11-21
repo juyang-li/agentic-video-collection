@@ -1,0 +1,38 @@
+{
+  "rows": 139,
+  "labels": {
+    "accepted": 111,
+    "rejected": 28
+  },
+  "audit_operations": {
+    "replace": 46,
+    "remove": 79,
+    "add": 14
+  },
+  "labels_by_operation": {
+    "remove": {
+      "accepted": 61,
+      "rejected": 18
+    },
+    "add": {
+      "accepted": 12,
+      "rejected": 2
+    },
+    "replace": {
+      "accepted": 38,
+      "rejected": 8
+    }
+  },
+  "datasets": {
+    "egoedit": 24,
+    "goku": 57,
+    "reco": 58
+  },
+  "annotation_sources": {
+    "historical_pair_review": 97,
+    "holdout40_raw_review": 26,
+    "artifact_risk30_raw_review": 16
+  },
+  "uncertain_policy": "excluded regardless of notes",
+  "benchmark_usage": "development_only_not_blind_test"
+}

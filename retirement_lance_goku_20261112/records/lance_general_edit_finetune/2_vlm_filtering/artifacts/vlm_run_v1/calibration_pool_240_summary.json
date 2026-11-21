@@ -1,0 +1,26 @@
+{
+  "version": "general_edit_stage2_calibration_pool_240_v1",
+  "rows": 240,
+  "previously_reviewed_ids": 788,
+  "route_counts": {
+    "robot": 120,
+    "general": 120
+  },
+  "branch_counts": {
+    "reco_remove": 61,
+    "reco_add": 52,
+    "reco_replace": 81,
+    "egoedit_replace": 12,
+    "goku_add": 17,
+    "goku_remove": 17
+  },
+  "operation_counts": {
+    "remove": 78,
+    "add": 69,
+    "replace": 93
+  },
+  "original_decision_counts": {
+    "accepted": 213,
+    "uncertain": 27
+  }
+}

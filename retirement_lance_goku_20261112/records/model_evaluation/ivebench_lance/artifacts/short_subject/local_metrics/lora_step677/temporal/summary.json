@@ -1,0 +1,26 @@
+{
+  "bundle": "temporal",
+  "failures": 0,
+  "finished_at": "2026-09-07T09:33:39.184466+00:00",
+  "metrics": {
+    "motion_smoothness": {
+      "average": 0.9882035706119547,
+      "error_records": 0,
+      "records": 91,
+      "status": "complete",
+      "valid_records": 91
+    },
+    "vtss": {
+      "average": 0.05622698999122604,
+      "error_records": 0,
+      "records": 91,
+      "status": "complete",
+      "valid_records": 91
+    }
+  },
+  "model_kind": "lora_step677",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "short_subject",
+  "started_at": "2026-09-07T09:26:22.996056+00:00",
+  "status": "complete"
+}

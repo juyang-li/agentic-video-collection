@@ -1,0 +1,40 @@
+{
+  "api_key_env": "OPEN_ROUTER_QWEN",
+  "failed_task_ids": [],
+  "manifest_task_count": 182,
+  "normalized_preferences": {
+    "fidelity": {
+      "base": 81,
+      "lora_step677": 79,
+      "tie": 22
+    },
+    "instruction": {
+      "base": 58,
+      "lora_step677": 54,
+      "tie": 70
+    },
+    "overall": {
+      "base": 79,
+      "lora_step677": 81,
+      "tie": 22
+    }
+  },
+  "order_consistency": {
+    "fidelity": 0.7802197802197802,
+    "instruction": 0.8021978021978022,
+    "overall": 0.8131868131868132
+  },
+  "reported_cost_usd": 0.24498449999999997,
+  "requests_including_retries": 182,
+  "requests_without_reported_cost": 0,
+  "scope": "full_manifest",
+  "status": "complete",
+  "tasks_failed": 0,
+  "tasks_requested": 182,
+  "tasks_succeeded": 182,
+  "usage_totals": {
+    "completion_tokens": 31660,
+    "prompt_tokens": 168346,
+    "total_tokens": 200006
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_rows": 900,
+  "accepted": 900,
+  "rejected": 0,
+  "pending_media": 0,
+  "media_ready": 900,
+  "decision_by_branch": {
+    "reco_remove": {
+      "accepted": 900
+    }
+  },
+  "reason_counts": {}
+}

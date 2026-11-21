@@ -1,0 +1,97 @@
+{
+  "public_input": "VEFX-Bench official object-removal demo",
+  "layout": "four aligned time cards; each contains FULL pair + tight ROI pair",
+  "privacy_scope": "Only upstream public demo frames and its public instruction were sent.",
+  "successful_models": 6,
+  "models": [
+    {
+      "model_id": "qwen/qwen3.5-397b-a17b",
+      "provider": "DeepInfra",
+      "input_tokens": 5180,
+      "output_tokens": 138,
+      "reasoning_tokens": 0,
+      "api_elapsed_seconds": 5.932804,
+      "cost_usd_one_public_pair": 0.00177348,
+      "linear_cost_projection_63_pairs_usd": 0.11172924000000001,
+      "public_demo_decision_not_an_accuracy_label": "rejected"
+    },
+    {
+      "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "provider": "DeepInfra",
+      "input_tokens": 6568,
+      "output_tokens": 122,
+      "reasoning_tokens": 0,
+      "api_elapsed_seconds": 8.613266,
+      "cost_usd_one_public_pair": 0.00142096,
+      "linear_cost_projection_63_pairs_usd": 0.08952048,
+      "public_demo_decision_not_an_accuracy_label": "rejected"
+    },
+    {
+      "model_id": "google/gemini-3.7-flash",
+      "provider": "Google AI Studio",
+      "input_tokens": 5789,
+      "output_tokens": 147,
+      "reasoning_tokens": 0,
+      "api_elapsed_seconds": 4.778725,
+      "cost_usd_one_public_pair": 0.004893,
+      "linear_cost_projection_63_pairs_usd": 0.308259,
+      "public_demo_decision_not_an_accuracy_label": "accepted"
+    },
+    {
+      "model_id": "google/gemini-3.1-pro-preview",
+      "provider": "Google AI Studio",
+      "input_tokens": 5789,
+      "output_tokens": 1370,
+      "reasoning_tokens": 1163,
+      "api_elapsed_seconds": 17.591795,
+      "cost_usd_one_public_pair": 0.028018,
+      "linear_cost_projection_63_pairs_usd": 1.765134,
+      "public_demo_decision_not_an_accuracy_label": "rejected"
+    },
+    {
+      "model_id": "openai/gpt-5.6-sol",
+      "provider": "OpenAI",
+      "input_tokens": 8021,
+      "output_tokens": 305,
+      "reasoning_tokens": 67,
+      "api_elapsed_seconds": 6.877603,
+      "cost_usd_one_public_pair": 0.023101,
+      "linear_cost_projection_63_pairs_usd": 1.455363,
+      "public_demo_decision_not_an_accuracy_label": "accepted"
+    },
+    {
+      "model_id": "openai/gpt-4o-2024-11-20",
+      "provider": "OpenAI",
+      "input_tokens": 5473,
+      "output_tokens": 112,
+      "reasoning_tokens": 0,
+      "api_elapsed_seconds": 6.025917,
+      "cost_usd_one_public_pair": 0.0148025,
+      "linear_cost_projection_63_pairs_usd": 0.9325574999999999,
+      "public_demo_decision_not_an_accuracy_label": "rejected"
+    }
+  ],
+  "linear_total_projection_63_pairs_usd": 4.66256322,
+  "projection_warning": "A one-pair linear estimate is planning evidence only; image tokenization and reasoning length vary by sample.",
+  "accuracy_warning": "The public demo has no local human usable/unusable label, so its decisions must not be used to rank model accuracy.",
+  "failed_endpoint_diagnostics": [
+    {
+      "model_id": "qwen/qwen3.5-397b-a17b",
+      "provider": "DeepInfra",
+      "cause": "five-image request exceeded provider limit of four",
+      "resolution": "use the common four-card API layout"
+    },
+    {
+      "model_id": "qwen/qwen3.5-397b-a17b",
+      "provider": "DeepInfra",
+      "cause": "default reasoning consumed the 768-token completion budget",
+      "resolution": "reasoning=none, exclude=true"
+    },
+    {
+      "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "provider": "Venice",
+      "cause": "structured response contained whitespace instead of JSON",
+      "resolution": "pin DeepInfra, which returned valid strict JSON"
+    }
+  ]
+}

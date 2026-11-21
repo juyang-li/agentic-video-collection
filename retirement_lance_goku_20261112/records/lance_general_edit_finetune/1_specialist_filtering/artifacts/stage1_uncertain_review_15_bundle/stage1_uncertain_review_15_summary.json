@@ -1,0 +1,32 @@
+{
+  "survey_version": "general_edit_stage1_uncertain_review_15_v1",
+  "rows": 15,
+  "seed": 20260830,
+  "excluded_existing_audit_rows": 300,
+  "reused_existing_audit_rows": 2,
+  "branch_counts": {
+    "egoedit_replace": 10,
+    "goku_add": 1,
+    "goku_remove": 1,
+    "reco_add": 1,
+    "reco_remove": 1,
+    "reco_replace": 1
+  },
+  "reason_counts": {
+    "source:boundary_sharpness_p10|source:boundary_dino_max_feature_jump": 1,
+    "target:boundary_musiq_p10": 1,
+    "target:boundary_dino_max_feature_jump": 5,
+    "source:boundary_dino_max_feature_jump|target:boundary_musiq_p10|target:boundary_dino_max_feature_jump": 1,
+    "source:boundary_dino_max_feature_jump": 2,
+    "source:boundary_sharpness_p10|target:boundary_dino_max_feature_jump": 1,
+    "target:boundary_musiq_p10|target:boundary_sharpness_p10|target:boundary_dino_max_feature_jump": 1,
+    "source:boundary_dino_max_feature_jump|target:boundary_dino_max_feature_jump": 1,
+    "source:boundary_musiq_p10|source:boundary_dino_max_feature_jump": 1,
+    "target:boundary_musiq_p10|target:boundary_sharpness_p10": 1
+  },
+  "direction_counts": {
+    "edited_to_original": 4,
+    "original_to_edited": 7,
+    "edited_to_edited": 4
+  }
+}

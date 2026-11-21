@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "1_specialist_filtering/artifacts/filter_run_v1/stage1_quality_shard0.csv",
+    "1_specialist_filtering/artifacts/filter_run_v1/stage1_quality_shard1.csv",
+    "1_specialist_filtering/artifacts/filter_run_v1/stage1_quality_shard2.csv",
+    "1_specialist_filtering/artifacts/filter_run_v1/stage1_quality_shard3.csv"
+  ],
+  "input_rows": 18531,
+  "unique_videos": 5046,
+  "duplicate_rows": 13485,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 5040,
+    "fail_short": 6
+  },
+  "full_scores": 5040
+}

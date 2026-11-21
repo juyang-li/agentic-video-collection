@@ -1,0 +1,226 @@
+{
+  "all_recorded_requests_including_retries": 240,
+  "categories": {
+    "Appearance_change": {
+      "accuracy": 2.4,
+      "consistency": 2.9,
+      "count": 10,
+      "overall_score": 1.9259999999999997,
+      "preservation": 3.0,
+      "realism": 3.0
+    },
+    "Clothes_change": {
+      "accuracy": 2.5,
+      "consistency": 2.4,
+      "count": 10,
+      "overall_score": 1.9120000000000001,
+      "preservation": 2.4,
+      "realism": 2.9
+    },
+    "Color_change": {
+      "accuracy": 2.7,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 2.142,
+      "preservation": 3.0,
+      "realism": 2.7
+    },
+    "Environment_change": {
+      "accuracy": 2.6,
+      "consistency": 2.5,
+      "count": 10,
+      "overall_score": 1.9840000000000004,
+      "preservation": 2.7,
+      "realism": 2.8
+    },
+    "Global_style_change": {
+      "accuracy": 2.9,
+      "consistency": 2.9,
+      "count": 10,
+      "overall_score": 2.2600000000000002,
+      "preservation": 2.7,
+      "realism": 2.8
+    },
+    "Global_visual_effects_adding": {
+      "accuracy": 2.9,
+      "consistency": 3.0,
+      "count": 10,
+      "overall_score": 2.321,
+      "preservation": 3.1,
+      "realism": 2.8
+    },
+    "Landscape_change": {
+      "accuracy": 2.9,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 2.2239999999999998,
+      "preservation": 2.4,
+      "realism": 2.8
+    },
+    "Material_change": {
+      "accuracy": 2.7,
+      "consistency": 3.2,
+      "count": 10,
+      "overall_score": 2.162,
+      "preservation": 2.8,
+      "realism": 2.8
+    },
+    "Object_State_change": {
+      "accuracy": 2.2,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 1.717,
+      "preservation": 2.9,
+      "realism": 2.6
+    },
+    "Object_adding": {
+      "accuracy": 3.0,
+      "consistency": 3.4,
+      "count": 10,
+      "overall_score": 2.4739999999999998,
+      "preservation": 3.3,
+      "realism": 2.7
+    },
+    "Object_direction_change": {
+      "accuracy": 2.2,
+      "consistency": 2.5,
+      "count": 10,
+      "overall_score": 1.702,
+      "preservation": 3.1,
+      "realism": 2.5
+    },
+    "Object_location_change": {
+      "accuracy": 2.1,
+      "consistency": 2.6,
+      "count": 10,
+      "overall_score": 1.6320000000000001,
+      "preservation": 3.0,
+      "realism": 2.6
+    },
+    "Object_location_swap": {
+      "accuracy": 2.0,
+      "consistency": 3.2,
+      "count": 10,
+      "overall_score": 1.6620000000000001,
+      "preservation": 3.4,
+      "realism": 3.3
+    },
+    "Object_number_change": {
+      "accuracy": 2.1,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 1.652,
+      "preservation": 3.0,
+      "realism": 2.8
+    },
+    "Object_removal": {
+      "accuracy": 2.0,
+      "consistency": 2.7,
+      "count": 10,
+      "overall_score": 1.6040000000000003,
+      "preservation": 3.5,
+      "realism": 2.7
+    },
+    "Object_replacement": {
+      "accuracy": 2.5,
+      "consistency": 2.5,
+      "count": 10,
+      "overall_score": 1.982,
+      "preservation": 3.2,
+      "realism": 2.7
+    },
+    "Object_style_change": {
+      "accuracy": 2.4,
+      "consistency": 2.5,
+      "count": 10,
+      "overall_score": 1.866,
+      "preservation": 3.0,
+      "realism": 2.7
+    },
+    "Object_visual_effects_adding": {
+      "accuracy": 2.3,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 1.807,
+      "preservation": 2.9,
+      "realism": 2.7
+    },
+    "Relighting": {
+      "accuracy": 2.8,
+      "consistency": 3.1,
+      "count": 10,
+      "overall_score": 2.2399999999999998,
+      "preservation": 2.9,
+      "realism": 3.0
+    },
+    "Season_change": {
+      "accuracy": 2.4,
+      "consistency": 3.0,
+      "count": 10,
+      "overall_score": 1.8960000000000001,
+      "preservation": 2.9,
+      "realism": 2.8
+    },
+    "Size_shape_change": {
+      "accuracy": 2.2,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 1.6950000000000003,
+      "preservation": 2.8,
+      "realism": 2.5
+    },
+    "Texture_change": {
+      "accuracy": 2.7,
+      "consistency": 2.8,
+      "count": 10,
+      "overall_score": 2.0530000000000004,
+      "preservation": 2.3,
+      "realism": 2.5
+    },
+    "Time_change": {
+      "accuracy": 2.4,
+      "consistency": 3.2,
+      "count": 10,
+      "overall_score": 1.975,
+      "preservation": 3.4,
+      "realism": 3.1
+    },
+    "Weather_change": {
+      "accuracy": 2.4,
+      "consistency": 3.3,
+      "count": 10,
+      "overall_score": 1.9459999999999997,
+      "preservation": 3.1,
+      "realism": 2.9
+    }
+  },
+  "failed_task_ids": [],
+  "manifest_task_count": 240,
+  "mean_scores_successes_only": {
+    "accuracy": 2.470833333333333,
+    "consistency": 2.8541666666666665,
+    "overall_score": 1.951416666666667,
+    "preservation": 2.95,
+    "realism": 2.779166666666667
+  },
+  "reasoning_tokens": 10778,
+  "reported_cost_usd_known_requests": 0.41432999999999987,
+  "requests_without_reported_cost": 0,
+  "retry_requests": 0,
+  "returned_models": [
+    "google/gemini-3.8-flash"
+  ],
+  "returned_providers": [
+    "Google"
+  ],
+  "scope": "full_manifest",
+  "status": "complete",
+  "tasks_failed": 0,
+  "tasks_requested": 240,
+  "tasks_succeeded": 240,
+  "usage_totals": {
+    "completion_tokens": 26007,
+    "prompt_tokens": 422405,
+    "total_tokens": 448412
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_pairs": 1400,
+  "survivors": 1375,
+  "pair_decisions": {
+    "accepted": 1203,
+    "rejected": 25,
+    "uncertain": 172
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 437,
+      "uncertain": 156,
+      "rejected": 2
+    },
+    "goku_add": {
+      "accepted": 408,
+      "rejected": 4,
+      "uncertain": 9
+    },
+    "goku_remove": {
+      "accepted": 358,
+      "rejected": 19,
+      "uncertain": 7
+    }
+  },
+  "rejection_reasons": {
+    "global_blur_low_detail": 7,
+    "global_low_visual_quality": 4,
+    "sustained_near_freeze": 16,
+    "boundary_sharpness_p10": 1
+  }
+}

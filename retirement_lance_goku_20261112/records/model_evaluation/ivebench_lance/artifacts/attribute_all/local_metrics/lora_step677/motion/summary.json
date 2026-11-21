@@ -1,0 +1,19 @@
+{
+  "bundle": "motion",
+  "failures": 0,
+  "finished_at": "2026-09-08T13:49:55.399363+00:00",
+  "metrics": {
+    "motion_fidelity": {
+      "average": 0.8552032895074512,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    }
+  },
+  "model_kind": "lora_step677",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "attribute_all",
+  "started_at": "2026-09-08T13:38:54.461749+00:00",
+  "status": "complete"
+}

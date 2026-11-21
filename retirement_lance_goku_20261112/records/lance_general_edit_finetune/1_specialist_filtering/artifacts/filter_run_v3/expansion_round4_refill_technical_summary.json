@@ -1,0 +1,19 @@
+{
+  "metric_set": "technical",
+  "device": "cpu",
+  "input": "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_stage1_0_survivors.csv",
+  "videos": 160,
+  "resumed_videos": 0,
+  "newly_scored_videos": 160,
+  "status_counts": {
+    "pass": 160
+  },
+  "elapsed_seconds": 161.86679564602673,
+  "frame_samples": 12,
+  "role_mode": "both",
+  "missing_jobs_before_skip": 620,
+  "dinov2_model": null,
+  "musiq_model": null,
+  "shard_index": 0,
+  "shard_count": 1
+}

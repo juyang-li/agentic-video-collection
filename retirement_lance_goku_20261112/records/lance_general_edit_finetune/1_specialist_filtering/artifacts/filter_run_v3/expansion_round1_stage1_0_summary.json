@@ -1,0 +1,23 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "input_rows": 2700,
+  "accepted": 2700,
+  "rejected": 0,
+  "pending_media": 2700,
+  "media_ready": 0,
+  "decision_by_branch": {
+    "egoedit_replace": {
+      "accepted": 700
+    },
+    "goku_add": {
+      "accepted": 600
+    },
+    "goku_remove": {
+      "accepted": 1100
+    },
+    "reco_remove": {
+      "accepted": 300
+    }
+  },
+  "reason_counts": {}
+}

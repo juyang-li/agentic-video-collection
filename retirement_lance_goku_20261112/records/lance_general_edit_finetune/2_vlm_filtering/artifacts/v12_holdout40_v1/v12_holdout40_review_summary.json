@@ -1,0 +1,26 @@
+{
+  "survey_version": "qwen72b_v12_unseen_holdout40_v1",
+  "rows": 40,
+  "model": "qwen/qwen2.5-vl-72b-instruct",
+  "judge_version": "general_edit_structural_v8_plus_eyewear_v9_filter_v12",
+  "decisions": {
+    "accepted": 28,
+    "rejected": 12
+  },
+  "instruction_following": {
+    "pass": 32,
+    "fail": 8
+  },
+  "visible_artifact": {
+    "pass": 28,
+    "fail": 12
+  },
+  "content_preservation": {
+    "pass": 39,
+    "fail": 1
+  },
+  "providers": {
+    "Nebius": 40
+  },
+  "total_cost_usd": 0.09658974999999999
+}

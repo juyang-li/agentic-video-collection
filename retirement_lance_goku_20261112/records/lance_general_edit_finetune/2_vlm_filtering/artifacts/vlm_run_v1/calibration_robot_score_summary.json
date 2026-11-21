@@ -1,0 +1,9 @@
+{
+  "score_version": "stage1_2_robot_scores_v1",
+  "model_backend": "yoloworld+musiq+siglip+dinov2",
+  "input_rows": 120,
+  "completed": 120,
+  "passed": 120,
+  "errors": 0,
+  "elapsed_seconds": 60.17094
+}

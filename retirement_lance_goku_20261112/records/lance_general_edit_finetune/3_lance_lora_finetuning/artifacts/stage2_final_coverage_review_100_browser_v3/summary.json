@@ -1,0 +1,44 @@
+{
+  "review_version": "stage2_final_coverage_review_100_browser_v3",
+  "selection_seed": 20260904,
+  "selection_policy": "deterministic_maximum_stratum_coverage",
+  "cascade_inputs": [
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/production_round0_nonreco/cascade_rows_stage1_corrected.csv",
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/production_round0_reco/cascade_rows.csv",
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/production_round3_reco_remove/cascade_rows.csv",
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/production_round1_goku/cascade_rows.csv",
+    "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/3_lance_lora_finetuning/artifacts/production_round2_ego/cascade_rows.csv"
+  ],
+  "rows": 100,
+  "groups": {
+    "direct_qwen_accept": 20,
+    "gemini_reviewed_accept": 20,
+    "qwen_reject_gemini_rescue": 20,
+    "gemini_final_reject": 20,
+    "boundary_or_quarantine": 20
+  },
+  "datasets": {
+    "egoedit": 18,
+    "reco": 51,
+    "goku": 31
+  },
+  "branches": {
+    "egoedit_replace": 18,
+    "reco_replace": 18,
+    "reco_add": 15,
+    "reco_remove": 18,
+    "goku_remove": 16,
+    "goku_add": 15
+  },
+  "cascade_status": {
+    "accepted": 64,
+    "rejected": 34,
+    "quarantine": 2
+  },
+  "review_media": {
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "browser_compatible": true,
+    "transcoded_files": 36
+  }
+}

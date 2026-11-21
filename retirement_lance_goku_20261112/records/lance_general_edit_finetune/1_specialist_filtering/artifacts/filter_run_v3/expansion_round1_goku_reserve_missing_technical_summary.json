@@ -1,0 +1,12 @@
+{
+  "input_pairs": 2750,
+  "metric_set": "technical",
+  "pairs_with_missing_full_scores": 471,
+  "missing_video_roles": 942,
+  "by_branch_role": {
+    "goku_remove:source": 232,
+    "goku_remove:target": 232,
+    "goku_add:source": 239,
+    "goku_add:target": 239
+  }
+}

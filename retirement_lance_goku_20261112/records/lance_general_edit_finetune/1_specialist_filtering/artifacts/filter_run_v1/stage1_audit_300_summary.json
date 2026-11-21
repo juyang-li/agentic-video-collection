@@ -1,0 +1,34 @@
+{
+  "rows": 300,
+  "seed": 20260829,
+  "decision_counts": {
+    "accepted": 100,
+    "uncertain": 100,
+    "rejected": 100
+  },
+  "branch_counts": {
+    "goku_add": 25,
+    "reco_remove": 72,
+    "reco_add": 47,
+    "reco_replace": 50,
+    "insave_remove": 69,
+    "egoedit_replace": 16,
+    "goku_remove": 21
+  },
+  "pilot_group_counts": {
+    "phase_b_adaptive": 79,
+    "branch_random": 153,
+    "reco_clothes": 24,
+    "reco_robot_cg": 34,
+    "phase_b_robot_cg": 9,
+    "phase_b_clothes": 1
+  },
+  "scope_counts": {
+    "accessory": 20,
+    "object": 115,
+    "clothes": 29,
+    "person": 132,
+    "background": 2,
+    "appearance": 2
+  }
+}

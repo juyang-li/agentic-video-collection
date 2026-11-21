@@ -1,0 +1,39 @@
+{
+  "judge_version": "openrouter_model_bakeoff_task_only_timecard_v6",
+  "roi_method_version": "paired_tight_change_roi_four_aligned_v1",
+  "visual_layout_version": "four_aligned_full_tight_roi_timecards_v1",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "model_backend": "openrouter",
+  "prompt_sha256": "30b7ed5ac2405ea885bf62a3845d28bef49d482571f56f0e2cc08d669b800d23",
+  "input_rows": 1,
+  "completed": 1,
+  "parse_errors": 0,
+  "decision_counts": {
+    "rejected": 1
+  },
+  "check_counts": {
+    "instruction_following": {
+      "pass": 1
+    },
+    "visible_artifact": {
+      "fail": 1
+    },
+    "content_preservation": {
+      "pass": 1
+    }
+  },
+  "provider_counts": {
+    "Google AI Studio": 1
+  },
+  "new_rows_attempted": 1,
+  "concurrency": 1,
+  "new_run_wall_seconds": 19.191171435988508,
+  "mean_pair_elapsed_seconds": 19.183954,
+  "mean_api_elapsed_seconds": 17.591795,
+  "total_input_tokens": 5789,
+  "total_output_tokens": 1370,
+  "total_cost_usd": 0.028018,
+  "mean_input_tokens": 5789,
+  "mean_roi_pairs": 4,
+  "rows_retried": 0
+}

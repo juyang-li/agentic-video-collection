@@ -1,0 +1,22 @@
+{
+  "judge_version": "qwen2_5_vl_7b_pair_rect_judge_v3",
+  "roi_method_version": "paired_change_rect_v1",
+  "visual_layout_version": "labeled_source_target_pair_strip_v1",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_backend": "transformers",
+  "prompt_sha256": "7416b4b7c2319adbc707ebed3dc6ed6ca4c08f520c1ee78a0dd3e881bbd25841",
+  "input_rows": 36,
+  "completed": 36,
+  "parse_errors": 0,
+  "decision_counts": {
+    "accepted": 5,
+    "rejected": 31,
+    "uncertain": 0
+  },
+  "new_run_elapsed_seconds": 132.4606052050367,
+  "seconds_per_new_pair": 3.679461255695464,
+  "mean_input_tokens": 7052.25,
+  "peak_gpu_memory_mb": 19734.573,
+  "mean_roi_reliability": 0.7948169722222223,
+  "pairs_with_any_roi_fallback": 5
+}

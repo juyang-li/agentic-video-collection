@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v1/stage1_quality_available.csv",
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/quality_missing_shard0.csv",
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/quality_missing_shard1.csv",
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/quality_missing_shard2.csv",
+    "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/quality_missing_shard3.csv"
+  ],
+  "input_rows": 7694,
+  "unique_videos": 7694,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 7688,
+    "fail_short": 6
+  },
+  "full_scores": 7688
+}

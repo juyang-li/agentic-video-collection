@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-09-05T20:57:16.560777+00:00",
+  "generated_sha256": "4f918a703e79ba7c292699a3c04d9b0e354b23f9aacfb075cd02284783fdf575",
+  "http_status": 403,
+  "response": {
+    "error": {
+      "code": 403,
+      "message": "Provider returned error",
+      "metadata": {
+        "is_byok": false,
+        "provider_error_code": "403",
+        "provider_name": "Google AI Studio",
+        "raw": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The caller does not have permission\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+      }
+    },
+    "user_id": "user_32iVlMs8fEBctLaVOue4QNFcp4d"
+  },
+  "scoring_protocol": {
+    "cost_basis": "OpenRouter returned usage.cost in USD, including retries; unknown charges reported separately",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "expected_response_provider": "Google AI Studio",
+    "media_resolution": "provider_default_not_explicitly_controllable_via_this_route",
+    "official_evaluator_sha256": "e3fd80f726c33fe4737267161f3440e1eed9d5c79f435e15ec924b4f3a6cc1dd",
+    "official_prompt_sha256": "8168fe4b4edf0f608e79476fd6b9edf28cb1ede6e6734184f1b12d65c2dedbaf",
+    "protocol": "omni_edit_spatial_gemini38_low_openrouter_v1",
+    "settings": {
+      "max_tokens": 2048,
+      "model": "google/gemini-3.8-flash",
+      "provider": {
+        "allow_fallbacks": false,
+        "data_collection": "deny",
+        "only": [
+          "google-ai-studio"
+        ],
+        "order": [
+          "google-ai-studio"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": {
+        "effort": "low"
+      },
+      "response_format": {
+        "json_schema": {
+          "name": "omni_edit_spatial",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "accuracy": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "consistency": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "preservation": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "realism": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "accuracy",
+              "preservation",
+              "realism",
+              "consistency",
+              "reason"
+            ],
+            "type": "object"
+          },
+          "strict": true
+        },
+        "type": "json_schema"
+      },
+      "stream": false
+    },
+    "system_rules_sha256": "57add515d6b255a28224c4f682b5b5f87e3cbdb2365bf1645a8158bd9c091e5b",
+    "video_input": "unaltered_complete_source_mp4_then_generated_mp4_base64"
+  },
+  "source_url": "https://huggingface.co/datasets/OmniEdit-Bench/OmniEdit-Bench/resolve/7447b1a57b52585c3c2c5ac7f00feefdf89f9d61/Spatial/Global-Level/Landscape_change/7_1280x720.mp4",
+  "source_url_sha256_verified": "6144b31ba5293c94dc5c446149e221c37b9f1320f093638cc3eb28fa22571e4f",
+  "status": "response_received",
+  "task": {
+    "category": "Landscape_change",
+    "checkpoint_step": "base",
+    "dataset_revision": "7447b1a57b52585c3c2c5ac7f00feefdf89f9d61",
+    "generated_video": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/outputs_raw/omni_edit_spatial_base_seed42_shard00/000167.mp4",
+    "generation_seed": 42,
+    "instruction": "Reconstruct the flat foreground rice paddies into a complex system of beautifully sculpted, multi-tiered rice terraces that cascade down a newly formed hill slope towards the viewer. These terraces should capture patches of water and green rice, creating a winding, layered pattern. Retain the distant palm trees and hills.",
+    "sample_id": "Sp_Landscape_change_07",
+    "sample_index": 167,
+    "source_path": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Landscape_change/7_1280x720.mp4",
+    "source_sha256": "6144b31ba5293c94dc5c446149e221c37b9f1320f093638cc3eb28fa22571e4f",
+    "stage": "omni_edit_spatial"
+  }
+}

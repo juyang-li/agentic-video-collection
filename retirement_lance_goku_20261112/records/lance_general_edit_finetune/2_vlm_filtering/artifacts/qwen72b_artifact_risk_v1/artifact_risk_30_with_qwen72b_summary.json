@@ -1,0 +1,25 @@
+{
+  "survey_version": "qwen72b_artifact_risk_30_v1",
+  "rows": 30,
+  "model": "qwen/qwen2.5-vl-72b-instruct",
+  "judge_version": "qwen2_5_vl_72b_openrouter_artifact_pair_judge_v1",
+  "decisions": {
+    "rejected": 20,
+    "accepted": 10
+  },
+  "instruction_following": {
+    "fail": 20,
+    "pass": 10
+  },
+  "visible_artifact": {
+    "fail": 7,
+    "pass": 23
+  },
+  "content_preservation": {
+    "pass": 30
+  },
+  "providers": {
+    "Nebius": 30
+  },
+  "total_cost_usd": 0.081998
+}

@@ -1,0 +1,25 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "source": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v1/pilot_manifest_5k.csv",
+  "rows": 5000,
+  "by_branch": {
+    "insave_remove": 623,
+    "goku_remove": 553,
+    "goku_add": 554,
+    "egoedit_replace": 599,
+    "reco_add": 871,
+    "reco_remove": 879,
+    "reco_replace": 921
+  },
+  "quality_checked_roles": {
+    "target": 1351,
+    "source": 677,
+    "both": 2972
+  },
+  "provenance_pairs": {
+    "original->edited": 1351,
+    "edited->original": 677,
+    "edited->edited": 301,
+    "generation_side_unresolved->generation_side_unresolved": 2671
+  }
+}

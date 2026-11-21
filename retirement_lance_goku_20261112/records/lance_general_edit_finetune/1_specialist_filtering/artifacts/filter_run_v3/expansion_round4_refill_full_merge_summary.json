@@ -1,0 +1,13 @@
+{
+  "inputs": [
+    "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_full_shard1.csv"
+  ],
+  "input_rows": 25,
+  "unique_videos": 25,
+  "duplicate_rows": 0,
+  "completeness_replacements": 0,
+  "status_counts": {
+    "pass": 25
+  },
+  "full_scores": 25
+}

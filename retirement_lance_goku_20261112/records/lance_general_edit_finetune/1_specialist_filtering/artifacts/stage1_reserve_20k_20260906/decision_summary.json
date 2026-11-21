@@ -1,0 +1,54 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 20000,
+  "survivors": 18662,
+  "pair_decisions": {
+    "accepted": 16916,
+    "rejected": 1338,
+    "uncertain": 1746
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 3715,
+      "uncertain": 1272,
+      "rejected": 13
+    },
+    "goku_add": {
+      "accepted": 1846,
+      "rejected": 108,
+      "uncertain": 46
+    },
+    "goku_remove": {
+      "accepted": 2785,
+      "rejected": 148,
+      "uncertain": 67
+    },
+    "reco_add": {
+      "accepted": 2449,
+      "rejected": 391,
+      "uncertain": 160
+    },
+    "reco_remove": {
+      "accepted": 2409,
+      "rejected": 538,
+      "uncertain": 53
+    },
+    "reco_replace": {
+      "accepted": 3712,
+      "uncertain": 148,
+      "rejected": 140
+    }
+  },
+  "rejection_reasons": {
+    "global_blur_low_detail": 346,
+    "sustained_near_freeze": 874,
+    "boundary_musiq_p10": 128,
+    "global_low_visual_quality": 330,
+    "joint_extreme_low_quality": 42,
+    "boundary_sharpness_p10": 106,
+    "boundary_dino_max_feature_jump": 51,
+    "extreme_freeze_repeat": 283,
+    "black_frames": 15
+  }
+}

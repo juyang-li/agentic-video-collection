@@ -23,6 +23,7 @@ CONTACT_DIR = EXAMPLES_DIR / "contact_sheets"
 INVENTORY_PATH = ROOT / "openve_inventory.csv"
 AUDIT_PATH = ROOT / "openve_audit.csv"
 TASKS = ("add", "change", "remove", "replace", "transform", "other")
+EXPECTED_SAMPLE_SIZE = 15
 HASH_PREFIX_LENGTH = 5
 REVIEW_HEIGHT = 540
 CONTACT_HALF_WIDTH = 480
@@ -167,8 +168,13 @@ def write_contact_sheet(
 def load_manifest() -> list[dict[str, str]]:
     with MANIFEST_PATH.open(encoding="utf-8", newline="") as file:
         rows = list(csv.DictReader(file))
-    if len(rows) != 15 or len({row["sample_id"] for row in rows}) != 15:
-        raise ValueError("manifest must contain 15 unique samples")
+    if (
+        len(rows) != EXPECTED_SAMPLE_SIZE
+        or len({row["sample_id"] for row in rows}) != EXPECTED_SAMPLE_SIZE
+    ):
+        raise ValueError(
+            f"manifest must contain {EXPECTED_SAMPLE_SIZE} unique samples"
+        )
     unknown = {row["task"] for row in rows} - set(TASKS)
     if unknown:
         raise ValueError(f"unknown tasks: {sorted(unknown)}")

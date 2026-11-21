@@ -1,0 +1,26 @@
+{
+  "continuation_version": "general_edit_stage1_continuation_v3",
+  "source": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v1/stage1_1_pair_decisions.csv",
+  "source_rows": 4748,
+  "source_stage1_1_survivors": 4563,
+  "continuation_input": 4003,
+  "structural_exclusions": 560,
+  "stage1_2_robot": 683,
+  "by_original_stage1_1_decision": {
+    "accepted": 3737,
+    "uncertain": 266
+  },
+  "by_branch": {
+    "goku_remove": 384,
+    "goku_add": 421,
+    "egoedit_replace": 595,
+    "reco_add": 851,
+    "reco_remove": 839,
+    "reco_replace": 913
+  },
+  "exclusion_reasons": {
+    "excluded_insave_person_remove_branch": 485,
+    "excluded_handheld_object_remove": 60,
+    "excluded_garment_add_remove": 15
+  }
+}

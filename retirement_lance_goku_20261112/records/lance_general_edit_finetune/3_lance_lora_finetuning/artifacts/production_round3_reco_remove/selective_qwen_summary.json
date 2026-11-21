@@ -1,0 +1,12 @@
+{
+  "selection_version": "selective_qwen_equivalent_cascade_v1",
+  "input_rows": 520,
+  "qwen_called_rows": 0,
+  "qwen_skipped_rows": 520,
+  "preclassified_risks": {
+    "high_risk_remove": 520,
+    "robot_or_synthetic_subject": 20,
+    "stage1_boundary": 9
+  },
+  "equivalence": "Qwen is skipped only when the frozen rescue cascade would route the row to Gemini regardless of Qwen's decision."
+}

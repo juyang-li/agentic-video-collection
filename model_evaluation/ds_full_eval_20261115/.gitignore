@@ -1,0 +1,10 @@
+metadata/
+frames/
+results/
+results_archive*/
+report/
+review/
+review_*/
+logs/
+*.zip
+__pycache__/

@@ -1,0 +1,39 @@
+{
+  "judge_version": "openrouter_model_bakeoff_task_only_timecard_v6",
+  "roi_method_version": "paired_tight_change_roi_four_aligned_v1",
+  "visual_layout_version": "four_aligned_full_tight_roi_timecards_v1",
+  "model_id": "openai/gpt-5.6-sol",
+  "model_backend": "openrouter",
+  "prompt_sha256": "30b7ed5ac2405ea885bf62a3845d28bef49d482571f56f0e2cc08d669b800d23",
+  "input_rows": 1,
+  "completed": 1,
+  "parse_errors": 0,
+  "decision_counts": {
+    "accepted": 1
+  },
+  "check_counts": {
+    "instruction_following": {
+      "pass": 1
+    },
+    "visible_artifact": {
+      "pass": 1
+    },
+    "content_preservation": {
+      "pass": 1
+    }
+  },
+  "provider_counts": {
+    "OpenAI": 1
+  },
+  "new_rows_attempted": 1,
+  "concurrency": 1,
+  "new_run_wall_seconds": 8.43388681509532,
+  "mean_pair_elapsed_seconds": 8.424374,
+  "mean_api_elapsed_seconds": 6.877603,
+  "total_input_tokens": 8021,
+  "total_output_tokens": 305,
+  "total_cost_usd": 0.023101,
+  "mean_input_tokens": 8021,
+  "mean_roi_pairs": 4,
+  "rows_retried": 0
+}

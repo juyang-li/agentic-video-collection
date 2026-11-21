@@ -1,0 +1,55 @@
+{
+  "filter_version": "general_edit_stage1_pilot_v1",
+  "phase": "B",
+  "seed": 20261029,
+  "rows": 500,
+  "combined_rows": 5000,
+  "selection_rule": "50-per-branch floor; remainder proportional to Phase-A uncertain rate",
+  "branch_quotas": {
+    "insave_remove": 123,
+    "goku_remove": 53,
+    "goku_add": 54,
+    "egoedit_replace": 99,
+    "reco_add": 54,
+    "reco_remove": 62,
+    "reco_replace": 55
+  },
+  "branch_counts": {
+    "insave_remove": 123,
+    "goku_remove": 53,
+    "goku_add": 54,
+    "egoedit_replace": 99,
+    "reco_add": 54,
+    "reco_remove": 62,
+    "reco_replace": 55
+  },
+  "group_counts": {
+    "phase_b_adaptive": 483,
+    "phase_b_robot_cg": 16,
+    "phase_b_clothes": 1
+  },
+  "source_archive_counts": {
+    "train_data/add_and_remove/part_01.tar": 77,
+    "train_data/add_and_remove/part_00.tar": 46,
+    "remove/remove.videos.part22.tar": 25,
+    "remove/remove.videos.part24.tar": 28,
+    "add/add.videos.part27.tar": 29,
+    "add/add.videos.part22.tar": 25,
+    "egoedit_remote_zip": 99,
+    "add/src_videos/add_src_video_56.tar": 12,
+    "add/src_videos/add_src_video_42.tar": 9,
+    "add/src_videos/add_src_video_00.tar": 12,
+    "add/src_videos/add_src_video_38.tar": 12,
+    "add/src_videos/add_src_video_37.tar": 9,
+    "remove/src_videos/remove_src_video_44.tar": 17,
+    "remove/src_videos/remove_src_video_39.tar": 15,
+    "remove/src_videos/remove_src_video_00.tar": 12,
+    "remove/src_videos/remove_src_video_50.tar": 7,
+    "remove/src_videos/remove_src_video_20.tar": 11,
+    "replace/src_videos/replace_src_video_34.tar": 5,
+    "replace/src_videos/replace_src_video_37.tar": 16,
+    "replace/src_videos/replace_src_video_72.tar": 17,
+    "replace/src_videos/replace_src_video_11.tar": 11,
+    "replace/src_videos/replace_src_video_58.tar": 6
+  }
+}

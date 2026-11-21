@@ -1,0 +1,3 @@
+{"id":"clip_001","model":"editor_a","prediction":"data/editor_a/clip_001.mp4","gt":"data/gt/clip_001.mp4"}
+{"id":"clip_001","model":"editor_b","prediction":"data/editor_b/clip_001.mp4","gt":"data/gt/clip_001.mp4"}
+{"id":"clip_002","model":"editor_a","prediction":"data/editor_a/clip_002.mp4","gt":"data/gt/clip_002.mp4"}

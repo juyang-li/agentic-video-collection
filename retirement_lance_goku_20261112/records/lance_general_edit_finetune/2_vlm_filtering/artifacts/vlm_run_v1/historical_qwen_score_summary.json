@@ -1,0 +1,16 @@
+{
+  "judge_version": "qwen2_5_vl_7b_pair_judge_v1",
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_backend": "transformers",
+  "prompt_sha256": "c734ff2a1199ea1bec0f17a1b625f370d419ebf13456cda1b82f80838d15eadc",
+  "input_rows": 233,
+  "completed": 233,
+  "parse_errors": 0,
+  "decision_counts": {
+    "accepted": 177,
+    "rejected": 56,
+    "uncertain": 0
+  },
+  "new_run_elapsed_seconds": 598.8982411089819,
+  "seconds_per_new_pair": 2.570378717205931
+}

@@ -1,0 +1,39 @@
+{
+  "experiment_version": "qwen3_artifact_focus_holdout_v1",
+  "selection_seed": "qwen3-artifact-focus-20260831-v1",
+  "source_holdout_rows": 91,
+  "selected_rows": 38,
+  "groups": {
+    "hard_failure": 12,
+    "borderline_focus_defect": 4,
+    "tolerated_artifact": 2,
+    "clean_control": 20
+  },
+  "human_labels": {
+    "unusable": 12,
+    "uncertain": 4,
+    "usable": 22
+  },
+  "datasets": {
+    "reco": 19,
+    "egoedit": 4,
+    "goku": 15
+  },
+  "dataset_operations": {
+    "egoedit:replace": 4,
+    "goku:add": 7,
+    "goku:remove": 8,
+    "reco:add": 4,
+    "reco:remove": 9,
+    "reco:replace": 6
+  },
+  "explicit_focus_defects": 7,
+  "focus_tags": {
+    "local_blur": 6,
+    "local_flicker": 2,
+    "repair_hole": 1,
+    "smear_ghost": 2
+  },
+  "egoedit_rows": 4,
+  "promotion_metrics_note": "Visible-artifact recall uses explicit human defect tags; clean false-positive rates use only clean_control, while tolerated_artifact is reported separately."
+}

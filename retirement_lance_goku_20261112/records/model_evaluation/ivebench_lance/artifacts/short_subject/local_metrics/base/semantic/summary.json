@@ -1,0 +1,33 @@
+{
+  "bundle": "semantic",
+  "failures": 0,
+  "finished_at": "2026-09-07T09:20:13.452314+00:00",
+  "metrics": {
+    "overall_semantic_consistency": {
+      "average": 0.23629748804883643,
+      "error_records": 0,
+      "records": 91,
+      "status": "complete",
+      "valid_records": 91
+    },
+    "phrase_semantic_consistency": {
+      "average": 0.4236580679541106,
+      "error_records": 0,
+      "records": 91,
+      "status": "complete",
+      "valid_records": 91
+    },
+    "semantic_fidelity": {
+      "average": 0.9285663739665524,
+      "error_records": 0,
+      "records": 91,
+      "status": "complete",
+      "valid_records": 91
+    }
+  },
+  "model_kind": "base",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "short_subject",
+  "started_at": "2026-09-07T09:15:44.355042+00:00",
+  "status": "complete"
+}

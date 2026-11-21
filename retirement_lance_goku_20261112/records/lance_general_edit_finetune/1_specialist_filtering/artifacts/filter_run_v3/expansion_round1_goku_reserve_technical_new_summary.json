@@ -1,0 +1,19 @@
+{
+  "metric_set": "technical",
+  "device": "cpu",
+  "input": "artifacts/filter_run_v3/expansion_round1_goku_reserve_missing_technical_manifest.csv",
+  "videos": 942,
+  "resumed_videos": 0,
+  "newly_scored_videos": 942,
+  "status_counts": {
+    "pass": 942
+  },
+  "elapsed_seconds": 603.7006288750563,
+  "frame_samples": 12,
+  "role_mode": "quality",
+  "missing_jobs_before_skip": 0,
+  "dinov2_model": null,
+  "musiq_model": null,
+  "shard_index": 0,
+  "shard_count": 1
+}

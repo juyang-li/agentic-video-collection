@@ -1,0 +1,51 @@
+{
+  "cascade_version": "qwen72b_prompt_v12_gemini38_rescue_v2",
+  "rows": 1375,
+  "decision_counts": {
+    "accepted": 785,
+    "rejected": 585,
+    "quarantine": 5
+  },
+  "route_counts": {
+    "gemini_confirm_qwen_accept_high_risk": 556,
+    "gemini_decides_qwen_rejected": 503,
+    "qwen_accept_low_risk": 316
+  },
+  "risk_counts": {
+    "high_risk_remove": 782,
+    "stage1_boundary": 172,
+    "robot_or_synthetic_subject": 2
+  },
+  "by_dataset": {
+    "egoedit": {
+      "accepted": 518,
+      "rejected": 74,
+      "quarantine": 1
+    },
+    "goku": {
+      "accepted": 267,
+      "rejected": 511,
+      "quarantine": 4
+    }
+  },
+  "by_branch": {
+    "egoedit_replace": {
+      "accepted": 518,
+      "rejected": 74,
+      "quarantine": 1
+    },
+    "goku_add": {
+      "rejected": 275,
+      "accepted": 141,
+      "quarantine": 1
+    },
+    "goku_remove": {
+      "accepted": 126,
+      "rejected": 236,
+      "quarantine": 3
+    }
+  },
+  "qwen_cost_usd": 9.5797644,
+  "gemini_routed_cost_usd": 6.480632775,
+  "cascade_cost_usd": 16.060397175
+}

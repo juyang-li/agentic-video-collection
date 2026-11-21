@@ -1,0 +1,34 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 1400,
+  "survivors": 1361,
+  "pair_decisions": {
+    "accepted": 1192,
+    "rejected": 39,
+    "uncertain": 169
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 437,
+      "uncertain": 156,
+      "rejected": 2
+    },
+    "goku_add": {
+      "accepted": 397,
+      "rejected": 18,
+      "uncertain": 6
+    },
+    "goku_remove": {
+      "accepted": 358,
+      "rejected": 19,
+      "uncertain": 7
+    }
+  },
+  "rejection_reasons": {
+    "global_blur_low_detail": 17,
+    "global_low_visual_quality": 12,
+    "sustained_near_freeze": 16,
+    "boundary_sharpness_p10": 4
+  }
+}

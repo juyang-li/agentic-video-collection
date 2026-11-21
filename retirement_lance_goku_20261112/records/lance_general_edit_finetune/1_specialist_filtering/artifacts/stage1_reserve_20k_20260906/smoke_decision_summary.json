@@ -1,0 +1,15 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "policy_revision": "v2_reverse_removal_generated_side_20260905",
+  "input_pairs": 6,
+  "survivors": 6,
+  "pair_decisions": {
+    "accepted": 6
+  },
+  "pair_decisions_by_branch": {
+    "egoedit_replace": {
+      "accepted": 6
+    }
+  },
+  "rejection_reasons": {}
+}

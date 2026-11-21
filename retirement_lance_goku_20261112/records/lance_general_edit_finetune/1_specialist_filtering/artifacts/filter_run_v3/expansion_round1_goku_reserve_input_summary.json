@@ -1,0 +1,37 @@
+{
+  "filter_version": "general_edit_stage1_quality_v2",
+  "selection_seed": 20260904,
+  "round": 1,
+  "rows": 2750,
+  "requested_quotas": {
+    "goku_remove": 1650,
+    "goku_add": 1100
+  },
+  "archive_restrictions": {
+    "goku_remove": "remove/remove.videos.part24.tar",
+    "goku_add": "add/add.videos.part22.tar"
+  },
+  "by_branch": {
+    "goku_remove": 1650,
+    "goku_add": 1100
+  },
+  "by_branch_scope": {
+    "goku_remove:object": 1106,
+    "goku_remove:accessory": 414,
+    "goku_remove:person": 130,
+    "goku_add:object": 736,
+    "goku_add:accessory": 224,
+    "goku_add:person": 140
+  },
+  "source_archives": {
+    "remove/remove.videos.part24.tar": 1650,
+    "add/add.videos.part22.tar": 1100
+  },
+  "metadata_rejected_before_selection": {
+    "excluded_garment_add_remove": 2455,
+    "excluded_task_scope": 3247,
+    "excluded_handheld_object_remove": 429,
+    "excluded_style": 12,
+    "excluded_camera": 1
+  }
+}

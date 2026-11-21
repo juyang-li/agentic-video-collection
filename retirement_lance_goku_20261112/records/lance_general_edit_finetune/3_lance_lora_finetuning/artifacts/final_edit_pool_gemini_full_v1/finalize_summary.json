@@ -1,0 +1,32 @@
+{
+  "selection_seed": 20260904,
+  "cascade_rows": 7185,
+  "accepted_available": 3863,
+  "not_accepted": 3322,
+  "target_by_branch": {
+    "goku_remove": 600,
+    "goku_add": 400,
+    "egoedit_replace": 1000,
+    "reco_add": 600,
+    "reco_remove": 600,
+    "reco_replace": 800
+  },
+  "accepted_available_by_branch": {
+    "goku_remove": 602,
+    "goku_add": 420,
+    "egoedit_replace": 959,
+    "reco_add": 540,
+    "reco_remove": 634,
+    "reco_replace": 708
+  },
+  "deficits": {
+    "egoedit_replace": 41,
+    "reco_add": 60,
+    "reco_replace": 92
+  },
+  "final_pool_status": "needs_more_candidates",
+  "final_pool_rows": 0,
+  "final_pool_by_branch": {},
+  "final_pool_by_split": {},
+  "split_policy": "shared-media connected component hash; train/validation/test=90/5/5 in expectation"
+}

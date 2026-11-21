@@ -1,0 +1,15 @@
+{
+  "metric_set": "technical",
+  "device": "cpu",
+  "input": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/1_specialist_filtering/artifacts/survey_manifest_reco_v3.csv",
+  "videos": 510,
+  "status_counts": {
+    "pass": 510
+  },
+  "elapsed_seconds": 289.9301902439911,
+  "frame_samples": 12,
+  "dinov2_model": null,
+  "musiq_model": null,
+  "shard_index": 0,
+  "shard_count": 1
+}

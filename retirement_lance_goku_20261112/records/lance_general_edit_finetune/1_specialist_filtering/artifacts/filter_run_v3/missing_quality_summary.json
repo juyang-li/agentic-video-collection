@@ -1,0 +1,11 @@
+{
+  "input_pairs": 4050,
+  "pairs_with_missing_full_scores": 2650,
+  "missing_video_roles": 2652,
+  "by_branch_role": {
+    "reco_add:source": 863,
+    "reco_remove:source": 866,
+    "reco_replace:source": 921,
+    "reco_remove:target": 2
+  }
+}

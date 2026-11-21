@@ -1,0 +1,19 @@
+{
+  "metric_set": "full",
+  "device": "cpu",
+  "input": "lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v3/expansion_round3_reco_remove_buffer_missing_full_manifest.csv",
+  "videos": 300,
+  "resumed_videos": 0,
+  "newly_scored_videos": 300,
+  "status_counts": {
+    "pass": 300
+  },
+  "elapsed_seconds": 998.2151376430411,
+  "frame_samples": 12,
+  "role_mode": "quality",
+  "missing_jobs_before_skip": 0,
+  "dinov2_model": "facebook/dinov2-small",
+  "musiq_model": "musiq-koniq",
+  "shard_index": 2,
+  "shard_count": 4
+}

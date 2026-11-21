@@ -1,0 +1,19 @@
+{
+  "metric_set": "full",
+  "device": "cuda",
+  "input": "../1_specialist_filtering/artifacts/filter_run_v3/expansion_round4_refill_stage1_0_survivors.csv",
+  "videos": 743,
+  "resumed_videos": 603,
+  "newly_scored_videos": 140,
+  "status_counts": {
+    "pass": 743
+  },
+  "elapsed_seconds": 42.589280446991324,
+  "frame_samples": 12,
+  "role_mode": "quality",
+  "missing_jobs_before_skip": 0,
+  "dinov2_model": "facebook/dinov2-small",
+  "musiq_model": "musiq-koniq",
+  "shard_index": 0,
+  "shard_count": 1
+}

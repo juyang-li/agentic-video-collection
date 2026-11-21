@@ -1,0 +1,26 @@
+{
+  "survey_version": "general_edit_qwen_rejected_30_v1",
+  "qwen_rejected_population": 47,
+  "rows": 30,
+  "boundary_prefix_rows": 5,
+  "boundary_confidence": 0.5,
+  "branches": {
+    "goku_remove": 6,
+    "reco_remove": 7,
+    "egoedit_replace": 6,
+    "goku_add": 4,
+    "reco_add": 1,
+    "reco_replace": 6
+  },
+  "operations": {
+    "remove": 13,
+    "replace": 12,
+    "add": 5
+  },
+  "datasets": {
+    "goku": 10,
+    "reco": 14,
+    "egoedit": 6
+  },
+  "overlap_with_calibration_review_100": 13
+}

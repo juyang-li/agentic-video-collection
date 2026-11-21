@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "review_type": "human_only_unlabeled",
+  "sample_count": 24,
+  "category_count": 24,
+  "samples_per_category": 1,
+  "tiers": {
+    "A": 24,
+    "B": 0
+  },
+  "model_id": "Lance",
+  "automated_judge_included": false
+}

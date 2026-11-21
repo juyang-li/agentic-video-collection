@@ -1,0 +1,33 @@
+{
+  "bundle": "semantic",
+  "failures": 0,
+  "finished_at": "2026-09-08T13:34:14.404064+00:00",
+  "metrics": {
+    "overall_semantic_consistency": {
+      "average": 0.2462771807579284,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    },
+    "phrase_semantic_consistency": {
+      "average": 0.1793111396279741,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    },
+    "semantic_fidelity": {
+      "average": 0.9446082159559778,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    }
+  },
+  "model_kind": "lora_step677",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "attribute_all",
+  "started_at": "2026-09-08T13:29:55.457524+00:00",
+  "status": "complete"
+}

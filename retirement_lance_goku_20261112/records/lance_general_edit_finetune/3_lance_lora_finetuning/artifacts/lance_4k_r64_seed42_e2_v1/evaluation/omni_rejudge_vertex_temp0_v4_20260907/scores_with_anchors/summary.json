@@ -1,0 +1,26 @@
+{
+  "all_recorded_requests_including_retries": 2,
+  "categories": {},
+  "failed_task_ids": [
+    "Sp_Object_direction_change_01",
+    "Sp_Object_direction_change_02"
+  ],
+  "manifest_task_count": 264,
+  "mean_scores_successes_only": {},
+  "reasoning_tokens": 0,
+  "reported_cost_usd_known_requests": 0,
+  "requests_without_reported_cost": 2,
+  "retry_requests": 0,
+  "returned_models": [],
+  "returned_providers": [],
+  "scope": "preflight",
+  "status": "incomplete",
+  "tasks_failed": 2,
+  "tasks_requested": 2,
+  "tasks_succeeded": 0,
+  "usage_totals": {
+    "completion_tokens": 0,
+    "prompt_tokens": 0,
+    "total_tokens": 0
+  }
+}

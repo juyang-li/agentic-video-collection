@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-09-05T21:00:17.076386+00:00",
+  "generated_sha256": "27219a07af748a9763da840fc9310a1f462a2b705e8cba932ac9f582d7f5ca30",
+  "http_status": 200,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"accuracy\":3,\"preservation\":2,\"realism\":3,\"consistency\":3,\"reason\":\"The video adopts a warm caramel tone with autumn leaves, aligning well with the thematic shift. However, the original tree structure and wide composition were replaced with a closer, structurally different tree.\"}",
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "format": "google-gemini-v1",
+              "index": 0,
+              "signature": "AY89a19YwY2gJ1u5s6sRzvsGhOtGSRkVw0rCEX8hMxmqXebrmZr91p8RFwhZOfYlPjQyN2KlVArl2y296iH1EEGizNkPJvc9god+nasR",
+              "type": "reasoning.text"
+            }
+          ],
+          "refusal": null,
+          "role": "assistant"
+        },
+        "native_finish_reason": "STOP"
+      }
+    ],
+    "created": 1788642044,
+    "id": "gen-1788642044-XE5jYxBuSIolCB6YsU27",
+    "model": "google/gemini-3.8-flash",
+    "object": "chat.completion",
+    "provider": "Google",
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 58,
+      "completion_tokens_details": {
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "cost": 0.00168825,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0002175,
+        "upstream_inference_cost": 0.00168825,
+        "upstream_inference_prompt_cost": 0.00147075
+      },
+      "is_byok": false,
+      "prompt_tokens": 1961,
+      "prompt_tokens_details": {
+        "audio_tokens": 250,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 1056
+      },
+      "total_tokens": 2019
+    }
+  },
+  "score": {
+    "accuracy": 3,
+    "consistency": 3,
+    "overall_score": 2.28,
+    "preservation": 2,
+    "realism": 3,
+    "reason": "The video adopts a warm caramel tone with autumn leaves, aligning well with the thematic shift. However, the original tree structure and wide composition were replaced with a closer, structurally different tree."
+  },
+  "scoring_protocol": {
+    "cost_basis": "OpenRouter returned usage.cost in USD, including retries; unknown charges reported separately",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "expected_response_provider": "Google",
+    "media_resolution": "provider_default_not_explicitly_controllable_via_this_route",
+    "official_evaluator_sha256": "e3fd80f726c33fe4737267161f3440e1eed9d5c79f435e15ec924b4f3a6cc1dd",
+    "official_prompt_sha256": "8168fe4b4edf0f608e79476fd6b9edf28cb1ede6e6734184f1b12d65c2dedbaf",
+    "protocol": "omni_edit_spatial_gemini38_low_vertex_probe",
+    "settings": {
+      "max_tokens": 2048,
+      "model": "google/gemini-3.8-flash",
+      "provider": {
+        "allow_fallbacks": false,
+        "data_collection": "deny",
+        "only": [
+          "google-vertex/global"
+        ],
+        "order": [
+          "google-vertex/global"
+        ],
+        "require_parameters": true
+      },
+      "reasoning": {
+        "effort": "low"
+      },
+      "response_format": {
+        "json_schema": {
+          "name": "omni_edit_spatial",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "accuracy": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "consistency": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "preservation": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "realism": {
+                "maximum": 5,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "accuracy",
+              "preservation",
+              "realism",
+              "consistency",
+              "reason"
+            ],
+            "type": "object"
+          },
+          "strict": true
+        },
+        "type": "json_schema"
+      },
+      "stream": false
+    },
+    "system_rules_sha256": "57add515d6b255a28224c4f682b5b5f87e3cbdb2365bf1645a8158bd9c091e5b",
+    "video_input": "unaltered_complete_source_mp4_then_generated_mp4_base64"
+  },
+  "source_url": "https://huggingface.co/datasets/OmniEdit-Bench/OmniEdit-Bench/resolve/7447b1a57b52585c3c2c5ac7f00feefdf89f9d61/Spatial/Global-Level/Season_change/5_1280x720.mp4",
+  "source_url_sha256_verified": "39d0c449c5660d2ee7afbd57493c7c927f1c88f35b710b88e12b09428c923489",
+  "status": "response_received",
+  "task": {
+    "category": "Season_change",
+    "checkpoint_step": "base",
+    "dataset_revision": "7447b1a57b52585c3c2c5ac7f00feefdf89f9d61",
+    "generated_video": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/outputs_raw/omni_edit_spatial_base_seed42_shard00/000215.mp4",
+    "generation_seed": 42,
+    "instruction": "Shift the tone to a warm caramel hue, recreating a tranquil moment of falling leaves and abundant harvest.",
+    "sample_id": "Sp_Season_change_05",
+    "sample_index": 215,
+    "source_path": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/lance_base/data/official_source/Spatial/Global-Level/Season_change/5_1280x720.mp4",
+    "source_sha256": "39d0c449c5660d2ee7afbd57493c7c927f1c88f35b710b88e12b09428c923489",
+    "stage": "omni_edit_spatial"
+  }
+}

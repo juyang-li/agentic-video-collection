@@ -1,0 +1,34 @@
+{
+  "judge_version": "general_edit_structural_v8_plus_eyewear_v9_filter_v12",
+  "rows": 30,
+  "base_judge": "qwen2_5_vl_72b_plus_cpu_remove_reconstruction_filter_v8",
+  "strict_judge": "qwen2_5_vl_72b_openrouter_unambiguous_remove_pair_judge_v9",
+  "quality_decisions": {
+    "accepted": 13,
+    "rejected": 17
+  },
+  "final_decisions": {
+    "rejected": 20,
+    "accepted": 10
+  },
+  "routes": {
+    "upstream_structural_policy": 7,
+    "qwen72b_v8_default": 20,
+    "qwen72b_v9_eyewear_reconstruction": 3
+  },
+  "routed_eyewear_ids": [
+    "pilot-goku_add-0ec549c590ef7c55",
+    "pilot-goku_remove-6b8e3df71ba07877",
+    "pilot-goku_add-a493963bed6c6da5"
+  ],
+  "structural_exclusion_ids": [
+    "pilot-goku_remove-7d30cc7f080ab492",
+    "pilot-goku_add-7bcd3ee57eb2d560",
+    "pilot-goku_add-5a25b43e48589a91",
+    "pilot-goku_add-af8d7f02dd9ae646",
+    "pilot-goku_add-69be56ec31f8b5e5",
+    "pilot-goku_add-b6accfce9a157a30",
+    "pilot-goku_add-d9b1d95f8c0188ed"
+  ],
+  "total_composed_cost_usd": 0.0656115
+}

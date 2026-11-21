@@ -1,0 +1,19 @@
+{
+  "metric_set": "full",
+  "device": "cpu",
+  "input": "artifacts/filter_run_v3/expansion_round1_goku_reserve_missing_full_manifest.csv",
+  "videos": 117,
+  "resumed_videos": 0,
+  "newly_scored_videos": 117,
+  "status_counts": {
+    "pass": 117
+  },
+  "elapsed_seconds": 440.15022757207043,
+  "frame_samples": 12,
+  "role_mode": "quality",
+  "missing_jobs_before_skip": 0,
+  "dinov2_model": "facebook/dinov2-small",
+  "musiq_model": "musiq-koniq",
+  "shard_index": 3,
+  "shard_count": 4
+}

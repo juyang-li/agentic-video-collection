@@ -1,0 +1,39 @@
+{
+  "judge_version": "qwen2_5_vl_72b_provenance_aware_pair_judge_prompt_v12",
+  "roi_method_version": "paired_tight_change_roi_five_aligned_v6",
+  "visual_layout_version": "five_aligned_full_tight_roi_timecards_v7",
+  "model_id": "qwen/qwen2.5-vl-72b-instruct",
+  "model_backend": "openrouter",
+  "prompt_sha256": "32e0d04ebc02bd292725425f144e6eab9d36b7915a39a4da2b5511176394212c",
+  "input_rows": 1,
+  "completed": 1,
+  "parse_errors": 0,
+  "decision_counts": {
+    "rejected": 1
+  },
+  "check_counts": {
+    "instruction_following": {
+      "fail": 1
+    },
+    "visible_artifact": {
+      "fail": 1
+    },
+    "content_preservation": {
+      "pass": 1
+    }
+  },
+  "provider_counts": {
+    "Parasail": 1
+  },
+  "new_rows_attempted": 1,
+  "concurrency": 1,
+  "new_run_wall_seconds": 9.830137796001509,
+  "mean_pair_elapsed_seconds": 9.823537,
+  "mean_api_elapsed_seconds": 8.337928,
+  "total_input_tokens": 9709,
+  "total_output_tokens": 199,
+  "total_cost_usd": 0.0079662,
+  "mean_input_tokens": 9709,
+  "mean_roi_pairs": 5,
+  "rows_retried": 0
+}

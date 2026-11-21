@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OmniEdit 人工审核</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b0d12;--panel:#151923;--line:#303746;--text:#ecf0f7;--muted:#9ca8bb;--accent:#75a7ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,sans-serif}
+    header{position:sticky;top:0;z-index:5;padding:12px 18px;background:#0b0d12ee;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    h1{font-size:19px;margin:0 0 8px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    button,input,select,textarea{color:var(--text);background:#1d2330;border:1px solid var(--line);border-radius:7px;padding:7px}
+    button{cursor:pointer}.summary{color:var(--muted)}main{max-width:1500px;margin:auto;padding:14px}
+    article{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px;margin:0 0 16px;scroll-margin-top:90px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted)}.instruction{font-size:16px;margin:9px 0 12px}
+    .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}.video-box{min-width:0}.video-label{font-weight:700;margin:0 0 5px;color:var(--accent)}
+    video{width:100%;max-height:520px;background:#000;border-radius:7px}.sync{margin-top:6px}
+    .ratings{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:8px;margin-top:12px}
+    fieldset{border:1px solid var(--line);border-radius:7px;padding:7px 9px}legend{color:var(--muted)}label{margin-right:9px}
+    textarea{width:100%;min-height:58px;margin-top:9px;resize:vertical}.hidden{display:none!important}
+    @media(max-width:760px){.videos{grid-template-columns:1fr}main{padding:8px}header{position:static}}
+  </style>
+</head>
+<body>
+<header>
+  <h1 id="title"></h1>
+  <div class="toolbar">
+    <input id="search" placeholder="搜索 ID / 类别 / 指令">
+    <select id="category"><option value="">全部类别</option></select>
+    <button id="exportCsv">导出 CSV</button><button id="exportJson">导出 JSON</button>
+    <button id="importBtn">导入标注</button><input id="importFile" type="file" accept=".csv,.json" hidden>
+    <button id="clear">清空本包本地标注</button><span class="summary" id="summary"></span>
+  </div>
+</header>
+<main id="cards"></main>
+<script id="reviewData" type="application/json">__REVIEW_DATA__</script>
+<script>
+const pack=JSON.parse(document.getElementById('reviewData').textContent);
+const fields=['instruction_correctness','logical_correctness','content_preservation','temporal_consistency','visual_quality','technical_quality','overall_decision'];
+const labels={instruction_correctness:'指令完成',logical_correctness:'逻辑正确',content_preservation:'内容保持',temporal_consistency:'时序一致',visual_quality:'视觉质量',technical_quality:'技术质量',overall_decision:'总体结论'};
+const key='human-review:'+pack.review_version, state=JSON.parse(localStorage.getItem(key)||'{}');
+const cards=document.getElementById('cards'); document.getElementById('title').textContent=pack.title;
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function save(){localStorage.setItem(key,JSON.stringify(state)); updateSummary();}
+function rowState(id){return state[id]||(state[id]={});}
+function build(){cards.innerHTML=pack.items.map((x,i)=>`<article data-id="${esc(x.eval_id)}" data-category="${esc(x.category)}" data-text="${esc((x.eval_id+' '+x.category+' '+x.instruction).toLowerCase())}">
+ <div class="meta"><b>#${i+1}</b><span>${esc(x.eval_id)}</span><span>${esc(x.category)}</span><span>Tier ${esc(x.tier)}</span>${x.task_type?`<span>task_type: ${esc(x.task_type)}</span>`:''}</div>
+ <div class="instruction">${esc(x.instruction)}</div><div class="videos">${x.panels.map(p=>`<div class="video-box"><div class="video-label">${esc(p.label)}</div><video controls muted playsinline preload="none" data-src="${esc(p.path)}"></video></div>`).join('')}</div>
+ <button class="sync">同步播放 / 暂停</button><div class="ratings">${fields.map(f=>`<fieldset><legend>${labels[f]}</legend>${['1','0','2'].map(v=>`<label><input type="radio" name="${esc(x.eval_id)}:${f}" data-field="${f}" value="${v}">${v}</label>`).join('')}<button data-clear="${f}" title="清除此项">清除</button></fieldset>`).join('')}</div>
+ <textarea data-field="notes" placeholder="备注（可留空）"></textarea></article>`).join('');
+ for(const a of cards.children){const id=a.dataset.id,s=rowState(id); a.querySelectorAll('[data-field]').forEach(el=>{const f=el.dataset.field;if(el.type==='radio')el.checked=s[f]===el.value;else el.value=s[f]||'';});
+  a.addEventListener('change',e=>{if(e.target.dataset.field){rowState(id)[e.target.dataset.field]=e.target.value;save();}});
+  a.querySelector('textarea').addEventListener('input',e=>{rowState(id).notes=e.target.value;save();});
+  a.querySelectorAll('[data-clear]').forEach(b=>b.onclick=()=>{delete rowState(id)[b.dataset.clear];a.querySelectorAll(`input[data-field="${b.dataset.clear}"]`).forEach(r=>r.checked=false);save();});
+  const vv=[...a.querySelectorAll('video')]; a.querySelector('.sync').onclick=()=>{const play=vv.some(v=>v.paused);vv.forEach(v=>play?v.play():v.pause());};
+  vv.forEach(v=>v.addEventListener('seeked',()=>vv.forEach(o=>{if(o!==v&&Math.abs(o.currentTime-v.currentTime)>.08)o.currentTime=Math.min(v.currentTime,o.duration||v.currentTime);})));}
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.querySelectorAll('video').forEach(v=>{if(e.isIntersecting&&!v.src)v.src=v.dataset.src;else if(!e.isIntersecting&&v.src){v.pause();v.removeAttribute('src');v.load();}})}),{rootMargin:'700px'});
+function filters(){const q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('category').value;[...cards.children].forEach(a=>a.classList.toggle('hidden',!(a.dataset.text.includes(q)&&(!c||a.dataset.category===c))));}
+function updateSummary(){const done=pack.items.filter(x=>fields.some(f=>rowState(x.eval_id)[f])).length;document.getElementById('summary').textContent=`已标注 ${done}/${pack.items.length}`;}
+function rows(){return pack.items.map(x=>({eval_id:x.eval_id,category:x.category,...Object.fromEntries([...fields,'notes'].map(f=>[f,rowState(x.eval_id)[f]||'']))}));}
+function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+function csvCell(v){v=String(v??'');return /[",\n]/.test(v)?'"'+v.replaceAll('"','""')+'"':v;}
+document.getElementById('exportCsv').onclick=()=>{const rr=rows(),h=Object.keys(rr[0]);download(pack.review_version+'_labels.csv','\ufeff'+[h,...rr.map(r=>h.map(k=>r[k]))].map(r=>r.map(csvCell).join(',')).join('\n'),'text/csv');};
+document.getElementById('exportJson').onclick=()=>download(pack.review_version+'_labels.json',JSON.stringify({review_version:pack.review_version,labels:rows()},null,2),'application/json');
+document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();
+function parseCsv(text){const table=[],row=[];let value='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){value+='"';i++;}else quoted=!quoted;}else if(c===','&&!quoted){row.push(value);value='';}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(value);value='';if(row.some(x=>x!==''))table.push(row.splice(0));else row.length=0;}else value+=c;}if(value||row.length){row.push(value);table.push(row);}return table;}
+document.getElementById('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{let rr;if(f.name.endsWith('.json')){const x=JSON.parse(await f.text());rr=x.labels||x;}else{const table=parseCsv((await f.text()).replace(/^\ufeff/,'')),h=table.shift();rr=table.map(values=>Object.fromEntries(values.map((v,i)=>[h[i],v])));}for(const r of rr){if(!pack.items.some(x=>x.eval_id===r.eval_id))continue;const s=rowState(r.eval_id);for(const f of [...fields,'notes'])if(r[f]!==undefined)s[f]=String(r[f]);}save();build();[...cards.children].forEach(a=>io.observe(a));}catch(err){alert('导入失败：'+err.message);}};
+document.getElementById('clear').onclick=()=>{if(confirm('确认清空本包保存在此浏览器的全部标注？')){localStorage.removeItem(key);location.reload();}};
+document.getElementById('search').oninput=filters;document.getElementById('category').onchange=filters;
+build(); for(const c of [...new Set(pack.items.map(x=>x.category))].sort()){const o=document.createElement('option');o.value=o.textContent=c;document.getElementById('category').append(o);}[...cards.children].forEach(a=>io.observe(a));updateSummary();
+</script>
+</body></html>

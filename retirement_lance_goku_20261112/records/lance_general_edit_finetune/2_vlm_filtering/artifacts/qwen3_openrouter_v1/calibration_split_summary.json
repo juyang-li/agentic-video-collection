@@ -1,0 +1,25 @@
+{
+  "source_current_scope": 123,
+  "dev": 32,
+  "holdout": 91,
+  "dev_human_labels": {
+    "usable": 18,
+    "unusable": 6,
+    "uncertain": 8
+  },
+  "holdout_human_labels": {
+    "usable": 61,
+    "unusable": 12,
+    "uncertain": 18
+  },
+  "dev_by_operation": {
+    "remove": 9,
+    "add": 11,
+    "replace": 12
+  },
+  "holdout_by_operation": {
+    "remove": 33,
+    "add": 28,
+    "replace": 30
+  }
+}

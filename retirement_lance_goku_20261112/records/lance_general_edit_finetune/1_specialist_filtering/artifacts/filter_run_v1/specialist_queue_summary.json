@@ -1,0 +1,22 @@
+{
+  "input_pairs": 4748,
+  "stage1_1_survivors": 4563,
+  "stage1_2_robot": 683,
+  "stage1_5_human": 1695,
+  "stage1_6_pair_candidates": 4563,
+  "robot_by_branch": {
+    "reco_add": 204,
+    "reco_remove": 196,
+    "reco_replace": 283
+  },
+  "human_by_scope": {
+    "person": 1092,
+    "accessory": 105,
+    "clothes": 490,
+    "appearance": 8
+  },
+  "stage1_1_survivors_by_decision": {
+    "uncertain": 509,
+    "accepted": 4054
+  }
+}

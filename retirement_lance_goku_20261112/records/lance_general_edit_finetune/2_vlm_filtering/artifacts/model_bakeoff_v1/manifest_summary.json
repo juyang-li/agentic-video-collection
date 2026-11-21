@@ -1,0 +1,30 @@
+{
+  "source_human_manifest": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/2_vlm_filtering/artifacts/pal4vst_v1/experiment_manifest.csv",
+  "source_current_media_manifest": "/scratch/prj0000000275/jcy/ljy/video_collection/lance_general_edit_finetune/1_specialist_filtering/artifacts/filter_run_v2/stage1_next_input.csv",
+  "frozen_label_rows": 70,
+  "current_scope_rows": 63,
+  "excluded_rows": 7,
+  "current_human_counts": {
+    "usable": 34,
+    "uncertain": 11,
+    "unusable": 18
+  },
+  "current_dataset_operation_counts": {
+    "egoedit/replace": 6,
+    "goku/add": 15,
+    "goku/remove": 16,
+    "reco/add": 6,
+    "reco/remove": 14,
+    "reco/replace": 6
+  },
+  "excluded_sample_ids": [
+    "pilot-goku_remove-7d30cc7f080ab492",
+    "pilot-goku_add-7bcd3ee57eb2d560",
+    "pilot-goku_add-5a25b43e48589a91",
+    "pilot-goku_add-af8d7f02dd9ae646",
+    "pilot-goku_add-69be56ec31f8b5e5",
+    "pilot-goku_add-b6accfce9a157a30",
+    "pilot-goku_add-d9b1d95f8c0188ed"
+  ],
+  "excluded_reason": "These seven Goku clothing samples were removed from the current Stage-1 candidate manifest by the later branch policy."
+}

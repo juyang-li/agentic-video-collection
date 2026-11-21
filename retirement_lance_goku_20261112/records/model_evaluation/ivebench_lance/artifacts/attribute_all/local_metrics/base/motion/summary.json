@@ -1,0 +1,19 @@
+{
+  "bundle": "motion",
+  "failures": 0,
+  "finished_at": "2026-09-08T13:38:43.225347+00:00",
+  "metrics": {
+    "motion_fidelity": {
+      "average": 0.8417982187727213,
+      "error_records": 0,
+      "records": 94,
+      "status": "complete",
+      "valid_records": 94
+    }
+  },
+  "model_kind": "base",
+  "official_upstream": "/scratch/prj0000000275/jcy/ljy/video_collection/model_evaluation/ivebench_lance/upstream/metrics",
+  "stage": "attribute_all",
+  "started_at": "2026-09-08T13:25:21.150743+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,83 @@
+{
+  "filter_version": "general_edit_stage1_pilot_v1",
+  "seed": 20260829,
+  "phase": "A",
+  "rows": 4500,
+  "remaining_boundary_quota_after_stage1_scoring": 500,
+  "group_counts": {
+    "branch_random": 3500,
+    "reco_robot_cg": 500,
+    "reco_clothes": 500
+  },
+  "branch_counts": {
+    "insave_remove": 500,
+    "goku_remove": 500,
+    "goku_add": 500,
+    "egoedit_replace": 500,
+    "reco_add": 817,
+    "reco_remove": 817,
+    "reco_replace": 866
+  },
+  "scope_counts": {
+    "person": 1228,
+    "object": 2414,
+    "accessory": 96,
+    "background": 58,
+    "clothes": 669,
+    "appearance": 35
+  },
+  "quality_role_counts": {
+    "target": 3650,
+    "source": 600,
+    "both": 250
+  },
+  "source_archive_counts": {
+    "train_data/add_and_remove/part_01.tar": 280,
+    "train_data/add_and_remove/part_00.tar": 220,
+    "remove/remove.videos.part24.tar": 256,
+    "remove/remove.videos.part22.tar": 244,
+    "add/add.videos.part22.tar": 262,
+    "add/add.videos.part27.tar": 238,
+    "egoedit_remote_zip": 500,
+    "add/src_videos/add_src_video_38.tar": 558,
+    "remove/src_videos/remove_src_video_50.tar": 563,
+    "replace/src_videos/replace_src_video_58.tar": 566,
+    "add/src_videos/add_src_video_37.tar": 54,
+    "add/src_videos/add_src_video_56.tar": 69,
+    "add/src_videos/add_src_video_00.tar": 65,
+    "add/src_videos/add_src_video_42.tar": 71,
+    "remove/src_videos/remove_src_video_00.tar": 66,
+    "remove/src_videos/remove_src_video_39.tar": 56,
+    "remove/src_videos/remove_src_video_20.tar": 68,
+    "remove/src_videos/remove_src_video_44.tar": 64,
+    "replace/src_videos/replace_src_video_37.tar": 78,
+    "replace/src_videos/replace_src_video_72.tar": 75,
+    "replace/src_videos/replace_src_video_34.tar": 76,
+    "replace/src_videos/replace_src_video_11.tar": 71
+  },
+  "target_archive_counts": {
+    "train_data/add_and_remove/part_01.tar": 280,
+    "train_data/add_and_remove/part_00.tar": 220,
+    "remove/remove.videos.part24.tar": 256,
+    "remove/remove.videos.part22.tar": 244,
+    "add/add.videos.part22.tar": 262,
+    "add/add.videos.part27.tar": 238,
+    "egoedit_remote_zip": 500,
+    "add/tar_videos/add_tar_video_38.tar": 558,
+    "remove/tar_videos/remove_tar_video_50.tar": 563,
+    "replace/tar_videos/replace_tar_video_58.tar": 566,
+    "add/tar_videos/add_tar_video_37.tar": 54,
+    "add/tar_videos/add_tar_video_56.tar": 69,
+    "add/tar_videos/add_tar_video_00.tar": 65,
+    "add/tar_videos/add_tar_video_42.tar": 71,
+    "remove/tar_videos/remove_tar_video_00.tar": 66,
+    "remove/tar_videos/remove_tar_video_39.tar": 56,
+    "remove/tar_videos/remove_tar_video_20.tar": 68,
+    "remove/tar_videos/remove_tar_video_44.tar": 64,
+    "replace/tar_videos/replace_tar_video_37.tar": 78,
+    "replace/tar_videos/replace_tar_video_72.tar": 75,
+    "replace/tar_videos/replace_tar_video_34.tar": 76,
+    "replace/tar_videos/replace_tar_video_11.tar": 71
+  },
+  "excluded_review_pairs": 460
+}
