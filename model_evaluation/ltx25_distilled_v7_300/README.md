@@ -1,5 +1,7 @@
 # LTX2.5 Base（distilled DiT）＋DataMake V7：300条
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。 review/media浏览副本已清理（VLM另含review_hair24/media），本地审核页需重建或恢复后播放；实际送评证据保留。
+
 本批对冻结300对全部重新推理：UE 200、CoinVE 75、TripVVT 25。10条先导结果不复用。独立目录保存结果，不改动A849、历史dev或共享DataMake源码。
 
 ## 固定模型与协议

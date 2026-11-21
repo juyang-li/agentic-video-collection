@@ -13,3 +13,5 @@
 - Lance/GOKU 退役清单、关键结论与交付凭据：[`retirement_lance_goku_20261112/README.md`](./retirement_lance_goku_20261112/README.md)
 
 目录约定：数据集调查与正式 11K 数据放在 `dataset_research/`，模型部署与评测放在 `model_evaluation/`。Lance/GOKU 已于 2026-11-12 退役，不再提供本地复跑入口。视频、压缩包、模型、输出和大型官方 metadata 是本地可重建产物，不进入 Git。
+
+本次维护：[2026-11-21工作空间清理与Git纳管记录](WORKSPACE_CLEANUP_20261121.md)。

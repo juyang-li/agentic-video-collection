@@ -1,5 +1,7 @@
 # frozen300：四模型VBench custom_input六项
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。
+
 **最终范围更新（用户于2026-11-15明确要求“不用静态筛选”）：仅交付完整300条、四模型的六项指标，共7200份分数。停止剩余RAFT筛选，不采用静态共同子集；Temporal Flickering按全量原始分数报告，受正常运动影响。已生成的部分静态缓存保留但不进入最终结果。授权记录见metadata/user_override.json。**
 
 **已完成并通过全量验收**：7200/7200份有限分数，评分失败0；336行总体/数据集/任务均值独立复核通过。正式结果见[report/REPORT.md](report/REPORT.md)，逐视频分数见[per_video_metrics.csv](report/per_video_metrics.csv)，验收见[final_validation.json](metadata/final_validation.json)。本任务静态筛选step 202896.19按用户要求取消，allocation 202896保留；取消不计作六项指标评分失败。

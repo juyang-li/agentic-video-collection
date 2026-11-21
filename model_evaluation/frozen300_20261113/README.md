@@ -1,5 +1,7 @@
 # 300 对冻结测评集与跨服务器交接
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。
+
 交付入口为 `package/README.md`、`package/inputs.jsonl`、`package/ground_truth.jsonl`。300 对为 UE 200、CoinVE 75、TripVVT 25；旧 100 对原身份保留，新增仅取师兄当前正式 test。外部 96 条不纳入。数据与文档包不含权重、环境、推理脚本或旧输出。
 
 在 login 节点使用已有 PyAV 环境：

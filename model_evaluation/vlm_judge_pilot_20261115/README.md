@@ -1,5 +1,7 @@
 # 单轮编辑 VLM 试评
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。
+
 2026-11-15。复用v3_116中10任务×4既有输出；CPU准备、外部API评分，无GPU推理。抽样seed 20261115，分层：hair、hair_color、identity、background、TripVVT、accessory、addition、removal、face、文字clothing各1。最后两项是原计划native两任务的明确配额，保证通用模板覆盖。
 
 中文评价模板继承师兄evaluation_protocol的五类模板；新增instruction_conditioned两份，覆盖原模板不适配的24条任务。原始英文编辑指令不翻译。EA/CP独立调用，1–5整数、score/reason两行；CP不输入reference像素。仅替换面部身份的任务不允许体形/衣物变化。映射、模板原文SHA及本地快照见metadata/prompt_provenance.json；新增模板见prompts/。

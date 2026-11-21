@@ -1,5 +1,7 @@
 # A849 v3：104 条、四模型
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。
+
 本轮保留原有 v3 的96条输入与已有结果，增加4条 CelebA-HQ 发型参考任务和4条完整头部 Identity。比较 LTX 基座、A849、原40步 VACE及新增 MiniMax-H3 Ref2VA PDD八步。共同时间范围仍为原视频0–4秒；不通过跨版本均值差声称模型进步。
 
 冻结入口为 `metadata/inputs.jsonl`、`freeze.json`、`generation_gate.json`。`input_origins.json`记录原任务和修改来源，`reuse_outputs.json`记录300条父任务结果的精确输入复用。新增发型任务为 `hair_celeb_01..04`，保留原发型指令及source-only mask，仅替换为四张非美国总统/副总统的CelebA-HQ参考。Identity引用已直接审核的完整头部版本，保留自然头发、RGB128背景以及历史失败诊断。

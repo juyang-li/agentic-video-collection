@@ -1,5 +1,7 @@
 # LTX2.5 distilled＋DataMake V7 单阶段实验
 
+> 清理交接（2026-11-21）：本目录有成功上传回执的本地ZIP已清理；原输入／输出、评分和回执保留，历史ZIP可按回执从百度网盘恢复。
+
 固定10条UE输入，与 `benchmark_full10s_20261112/outputs/ltx_base` 的完整10秒历史结果配对。仅新增蒸馏推理，不补跑dev、不扩大300条，不修改A849作业、历史JSON或共享DataMake源码。
 
 样本：identity_01、identity_02、single_piece_01、whole_outfit_01、action_01、action_02、site_01、hair_01、hair_color_01、camera_01。执行顺序先 identity_01、whole_outfit_01、action_01，逐条技术检查通过才继续后七条；技术失败立即停止并给余下样本写明确未运行原因，不自动重试。
